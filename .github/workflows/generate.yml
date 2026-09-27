@@ -1,0 +1,101 @@
+name: Generate verse audio
+on:
+  workflow_dispatch:
+    inputs:
+      books:
+        description: Comma-separated books (English, Swedish, or numbers)
+        default: John
+        type: string
+      chapters:
+        description: Chapters/ranges, blank for all chapters of selected books
+        default: '1'
+        type: string
+      entire:
+        description: Entire Bible (leave books and chapters blank)
+        default: false
+        type: boolean
+      revision:
+        description: Leave blank to resume; new value intentionally regenerates audio
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: bible-audio-generation
+  cancel-in-progress: false
+env:
+  GH_TOKEN: ${{ github.token }}
+  BOOKS: ${{ inputs.books }}
+  CHAPTERS: ${{ inputs.chapters }}
+  ENTIRE: ${{ inputs.entire }}
+  REVISION: ${{ inputs.revision }}
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - id: plan
+        shell: bash
+        run: |
+          args=(--books "$BOOKS" --chapters "$CHAPTERS")
+          if [[ "$ENTIRE" == "true" ]]; then args+=(--all); fi
+          echo "matrix=$(python audio.py matrix "${args[@]}")" >> "$GITHUB_OUTPUT"
+          python audio.py estimate "${args[@]}" >> "$GITHUB_STEP_SUMMARY"
+  generate:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
+      - name: Generate and validate individual verses
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SHARD: ${{ matrix.shard }}
+        shell: bash
+        run: |
+          args=(--books "$BOOKS" --chapters "$CHAPTERS")
+          if [[ "$ENTIRE" == "true" ]]; then args+=(--all); fi
+          python audio.py generate "${args[@]}" --shard "$SHARD" --revision "$REVISION"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: chapters-${{ matrix.shard }}
+          path: generated/*.json
+          if-no-files-found: ignore
+          retention-days: 7
+  publish:
+    needs: [plan, generate]
+    if: ${{ always() && needs.plan.result == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: chapters-*
+          path: generated
+          merge-multiple: true
+      - run: python audio.py publish
+      - name: Publish complete chapter catalog
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add catalog.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish complete audio chapters'
+            git push origin HEAD:main
+          fi
