@@ -2,6 +2,8 @@ import json
 from pathlib import Path
 from types import SimpleNamespace
 import tempfile
+import shutil
+import subprocess
 import unittest
 from unittest.mock import patch
 
@@ -68,6 +70,16 @@ class AudioTests(unittest.TestCase):
         self.assertEqual(len(selection), 1189)
         self.assertEqual(len(texts), 31170)
         self.assertTrue(all(0 < len(text) <= 4096 and "*" not in text for text in texts))
+
+    @unittest.skipUnless(shutil.which("ffmpeg") and shutil.which("ffprobe"), "FFmpeg is not installed")
+    def test_real_decoder_accepts_mp3_and_rejects_corruption(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path = Path(temp) / "verse.mp3"
+            subprocess.run(["ffmpeg", "-v", "error", "-f", "lavfi", "-i", "sine=frequency=440:duration=0.1", str(path)], check=True)
+            self.assertGreater(audio.inspect_mp3(path), 0)
+            path.write_bytes(b"not an MP3")
+            with self.assertRaises(subprocess.CalledProcessError):
+                audio.inspect_mp3(path)
 
 
 if __name__ == "__main__":
