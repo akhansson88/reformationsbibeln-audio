@@ -4,6 +4,8 @@ from types import SimpleNamespace
 import tempfile
 import shutil
 import subprocess
+import sys
+import io
 import unittest
 from unittest.mock import patch
 
@@ -49,6 +51,35 @@ class AudioTests(unittest.TestCase):
                 audio.generate_chapter(self.data, self.book, self.book["chapters"][0], audio.REPO, temp)
             self.assertFalse(list(Path(temp).glob("*.json")))
             self.assertFalse(any(call.args[:2] == ("release", "upload") for call in github_mock.call_args_list))
+
+    def test_speech_retry_is_bounded_and_auth_errors_are_not_retried(self):
+        class ConnectionError(Exception):
+            pass
+        class StatusError(Exception):
+            def __init__(self, status):
+                self.status_code = status
+        for code, expected_calls in [(429, 6), (503, 6), (401, 1)]:
+            from unittest.mock import Mock
+            create = Mock(side_effect=StatusError(code))
+            client = SimpleNamespace(audio=SimpleNamespace(speech=SimpleNamespace(with_streaming_response=SimpleNamespace(create=create))))
+            module = SimpleNamespace(OpenAI=lambda **kwargs: client, APIConnectionError=ConnectionError, APIStatusError=StatusError)
+            with patch.dict(sys.modules, {"openai": module}), patch.object(audio.time, "sleep"):
+                with self.assertRaisesRegex(RuntimeError, str(code)):
+                    audio.synthesize("Text", Path("unused.mp3"))
+            self.assertEqual(create.call_count, expected_calls)
+
+    def test_publisher_preserves_existing_chapters(self):
+        manifest = {"translation": audio.VERSION, "bookId": 43, "book": "John", "bookName": "Johannesevangeliet", "chapter": 1, "revision": "revision", "sourceHash": "source", "manifestUrl": "https://example.test/chapter.json", "expectedVerses": [1], "verses": [{"verse": 1}]}
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            audio.write_json(root / "catalog.json", {"schemaVersion": 1, "translation": audio.VERSION, "chapters": {"1:1": {"existing": True}}})
+            audio.write_json(root / "generated/43-001.json", manifest)
+            with patch.object(audio.urllib.request, "urlopen", return_value=io.StringIO(json.dumps(manifest))):
+                audio.publish(root / "generated", root / "catalog.json")
+            catalog = json.loads((root / "catalog.json").read_text(encoding="utf-8"))
+            self.assertEqual(catalog["chapters"]["1:1"], {"existing": True})
+            self.assertEqual(catalog["chapters"]["43:1"]["revision"], "revision")
+            self.assertNotIn("verses", catalog["chapters"]["43:1"], "catalog should stay small")
 
     def test_publisher_rejects_incomplete_chapter_without_changing_catalog(self):
         with tempfile.TemporaryDirectory() as temp:
