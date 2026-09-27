@@ -11,6 +11,7 @@ import sys
 import tempfile
 import time
 import urllib.request
+import uuid
 
 REPO = "akhansson88/reformationsbibeln-audio"
 VERSION = "reformationsbibeln2026"
@@ -186,10 +187,12 @@ def main():
     parser.add_argument("--repo", default=REPO)
     parser.add_argument("--output", default="generated")
     parser.add_argument("--catalog", default="catalog.json")
-    parser.add_argument("--shard", type=int, default=0)
+    parser.add_argument("--shard", type=int)
     parser.add_argument("--shard-size", type=int, default=25)
     parser.add_argument("--revision", default="", help="New explicit revision for intentional regeneration")
     args = parser.parse_args()
+    if args.shard_size < 1 or (args.shard is not None and args.shard < 0):
+        parser.error("Shard size must be positive and shard index nonnegative")
     if args.command == "publish":
         publish(args.output, args.catalog)
         return
@@ -202,17 +205,27 @@ def main():
         count = sum(map(len, texts))
         print(json.dumps({"chapters": len(selection), "verses": len(texts), "characters": count, "estimatedUSD": round(count * 30 / 1_000_000, 2)}))
     elif args.command == "dispatch":
-        inputs = {"books": args.books, "chapters": args.chapters, "entire": str(args.all).lower(), "revision": args.revision}
+        request_id = uuid.uuid4().hex[:12]
+        inputs = {"books": args.books, "chapters": args.chapters, "entire": str(args.all).lower(), "revision": args.revision, "request_id": request_id}
         command = ["workflow", "run", "generate.yml", "--repo", args.repo]
         for name, value in inputs.items():
             command += ["-f", f"{name}={value}"]
         gh(*command)
-        print(f"Generation dispatched: https://github.com/{args.repo}/actions/workflows/generate.yml")
+        for _ in range(6):
+            runs = json.loads(gh("run", "list", "--repo", args.repo, "--workflow", "generate.yml", "--limit", "20", "--json", "displayTitle,url").stdout)
+            match = next((run for run in runs if request_id in run["displayTitle"]), None)
+            if match:
+                print(f"Generation dispatched: {match['url']}")
+                break
+            time.sleep(2)
+        else:
+            print(f"Generation dispatched ({request_id}): https://github.com/{args.repo}/actions/workflows/generate.yml")
     elif args.command == "matrix":
         print(json.dumps({"shard": list(range((len(selection) + args.shard_size - 1) // args.shard_size))}))
     elif args.command == "generate":
         failures = []
-        for book, chapter in selection[args.shard * args.shard_size:(args.shard + 1) * args.shard_size]:
+        selected_shard = selection if args.shard is None else selection[args.shard * args.shard_size:(args.shard + 1) * args.shard_size]
+        for book, chapter in selected_shard:
             try:
                 generate_chapter(data, book, chapter, args.repo, args.output, args.revision)
             except Exception as error:

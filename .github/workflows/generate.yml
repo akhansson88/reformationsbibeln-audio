@@ -1,7 +1,11 @@
 name: Generate verse audio
+run-name: Verse audio · ${{ inputs.request_id || inputs.books || 'Entire Bible' }}
 on:
   workflow_dispatch:
     inputs:
+      request_id:
+        description: Optional dispatch tracking ID
+        type: string
       books:
         description: Comma-separated books (English, Swedish, or numbers)
         default: John
@@ -35,6 +39,10 @@ jobs:
       matrix: ${{ steps.plan.outputs.matrix }}
     steps:
       - uses: actions/checkout@v4
+      - name: Require speech credential
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: test -n "$OPENAI_API_KEY" || { echo 'Add the OPENAI_API_KEY repository secret before generation.'; exit 1; }
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
