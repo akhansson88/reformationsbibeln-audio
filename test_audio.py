@@ -58,6 +58,17 @@ class AudioTests(unittest.TestCase):
                 audio.publish(output, root / "catalog.json")
             self.assertEqual(json.loads((root / "catalog.json").read_text())["chapters"], {"existing": True})
 
+    def test_source_counts_and_model_input_lengths(self):
+        source = Path(__file__).with_name("reformationsbibeln.json")
+        if not source.exists():
+            source = Path(__file__).parents[2] / "assets/bible/reformationsbibeln.json"
+        data = audio.load_source(source)
+        selection = audio.select(data, entire=True)
+        texts = [audio.clean(v["text"]) for _, c in selection for v in c["verses"]]
+        self.assertEqual(len(selection), 1189)
+        self.assertEqual(len(texts), 31170)
+        self.assertTrue(all(0 < len(text) <= 4096 and "*" not in text for text in texts))
+
 
 if __name__ == "__main__":
     unittest.main()
