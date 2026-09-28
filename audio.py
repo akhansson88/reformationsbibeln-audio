@@ -160,9 +160,12 @@ def complete_manifest(value, *, book, chapter, source_hash, generation, repo, ta
 def previous_verses(book, chapter, repo):
     """Reuse unchanged verses when another verse changed the chapter revision."""
     catalog_path = Path(__file__).with_name("catalog.json")
-    if not catalog_path.exists():
-        return {}
-    catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+    if catalog_path.exists():
+        catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+    else:
+        # Direct local generation gets the same reuse protection as Actions.
+        # A failed catalog lookup must stop before charging for possibly existing audio.
+        catalog = json.loads(gh("api", f"repos/{repo}/contents/catalog.json", "-H", "Accept: application/vnd.github.raw+json").stdout)
     entry = catalog.get("chapters", {}).get(f"{book['number']}:{chapter['number']}")
     if not entry:
         return {}
