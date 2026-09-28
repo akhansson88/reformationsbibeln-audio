@@ -43,6 +43,34 @@ class AudioTests(unittest.TestCase):
             self.assertEqual([v["verse"] for v in manifest["verses"]], [1, 2])
             self.assertEqual(manifest["verses"][0]["sha256"], audio.digest(assets["verse-001.mp3"]))
 
+    def test_complete_chapter_skips_every_speech_request(self):
+        verses = [{"verse": 1, "text": audio.clean(self.book["chapters"][0]["verses"][0]["text"])}, {"verse": 2, "text": audio.clean(self.book["chapters"][0]["verses"][1]["text"])}]
+        source_hash = audio.digest(verses)
+        generation = audio.digest({"source": source_hash, "model": audio.MODEL, "voice": audio.VOICE, "speed": 1, "format": "mp3", "revision": ""})[:20]
+        tag = f"audio-43-001-{generation}"
+        manifest = {"schemaVersion": 1, "translation": audio.VERSION, "sourceLabel": self.data["translation"], "sourceHash": source_hash, "revision": generation, "model": audio.MODEL, "voice": audio.VOICE, "bookId": 43, "book": "John", "bookName": self.book["name"], "chapter": 1, "expectedVerses": [1, 2], "verses": []}
+        for verse in verses:
+            manifest["verses"].append({"verse": verse["verse"], "url": f"https://github.com/{audio.REPO}/releases/download/{tag}/verse-{verse['verse']:03d}.mp3", "duration": 2.5, "sha256": "a" * 64, "textHash": audio.digest(verse["text"])})
+
+        def github(*args, **kwargs):
+            if args[:2] == ("release", "view"):
+                return SimpleNamespace(returncode=0, stdout=json.dumps({"assets": [{"name": "chapter.json"}]}))
+            if args[:2] == ("release", "download"):
+                (Path(args[args.index("--dir") + 1]) / "chapter.json").write_text(json.dumps(manifest), encoding="utf-8")
+            return SimpleNamespace(returncode=0, stdout="")
+
+        with tempfile.TemporaryDirectory() as temp, patch.object(audio, "gh", side_effect=github) as github_mock, patch.object(audio, "synthesize") as synthesize, patch.object(audio, "inspect_mp3") as inspect:
+            audio.generate_chapter(self.data, self.book, self.book["chapters"][0], audio.REPO, temp)
+            synthesize.assert_not_called()
+            inspect.assert_not_called()
+            calls = [call.args[:2] for call in github_mock.call_args_list]
+            self.assertEqual(calls, [("release", "view"), ("release", "download")])
+            output = json.loads((Path(temp) / "43-001.json").read_text(encoding="utf-8"))
+            self.assertEqual(output["manifestUrl"], f"https://github.com/{audio.REPO}/releases/download/{tag}/chapter.json")
+
+    def test_changed_source_does_not_reuse_completed_manifest(self):
+        self.assertFalse(audio.complete_manifest({}, book=self.book, chapter=self.book["chapters"][0], source_hash="new", generation="new", repo=audio.REPO, tag="tag", numbers=[1, 2]))
+
     def test_failed_verse_does_not_publish_manifest(self):
         def github(*args, **kwargs):
             return SimpleNamespace(returncode=0, stdout='{"assets": []}')

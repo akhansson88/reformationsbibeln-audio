@@ -45,6 +45,12 @@ fail. A new `--revision` value intentionally regenerates selected chapters; old
 revisions remain available to listeners. Do not delete assets referenced by the
 catalog or saved listening positions.
 
+Selecting an already completed chapter is safe: its deterministic generation metadata is
+checked first and the whole chapter is skipped before any OpenAI request. Partial
+chapters reuse each existing valid MP3 and call OpenAI only for missing or corrupt
+verses. Keep `revision` blank to retain this protection; a new revision explicitly
+requests fresh audio.
+
 Large selections use 25-chapter shards with two concurrent workers. Workflow runs
 are serialized to protect catalog updates. An interrupted run can resume with the
 same inputs; cancelled jobs do not mark partial chapters complete. GitHub Actions

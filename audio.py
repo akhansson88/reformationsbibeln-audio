@@ -118,6 +118,43 @@ def synthesize(text, destination):
             time.sleep(min(60, 2 ** (attempt + 1)))
 
 
+def complete_manifest(value, *, book, chapter, source_hash, generation, repo, tag, numbers):
+    if not isinstance(value, dict):
+        return False
+    expected = {
+        "schemaVersion": 1,
+        "translation": VERSION,
+        "sourceHash": source_hash,
+        "revision": generation,
+        "model": MODEL,
+        "voice": VOICE,
+        "bookId": book["number"],
+        "book": BOOKS[book["number"] - 1],
+        "bookName": book["name"],
+        "chapter": chapter["number"],
+        "expectedVerses": numbers,
+    }
+    if any(value.get(key) != item for key, item in expected.items()):
+        return False
+    verses = value.get("verses")
+    if not isinstance(verses, list) or [item.get("verse") for item in verses if isinstance(item, dict)] != numbers:
+        return False
+    for item in verses:
+        verse = item["verse"]
+        expected_url = f"https://github.com/{repo}/releases/download/{tag}/verse-{verse:03d}.mp3"
+        if (
+            item.get("url") != expected_url
+            or not isinstance(item.get("duration"), (int, float))
+            or item["duration"] <= 0
+            or not isinstance(item.get("sha256"), str)
+            or len(item["sha256"]) != 64
+            or not isinstance(item.get("textHash"), str)
+            or len(item["textHash"]) != 64
+        ):
+            return False
+    return True
+
+
 def generate_chapter(data, book, chapter, repo, output, revision=""):
     verses = [{"verse": v["number"], "text": clean(v["text"])} for v in chapter["verses"]]
     numbers = [v["verse"] for v in verses]
@@ -134,8 +171,32 @@ def generate_chapter(data, book, chapter, repo, output, revision=""):
         assets = set()
     else:
         assets = {a["name"] for a in json.loads(existing.stdout)["assets"]}
-    manifest = {"schemaVersion": 1, "translation": VERSION, "sourceLabel": data["translation"], "sourceHash": source_hash, "revision": generation, "model": MODEL, "voice": VOICE, "bookId": book["number"], "book": BOOKS[book["number"] - 1], "bookName": book["name"], "chapter": chapter["number"], "expectedVerses": numbers, "verses": []}
+    manifest_url = f"https://github.com/{repo}/releases/download/{tag}/chapter.json"
     with tempfile.TemporaryDirectory() as directory:
+        if "chapter.json" in assets:
+            manifest_path = Path(directory) / "chapter.json"
+            gh("release", "download", tag, "--repo", repo, "--pattern", "chapter.json", "--dir", directory)
+            try:
+                published = json.loads(manifest_path.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                published = None
+            if complete_manifest(
+                published,
+                book=book,
+                chapter=chapter,
+                source_hash=source_hash,
+                generation=generation,
+                repo=repo,
+                tag=tag,
+                numbers=numbers,
+            ):
+                published["manifestUrl"] = manifest_url
+                write_json(Path(output) / f"{book['number']:02d}-{chapter['number']:03d}.json", published)
+                print(f"Already complete; skipped {book['number']}:{chapter['number']} ({len(numbers)} verses)", flush=True)
+                return
+            manifest_path.unlink(missing_ok=True)
+
+        manifest = {"schemaVersion": 1, "translation": VERSION, "sourceLabel": data["translation"], "sourceHash": source_hash, "revision": generation, "model": MODEL, "voice": VOICE, "bookId": book["number"], "book": BOOKS[book["number"] - 1], "bookName": book["name"], "chapter": chapter["number"], "expectedVerses": numbers, "verses": []}
         for verse in verses:
             name = f"verse-{verse['verse']:03d}.mp3"
             path = Path(directory) / name
@@ -155,7 +216,7 @@ def generate_chapter(data, book, chapter, repo, output, revision=""):
         manifest_path = Path(directory) / "chapter.json"
         write_json(manifest_path, manifest)
         gh("release", "upload", tag, str(manifest_path), "--repo", repo, "--clobber")
-    manifest["manifestUrl"] = f"https://github.com/{repo}/releases/download/{tag}/chapter.json"
+    manifest["manifestUrl"] = manifest_url
     write_json(Path(output) / f"{book['number']:02d}-{chapter['number']:03d}.json", manifest)
 
 
