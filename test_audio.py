@@ -14,6 +14,9 @@ import audio
 
 class AudioTests(unittest.TestCase):
     def setUp(self):
+        previous = patch.object(audio, "previous_verses", return_value={})
+        self.previous = previous.start()
+        self.addCleanup(previous.stop)
         self.book = {"number": 43, "name": "Johannesevangeliet", "abbreviation": "Joh.", "chapters": [{"number": 1, "verses": [{"number": 1, "text": "I begynnelsen* var Ordet.**"}, {"number": 2, "text": "Ordet var hos Gud."}]}]}
         self.data = {"translation": "Reformationsbibeln 2016", "books": [self.book]}
 
@@ -54,7 +57,7 @@ class AudioTests(unittest.TestCase):
 
         def github(*args, **kwargs):
             if args[:2] == ("release", "view"):
-                return SimpleNamespace(returncode=0, stdout=json.dumps({"assets": [{"name": "chapter.json"}]}))
+                return SimpleNamespace(returncode=0, stdout=json.dumps({"assets": [{"name": name} for name in ["chapter.json", "verse-001.mp3", "verse-002.mp3"]]}))
             if args[:2] == ("release", "download"):
                 (Path(args[args.index("--dir") + 1]) / "chapter.json").write_text(json.dumps(manifest), encoding="utf-8")
             return SimpleNamespace(returncode=0, stdout="")
@@ -70,6 +73,33 @@ class AudioTests(unittest.TestCase):
 
     def test_changed_source_does_not_reuse_completed_manifest(self):
         self.assertFalse(audio.complete_manifest({}, book=self.book, chapter=self.book["chapters"][0], source_hash="new", generation="new", repo=audio.REPO, tag="tag", numbers=[1, 2]))
+
+    def test_revision_cannot_force_duplicate_audio(self):
+        with patch.object(audio, "gh") as github, patch.object(audio, "synthesize") as synthesize:
+            with self.assertRaisesRegex(ValueError, "Regeneration is disabled"):
+                audio.generate_chapter(self.data, self.book, self.book["chapters"][0], audio.REPO, "unused", "new")
+            github.assert_not_called()
+            synthesize.assert_not_called()
+
+    def test_existing_corrupt_audio_is_not_automatically_regenerated(self):
+        def github(*args, **kwargs):
+            if args[:2] == ("release", "view"):
+                return SimpleNamespace(returncode=0, stdout='{"assets":[{"name":"verse-001.mp3"}]}')
+            if args[:2] == ("release", "download"):
+                (Path(args[args.index("--dir") + 1]) / "verse-001.mp3").write_bytes(b"corrupt")
+        with tempfile.TemporaryDirectory() as temp, patch.object(audio, "gh", side_effect=github), patch.object(audio, "inspect_mp3", side_effect=ValueError("corrupt")), patch.object(audio, "synthesize") as synthesize:
+            with self.assertRaisesRegex(ValueError, "refusing to regenerate"):
+                audio.generate_chapter(self.data, self.book, self.book["chapters"][0], audio.REPO, temp)
+            synthesize.assert_not_called()
+
+    def test_unchanged_verses_reused_across_chapter_revisions(self):
+        payload = b"previous recording"
+        self.previous.return_value = {v["number"]: {"textHash": audio.digest(audio.clean(v["text"])), "sha256": audio.digest(payload), "url": f"https://github.com/{audio.REPO}/releases/download/old/verse.mp3"} for v in self.book["chapters"][0]["verses"]}
+        with tempfile.TemporaryDirectory() as temp, patch.object(audio, "gh", return_value=SimpleNamespace(returncode=0, stdout='{"assets":[]}')), patch.object(audio.urllib.request, "urlopen", side_effect=lambda *a, **k: io.BytesIO(payload)), patch.object(audio, "inspect_mp3", return_value=2), patch.object(audio, "synthesize") as synthesize:
+            audio.generate_chapter(self.data, self.book, self.book["chapters"][0], audio.REPO, temp)
+            synthesize.assert_not_called()
+            manifest = json.loads((Path(temp) / "43-001.json").read_text(encoding="utf-8"))
+            self.assertEqual(len(manifest["verses"]), 2)
 
     def test_failed_verse_does_not_publish_manifest(self):
         def github(*args, **kwargs):

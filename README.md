@@ -39,17 +39,16 @@ metadata (Reformationsbibeln 2016); Koino's existing translation ID is
 and https://bibelonline.se/biblereader.php. This repository does not grant a new
 license over the source Bible text. Narration is AI-generated.
 
-Run the same dispatch again after a failure: existing valid verse assets are
-downloaded, checked, and reused. Completed chapters publish even if other chapters
-fail. A new `--revision` value intentionally regenerates selected chapters; old
-revisions remain available to listeners. Do not delete assets referenced by the
-catalog or saved listening positions.
+Run the same dispatch again after a failure. Completed chapters are skipped before
+any OpenAI request. Partial chapters reuse existing verse assets. Only missing
+verses are synthesized. Existing damaged files cause a validation error instead
+of silently generating and charging for replacement audio.
 
-Selecting an already completed chapter is safe: its deterministic generation metadata is
-checked first and the whole chapter is skipped before any OpenAI request. Partial
-chapters reuse each existing valid MP3 and call OpenAI only for missing or corrupt
-verses. Keep `revision` blank to retain this protection; a new revision explicitly
-requests fresh audio.
+When source text changes, unchanged verses are copied from the chapter already
+listed in the catalog after checking the narration settings, text hash and audio
+checksum. Only changed or new text needs narration. The workflow reads the
+catalog in its checkout. Regeneration through `revision` is disabled; leave it
+blank. Do not delete assets referenced by the catalog or saved positions.
 
 Large selections use 25-chapter shards with two concurrent workers. Workflow runs
 are serialized to protect catalog updates. An interrupted run can resume with the
@@ -67,3 +66,16 @@ python -m unittest discover -s scripts/bible-audio -p 'test_*.py'
 
 Inside the audio repo use `-s .`. Test data uses temporary directories and mocked
 speech/publishing, so checks do not spend API credits.
+
+## Koino playback build
+
+The reader downloads all verse files of the selected chapter before starting a
+native TrackPlayer queue, and preloads the next completed chapter when continuous
+playback is on. The playback service owns lock-screen controls. Both close buttons
+stop playback and clear the saved session; Follow spoken verse minimizes it.
+
+This change needs a fresh Android/iOS build (runtime 1.3.0), not an OTA-only update
+or Expo Go. `npm install` applies the RNTP 4.1.2 compatibility patch for React Native
+0.81. Run `npx expo run:android` or build with EAS. Test screen-lock playback and
+chapter transitions on a physical iPhone and Android device before release.
+Screen-off playback is supported; a powered-off phone cannot play audio.

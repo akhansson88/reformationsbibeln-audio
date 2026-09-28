@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import math
 import os
 from pathlib import Path
 import subprocess
@@ -137,7 +138,7 @@ def complete_manifest(value, *, book, chapter, source_hash, generation, repo, ta
     if any(value.get(key) != item for key, item in expected.items()):
         return False
     verses = value.get("verses")
-    if not isinstance(verses, list) or [item.get("verse") for item in verses if isinstance(item, dict)] != numbers:
+    if not isinstance(verses, list) or not all(isinstance(item, dict) for item in verses) or [item.get("verse") for item in verses] != numbers:
         return False
     for item in verses:
         verse = item["verse"]
@@ -145,6 +146,7 @@ def complete_manifest(value, *, book, chapter, source_hash, generation, repo, ta
         if (
             item.get("url") != expected_url
             or not isinstance(item.get("duration"), (int, float))
+            or not math.isfinite(item["duration"])
             or item["duration"] <= 0
             or not isinstance(item.get("sha256"), str)
             or len(item["sha256"]) != 64
@@ -155,7 +157,30 @@ def complete_manifest(value, *, book, chapter, source_hash, generation, repo, ta
     return True
 
 
+def previous_verses(book, chapter, repo):
+    """Reuse unchanged verses when another verse changed the chapter revision."""
+    catalog_path = Path(__file__).with_name("catalog.json")
+    if not catalog_path.exists():
+        return {}
+    catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+    entry = catalog.get("chapters", {}).get(f"{book['number']}:{chapter['number']}")
+    if not entry:
+        return {}
+    prefix = f"https://github.com/{repo}/releases/download/"
+    if not entry["manifestUrl"].startswith(prefix):
+        raise ValueError("Unexpected previous audio repository")
+    with urllib.request.urlopen(entry["manifestUrl"], timeout=60) as response:
+        manifest = json.load(response)
+    if manifest.get("model") != MODEL or manifest.get("voice") != VOICE:
+        raise ValueError("Existing chapter uses different narration settings; refusing regeneration")
+    if manifest.get("bookId") != book["number"] or manifest.get("chapter") != chapter["number"]:
+        raise ValueError("Existing chapter identity mismatch")
+    return {verse["verse"]: verse for verse in manifest["verses"]}
+
+
 def generate_chapter(data, book, chapter, repo, output, revision=""):
+    if revision:
+        raise ValueError("Regeneration is disabled: leave revision blank to reuse existing verse audio")
     verses = [{"verse": v["number"], "text": clean(v["text"])} for v in chapter["verses"]]
     numbers = [v["verse"] for v in verses]
     if not verses or len(set(numbers)) != len(numbers) or numbers != sorted(numbers):
@@ -180,7 +205,7 @@ def generate_chapter(data, book, chapter, repo, output, revision=""):
                 published = json.loads(manifest_path.read_text(encoding="utf-8"))
             except (OSError, json.JSONDecodeError):
                 published = None
-            if complete_manifest(
+            if all(f"verse-{number:03d}.mp3" in assets for number in numbers) and complete_manifest(
                 published,
                 book=book,
                 chapter=chapter,
@@ -197,6 +222,7 @@ def generate_chapter(data, book, chapter, repo, output, revision=""):
             manifest_path.unlink(missing_ok=True)
 
         manifest = {"schemaVersion": 1, "translation": VERSION, "sourceLabel": data["translation"], "sourceHash": source_hash, "revision": generation, "model": MODEL, "voice": VOICE, "bookId": book["number"], "book": BOOKS[book["number"] - 1], "bookName": book["name"], "chapter": chapter["number"], "expectedVerses": numbers, "verses": []}
+        reusable = previous_verses(book, chapter, repo) if any(f"verse-{n:03d}.mp3" not in assets for n in numbers) else {}
         for verse in verses:
             name = f"verse-{verse['verse']:03d}.mp3"
             path = Path(directory) / name
@@ -205,10 +231,19 @@ def generate_chapter(data, book, chapter, repo, output, revision=""):
                 try:
                     duration = inspect_mp3(path)
                 except (ValueError, subprocess.CalledProcessError):
-                    path.unlink(missing_ok=True)
-                    assets.remove(name)
+                    raise ValueError(f"Existing audio {tag}/{name} failed validation; refusing to regenerate it")
             if name not in assets:
-                synthesize(verse["text"], path)
+                previous = reusable.get(verse["verse"])
+                if previous and previous.get("textHash") == digest(verse["text"]):
+                    if not previous["url"].startswith(f"https://github.com/{repo}/releases/download/"):
+                        raise ValueError("Unexpected verse repository")
+                    with urllib.request.urlopen(previous["url"], timeout=60) as response:
+                        path.write_bytes(response.read())
+                    if digest(path.read_bytes()) != previous["sha256"]:
+                        raise ValueError("Existing verse checksum mismatch; refusing regeneration")
+                    print(f"Reused {book['number']}:{chapter['number']}:{verse['verse']}", flush=True)
+                else:
+                    synthesize(verse["text"], path)
                 duration = inspect_mp3(path)
                 gh("release", "upload", tag, str(path), "--repo", repo, "--clobber")
             manifest["verses"].append({"verse": verse["verse"], "url": f"https://github.com/{repo}/releases/download/{tag}/{name}", "duration": duration, "sha256": digest(path.read_bytes()), "textHash": digest(verse["text"])})
@@ -250,8 +285,10 @@ def main():
     parser.add_argument("--catalog", default="catalog.json")
     parser.add_argument("--shard", type=int)
     parser.add_argument("--shard-size", type=int, default=25)
-    parser.add_argument("--revision", default="", help="New explicit revision for intentional regeneration")
+    parser.add_argument("--revision", default="", help="Deprecated; must remain blank to prevent regeneration")
     args = parser.parse_args()
+    if args.revision:
+        parser.error("Regeneration is disabled; omit --revision")
     if args.shard_size < 1 or (args.shard is not None and args.shard < 0):
         parser.error("Shard size must be positive and shard index nonnegative")
     if args.command == "publish":

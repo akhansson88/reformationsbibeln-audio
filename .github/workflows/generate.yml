@@ -19,7 +19,7 @@ on:
         default: false
         type: boolean
       revision:
-        description: Leave blank to resume; new value intentionally regenerates audio
+        description: Deprecated; leave blank (existing audio is never regenerated)
         type: string
 permissions:
   contents: write
