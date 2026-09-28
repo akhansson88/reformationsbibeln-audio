@@ -1,1 +1,15 @@
-{"schemaVersion":1,"translation":"reformationsbibeln2026","chapters":{}}
+{
+  "schemaVersion": 1,
+  "translation": "reformationsbibeln2026",
+  "chapters": {
+    "43:1": {
+      "bookId": 43,
+      "book": "John",
+      "bookName": "Johannes Evangelium",
+      "chapter": 1,
+      "revision": "9b88cc8aa1ba8b540b3d",
+      "sourceHash": "5185b738956e2da66056851b4715c81c9e8909aa73415c1d4c4eb998d4d6769f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-001-9b88cc8aa1ba8b540b3d/chapter.json"
+    }
+  }
+}
