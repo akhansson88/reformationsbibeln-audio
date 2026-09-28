@@ -10,6 +10,186 @@
       "revision": "9b88cc8aa1ba8b540b3d",
       "sourceHash": "5185b738956e2da66056851b4715c81c9e8909aa73415c1d4c4eb998d4d6769f",
       "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-001-9b88cc8aa1ba8b540b3d/chapter.json"
+    },
+    "43:2": {
+      "bookId": 43,
+      "book": "John",
+      "bookName": "Johannes Evangelium",
+      "chapter": 2,
+      "revision": "d0ea6196fb02f67d0f12",
+      "sourceHash": "3058bae516f3bf2278e69a59b21e4b2688586958376740cf564e00a1ec713743",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-002-d0ea6196fb02f67d0f12/chapter.json"
+    },
+    "43:3": {
+      "bookId": 43,
+      "book": "John",
+      "bookName": "Johannes Evangelium",
+      "chapter": 3,
+      "revision": "dde3e793b54f0f7e1454",
+      "sourceHash": "c62815182988de75e66b053a8d40ee3905f495c905302e8ad15e3ba3bceb8b5a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-003-dde3e793b54f0f7e1454/chapter.json"
+    },
+    "43:4": {
+      "bookId": 43,
+      "book": "John",
+      "bookName": "Johannes Evangelium",
+      "chapter": 4,
+      "revision": "802ce0c4ba06bd71cf0d",
+      "sourceHash": "896404eb1adf17a6903edf19bb2e46fc95e299efca42158183bff3f0c633fa04",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-004-802ce0c4ba06bd71cf0d/chapter.json"
+    },
+    "43:5": {
+      "bookId": 43,
+      "book": "John",
+      "bookName": "Johannes Evangelium",
+      "chapter": 5,
+      "revision": "cf876d4787a2596ad3c1",
+      "sourceHash": "571613cd2d17641daa9eec28f29e47220b3fafaf775e7a32f6b406dd5f41338b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-005-cf876d4787a2596ad3c1/chapter.json"
+    },
+    "43:6": {
+      "bookId": 43,
+      "book": "John",
+      "bookName": "Johannes Evangelium",
+      "chapter": 6,
+      "revision": "74212be50f818d5301f5",
+      "sourceHash": "16ccc7a31bb5dd7dcf6576006379f78d9d64aa110e4cbce222ee967b507b3500",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-006-74212be50f818d5301f5/chapter.json"
+    },
+    "43:7": {
+      "bookId": 43,
+      "book": "John",
+      "bookName": "Johannes Evangelium",
+      "chapter": 7,
+      "revision": "e59976c4eaf6789e01a0",
+      "sourceHash": "7fe83a3027f83ae06e946d4b36f1bc8ca3b0444c3c894e9d2241e715bac4c440",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-007-e59976c4eaf6789e01a0/chapter.json"
+    },
+    "43:8": {
+      "bookId": 43,
+      "book": "John",
+      "bookName": "Johannes Evangelium",
+      "chapter": 8,
+      "revision": "4f9a96be0d2660653f29",
+      "sourceHash": "e54fbba0a69c68eb25adce764880c94209c5bc36412cffd1ce2703b95277c3c9",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-008-4f9a96be0d2660653f29/chapter.json"
+    },
+    "43:9": {
+      "bookId": 43,
+      "book": "John",
+      "bookName": "Johannes Evangelium",
+      "chapter": 9,
+      "revision": "75741549b7d56f037d0e",
+      "sourceHash": "c1e7f61d31e00d1cd0f7b728d925ab64d25074a7f01f14785379dcb3aafb62ee",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-009-75741549b7d56f037d0e/chapter.json"
+    },
+    "43:10": {
+      "bookId": 43,
+      "book": "John",
+      "bookName": "Johannes Evangelium",
+      "chapter": 10,
+      "revision": "d1109da4792e3d5bd84f",
+      "sourceHash": "1e776b3e368b41e5a1b326820abb79fcf22e52b97bafb23f092e3aa29a05c4b1",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-010-d1109da4792e3d5bd84f/chapter.json"
+    },
+    "43:11": {
+      "bookId": 43,
+      "book": "John",
+      "bookName": "Johannes Evangelium",
+      "chapter": 11,
+      "revision": "b86b618f35982abd6c42",
+      "sourceHash": "6bfda1313b4ee98f2a80e8cf189693862408471744c447449659f49b3678c419",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-011-b86b618f35982abd6c42/chapter.json"
+    },
+    "43:12": {
+      "bookId": 43,
+      "book": "John",
+      "bookName": "Johannes Evangelium",
+      "chapter": 12,
+      "revision": "e06376839497f7e79910",
+      "sourceHash": "4da222c278057a619974f0275f0525f62f68e1ff9f54aae47c532b42b35881eb",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-012-e06376839497f7e79910/chapter.json"
+    },
+    "43:13": {
+      "bookId": 43,
+      "book": "John",
+      "bookName": "Johannes Evangelium",
+      "chapter": 13,
+      "revision": "ee03828724ae1e83d187",
+      "sourceHash": "454bf6c5cb8f49c6155caf175620b378fdf21a6c7b6d7cb94642e6c453fcbce9",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-013-ee03828724ae1e83d187/chapter.json"
+    },
+    "43:14": {
+      "bookId": 43,
+      "book": "John",
+      "bookName": "Johannes Evangelium",
+      "chapter": 14,
+      "revision": "ef6dfcbeba57889dea9f",
+      "sourceHash": "42c89340872c22ff59c16ac6b5da92bfb8e9060e0540813816798ff9c6d5408f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-014-ef6dfcbeba57889dea9f/chapter.json"
+    },
+    "43:15": {
+      "bookId": 43,
+      "book": "John",
+      "bookName": "Johannes Evangelium",
+      "chapter": 15,
+      "revision": "a5e6233dcef6c533acac",
+      "sourceHash": "5cb8f1d4a74ed5609098138a0008ba6541bdfdaf40a3e80f8dce893ee1a4b174",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-015-a5e6233dcef6c533acac/chapter.json"
+    },
+    "43:16": {
+      "bookId": 43,
+      "book": "John",
+      "bookName": "Johannes Evangelium",
+      "chapter": 16,
+      "revision": "e01f3a668d0a3ada1f19",
+      "sourceHash": "439fa9e3932244fd30f97da86178c9ae9fa9018a19458a7e8f070e4ddfe4886e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-016-e01f3a668d0a3ada1f19/chapter.json"
+    },
+    "43:17": {
+      "bookId": 43,
+      "book": "John",
+      "bookName": "Johannes Evangelium",
+      "chapter": 17,
+      "revision": "c6c7814490fb4e46b05c",
+      "sourceHash": "32181868cf83d9be8342e8e71eb004970e51022bb37106e6348de32148f0127b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-017-c6c7814490fb4e46b05c/chapter.json"
+    },
+    "43:18": {
+      "bookId": 43,
+      "book": "John",
+      "bookName": "Johannes Evangelium",
+      "chapter": 18,
+      "revision": "9ea9c249923e75495317",
+      "sourceHash": "5aa4081cb4886de43ac406053cffcf5f684ed0465da98b8dd32fd485b5a5aa9f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-018-9ea9c249923e75495317/chapter.json"
+    },
+    "43:19": {
+      "bookId": 43,
+      "book": "John",
+      "bookName": "Johannes Evangelium",
+      "chapter": 19,
+      "revision": "4338df22cf437892c9d6",
+      "sourceHash": "a2c85af28224dece6f5c10c2392fdbcc5147c0119980cd47fc9eb73f429ac08d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-019-4338df22cf437892c9d6/chapter.json"
+    },
+    "43:20": {
+      "bookId": 43,
+      "book": "John",
+      "bookName": "Johannes Evangelium",
+      "chapter": 20,
+      "revision": "2ad09bce3978e401c781",
+      "sourceHash": "bbab4c9fb9ba014a8f96bfeb37e43e40c24d56d8df2fb004d5c63d49ad352904",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-020-2ad09bce3978e401c781/chapter.json"
+    },
+    "43:21": {
+      "bookId": 43,
+      "book": "John",
+      "bookName": "Johannes Evangelium",
+      "chapter": 21,
+      "revision": "f80020f48e62fc85c4bb",
+      "sourceHash": "e387a63758da50a976fbee6022dbe37945603353b2e329f273ac7aa84bd9c413",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-43-021-f80020f48e62fc85c4bb/chapter.json"
     }
   }
 }
