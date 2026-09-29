@@ -279,6 +279,18 @@ class AudioTests(unittest.TestCase):
                 audio.preflight()
             speech.assert_not_called()
 
+    def test_preflight_reports_permissions_without_leaking_response(self):
+        import urllib.error
+        for status, explanation in [("missing_permissions", "Models: Read"), ("invalid_api_key", "invalid or revoked")]:
+            body = json.dumps({"detail": {"status": status, "message": "SENSITIVE_RESPONSE"}}).encode()
+            error = urllib.error.HTTPError("https://example.test", 401, "Unauthorized", {}, io.BytesIO(body))
+            with patch.object(audio, "eleven_request", side_effect=error), patch.object(audio, "summary") as report:
+                with self.assertRaisesRegex(RuntimeError, explanation) as result:
+                    audio.preflight()
+                self.assertIn("models check", str(result.exception))
+                self.assertNotIn("SENSITIVE_RESPONSE", str(result.exception))
+                self.assertNotIn("SENSITIVE_RESPONSE", report.call_args.args[0])
+
     @unittest.skipUnless(shutil.which("ffmpeg") and shutil.which("ffprobe"), "FFmpeg is not installed")
     def test_real_decoder_accepts_mp3_and_rejects_corruption(self):
         with tempfile.TemporaryDirectory() as temp:

@@ -37,7 +37,7 @@ def summary(message):
 
 
 def eleven_request(path, payload=None):
-    key = os.environ.get("ELEVENLABS_API_KEY")
+    key = os.environ.get("ELEVENLABS_API_KEY", "").strip()
     if not key:
         raise RuntimeError("Add the ELEVENLABS_API_KEY repository secret before generation")
     return urllib.request.urlopen(urllib.request.Request(
@@ -48,17 +48,37 @@ def eleven_request(path, payload=None):
 
 
 def preflight():
+    check = "models"
     try:
         with eleven_request("models") as response:
             models = json.load(response)
         if not any(model.get("model_id") == MODEL and model.get("can_do_text_to_speech") for model in models):
             raise RuntimeError(f"The ElevenLabs account cannot access {MODEL}; no substitute model will be used")
+        check = "Jessica voice"
         with eleven_request(f"voices/{VOICE}") as response:
             voice = json.load(response)
         if voice.get("voice_id") != VOICE:
             raise RuntimeError("The requested Jessica voice is unavailable")
     except urllib.error.HTTPError as error:
-        raise RuntimeError(f"ElevenLabs model/voice access check failed (HTTP {error.code})") from None
+        try:
+            detail = json.loads(error.read()).get("detail", {})
+            status = detail.get("status") if isinstance(detail, dict) else None
+        except (ValueError, AttributeError):
+            status = None
+        finally:
+            error.close()
+        # Map provider responses to fixed messages: never log bodies, keys or headers.
+        reasons = {
+            "missing_permissions": "The key is missing permissions. Enable Models: Read, Voices: Read and Text to Speech: Access in ElevenLabs.",
+            "invalid_api_key": "The API key is invalid or revoked. Replace the ELEVENLABS_API_KEY GitHub secret with an active ElevenLabs API key.",
+            "unauthorized": "The key was rejected. Check that it is active and belongs to the intended ElevenLabs workspace.",
+            "voice_not_found": "The selected Jessica voice is not available in this ElevenLabs workspace.",
+            "quota_exceeded": "The ElevenLabs account or API key has no credits available.",
+        }
+        reason = reasons.get(status, "Check the key's validity and Models: Read / Voices: Read permissions in ElevenLabs.")
+        message = f"ElevenLabs {check} check failed (HTTP {error.code}). {reason}"
+        summary(message)
+        raise RuntimeError(message) from None
     summary(f"Verified ElevenLabs {MODEL}, Jessica ({VOICE}).")
 BOOKS = "Genesis|Exodus|Leviticus|Numbers|Deuteronomy|Joshua|Judges|Ruth|1 Samuel|2 Samuel|1 Kings|2 Kings|1 Chronicles|2 Chronicles|Ezra|Nehemiah|Esther|Job|Psalms|Proverbs|Ecclesiastes|Solomon's Song|Isaiah|Jeremiah|Lamentations|Ezekiel|Daniel|Hosea|Joel|Amos|Obadiah|Jonah|Micah|Nahum|Habakkuk|Zephaniah|Haggai|Zechariah|Malachi|Matthew|Mark|Luke|John|Acts|Romans|1 Corinthians|2 Corinthians|Galatians|Ephesians|Philippians|Colossians|1 Thessalonians|2 Thessalonians|1 Timothy|2 Timothy|Titus|Philemon|Hebrews|James|1 Peter|2 Peter|1 John|2 John|3 John|Jude|Revelation".split("|")
 
@@ -444,7 +464,7 @@ def recover_pending(output, repo):
 def main():
     global DEADLINE
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["estimate", "dispatch", "matrix", "generate", "publish", "prepare"])
+    parser.add_argument("command", choices=["estimate", "dispatch", "matrix", "generate", "publish", "prepare", "preflight"])
     parser.add_argument("--source", default=str(Path(__file__).with_name("reformationsbibeln.json")))
     parser.add_argument("--books", default="")
     parser.add_argument("--chapters", default="")
@@ -459,6 +479,9 @@ def main():
     parser.add_argument("--shard-size", type=int, default=25)
     parser.add_argument("--revision", default="", help="Deprecated; must remain blank to prevent regeneration")
     args = parser.parse_args()
+    if args.command == "preflight":
+        preflight()
+        return
     if args.revision:
         parser.error("Regeneration is disabled; omit --revision")
     if args.shard_size < 1 or (args.shard is not None and args.shard < 0):
