@@ -1,81 +1,101 @@
 # Reformationsbibeln audio
 
-One MP3 per verse, generated with OpenAI `tts-1-hd`, Onyx, speed 1.
-The initial publication is John 1. Full-Bible generation is never automatic.
+One MP3 per verse, generated with ElevenLabs `eleven_v4` and Jessica
+(`r1KmysJdVYZjJCm4mL3b`). Swedish, MP3 44.1 kHz/128 kbps, stability 0.5,
+similarity 0.75. Asterisks and Markdown heading markers are removed before speech.
 
-## Commands
-
-Install Python 3.12+, GitHub CLI (`gh auth login`), FFmpeg, and the packages in
-`requirements.txt`. Dispatch and estimate do not require the OpenAI package/key.
-From Koino use `python scripts/bible-audio/audio.py`; from the audio repository use
-`python audio.py`.
-
-```sh
-python audio.py estimate --books John --chapters 1
-python audio.py dispatch --books John --chapters 1
-python audio.py dispatch --books 'John,Romans'
-python audio.py dispatch --books 'Första Moseboken' --chapters '1-3,5'
-python audio.py estimate --all
-python audio.py dispatch --all
-```
-
-The command returns the workflow page. Closing the terminal does not stop the run.
-The Actions UI also accepts these selections. For `entire`, clear books/chapters.
-The selected chapter range applies to each selected book; invalid chapters fail.
-
-## Hosting and recovery
+## Generate in the background
 
 Repository: https://github.com/akhansson88/reformationsbibeln-audio
 
-Actions requires an `OPENAI_API_KEY` repository secret and contents write access.
-Never commit keys. `GITHUB_TOKEN` publishes releases and the catalog; no additional
-GitHub token is needed in CI. The consumer needs no credentials.
+Add `ELEVENLABS_API_KEY` in repository Settings > Secrets and variables > Actions.
+The key needs access to Text to Speech, the selected voice, and model/voice reads.
+Never paste keys into workflow inputs, source files, or issue comments.
 
-Each chapter revision has a prerelease containing individual verse MP3s and a
-`chapter.json`. The public `catalog.json` lists only fully validated chapters.
-There are no chapter-length audio files. The source snapshot retains its original
-metadata (Reformationsbibeln 2016); Koino's existing translation ID is
-`reformationsbibeln2026`. Original text source: https://bibelonline.se/studyb.php
-and https://bibelonline.se/biblereader.php. This repository does not grant a new
-license over the source Bible text. Narration is AI-generated.
+Open Actions > Generate verse audio > Run workflow. Choose books and chapters,
+leave chapters blank for every chapter in those books, or select Entire Bible
+and clear books/chapters. Closing the browser does not stop the workflow.
 
-Run the same dispatch again after a failure. Completed chapters are skipped before
-any OpenAI request. Partial chapters reuse existing verse assets. Only missing
-verses are synthesized. Existing damaged files cause a validation error instead
-of silently generating and charging for replacement audio.
-
-When source text changes, unchanged verses are copied from the chapter already
-listed in the catalog after checking the narration settings, text hash and audio
-checksum. Only changed or new text needs narration. The workflow reads the
-catalog in its checkout. Regeneration through `revision` is disabled; leave it
-blank. Do not delete assets referenced by the catalog or saved positions.
-
-Large selections use 25-chapter shards with two concurrent workers. Workflow runs
-are serialized to protect catalog updates. An interrupted run can resume with the
-same inputs; cancelled jobs do not mark partial chapters complete. GitHub Actions
-may replace an older pending run if several are queued: wait for the active run
-before dispatching more work. Costs shown by `estimate` assume $30 per million
-characters, excluding retries. Repeated synthesis after a network interruption
-can incur additional charges.
-
-## Checks
+For the command line, install Python 3.12+ and GitHub CLI (`gh auth login`). From
+Koino, use `python scripts/bible-audio/audio.py`; inside this repository, use
+`python audio.py`. Estimates and dispatch do not need an ElevenLabs credential.
 
 ```sh
-python -m unittest discover -s scripts/bible-audio -p 'test_*.py'
+python audio.py estimate --books John --chapters 1-3
+python audio.py dispatch --books John --chapters 1-3
+python audio.py dispatch --books 'John,Romans'
+python audio.py dispatch --books 'Första Moseboken' --chapters '1-3,5'
+python audio.py dispatch --all
+python audio.py dispatch --replace-legacy
 ```
 
-Inside the audio repo use `-s .`. Test data uses temporary directories and mocked
-speech/publishing, so checks do not spend API credits.
+Estimates show text counts including existing recordings. Credit usage depends on
+your ElevenLabs subscription. The workflow verifies the exact model and voice;
+it never silently falls back to another model. For local generation also install
+FFmpeg and expose `ELEVENLABS_API_KEY` in your environment. No Python SDK is needed.
 
-## Koino playback build
+## Replace legacy OpenAI audio
 
-The reader downloads all verse files of the selected chapter before starting a
-native TrackPlayer queue, and preloads the next completed chapter when continuous
-playback is on. The playback service owns lock-screen controls. Both close buttons
-stop playback and clear the saved session; Follow spoken verse minimizes it.
+Choose **Replace legacy audio** (or `--replace-legacy`). This ignores the book and
+chapter fields. Before hiding anything, the workflow saves the old entries and
+manifests in `migration-jessica.json`, then removes legacy chapters from the public
+catalog. Each chapter becomes playable again only after all its Jessica verses
+are uploaded and validated. Old release assets remain available for recovery.
+Rerun the same migration option to continue, even though the old chapters are
+no longer listed. Completed Jessica chapters and verses are reused.
 
-This change needs a fresh Android/iOS build (runtime 1.3.0), not an OTA-only update
-or Expo Go. `npm install` applies the RNTP 4.1.2 compatibility patch for React Native
-0.81. Run `npx expo run:android` or build with EAS. Test screen-lock playback and
-chapter transitions on a physical iPhone and Android device before release.
-Screen-off playback is supported; a powered-off phone cannot play audio.
+## Credits, interruptions, and recovery
+
+The workflow runs one generator at a time. Each verse is decoded and uploaded
+immediately before the next paid request. The public `catalog.json` contains only
+complete chapters; `chapter.json` is uploaded only when every verse is ready.
+
+If credits run out, generation stops with a resume point in the Actions summary.
+Completed verses stay in GitHub releases, and completed chapters are published
+even though the generation step reports failure. Refill credits and **run the
+workflow again with the same inputs**. Existing matching audio is not charged for
+again. The workflow also stops gracefully after five hours; rerun to continue.
+
+If GitHub uploads fail, completed local MP3s, checksums, and pending request markers
+are saved in a `pending-audio` Actions artifact. The next run restores the latest
+checkpoint and retries uploads before contacting ElevenLabs. These fallback
+artifacts last 90 days; uploaded release assets do not expire. Download the artifact
+if you need to preserve an upload failure longer. Avoid cancelling runs while
+speech is being generated; forced runner termination can prevent artifact saving.
+
+An uncertain speech response (connection loss/server failure) leaves a request
+marker. The generator stops instead of blindly paying for the same verse again.
+Recover the corresponding recording from ElevenLabs history, validate it, and
+place it at the marker's matching `.mp3` path in the recovery checkpoint before
+continuing. If no recording was created, verify that in ElevenLabs before removing
+the marker. Corrupt existing recordings also stop generation for review.
+
+Narration fingerprints include provider, exact model/voice, settings and text.
+Legacy OpenAI recordings cannot be reused as Jessica recordings. Unchanged verses
+can be reused across source revisions only when their full narration profile and
+text match. Leave the deprecated `revision` field blank.
+
+## Checks and playback
+
+```sh
+python -m unittest discover -s . -p 'test_*.py'
+```
+
+From Koino use `-s scripts/bible-audio`. Tests mock speech and publishing and spend
+no credits. GitHub Actions needs contents-write and actions-read permissions.
+Wait for an active generation to finish before dispatching another selection.
+
+Koino downloads the whole selected chapter before starting its native TrackPlayer
+queue. Catalog refreshes on startup and foregrounding withdraw old revisions and
+stop their sessions; offline clients receive withdrawals after reconnecting.
+The small player always exposes Follow spoken verse, including while paused.
+Both close buttons stop playback and clear the session.
+
+Native background playback requires the existing runtime 1.3.0 build, not Expo Go.
+These Jessica/Follow changes do not add a new native dependency. Verify screen-lock
+playback on physical iPhone and Android hardware. A powered-off phone cannot play.
+
+The source snapshot retains its original metadata (Reformationsbibeln 2016);
+Koino's translation ID is `reformationsbibeln2026`. Source:
+https://bibelonline.se/studyb.php and https://bibelonline.se/biblereader.php.
+This repository does not grant a new license over the Bible text. Narration is AI.

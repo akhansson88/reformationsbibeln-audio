@@ -14,6 +14,7 @@ import audio
 
 class AudioTests(unittest.TestCase):
     def setUp(self):
+        self.real_previous = audio.previous_verses
         previous = patch.object(audio, "previous_verses", return_value={})
         self.previous = previous.start()
         self.addCleanup(previous.stop)
@@ -49,9 +50,9 @@ class AudioTests(unittest.TestCase):
     def test_complete_chapter_skips_every_speech_request(self):
         verses = [{"verse": 1, "text": audio.clean(self.book["chapters"][0]["verses"][0]["text"])}, {"verse": 2, "text": audio.clean(self.book["chapters"][0]["verses"][1]["text"])}]
         source_hash = audio.digest(verses)
-        generation = audio.digest({"source": source_hash, "model": audio.MODEL, "voice": audio.VOICE, "speed": 1, "format": "mp3", "revision": ""})[:20]
+        generation = audio.generation_id(source_hash)
         tag = f"audio-43-001-{generation}"
-        manifest = {"schemaVersion": 1, "translation": audio.VERSION, "sourceLabel": self.data["translation"], "sourceHash": source_hash, "revision": generation, "model": audio.MODEL, "voice": audio.VOICE, "bookId": 43, "book": "John", "bookName": self.book["name"], "chapter": 1, "expectedVerses": [1, 2], "verses": []}
+        manifest = {"schemaVersion": 1, "translation": audio.VERSION, "sourceLabel": self.data["translation"], "sourceHash": source_hash, "revision": generation, **audio.PROFILE, "bookId": 43, "book": "John", "bookName": self.book["name"], "chapter": 1, "expectedVerses": [1, 2], "verses": []}
         for verse in verses:
             manifest["verses"].append({"verse": verse["verse"], "url": f"https://github.com/{audio.REPO}/releases/download/{tag}/verse-{verse['verse']:03d}.mp3", "duration": 2.5, "sha256": "a" * 64, "textHash": audio.digest(verse["text"])})
 
@@ -110,24 +111,95 @@ class AudioTests(unittest.TestCase):
             self.assertFalse(list(Path(temp).glob("*.json")))
             self.assertFalse(any(call.args[:2] == ("release", "upload") for call in github_mock.call_args_list))
 
-    def test_speech_retry_is_bounded_and_auth_errors_are_not_retried(self):
-        class ConnectionError(Exception):
-            pass
-        class StatusError(Exception):
-            def __init__(self, status):
-                self.status_code = status
-        for code, expected_calls in [(429, 6), (503, 6), (401, 1)]:
-            from unittest.mock import Mock
-            create = Mock(side_effect=StatusError(code))
-            client = SimpleNamespace(audio=SimpleNamespace(speech=SimpleNamespace(with_streaming_response=SimpleNamespace(create=create))))
-            module = SimpleNamespace(OpenAI=lambda **kwargs: client, APIConnectionError=ConnectionError, APIStatusError=StatusError)
-            with patch.dict(sys.modules, {"openai": module}), patch.object(audio.time, "sleep"):
-                with self.assertRaisesRegex(RuntimeError, str(code)):
-                    audio.synthesize("Text", Path("unused.mp3"))
-            self.assertEqual(create.call_count, expected_calls)
+    def test_speech_rejections_and_credits(self):
+        import urllib.error
+        for code, status, expected_calls, exception in [
+            (429, "too_many_concurrent_requests", 6, RuntimeError),
+            (503, "server_error", 1, RuntimeError),
+            (401, "invalid_api_key", 1, RuntimeError),
+            (401, "quota_exceeded", 1, audio.GenerationPaused),
+            (429, "quota_exceeded", 1, audio.GenerationPaused),
+        ]:
+            def failure(*args):
+                raise urllib.error.HTTPError("https://example.test", code, "rejected", {}, io.BytesIO(json.dumps({"detail": {"status": status}}).encode()))
+            with tempfile.TemporaryDirectory() as temp, patch.object(audio, "eleven_request", side_effect=failure) as request, patch.object(audio.time, "sleep"):
+                with self.assertRaises(exception):
+                    audio.synthesize("Text", Path(temp) / "verse.mp3")
+                self.assertEqual(request.call_count, expected_calls)
+
+    def test_eleven_request_uses_exact_profile(self):
+        with tempfile.TemporaryDirectory() as temp, patch.object(audio, "eleven_request", return_value=io.BytesIO(b"audio")) as request:
+            destination = Path(temp) / "verse.mp3"
+            audio.synthesize("Gud älskar världen.", destination)
+            self.assertEqual(destination.read_bytes(), b"audio")
+            endpoint, payload = request.call_args.args
+            self.assertIn(audio.VOICE, endpoint)
+            self.assertEqual(payload["model_id"], "eleven_v4")
+            self.assertEqual(payload["language_code"], "sv")
+            self.assertNotIn("speed", payload["voice_settings"])
+
+    def test_quota_resume_and_upload_failure_do_not_repeat_paid_verses(self):
+        for fail_upload in (False, True):
+            assets = {}
+            rejected = False
+            calls = []
+            def github(*args, **kwargs):
+                nonlocal rejected
+                if args[:2] == ("release", "view"):
+                    return SimpleNamespace(returncode=0, stdout=json.dumps({"assets": [{"name": name} for name in assets]}))
+                if args[:2] == ("release", "download"):
+                    name = args[args.index("--pattern") + 1]
+                    (Path(args[args.index("--dir") + 1]) / name).write_bytes(assets[name])
+                if args[:2] == ("release", "upload"):
+                    path = Path(args[3])
+                    if fail_upload and not rejected:
+                        raise RuntimeError("GitHub unavailable")
+                    assets[path.name] = path.read_bytes()
+                return SimpleNamespace(returncode=0, stdout="")
+            def speech(text, path):
+                calls.append(text)
+                if len(calls) == 2 and not fail_upload:
+                    raise audio.GenerationPaused("No credits")
+                path.write_bytes(text.encode())
+            with tempfile.TemporaryDirectory() as temp, patch.object(audio, "gh", side_effect=github), patch.object(audio, "synthesize", side_effect=speech), patch.object(audio, "inspect_mp3", return_value=2), patch.object(audio.time, "sleep"):
+                with self.assertRaises(RuntimeError):
+                    audio.generate_chapter(self.data, self.book, self.book["chapters"][0], audio.REPO, temp)
+                self.assertNotIn("chapter.json", assets)
+                self.assertFalse((Path(temp) / "43-001.json").exists())
+                if not fail_upload:
+                    self.assertIn("verse-001.mp3", assets)
+                rejected = True
+                audio.generate_chapter(self.data, self.book, self.book["chapters"][0], audio.REPO, temp)
+                self.assertEqual(calls.count(audio.clean(self.book["chapters"][0]["verses"][0]["text"])), 1)
+                self.assertIn("chapter.json", assets)
+                count = len(calls)
+                audio.generate_chapter(self.data, self.book, self.book["chapters"][0], audio.REPO, temp)
+                self.assertEqual(len(calls), count)
+
+    def test_migration_hides_legacy_and_can_resume_after_catalog_removal(self):
+        entry = {"manifestUrl": "https://example.test/legacy"}
+        replacement = {"manifestUrl": "https://example.test/jessica"}
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            catalog = root / "catalog.json"
+            migration = root / "migration.json"
+            audio.write_json(catalog, {"chapters": {"43:1": entry, "43:2": replacement}})
+            def fetch(url, **kwargs):
+                return io.BytesIO(json.dumps({"model": "tts-1-hd" if url.endswith("legacy") else audio.MODEL}).encode())
+            with patch.object(audio.urllib.request, "urlopen", side_effect=fetch):
+                audio.prepare_migration(catalog, migration)
+                audio.prepare_migration(catalog, migration)
+            self.assertEqual(set(json.loads(catalog.read_text())["chapters"]), {"43:2"})
+            self.assertEqual(len(audio.migration_selection(self.data, migration)), 1)
+            self.assertEqual(json.loads(migration.read_text())["chapters"]["43:1"]["entry"], entry)
+
+    def test_previous_openai_audio_is_never_reused(self):
+        entry = {"manifestUrl": f"https://github.com/{audio.REPO}/releases/download/legacy/chapter.json"}
+        with patch.object(audio.Path, "exists", return_value=False), patch.object(audio, "gh", return_value=SimpleNamespace(stdout=json.dumps({"chapters": {"43:1": entry}}))), patch.object(audio.urllib.request, "urlopen", return_value=io.BytesIO(b'{"model":"tts-1-hd","voice":"onyx"}')):
+            self.assertEqual(self.real_previous(self.book, self.book["chapters"][0], audio.REPO), {})
 
     def test_publisher_preserves_existing_chapters(self):
-        manifest = {"translation": audio.VERSION, "bookId": 43, "book": "John", "bookName": "Johannesevangeliet", "chapter": 1, "revision": "revision", "sourceHash": "source", "manifestUrl": "https://example.test/chapter.json", "expectedVerses": [1], "verses": [{"verse": 1}]}
+        manifest = {**audio.PROFILE, "translation": audio.VERSION, "bookId": 43, "book": "John", "bookName": "Johannesevangeliet", "chapter": 1, "revision": "revision", "sourceHash": "source", "manifestUrl": "https://example.test/chapter.json", "expectedVerses": [1], "verses": [{"verse": 1}]}
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
             audio.write_json(root / "catalog.json", {"schemaVersion": 1, "translation": audio.VERSION, "chapters": {"1:1": {"existing": True}}})
@@ -159,6 +231,53 @@ class AudioTests(unittest.TestCase):
         self.assertEqual(len(selection), 1189)
         self.assertEqual(len(texts), 31170)
         self.assertTrue(all(0 < len(text) <= 4096 and "*" not in text for text in texts))
+
+    def test_recovery_uploads_checkpoint_without_speech_or_credential(self):
+        payload = b"completed audio"
+        assets = {}
+        def github(*args, **kwargs):
+            if args[0] == "api":
+                return SimpleNamespace(stdout=json.dumps([{"artifacts": [{"expired": False, "created_at": "2026-09-29", "workflow_run": {"id": 123}}]}]))
+            if args[:2] == ("run", "download"):
+                root = Path(args[args.index("--dir") + 1]) / "audio-43-001-test"
+                root.mkdir()
+                (root / "verse-001.mp3").write_bytes(payload)
+                audio.write_json(root / "verse-001.receipt.json", {**audio.PROFILE, "sha256": audio.digest(payload), "textHash": "text"})
+                audio.write_json(root / "verse-001.request.json", audio.PROFILE)
+            if args[:2] == ("release", "view"):
+                return SimpleNamespace(stdout='{"assets":[]}')
+            if args[:2] == ("release", "upload"):
+                assets[Path(args[3]).name] = Path(args[3]).read_bytes()
+            return SimpleNamespace(stdout="", returncode=0)
+        with tempfile.TemporaryDirectory() as temp, patch.object(audio, "gh", side_effect=github), patch.object(audio, "inspect_mp3", return_value=2), patch.object(audio, "synthesize") as speech:
+            audio.recover_pending(temp, audio.REPO)
+            self.assertEqual(assets["verse-001.mp3"], payload)
+            self.assertFalse(list(Path(temp).rglob("*.request.json")))
+            self.assertTrue((Path(temp) / "pending/state.json").exists())
+            speech.assert_not_called()
+
+    def test_uncertain_request_stops_rerun_without_charging_again(self):
+        with tempfile.TemporaryDirectory() as temp, patch.object(audio, "gh", return_value=SimpleNamespace(returncode=0, stdout='{"assets":[]}')), patch.object(audio, "synthesize", side_effect=TimeoutError("connection lost")) as speech:
+            with self.assertRaises(TimeoutError):
+                audio.generate_chapter(self.data, self.book, self.book["chapters"][0], audio.REPO, temp)
+            with self.assertRaisesRegex(RuntimeError, "Uncertain previous speech request"):
+                audio.generate_chapter(self.data, self.book, self.book["chapters"][0], audio.REPO, temp)
+            self.assertEqual(speech.call_count, 1)
+
+    def test_generation_stops_selection_on_credit_exhaustion(self):
+        data = {"translation": "test", "books": [dict(self.book, chapters=self.book["chapters"] * 2)]}
+        args = ["audio.py", "generate", "--books", "John"]
+        with patch.object(sys, "argv", args), patch.object(audio, "load_source", return_value=data), patch.object(audio, "recover_pending"), patch.object(audio, "preflight"), patch.object(audio, "generate_chapter", side_effect=audio.GenerationPaused("No credits")) as generate:
+            with self.assertRaises(SystemExit) as error:
+                audio.main()
+            self.assertEqual(error.exception.code, 2)
+            self.assertEqual(generate.call_count, 1, "do not keep requesting later chapters after quota exhaustion")
+
+    def test_preflight_rejects_unavailable_model_without_synthesis(self):
+        with patch.object(audio, "eleven_request", return_value=io.BytesIO(b'[{"model_id":"eleven_v3","can_do_text_to_speech":true}]')), patch.object(audio, "synthesize") as speech:
+            with self.assertRaisesRegex(RuntimeError, "no substitute"):
+                audio.preflight()
+            speech.assert_not_called()
 
     @unittest.skipUnless(shutil.which("ffmpeg") and shutil.which("ffprobe"), "FFmpeg is not installed")
     def test_real_decoder_accepts_mp3_and_rejects_corruption(self):

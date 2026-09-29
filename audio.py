@@ -12,12 +12,54 @@ import sys
 import tempfile
 import time
 import urllib.request
+import urllib.error
 import uuid
 
 REPO = "akhansson88/reformationsbibeln-audio"
 VERSION = "reformationsbibeln2026"
-MODEL = "tts-1-hd"
-VOICE = "onyx"
+MODEL = "eleven_v4"
+VOICE = "r1KmysJdVYZjJCm4mL3b"
+PROFILE = {"provider": "elevenlabs", "model": MODEL, "voice": VOICE, "voiceId": VOICE,
+           "voiceName": "Jessica", "language": "sv", "format": "mp3_44100_128",
+           "voiceSettings": {"stability": 0.5, "similarity_boost": 0.75}}
+DEADLINE = float("inf")
+
+
+class GenerationPaused(RuntimeError):
+    """Completed recordings remain uploaded; rerun with the same selection."""
+
+
+def summary(message):
+    print(message, flush=True)
+    if os.environ.get("GITHUB_STEP_SUMMARY"):
+        with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as output:
+            output.write(message + "\n\n")
+
+
+def eleven_request(path, payload=None):
+    key = os.environ.get("ELEVENLABS_API_KEY")
+    if not key:
+        raise RuntimeError("Add the ELEVENLABS_API_KEY repository secret before generation")
+    return urllib.request.urlopen(urllib.request.Request(
+        "https://api.elevenlabs.io/v1/" + path,
+        data=json.dumps(payload).encode() if payload is not None else None,
+        headers={"xi-api-key": key, "Content-Type": "application/json"},
+    ), timeout=120)
+
+
+def preflight():
+    try:
+        with eleven_request("models") as response:
+            models = json.load(response)
+        if not any(model.get("model_id") == MODEL and model.get("can_do_text_to_speech") for model in models):
+            raise RuntimeError(f"The ElevenLabs account cannot access {MODEL}; no substitute model will be used")
+        with eleven_request(f"voices/{VOICE}") as response:
+            voice = json.load(response)
+        if voice.get("voice_id") != VOICE:
+            raise RuntimeError("The requested Jessica voice is unavailable")
+    except urllib.error.HTTPError as error:
+        raise RuntimeError(f"ElevenLabs model/voice access check failed (HTTP {error.code})") from None
+    summary(f"Verified ElevenLabs {MODEL}, Jessica ({VOICE}).")
 BOOKS = "Genesis|Exodus|Leviticus|Numbers|Deuteronomy|Joshua|Judges|Ruth|1 Samuel|2 Samuel|1 Kings|2 Kings|1 Chronicles|2 Chronicles|Ezra|Nehemiah|Esther|Job|Psalms|Proverbs|Ecclesiastes|Solomon's Song|Isaiah|Jeremiah|Lamentations|Ezekiel|Daniel|Hosea|Joel|Amos|Obadiah|Jonah|Micah|Nahum|Habakkuk|Zephaniah|Haggai|Zechariah|Malachi|Matthew|Mark|Luke|John|Acts|Romans|1 Corinthians|2 Corinthians|Galatians|Ephesians|Philippians|Colossians|1 Thessalonians|2 Thessalonians|1 Timothy|2 Timothy|Titus|Philemon|Hebrews|James|1 Peter|2 Peter|1 John|2 John|3 John|Jude|Revelation".split("|")
 
 
@@ -102,21 +144,50 @@ def inspect_mp3(path):
 
 
 def synthesize(text, destination):
-    from openai import OpenAI, APIConnectionError, APIStatusError
-    client = OpenAI(max_retries=0, timeout=120)
+    partial = destination.with_suffix(".part")
     for attempt in range(6):
         try:
-            with client.audio.speech.with_streaming_response.create(
-                model=MODEL, voice=VOICE, input=text, response_format="mp3", speed=1,
-            ) as response:
-                response.stream_to_file(destination)
+            with eleven_request(f"text-to-speech/{VOICE}?output_format={PROFILE['format']}", {
+                "model_id": MODEL, "text": text, "language_code": "sv",
+                "voice_settings": PROFILE["voiceSettings"],
+            }) as response, partial.open("wb") as output:
+                import shutil
+                shutil.copyfileobj(response, output)
+            partial.replace(destination)
             return
-        except (APIConnectionError, APIStatusError) as error:
-            code = getattr(error, "status_code", None)
-            if attempt == 5 or (code is not None and code not in (408, 429) and code < 500):
-                # Do not include request objects or credentials in workflow output.
-                raise RuntimeError(f"Speech request failed (status {code or 'connection'})") from None
-            time.sleep(min(60, 2 ** (attempt + 1)))
+        except urllib.error.HTTPError as error:
+            try:
+                detail = json.loads(error.read()).get("detail", {})
+                status = detail.get("status", "") if isinstance(detail, dict) else ""
+            except (ValueError, AttributeError):
+                status = ""
+            finally:
+                error.close()
+            if error.code == 402 or status in ("quota_exceeded", "insufficient_credits", "insufficient_credit_balance"):
+                raise GenerationPaused("ElevenLabs credits exhausted. Refill credits and rerun the same selection.") from None
+            if error.code == 429 and attempt < 5:
+                time.sleep(min(60, 2 ** (attempt + 1)))
+                continue
+            # A rejection is safe to resume. An uncertain server/connection failure
+            # leaves a request marker so a rerun cannot silently charge twice.
+            if error.code < 500 and error.code != 408:
+                destination.with_suffix(".request.json").unlink(missing_ok=True)
+            raise RuntimeError(f"Speech request failed (HTTP {error.code}); no automatic paid retry") from None
+
+
+def upload(tag, path, repo):
+    for attempt in range(4):
+        try:
+            gh("release", "upload", tag, str(path), "--repo", repo, "--clobber")
+            return
+        except RuntimeError:
+            if attempt == 3:
+                raise
+            time.sleep(2 ** attempt)
+
+
+def generation_id(source_hash, revision=""):
+    return digest({"source": source_hash, **PROFILE, "revision": revision})[:20]
 
 
 def complete_manifest(value, *, book, chapter, source_hash, generation, repo, tag, numbers):
@@ -127,8 +198,7 @@ def complete_manifest(value, *, book, chapter, source_hash, generation, repo, ta
         "translation": VERSION,
         "sourceHash": source_hash,
         "revision": generation,
-        "model": MODEL,
-        "voice": VOICE,
+        **PROFILE,
         "bookId": book["number"],
         "book": BOOKS[book["number"] - 1],
         "bookName": book["name"],
@@ -174,8 +244,8 @@ def previous_verses(book, chapter, repo):
         raise ValueError("Unexpected previous audio repository")
     with urllib.request.urlopen(entry["manifestUrl"], timeout=60) as response:
         manifest = json.load(response)
-    if manifest.get("model") != MODEL or manifest.get("voice") != VOICE:
-        raise ValueError("Existing chapter uses different narration settings; refusing regeneration")
+    if any(manifest.get(key) != value for key, value in PROFILE.items()):
+        return {}  # A different provider/voice must never supply replacement verses.
     if manifest.get("bookId") != book["number"] or manifest.get("chapter") != chapter["number"]:
         raise ValueError("Existing chapter identity mismatch")
     return {verse["verse"]: verse for verse in manifest["verses"]}
@@ -191,7 +261,7 @@ def generate_chapter(data, book, chapter, repo, output, revision=""):
     if any(not v["text"] or len(v["text"]) > 4096 for v in verses):
         raise ValueError("Source verse is empty or exceeds the speech input limit")
     source_hash = digest(verses)
-    generation = digest({"source": source_hash, "model": MODEL, "voice": VOICE, "speed": 1, "format": "mp3", "revision": revision})[:20]
+    generation = generation_id(source_hash, revision)
     tag = f"audio-{book['number']:02d}-{chapter['number']:03d}-{generation}"
     existing = gh("release", "view", tag, "--repo", repo, "--json", "assets", check=False)
     if existing.returncode:
@@ -200,60 +270,83 @@ def generate_chapter(data, book, chapter, repo, output, revision=""):
     else:
         assets = {a["name"] for a in json.loads(existing.stdout)["assets"]}
     manifest_url = f"https://github.com/{repo}/releases/download/{tag}/chapter.json"
-    with tempfile.TemporaryDirectory() as directory:
-        if "chapter.json" in assets:
-            manifest_path = Path(directory) / "chapter.json"
-            gh("release", "download", tag, "--repo", repo, "--pattern", "chapter.json", "--dir", directory)
-            try:
-                published = json.loads(manifest_path.read_text(encoding="utf-8"))
-            except (OSError, json.JSONDecodeError):
-                published = None
-            if all(f"verse-{number:03d}.mp3" in assets for number in numbers) and complete_manifest(
-                published,
-                book=book,
-                chapter=chapter,
-                source_hash=source_hash,
-                generation=generation,
-                repo=repo,
-                tag=tag,
-                numbers=numbers,
-            ):
-                published["manifestUrl"] = manifest_url
-                write_json(Path(output) / f"{book['number']:02d}-{chapter['number']:03d}.json", published)
-                print(f"Already complete; skipped {book['number']}:{chapter['number']} ({len(numbers)} verses)", flush=True)
-                return
-            manifest_path.unlink(missing_ok=True)
-
-        manifest = {"schemaVersion": 1, "translation": VERSION, "sourceLabel": data["translation"], "sourceHash": source_hash, "revision": generation, "model": MODEL, "voice": VOICE, "bookId": book["number"], "book": BOOKS[book["number"] - 1], "bookName": book["name"], "chapter": chapter["number"], "expectedVerses": numbers, "verses": []}
-        reusable = previous_verses(book, chapter, repo) if any(f"verse-{n:03d}.mp3" not in assets for n in numbers) else {}
-        for verse in verses:
-            name = f"verse-{verse['verse']:03d}.mp3"
-            path = Path(directory) / name
-            if name in assets:
-                gh("release", "download", tag, "--repo", repo, "--pattern", name, "--dir", directory)
-                try:
-                    duration = inspect_mp3(path)
-                except (ValueError, subprocess.CalledProcessError):
-                    raise ValueError(f"Existing audio {tag}/{name} failed validation; refusing to regenerate it")
-            if name not in assets:
-                previous = reusable.get(verse["verse"])
-                if previous and previous.get("textHash") == digest(verse["text"]):
-                    if not previous["url"].startswith(f"https://github.com/{repo}/releases/download/"):
-                        raise ValueError("Unexpected verse repository")
-                    with urllib.request.urlopen(previous["url"], timeout=60) as response:
-                        path.write_bytes(response.read())
-                    if digest(path.read_bytes()) != previous["sha256"]:
-                        raise ValueError("Existing verse checksum mismatch; refusing regeneration")
-                    print(f"Reused {book['number']}:{chapter['number']}:{verse['verse']}", flush=True)
-                else:
-                    synthesize(verse["text"], path)
-                duration = inspect_mp3(path)
-                gh("release", "upload", tag, str(path), "--repo", repo, "--clobber")
-            manifest["verses"].append({"verse": verse["verse"], "url": f"https://github.com/{repo}/releases/download/{tag}/{name}", "duration": duration, "sha256": digest(path.read_bytes()), "textHash": digest(verse["text"])})
-            print(f"Validated {book['number']}:{chapter['number']}:{verse['verse']}", flush=True)
+    pending = Path(output) / "pending" / tag
+    pending.mkdir(parents=True, exist_ok=True)
+    directory = str(pending)
+    if "chapter.json" in assets:
         manifest_path = Path(directory) / "chapter.json"
-        write_json(manifest_path, manifest)
-        gh("release", "upload", tag, str(manifest_path), "--repo", repo, "--clobber")
+        gh("release", "download", tag, "--repo", repo, "--pattern", "chapter.json", "--dir", directory, "--clobber")
+        try:
+            published = json.loads(manifest_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            published = None
+        if all(f"verse-{number:03d}.mp3" in assets for number in numbers) and complete_manifest(
+            published,
+            book=book,
+            chapter=chapter,
+            source_hash=source_hash,
+            generation=generation,
+            repo=repo,
+            tag=tag,
+            numbers=numbers,
+        ):
+            manifest_path.unlink(missing_ok=True)
+            published["manifestUrl"] = manifest_url
+            write_json(Path(output) / f"{book['number']:02d}-{chapter['number']:03d}.json", published)
+            print(f"Already complete; skipped {book['number']}:{chapter['number']} ({len(numbers)} verses)", flush=True)
+            return
+        manifest_path.unlink(missing_ok=True)
+
+    manifest = {"schemaVersion": 1, "translation": VERSION, "sourceLabel": data["translation"], "sourceHash": source_hash, "revision": generation, **PROFILE, "bookId": book["number"], "book": BOOKS[book["number"] - 1], "bookName": book["name"], "chapter": chapter["number"], "expectedVerses": numbers, "verses": []}
+    reusable = previous_verses(book, chapter, repo) if any(f"verse-{n:03d}.mp3" not in assets for n in numbers) else {}
+    for verse in verses:
+        if time.monotonic() >= DEADLINE:
+            raise GenerationPaused(f"Time budget reached before {book['number']}:{chapter['number']}:{verse['verse']}; rerun to resume.")
+        name = f"verse-{verse['verse']:03d}.mp3"
+        path = Path(directory) / name
+        marker = path.with_suffix(".request.json")
+        receipt = path.with_suffix(".receipt.json")
+        if name in assets:
+            gh("release", "download", tag, "--repo", repo, "--pattern", name, "--dir", directory, "--clobber")
+            try:
+                duration = inspect_mp3(path)
+            except (ValueError, subprocess.CalledProcessError):
+                raise ValueError(f"Existing audio {tag}/{name} failed validation; refusing to regenerate it")
+        if name not in assets:
+            previous = reusable.get(verse["verse"])
+            if path.exists():
+                if receipt.exists() and json.loads(receipt.read_text(encoding="utf-8"))["sha256"] != digest(path.read_bytes()):
+                    raise ValueError("Pending upload checksum mismatch; refusing regeneration")
+            elif marker.exists():
+                raise RuntimeError(f"Uncertain previous speech request for {tag}/{name}; recover audio from ElevenLabs history before retrying")
+            elif previous and previous.get("textHash") == digest(verse["text"]):
+                if not previous["url"].startswith(f"https://github.com/{repo}/releases/download/"):
+                    raise ValueError("Unexpected verse repository")
+                with urllib.request.urlopen(previous["url"], timeout=60) as response:
+                    path.write_bytes(response.read())
+                if digest(path.read_bytes()) != previous["sha256"]:
+                    raise ValueError("Existing verse checksum mismatch; refusing regeneration")
+                print(f"Reused {book['number']}:{chapter['number']}:{verse['verse']}", flush=True)
+            else:
+                write_json(marker, {"textHash": digest(verse["text"]), **PROFILE})
+                try:
+                    synthesize(verse["text"], path)
+                except GenerationPaused as error:
+                    marker.unlink(missing_ok=True)
+                    raise GenerationPaused(f"{error} Next verse: {book['number']}:{chapter['number']}:{verse['verse']}.") from None
+            duration = inspect_mp3(path)
+            write_json(receipt, {"sha256": digest(path.read_bytes()), "textHash": digest(verse["text"]), **PROFILE})
+            upload(tag, path, repo)
+        manifest["verses"].append({"verse": verse["verse"], "url": f"https://github.com/{repo}/releases/download/{tag}/{name}", "duration": duration, "sha256": digest(path.read_bytes()), "textHash": digest(verse["text"])})
+        path.unlink(missing_ok=True)
+        marker.unlink(missing_ok=True)
+        receipt.unlink(missing_ok=True)
+        path.with_suffix(".part").unlink(missing_ok=True)
+        print(f"Validated {book['number']}:{chapter['number']}:{verse['verse']}", flush=True)
+    manifest_path = Path(directory) / "chapter.json"
+    write_json(manifest_path, manifest)
+    upload(tag, manifest_path, repo)
+    manifest_path.unlink(missing_ok=True)
     manifest["manifestUrl"] = manifest_url
     write_json(Path(output) / f"{book['number']:02d}-{chapter['number']:03d}.json", manifest)
 
@@ -261,14 +354,16 @@ def generate_chapter(data, book, chapter, repo, output, revision=""):
 def publish(directory, catalog_path):
     path = Path(catalog_path)
     catalog = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {"schemaVersion": 1, "translation": VERSION, "chapters": {}}
-    for file in sorted(Path(directory).glob("**/*.json")):
+    for file in sorted(Path(directory).glob("*.json")):
         manifest = json.loads(file.read_text(encoding="utf-8"))
         if manifest.get("translation") != VERSION or [v["verse"] for v in manifest["verses"]] != manifest["expectedVerses"]:
             raise ValueError("Refusing to publish incomplete chapter")
+        if any(manifest.get(key) != value for key, value in PROFILE.items()):
+            raise ValueError("Refusing to publish a different narration profile")
         # The release manifest is uploaded only after every audio file is validated.
         with urllib.request.urlopen(manifest["manifestUrl"], timeout=60) as response:
             remote = json.load(response)
-        if remote["verses"] != manifest["verses"] or remote["sourceHash"] != manifest["sourceHash"]:
+        if any(remote.get(key) != value for key, value in manifest.items() if key != "manifestUrl"):
             raise ValueError("Published chapter does not match validated output")
         catalog["chapters"][f"{manifest['bookId']}:{manifest['chapter']}"] = {
             key: manifest[key] for key in ("bookId", "book", "bookName", "chapter", "revision", "sourceHash", "manifestUrl")
@@ -276,9 +371,80 @@ def publish(directory, catalog_path):
     write_json(path, catalog)
 
 
+def prepare_migration(catalog_path, migration_path):
+    """Persist original manifests before withdrawing legacy catalog entries."""
+    catalog = json.loads(Path(catalog_path).read_text(encoding="utf-8"))
+    path = Path(migration_path)
+    migration = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {"profile": PROFILE, "chapters": {}}
+    if migration["profile"] != PROFILE:
+        raise ValueError("Migration narration profile changed")
+    for key, entry in list(catalog["chapters"].items()):
+        with urllib.request.urlopen(entry["manifestUrl"], timeout=60) as response:
+            manifest = json.load(response)
+        if manifest.get("model", "").startswith("tts-") or manifest.get("provider") == "openai":
+            migration["chapters"][key] = {"entry": entry, "manifest": manifest}
+            del catalog["chapters"][key]
+    # The checkpoint must reach disk before the catalog loses its entries.
+    write_json(path, migration)
+    write_json(catalog_path, catalog)
+    summary(f"Legacy migration saved: {len(migration['chapters'])} chapters. Incomplete replacements are hidden.")
+
+
+def migration_selection(data, migration_path):
+    migration = json.loads(Path(migration_path).read_text(encoding="utf-8"))
+    if migration["profile"] != PROFILE:
+        raise ValueError("Migration narration profile changed")
+    keys = set(migration["chapters"])
+    return [(book, chapter) for book, chapter in select(data, entire=True)
+            if f"{book['number']}:{chapter['number']}" in keys]
+
+
+def recover_pending(output, repo):
+    """Carry the most recent recovery checkpoint across workflow runs."""
+    pending = Path(output) / "pending"
+    pending.mkdir(parents=True, exist_ok=True)
+    pages = json.loads(gh("api", "--paginate", "--slurp", f"repos/{repo}/actions/artifacts?name=pending-audio&per_page=100").stdout)
+    artifacts = [item for page in pages for item in page["artifacts"]
+                 if not item["expired"] and str(item["workflow_run"]["id"]) != os.environ.get("GITHUB_RUN_ID")]
+    if artifacts:
+        latest = max(artifacts, key=lambda item: item["created_at"])
+        with tempfile.TemporaryDirectory() as directory:
+            gh("run", "download", str(latest["workflow_run"]["id"]), "--repo", repo,
+               "--name", "pending-audio", "--dir", directory)
+            import shutil
+            for source in Path(directory).rglob("*"):
+                if source.is_file():
+                    target = pending / source.relative_to(directory)
+                    if target.exists() and target.read_bytes() != source.read_bytes() and target.name != "state.json":
+                        raise ValueError("Conflicting pending audio; refusing to overwrite recovery data")
+                    target.parent.mkdir(parents=True, exist_ok=True)
+                    shutil.copyfile(source, target)
+    write_json(pending / "state.json", {"schemaVersion": 1})
+    # Flush completed recordings even if the speech credential is missing or empty.
+    for receipt in pending.glob("audio-*/*.receipt.json"):
+        record = json.loads(receipt.read_text(encoding="utf-8"))
+        path = receipt.with_name(receipt.name.replace(".receipt.json", ".mp3"))
+        if any(record.get(key) != value for key, value in PROFILE.items()) or not path.exists() or digest(path.read_bytes()) != record["sha256"]:
+            raise ValueError("Invalid pending recording; refusing regeneration")
+        inspect_mp3(path)
+        tag = path.parent.name
+        existing = json.loads(gh("release", "view", tag, "--repo", repo, "--json", "assets").stdout)
+        if any(asset["name"] == path.name for asset in existing["assets"]):
+            with tempfile.TemporaryDirectory() as directory:
+                gh("release", "download", tag, "--repo", repo, "--pattern", path.name, "--dir", directory)
+                if digest((Path(directory) / path.name).read_bytes()) != record["sha256"]:
+                    raise ValueError("Remote verse differs from pending recording")
+        else:
+            upload(tag, path, repo)
+        path.unlink()
+        receipt.unlink()
+        path.with_suffix(".request.json").unlink(missing_ok=True)
+
+
 def main():
+    global DEADLINE
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["estimate", "dispatch", "matrix", "generate", "publish"])
+    parser.add_argument("command", choices=["estimate", "dispatch", "matrix", "generate", "publish", "prepare"])
     parser.add_argument("--source", default=str(Path(__file__).with_name("reformationsbibeln.json")))
     parser.add_argument("--books", default="")
     parser.add_argument("--chapters", default="")
@@ -286,6 +452,9 @@ def main():
     parser.add_argument("--repo", default=REPO)
     parser.add_argument("--output", default="generated")
     parser.add_argument("--catalog", default="catalog.json")
+    parser.add_argument("--replace-legacy", action="store_true")
+    parser.add_argument("--migration", default="migration-jessica.json")
+    parser.add_argument("--max-seconds", type=int, default=18000)
     parser.add_argument("--shard", type=int)
     parser.add_argument("--shard-size", type=int, default=25)
     parser.add_argument("--revision", default="", help="Deprecated; must remain blank to prevent regeneration")
@@ -297,17 +466,21 @@ def main():
     if args.command == "publish":
         publish(args.output, args.catalog)
         return
+    if args.command == "prepare":
+        if args.replace_legacy:
+            prepare_migration(args.catalog, args.migration)
+        return
     if not Path(args.source).exists():
         args.source = str(Path(__file__).parents[2] / "assets/bible/reformationsbibeln.json")
     data = load_source(args.source)
-    selection = select(data, args.books, args.chapters, args.all)
+    selection = [] if args.command == "dispatch" and args.replace_legacy else migration_selection(data, args.migration) if args.replace_legacy else select(data, args.books, args.chapters, args.all)
     if args.command == "estimate":
         texts = [clean(v["text"]) for _, c in selection for v in c["verses"]]
         count = sum(map(len, texts))
-        print(json.dumps({"chapters": len(selection), "verses": len(texts), "characters": count, "estimatedUSD": round(count * 30 / 1_000_000, 2)}))
+        print(json.dumps({"chapters": len(selection), "verses": len(texts), "characters": count, "model": MODEL, "voice": "Jessica", "note": "Credits depend on your ElevenLabs plan; counts include already generated verses."}))
     elif args.command == "dispatch":
         request_id = uuid.uuid4().hex[:12]
-        inputs = {"books": args.books, "chapters": args.chapters, "entire": str(args.all).lower(), "revision": args.revision, "request_id": request_id}
+        inputs = {"books": args.books, "chapters": args.chapters, "entire": str(args.all).lower(), "revision": args.revision, "request_id": request_id, "replace_legacy": str(args.replace_legacy).lower()}
         command = ["workflow", "run", "generate.yml", "--repo", args.repo]
         for name, value in inputs.items():
             command += ["-f", f"{name}={value}"]
@@ -324,15 +497,20 @@ def main():
     elif args.command == "matrix":
         print(json.dumps({"shard": list(range((len(selection) + args.shard_size - 1) // args.shard_size))}))
     elif args.command == "generate":
-        failures = []
+        recover_pending(args.output, args.repo)
+        preflight()
+        DEADLINE = time.monotonic() + args.max_seconds
         selected_shard = selection if args.shard is None else selection[args.shard * args.shard_size:(args.shard + 1) * args.shard_size]
         for book, chapter in selected_shard:
             try:
                 generate_chapter(data, book, chapter, args.repo, args.output, args.revision)
+            except GenerationPaused as error:
+                summary(str(error))
+                raise SystemExit(2) from None
             except Exception as error:
-                failures.append(f"{book['number']}:{chapter['number']} ({type(error).__name__})")
-        if failures:
-            raise RuntimeError("Failed chapters; rerun to resume: " + ", ".join(failures))
+                summary(f"Stopped at {book['number']}:{chapter['number']}. Completed verses are preserved. {error}")
+                raise
+        summary(f"Finished selection: {len(selected_shard)} chapters. Existing recordings were reused.")
 
 
 if __name__ == "__main__":

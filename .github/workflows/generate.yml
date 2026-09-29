@@ -18,11 +18,16 @@ on:
         description: Entire Bible (leave books and chapters blank)
         default: false
         type: boolean
+      replace_legacy:
+        description: Hide and replace legacy OpenAI chapters with Jessica (ignores book/chapter selection)
+        default: false
+        type: boolean
       revision:
-        description: Deprecated; leave blank (existing audio is never regenerated)
+        description: Deprecated; leave blank (existing Jessica audio is never regenerated)
         type: string
 permissions:
   contents: write
+  actions: read
 concurrency:
   group: bible-audio-generation
   cancel-in-progress: false
@@ -31,79 +36,65 @@ env:
   BOOKS: ${{ inputs.books }}
   CHAPTERS: ${{ inputs.chapters }}
   ENTIRE: ${{ inputs.entire }}
+  REPLACE_LEGACY: ${{ inputs.replace_legacy }}
   REVISION: ${{ inputs.revision }}
 jobs:
-  plan:
-    runs-on: ubuntu-latest
-    outputs:
-      matrix: ${{ steps.plan.outputs.matrix }}
-    steps:
-      - uses: actions/checkout@v4
-      - name: Require speech credential
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: test -n "$OPENAI_API_KEY" || { echo 'Add the OPENAI_API_KEY repository secret before generation.'; exit 1; }
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - id: plan
-        shell: bash
-        run: |
-          args=(--books "$BOOKS" --chapters "$CHAPTERS")
-          if [[ "$ENTIRE" == "true" ]]; then args+=(--all); fi
-          echo "matrix=$(python audio.py matrix "${args[@]}")" >> "$GITHUB_OUTPUT"
-          python audio.py estimate "${args[@]}" >> "$GITHUB_STEP_SUMMARY"
   generate:
-    needs: plan
     runs-on: ubuntu-latest
-    timeout-minutes: 330
-    strategy:
-      fail-fast: false
-      max-parallel: 2
-      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - run: pip install -r requirements.txt
-      - run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
-      - name: Generate and validate individual verses
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          SHARD: ${{ matrix.shard }}
-        shell: bash
-        run: |
-          args=(--books "$BOOKS" --chapters "$CHAPTERS")
-          if [[ "$ENTIRE" == "true" ]]; then args+=(--all); fi
-          python audio.py generate "${args[@]}" --shard "$SHARD" --revision "$REVISION"
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: chapters-${{ matrix.shard }}
-          path: generated/*.json
-          if-no-files-found: ignore
-          retention-days: 7
-  publish:
-    needs: [plan, generate]
-    if: ${{ always() && needs.plan.result == 'success' }}
-    runs-on: ubuntu-latest
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
-      - uses: actions/download-artifact@v4
+      - uses: actions/setup-python@v5
         with:
-          pattern: chapters-*
-          path: generated
-          merge-multiple: true
-      - run: python audio.py publish
-      - name: Publish complete chapter catalog
+          python-version: '3.12'
+      - run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
+      - name: Save migration and hide legacy chapters
+        id: prepare
+        shell: bash
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if [[ "$REPLACE_LEGACY" == "true" ]]; then
+            python audio.py prepare --replace-legacy
+            git add catalog.json migration-jessica.json
+            if ! git diff --cached --quiet; then
+              git commit -m 'Hide legacy chapters and save Jessica migration'
+              git push origin HEAD:main
+            fi
+          fi
+      - name: Generate and upload individual Jessica verses
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        shell: bash
+        run: |
+          args=(--books "$BOOKS" --chapters "$CHAPTERS")
+          if [[ "$ENTIRE" == "true" ]]; then args+=(--all); fi
+          if [[ "$REPLACE_LEGACY" == "true" ]]; then args=(--replace-legacy); fi
+          python audio.py estimate "${args[@]}" >> "$GITHUB_STEP_SUMMARY"
+          python audio.py generate "${args[@]}" --revision "$REVISION" --max-seconds 18000
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pending-audio
+          path: generated/pending/
+          if-no-files-found: ignore
+          retention-days: 90
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: completed-chapters
+          path: generated/*.json
+          if-no-files-found: ignore
+          retention-days: 90
+      - name: Publish every completed chapter even after credits run out
+        if: ${{ always() && steps.prepare.outcome == 'success' }}
+        shell: bash
+        run: |
+          python audio.py publish
           git add catalog.json
           if ! git diff --cached --quiet; then
-            git commit -m 'Publish complete audio chapters'
+            git commit -m 'Publish complete Jessica audio chapters'
             git push origin HEAD:main
           fi
