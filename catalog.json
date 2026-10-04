@@ -226,6 +226,1662 @@
       "revision": "abb2316427bc5bf59d0a",
       "sourceHash": "8ed59a860c63d4d16ad2a01870d4783f452bbdda129f0fa56dfce3b7ff0ef3a8",
       "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-001-abb2316427bc5bf59d0a/chapter.json"
+    },
+    "1:1": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 1,
+      "revision": "acdf2c2a1e6cfc53b061",
+      "sourceHash": "9dc0b99ac6898a0d76b9bd9aed1398ca1b2cad607171ba7470c03ac7ae82af4c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-001-acdf2c2a1e6cfc53b061/chapter.json"
+    },
+    "1:2": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 2,
+      "revision": "b5192b75017f0f6e2938",
+      "sourceHash": "c7123e462e87e05d661bc7c2128ceb03b6ee7ba5180f106d93f7531553a7c43e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-002-b5192b75017f0f6e2938/chapter.json"
+    },
+    "1:3": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 3,
+      "revision": "16fc01a8adcf33f246d8",
+      "sourceHash": "e4ee44b08d88b515c71e4eb3a56fe2ba2008689bee3e0b81ca3f45370f61cf13",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-003-16fc01a8adcf33f246d8/chapter.json"
+    },
+    "1:4": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 4,
+      "revision": "c4bb5fd8cda575f85545",
+      "sourceHash": "970be19fd1dd2bbb0b760632535e1db624666d1127819ed72344477b23053a08",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-004-c4bb5fd8cda575f85545/chapter.json"
+    },
+    "1:5": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 5,
+      "revision": "c1c0d47e6e305d36acb2",
+      "sourceHash": "91acc5e35b2918b4fdbf768627b1c74109839cc931d08cceca42d6af8254296b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-005-c1c0d47e6e305d36acb2/chapter.json"
+    },
+    "1:6": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 6,
+      "revision": "a4065790d69a5f6d29df",
+      "sourceHash": "bbea242f27a6bae201d639132c6b05979a3784ed5155c4f476dd0eda293db1a9",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-006-a4065790d69a5f6d29df/chapter.json"
+    },
+    "1:7": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 7,
+      "revision": "ea84bc2cb08e40ddc094",
+      "sourceHash": "e33091bc9e7fed28e0672a15e09386cead0dd1ad9e674d55dc15cf28e35e0166",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-007-ea84bc2cb08e40ddc094/chapter.json"
+    },
+    "1:8": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 8,
+      "revision": "e08d272a02d344fe304c",
+      "sourceHash": "aa101736f27efb208d33190ba7343f25d58039edc1267dc8a565908a4767a4f2",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-008-e08d272a02d344fe304c/chapter.json"
+    },
+    "1:9": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 9,
+      "revision": "026d5ff503620c0b99c0",
+      "sourceHash": "0cacb1ff6559f24a915c47095ad5cc0f2a9f16216e469fe7aad6ca05a990836c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-009-026d5ff503620c0b99c0/chapter.json"
+    },
+    "1:10": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 10,
+      "revision": "1b2ff303e2dc2261ed17",
+      "sourceHash": "af6875c26be506bf0cf6a94e9a45a444b2d5fbc9e5194030e88250ec00ed4ae7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-010-1b2ff303e2dc2261ed17/chapter.json"
+    },
+    "1:11": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 11,
+      "revision": "583d4a9736edb10a9c61",
+      "sourceHash": "9de9096d9f60b13d9e0fbc2778cb97bdacea76b8054ef5b1ca951f57aa74adfb",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-011-583d4a9736edb10a9c61/chapter.json"
+    },
+    "1:12": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 12,
+      "revision": "3c2e55a0531926b94c97",
+      "sourceHash": "7f4fd3c20f250e1715d5b3ecfe32c292bccf9218401a0ba54a28d71d777c2bf8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-012-3c2e55a0531926b94c97/chapter.json"
+    },
+    "1:13": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 13,
+      "revision": "fda27343421494598737",
+      "sourceHash": "625c60f2e5bc8d8845dd181bcc65ea70dfd01b8a3c8b85a43bb653d115b296bc",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-013-fda27343421494598737/chapter.json"
+    },
+    "1:14": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 14,
+      "revision": "ab27ccbc5d69035d27e5",
+      "sourceHash": "ec01e61bb371ee40864746c359156ca669ba7d64e351c39bcd7a4a2d009fb0c3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-014-ab27ccbc5d69035d27e5/chapter.json"
+    },
+    "1:15": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 15,
+      "revision": "139371ce604318fc84bf",
+      "sourceHash": "1a43d0e6fa5d87eb6de065ef035e2d5fb5931e5d6d9304a9c106d61a96b90008",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-015-139371ce604318fc84bf/chapter.json"
+    },
+    "1:16": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 16,
+      "revision": "ca5a7fb0f46908b212f3",
+      "sourceHash": "feef24782efc99beea6fffb6c8c52d8f1881c776eb3be554d31d7a0f19e10209",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-016-ca5a7fb0f46908b212f3/chapter.json"
+    },
+    "1:17": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 17,
+      "revision": "9952a0cf1b51bcccc85d",
+      "sourceHash": "19b775540bcbe5738dda1c9d20eb5f45875a85fe1842bb7a4288f65705b0ad3e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-017-9952a0cf1b51bcccc85d/chapter.json"
+    },
+    "1:18": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 18,
+      "revision": "90191eeb9c3efdff876a",
+      "sourceHash": "17c863bb3b4b3a8e267c2002ac65bb07387ed8f67c4567c9a1d8ef6a8ef0382b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-018-90191eeb9c3efdff876a/chapter.json"
+    },
+    "1:19": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 19,
+      "revision": "77db579a86799c92b60e",
+      "sourceHash": "e2384e2f368b53319eb3510f31c3833fcce67500e53dc5b9226b7f63ee9efd1a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-019-77db579a86799c92b60e/chapter.json"
+    },
+    "1:20": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 20,
+      "revision": "9c7ab0efc25f03f4873b",
+      "sourceHash": "2211fb1b67fdb83984484206cce9447b8af4fdc7ec27afeda680966deaa4dc0b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-020-9c7ab0efc25f03f4873b/chapter.json"
+    },
+    "1:21": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 21,
+      "revision": "a2d05edcfc659254cde0",
+      "sourceHash": "84cb510d637a6db99509b4dd8db90fe547587a747f025bfa4fe28491172ca7da",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-021-a2d05edcfc659254cde0/chapter.json"
+    },
+    "1:22": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 22,
+      "revision": "2567ea25e7a5c2f135a2",
+      "sourceHash": "8eb6588073c8047743a104c22eb99ccd08f59a024c2d30efb2be16852599076a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-022-2567ea25e7a5c2f135a2/chapter.json"
+    },
+    "1:23": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 23,
+      "revision": "1e57ab0b0c174c0ea9b9",
+      "sourceHash": "a9740d9049616a37a5fdd66c0a855c504b45463621a0671572a935a02ce4a5c2",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-023-1e57ab0b0c174c0ea9b9/chapter.json"
+    },
+    "1:24": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 24,
+      "revision": "742b48ce13c19c1eec2d",
+      "sourceHash": "2b6e157751b9d9cede7f6a5e2bf2697ead211afd94fa0d7a3af2460394ef9078",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-024-742b48ce13c19c1eec2d/chapter.json"
+    },
+    "1:25": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 25,
+      "revision": "bebd97520ac9895992fa",
+      "sourceHash": "8352430a79e22f52d469dd8918a849ef3e45cd83843ba4e87f5aa8106c4e6254",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-025-bebd97520ac9895992fa/chapter.json"
+    },
+    "1:26": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 26,
+      "revision": "110d8d8e14a10c99d84f",
+      "sourceHash": "7eec7ff7e665e825a44514435ba3a229e65d3c06a1e23dbf99b61aacc2be9113",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-026-110d8d8e14a10c99d84f/chapter.json"
+    },
+    "1:27": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 27,
+      "revision": "7d511ccfc96e7a36642e",
+      "sourceHash": "ba37c396dea1e4150ae6c470a34cd5fe283200ba777159a5ddce3853126de66e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-027-7d511ccfc96e7a36642e/chapter.json"
+    },
+    "1:28": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 28,
+      "revision": "5334d03b7a3fb81c8c03",
+      "sourceHash": "c78cc1a6d056b828ab47853d29ca47c296294143a2a4365e40432529ad39ceb0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-028-5334d03b7a3fb81c8c03/chapter.json"
+    },
+    "1:29": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 29,
+      "revision": "8bc356087e106b571f51",
+      "sourceHash": "f90913702220e56a2b288d9e9898b5d4cf0b7f96bc5d3cca08b40b4e6a1981b3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-029-8bc356087e106b571f51/chapter.json"
+    },
+    "1:30": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 30,
+      "revision": "4d9bd191d57fa98d32a6",
+      "sourceHash": "aa5a8c3cb32f043e9c2d0ad1bf12e5e79041904f7f18b5f4853a118b01b02d74",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-030-4d9bd191d57fa98d32a6/chapter.json"
+    },
+    "1:31": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 31,
+      "revision": "48eb5ab53d589b654000",
+      "sourceHash": "dd29f1a987198047ed0b6fa2d2a28e7094ea392f8751e0120e9326ea09559f18",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-031-48eb5ab53d589b654000/chapter.json"
+    },
+    "1:32": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 32,
+      "revision": "23423246ed95d1420012",
+      "sourceHash": "5743c79012f4c1fcd994a114ecb8f1469317f527163c877c7aaa574b8fb07973",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-032-23423246ed95d1420012/chapter.json"
+    },
+    "1:33": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 33,
+      "revision": "3b2785501476bacb8db5",
+      "sourceHash": "187cfdcd047cf111499412ede77a34b20736310a49928d41a95740fc4a8b5cfc",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-033-3b2785501476bacb8db5/chapter.json"
+    },
+    "1:34": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 34,
+      "revision": "f3a64a91edc71cd818e3",
+      "sourceHash": "674c48d76c6a3e7b9f40a2c49981c2387b76e2f3e3c9f0a108e5056c70910848",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-034-f3a64a91edc71cd818e3/chapter.json"
+    },
+    "1:35": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 35,
+      "revision": "c3299dddbd36e241cde4",
+      "sourceHash": "b0502e0a5912131c2f15ddc0ef1a1275dd2261bb87630f5ee11b0587c5a37e7d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-035-c3299dddbd36e241cde4/chapter.json"
+    },
+    "1:36": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 36,
+      "revision": "a4c3c4effd51c28d4bab",
+      "sourceHash": "54bfb68b15444c4afc41e1c525d62fe893df16604e79b0038618eb4c72cba853",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-036-a4c3c4effd51c28d4bab/chapter.json"
+    },
+    "1:37": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 37,
+      "revision": "7e30d723cb1460e3480c",
+      "sourceHash": "d504844077e01ea7c62ac5ef02d4fefae7b13f8d9b9732f266b03650d59ed307",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-037-7e30d723cb1460e3480c/chapter.json"
+    },
+    "1:38": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 38,
+      "revision": "b827ebf242561adfdfc8",
+      "sourceHash": "c231048a4a2e67139409cba6d7afecaa414b84c902c732f3f9c3d534ef0a9cd5",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-038-b827ebf242561adfdfc8/chapter.json"
+    },
+    "1:39": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 39,
+      "revision": "746d5a20c92dd355efee",
+      "sourceHash": "d12c92f4fcf1c561128bc7b99821341ccc12569c1ca24a4d1ecbc5dc2dd63f4c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-039-746d5a20c92dd355efee/chapter.json"
+    },
+    "1:40": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 40,
+      "revision": "968eee3b2ca380c7af8c",
+      "sourceHash": "ed5b53208a375d8618546324bfa98ea606b8e0827020af383aa959c0ff2a843e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-040-968eee3b2ca380c7af8c/chapter.json"
+    },
+    "1:41": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 41,
+      "revision": "16d8bc2ca70568fa018b",
+      "sourceHash": "46c4810d7bbdd55d52b8907c9aee31053d5ab8f1bc450c9ac801117fbc04ba5a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-041-16d8bc2ca70568fa018b/chapter.json"
+    },
+    "1:42": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 42,
+      "revision": "3732194765ea04773e3b",
+      "sourceHash": "e6a6d81bdc089e73212ba98c1703385ef37ba73adad954caec0dd20f96bf094c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-042-3732194765ea04773e3b/chapter.json"
+    },
+    "1:43": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 43,
+      "revision": "117fa634344790b7fff0",
+      "sourceHash": "d4f4fd962b1db226f8e39d8423b9db2f3c6a9b35e042c18f05c52e3db1543c75",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-043-117fa634344790b7fff0/chapter.json"
+    },
+    "1:44": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 44,
+      "revision": "f0a114e9b7e5b2284bd2",
+      "sourceHash": "64a1431e03421d0a8fb7a42ca2fb94eb1b1b1698d791ff2547cab315b27e3b2f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-044-f0a114e9b7e5b2284bd2/chapter.json"
+    },
+    "1:45": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 45,
+      "revision": "fde2da8f4cea36b4a5ee",
+      "sourceHash": "b959e56edacb81f94562f0441bd84155446b76af4d0ece0ef2cb90cf9b8cbf7e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-045-fde2da8f4cea36b4a5ee/chapter.json"
+    },
+    "1:46": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 46,
+      "revision": "3070482a9fd0fc94f79d",
+      "sourceHash": "3ce0384a2959906c1342a21cca7e4d9a0c1a70603a065581d08224deddf3eb07",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-046-3070482a9fd0fc94f79d/chapter.json"
+    },
+    "1:47": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 47,
+      "revision": "2f4fe94ca70f16d2b521",
+      "sourceHash": "add37d65fb4dd2b456e254ff8e006acdd863331249c9323bc3a1dd71865ff0ae",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-047-2f4fe94ca70f16d2b521/chapter.json"
+    },
+    "1:48": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 48,
+      "revision": "6492946b2d317f223864",
+      "sourceHash": "69bb759996b0496270fa213c328e48d8428209095a974b90cead8dc0eacfd892",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-048-6492946b2d317f223864/chapter.json"
+    },
+    "1:49": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 49,
+      "revision": "c910a1d9461bfd4d55c7",
+      "sourceHash": "f43567e0b370bdf2eac0d59cf70732b636d895ec7dcfe8daa52d61ba84be976d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-049-c910a1d9461bfd4d55c7/chapter.json"
+    },
+    "1:50": {
+      "bookId": 1,
+      "book": "Genesis",
+      "bookName": "Första Moseboken",
+      "chapter": 50,
+      "revision": "66700997215cabf57b68",
+      "sourceHash": "433d2b89ff8f9833c784a888055ed27e50a4e55715d8f41aa74f367bba8d2ed1",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-01-050-66700997215cabf57b68/chapter.json"
+    },
+    "2:1": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 1,
+      "revision": "269910f68edfbe3c660a",
+      "sourceHash": "0498379e08ab5af6e72ccdae532f7b59976cca026ee685944264915e9e491253",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-001-269910f68edfbe3c660a/chapter.json"
+    },
+    "2:2": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 2,
+      "revision": "e04badfac4da81a779a0",
+      "sourceHash": "9186669cb7080a69ffc41656bc2c4781acf86756fb3084382eceb3b3630c1137",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-002-e04badfac4da81a779a0/chapter.json"
+    },
+    "2:3": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 3,
+      "revision": "237cfc173b422faedc88",
+      "sourceHash": "397ac7a96af467beb7e82ed791431556a4ad663c70292d20de1e8e184696ed8f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-003-237cfc173b422faedc88/chapter.json"
+    },
+    "2:4": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 4,
+      "revision": "99611155feee6621d110",
+      "sourceHash": "b8faa0a6375c51f055eb136ea65d6036ab1913a9fabccc65c86d4d4523418036",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-004-99611155feee6621d110/chapter.json"
+    },
+    "2:5": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 5,
+      "revision": "619e748afb9a9736738c",
+      "sourceHash": "263789d3dc4e2fb52899da3ad1579fd2ea3058afc11f94f66a7522f163736e5b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-005-619e748afb9a9736738c/chapter.json"
+    },
+    "2:6": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 6,
+      "revision": "97dd8b2632ea65c397dd",
+      "sourceHash": "a44ea1d630844784be9846a414b45e005d6c2a7f10c7f8824dc8188bf558c47c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-006-97dd8b2632ea65c397dd/chapter.json"
+    },
+    "2:7": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 7,
+      "revision": "1cd909d57bb811ab8206",
+      "sourceHash": "bd5eaa250b7bb1ac5bd8997f5ad64a0b8d54eb7df6f2e9dc09d823fd918a22d9",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-007-1cd909d57bb811ab8206/chapter.json"
+    },
+    "2:8": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 8,
+      "revision": "74fdbc469ffb18f52888",
+      "sourceHash": "1f83586fe2b03ef1b7d9ba586376761028f11cea3d78580d6b8fe62b66bf8387",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-008-74fdbc469ffb18f52888/chapter.json"
+    },
+    "2:9": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 9,
+      "revision": "b3ac4d085ffd50241404",
+      "sourceHash": "37d291de64419fe08ccf50ab2588c3c3856ad5bb5de8c33fe5b71683d057a0a7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-009-b3ac4d085ffd50241404/chapter.json"
+    },
+    "2:10": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 10,
+      "revision": "f0458bef67dc3f1db028",
+      "sourceHash": "d31fb1fb2b33c91fdec5eb3edefeccda0cb7436674df44c156094384277c0a1e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-010-f0458bef67dc3f1db028/chapter.json"
+    },
+    "2:11": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 11,
+      "revision": "8cc2075c8775f3c46755",
+      "sourceHash": "74a49494f0faabedde0ecad463daed296c51edfa3c6799b96c03cea7465a0245",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-011-8cc2075c8775f3c46755/chapter.json"
+    },
+    "2:12": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 12,
+      "revision": "640e97746dbec39f9678",
+      "sourceHash": "6f7c86e9ba6d2e13d08016c3680abaa3f5a7d13c85353d75ca8c0980ac249e7e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-012-640e97746dbec39f9678/chapter.json"
+    },
+    "2:13": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 13,
+      "revision": "6c3e1a3ae900e56a83b9",
+      "sourceHash": "d6bfc00899167e09d300cf65512a402267208c483669c7aa69dddcbd8cdfe866",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-013-6c3e1a3ae900e56a83b9/chapter.json"
+    },
+    "2:14": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 14,
+      "revision": "aa7918c56953a1189b76",
+      "sourceHash": "b771016058a258819fe4fbc726250d3effb039fec9c7c1b8f8ef85c24482613a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-014-aa7918c56953a1189b76/chapter.json"
+    },
+    "2:15": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 15,
+      "revision": "2dd489bac37e78b59473",
+      "sourceHash": "af07054f0dcdc64c4accacc199966fee3fff6518af08033e10c2695c5c8a776b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-015-2dd489bac37e78b59473/chapter.json"
+    },
+    "2:16": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 16,
+      "revision": "0aae054f707f4047c35b",
+      "sourceHash": "32d428be09d49853d97f6341623ea5c2e18f2160340052e0b78237ed34d5e0d8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-016-0aae054f707f4047c35b/chapter.json"
+    },
+    "2:17": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 17,
+      "revision": "4c489b956570716137ee",
+      "sourceHash": "2b14482cac8b601e3bbf04530226e1cdb5defa1bb75e613a55a5fcd3fd59c597",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-017-4c489b956570716137ee/chapter.json"
+    },
+    "2:18": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 18,
+      "revision": "df79ac999b0ef9fbac60",
+      "sourceHash": "1dfb183fccd39cdb68f6b073642cda510cdbd95da09d8de96f8fab038a3c1c0c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-018-df79ac999b0ef9fbac60/chapter.json"
+    },
+    "2:19": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 19,
+      "revision": "cbfb67052de8ce5a564f",
+      "sourceHash": "7873f76d2d74fbd2b7a45dad25b463904be493b7635c3ef338515393ab5f53aa",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-019-cbfb67052de8ce5a564f/chapter.json"
+    },
+    "2:20": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 20,
+      "revision": "ff671754c995589f4bd0",
+      "sourceHash": "cbb05f9937d7ebcf6b74582477ad55e2498cdcb19ec624efd4b04519f36f8402",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-020-ff671754c995589f4bd0/chapter.json"
+    },
+    "2:21": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 21,
+      "revision": "1d27ed873028f476ca17",
+      "sourceHash": "0dc6d5fb9ac2af82f8a246530cdaf385ab1b4d4720acd694bf00df693f37caf3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-021-1d27ed873028f476ca17/chapter.json"
+    },
+    "2:22": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 22,
+      "revision": "fba09db42bbc44fb6af8",
+      "sourceHash": "53d291ce4f804e6399c9d2e1b77b88dd4d7b313adf000f86b85b9f5ce681f9a8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-022-fba09db42bbc44fb6af8/chapter.json"
+    },
+    "2:23": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 23,
+      "revision": "b442a5923efee1675f00",
+      "sourceHash": "148df660dadb8dea886c4c0303f2a520581f00a588003f502c489c597f5b289d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-023-b442a5923efee1675f00/chapter.json"
+    },
+    "2:24": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 24,
+      "revision": "36a33130f83b2e782f3b",
+      "sourceHash": "cec6486082dd87ca543985e4944a929d0daf619d722e1ec70c007a64d64bbf66",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-024-36a33130f83b2e782f3b/chapter.json"
+    },
+    "2:25": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 25,
+      "revision": "ee5ea4d59819bcb1a448",
+      "sourceHash": "bcd4f0f34f672270ea36b3b93e3d8253a416e961c859332c27c3db2f53d039c6",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-025-ee5ea4d59819bcb1a448/chapter.json"
+    },
+    "2:26": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 26,
+      "revision": "6c95961730c97fa23a89",
+      "sourceHash": "db3a4cd5d88c2b0b3bd7b33066c4be2bff90b86abad71cacbe52320526b4844d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-026-6c95961730c97fa23a89/chapter.json"
+    },
+    "2:27": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 27,
+      "revision": "d5008b27213e5e2bf572",
+      "sourceHash": "11dbd41a5bb6bd1f85c2063a1ce41a77e6e9790412256546f7fbad3a4012e63f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-027-d5008b27213e5e2bf572/chapter.json"
+    },
+    "2:28": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 28,
+      "revision": "dd0df32f0bf8bdf63512",
+      "sourceHash": "5ee36c6a24b58a7edd829c5aa7e4bb0213897a736b255af7586ef5cc758394bf",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-028-dd0df32f0bf8bdf63512/chapter.json"
+    },
+    "2:29": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 29,
+      "revision": "77da6ab7c070f60c6416",
+      "sourceHash": "12170bbb8013371ecf06ec08c051a3d128e716bdc07310df50b895787d916e58",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-029-77da6ab7c070f60c6416/chapter.json"
+    },
+    "2:30": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 30,
+      "revision": "3d8b9abd4ae7bff90efa",
+      "sourceHash": "c198381a9758ef414fd623f2463d313ff37b8da1e93062ad64b5006b194d7fe3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-030-3d8b9abd4ae7bff90efa/chapter.json"
+    },
+    "2:31": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 31,
+      "revision": "4545fe317706e8c050a3",
+      "sourceHash": "841eb18bca8c36a4e9bcb463f20b95fc46f891cba264aa3ed63321d141ee6533",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-031-4545fe317706e8c050a3/chapter.json"
+    },
+    "2:32": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 32,
+      "revision": "897fd799fc8008099e04",
+      "sourceHash": "27fed06b0f5479317da76c8d734ce9c5bc9c8b5122392996dd7c1c744fbf5817",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-032-897fd799fc8008099e04/chapter.json"
+    },
+    "2:33": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 33,
+      "revision": "42703691d3150ee2d38e",
+      "sourceHash": "ca26cda8b9253f155d476ac7b1c0985a5b9b9b28a490204c2448136bcbccfb6e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-033-42703691d3150ee2d38e/chapter.json"
+    },
+    "2:34": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 34,
+      "revision": "4c2b6d613fee976adb6f",
+      "sourceHash": "12b93c0ba59955e5d1b59788b6ecb46a9801678b9bb1bcecf3d6175fb99a83c8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-034-4c2b6d613fee976adb6f/chapter.json"
+    },
+    "2:35": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 35,
+      "revision": "62223e66d150598809ea",
+      "sourceHash": "e93d99242ac1bf8bf51760384a620de34526f7d7cef6fbc53918c1b81cb7c9e7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-035-62223e66d150598809ea/chapter.json"
+    },
+    "2:36": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 36,
+      "revision": "9d03af5fbccb0b314c18",
+      "sourceHash": "9cfd51d4da8e887de640e559ffb83478f69a60f9dd4c1200419955033c6e9b69",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-036-9d03af5fbccb0b314c18/chapter.json"
+    },
+    "2:37": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 37,
+      "revision": "dff40abe15bc4cd45d2b",
+      "sourceHash": "d157ea45991142f78b62a6371904ec1060a1c0135383c9e2a8d51945dd202de7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-037-dff40abe15bc4cd45d2b/chapter.json"
+    },
+    "2:38": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 38,
+      "revision": "00df6dc4ddefa27c210c",
+      "sourceHash": "147b2da9713075c2084444780f7be3befda3d893e62a582fe710a3bfc7d7eac1",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-038-00df6dc4ddefa27c210c/chapter.json"
+    },
+    "2:39": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 39,
+      "revision": "65aff5420df7fdffede8",
+      "sourceHash": "721d16dacb11588eaef2cf4ef4f007362ccd22ed0514dd7bed7c1b67a91198f3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-039-65aff5420df7fdffede8/chapter.json"
+    },
+    "2:40": {
+      "bookId": 2,
+      "book": "Exodus",
+      "bookName": "Andra Moseboken",
+      "chapter": 40,
+      "revision": "c563867e9cf53d663710",
+      "sourceHash": "0d72ba47725d11f1ea6fb06d7c4dc89f42fe5bde8486bb9469167a8bec5b8a8a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-02-040-c563867e9cf53d663710/chapter.json"
+    },
+    "3:1": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 1,
+      "revision": "971057390f8b0edd2b4e",
+      "sourceHash": "ad11bdc463af020cdc8b45e5f06a4cad1fcd5db83040fc6d264e1df3d662615e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-001-971057390f8b0edd2b4e/chapter.json"
+    },
+    "3:2": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 2,
+      "revision": "6a98e13688de679aadea",
+      "sourceHash": "791f6fa98a87ea1004b8195e9713415f4c72d5a1b482da7e5056617a71b2630e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-002-6a98e13688de679aadea/chapter.json"
+    },
+    "3:3": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 3,
+      "revision": "35b1a6f74da8feafba4e",
+      "sourceHash": "7eea05c6cdcf24e401043ce18467b07502c08c8d2be45364d0daeb23e40d6490",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-003-35b1a6f74da8feafba4e/chapter.json"
+    },
+    "3:4": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 4,
+      "revision": "d73c8649d52d4757f89f",
+      "sourceHash": "abcba74a98344996644913c78d8191582d00a994f1bbd576c5a61d4bac63a763",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-004-d73c8649d52d4757f89f/chapter.json"
+    },
+    "3:5": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 5,
+      "revision": "9d91a9b440203f728ba1",
+      "sourceHash": "03d7b264355384d9397d5be10b6d8f3b57dd44337857acb9d504775fd077ba1b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-005-9d91a9b440203f728ba1/chapter.json"
+    },
+    "3:6": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 6,
+      "revision": "7f327bafbfff271bcf89",
+      "sourceHash": "588c467a2d0715ef4b3adf57a6aebd7892eacf7f103dd831ebaf3f33bd7a6548",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-006-7f327bafbfff271bcf89/chapter.json"
+    },
+    "3:7": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 7,
+      "revision": "55b73bd1a50cced934d4",
+      "sourceHash": "813bc5c670751199704fcb9b8d277524bd2be8fd5f0fed4679dc0ec56dfa5b56",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-007-55b73bd1a50cced934d4/chapter.json"
+    },
+    "3:8": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 8,
+      "revision": "d4354e128bc61b94e478",
+      "sourceHash": "51b9166b11df2c60abf7e46576ca676d3ea8ec987be3724b8878be1ce2a45075",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-008-d4354e128bc61b94e478/chapter.json"
+    },
+    "3:9": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 9,
+      "revision": "eb3601bb9716c6b64ed8",
+      "sourceHash": "6003c9e05b8f17d8ff08138f228afa37dd2000a5d35a41070a72d7458fab580e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-009-eb3601bb9716c6b64ed8/chapter.json"
+    },
+    "3:10": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 10,
+      "revision": "4b923b3ae6c287dd8c76",
+      "sourceHash": "9a8cdcbd5dbbd5bfd871602f9331b0d66292fdda467a9b627e79d7379ce67b17",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-010-4b923b3ae6c287dd8c76/chapter.json"
+    },
+    "3:11": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 11,
+      "revision": "0e8a154feadfae1f9391",
+      "sourceHash": "14bbd6dfc4a4d4bcfd223af33c4bd8eb99c8e15a0ee32690ec3d4c33496df1df",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-011-0e8a154feadfae1f9391/chapter.json"
+    },
+    "3:12": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 12,
+      "revision": "bd23d2911b26908880d6",
+      "sourceHash": "148bbbe55192649a786a0af8144c2f302e6ee353d15678acd89af326dee4cbe9",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-012-bd23d2911b26908880d6/chapter.json"
+    },
+    "3:13": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 13,
+      "revision": "49e6a0b741d23d52f060",
+      "sourceHash": "cb816834eac54e5389a77e2dc4f8a5dd7f5ed049d7b36b1924481b0646f20a9d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-013-49e6a0b741d23d52f060/chapter.json"
+    },
+    "3:14": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 14,
+      "revision": "3f5a2f9ef8d7b296d1d3",
+      "sourceHash": "57e7d3f44c1fdc6e6962812ca31f0ddd3ccbd126859205f5b12928afc3d94bd2",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-014-3f5a2f9ef8d7b296d1d3/chapter.json"
+    },
+    "3:15": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 15,
+      "revision": "50fbc0336e2f00bf2900",
+      "sourceHash": "4b63ea778f8c44ec2d4db0c7bb0f8fc6faa7b9201ce5fa6ed360081656d35539",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-015-50fbc0336e2f00bf2900/chapter.json"
+    },
+    "3:16": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 16,
+      "revision": "7f94c4424ef8001d385b",
+      "sourceHash": "d8c5a95b05a2388f18ef881e279298d2cd3506c476dc7ee869ec0af9570a20c1",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-016-7f94c4424ef8001d385b/chapter.json"
+    },
+    "3:17": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 17,
+      "revision": "ea946989643b1e1d06d1",
+      "sourceHash": "10431b81cc285791cddce0d7fc28383623f520b22e8da605f5ec52e2cabc6f4e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-017-ea946989643b1e1d06d1/chapter.json"
+    },
+    "3:18": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 18,
+      "revision": "e7fb122883b39375b9ea",
+      "sourceHash": "150e94fcf8b52be47161d7659f6e3ced9a7cfd410b47daa314e042f22bcd2325",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-018-e7fb122883b39375b9ea/chapter.json"
+    },
+    "3:19": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 19,
+      "revision": "829b0d226e0afbfc5055",
+      "sourceHash": "b4c22aca468aef143bf0012dd54c77c1ae053eb8f2ba5dc92f04222f9808375f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-019-829b0d226e0afbfc5055/chapter.json"
+    },
+    "3:20": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 20,
+      "revision": "57c2af6503a6ad9fc19b",
+      "sourceHash": "00eb8f5b64b5833737a766db5f54fb12646ef995fc2abf22a68cb46c1c8fe1e2",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-020-57c2af6503a6ad9fc19b/chapter.json"
+    },
+    "3:21": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 21,
+      "revision": "fddb6a5a91cdeb124f13",
+      "sourceHash": "d6ced300953c91535653965f926c90f27e70388b7476b7c81f4622c2680ac9f6",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-021-fddb6a5a91cdeb124f13/chapter.json"
+    },
+    "3:22": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 22,
+      "revision": "8e0c54f61c9e05213fb1",
+      "sourceHash": "c98e0826b7ac4f9f79d52a0b07e1ed9652212768bf7f6b999aa811c0fc14c66e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-022-8e0c54f61c9e05213fb1/chapter.json"
+    },
+    "3:23": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 23,
+      "revision": "8ac8f0701a3cf197cf08",
+      "sourceHash": "463a20c7d7e8d2c5b392f47dea459da953e3e9b2754c9ec816e0ce609735c68f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-023-8ac8f0701a3cf197cf08/chapter.json"
+    },
+    "3:24": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 24,
+      "revision": "c989105e2b3560381faa",
+      "sourceHash": "3a8e0d81ef687173be2e9444b6af063bbbd7c6bedb403d68b9804317e1c2362f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-024-c989105e2b3560381faa/chapter.json"
+    },
+    "3:25": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 25,
+      "revision": "f7363b2dceef2f53fd77",
+      "sourceHash": "157ff9f0795cad8effe2351caaa7f0b3c89972a54416a570a044125230380ccd",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-025-f7363b2dceef2f53fd77/chapter.json"
+    },
+    "3:26": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 26,
+      "revision": "21c97172fa98a540ba3f",
+      "sourceHash": "02b72428c5ed3f9d50a73553fb89491531f743e872bc455c85f83b1275d4f038",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-026-21c97172fa98a540ba3f/chapter.json"
+    },
+    "3:27": {
+      "bookId": 3,
+      "book": "Leviticus",
+      "bookName": "Tredje Moseboken",
+      "chapter": 27,
+      "revision": "c406670c6264ce85caeb",
+      "sourceHash": "66c722106d3bf0d82e755ba7bb7ef7ecc9119ac5cd5ff2c6169f7be831d4dfca",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-03-027-c406670c6264ce85caeb/chapter.json"
+    },
+    "4:1": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 1,
+      "revision": "da945290764e43ba5d40",
+      "sourceHash": "ee0fa2ff50005722e728d0b48353c6150828a23f6d13d5913b820af1aed235c1",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-001-da945290764e43ba5d40/chapter.json"
+    },
+    "4:2": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 2,
+      "revision": "9c70cf334ae18a52f1e3",
+      "sourceHash": "c77aced2d3130c66b5b4552edcf07c05e8925fbc82155a3f4dbb8c67cd6e9883",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-002-9c70cf334ae18a52f1e3/chapter.json"
+    },
+    "4:3": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 3,
+      "revision": "3b5ced13a09bd362dee7",
+      "sourceHash": "08ba5833259404f4b7ffa0b7ccf23f8c3beda6fa26dcef861d85054141d252b5",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-003-3b5ced13a09bd362dee7/chapter.json"
+    },
+    "4:4": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 4,
+      "revision": "89a8604059e47e2e81ac",
+      "sourceHash": "856da34ae459d923f9afb82e9369e0f0f26f87f7c3c55715615a8e252d2a43cf",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-004-89a8604059e47e2e81ac/chapter.json"
+    },
+    "4:5": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 5,
+      "revision": "9a7caecfbbb7931b1086",
+      "sourceHash": "5f663e9f109626b3f58000f1d944c4e7b3d7845852cf6e8d409455e844f2beed",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-005-9a7caecfbbb7931b1086/chapter.json"
+    },
+    "4:6": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 6,
+      "revision": "faa566fbdedbc9858942",
+      "sourceHash": "e3d8d3e982e6bb22c071c62d84046ee2bfdb76e71fddcb1307c4b17925ce432e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-006-faa566fbdedbc9858942/chapter.json"
+    },
+    "4:7": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 7,
+      "revision": "2b5e0c9e69fde03a123f",
+      "sourceHash": "68f9855c5d3298a1c254f4b516153286dc70993a6b00ceeea32e6e3b0ff7ef4d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-007-2b5e0c9e69fde03a123f/chapter.json"
+    },
+    "4:8": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 8,
+      "revision": "047d812b869ea41debf3",
+      "sourceHash": "733e0646f7564f970f0f72a678706ed5e1106fff69b2f54a772845990369d602",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-008-047d812b869ea41debf3/chapter.json"
+    },
+    "4:9": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 9,
+      "revision": "99050a789432ff6400c2",
+      "sourceHash": "2c691cb9ed9abdeba1a53483500b2600e1f4bb3b1344d59c3491a8a634965314",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-009-99050a789432ff6400c2/chapter.json"
+    },
+    "4:10": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 10,
+      "revision": "1fa58427d04486003f11",
+      "sourceHash": "74e9b84634f0a607900c6bc3c82d094348e75104bff2becc0e889e4801983099",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-010-1fa58427d04486003f11/chapter.json"
+    },
+    "4:11": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 11,
+      "revision": "4a608a9af4c0714ed8b4",
+      "sourceHash": "79aafbd830a0ffa9237a995f15435cd6399928ab0d9344e24ee4544b385936ea",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-011-4a608a9af4c0714ed8b4/chapter.json"
+    },
+    "4:12": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 12,
+      "revision": "afc1c0e252b3aeee4451",
+      "sourceHash": "5950c9bb3ce079fc65ffbdbe40536ab94c559536cc30d18bccf8a9d71c9b4fd7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-012-afc1c0e252b3aeee4451/chapter.json"
+    },
+    "4:13": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 13,
+      "revision": "a35eb3d053c1c353018d",
+      "sourceHash": "e9db1bd2824aa74962aaf12df371d70fcd926c4bd8ad78a6059b5338f7a80047",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-013-a35eb3d053c1c353018d/chapter.json"
+    },
+    "4:14": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 14,
+      "revision": "0d2e7a5c702cd5ab0a1c",
+      "sourceHash": "65bab731fb2a324caa98455ea3410cb08b4fb0ab624815315c78c657f1bb5477",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-014-0d2e7a5c702cd5ab0a1c/chapter.json"
+    },
+    "4:15": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 15,
+      "revision": "3804cad6bcce07282768",
+      "sourceHash": "f61002160627312f38482e40d1d192693cafa9299dc37c0ee95b77827b97d31b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-015-3804cad6bcce07282768/chapter.json"
+    },
+    "4:16": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 16,
+      "revision": "510c1966bb639a29d20b",
+      "sourceHash": "63b2e4be30011031da2e454b89176c0c5de334295032f495af0016d6a9d117de",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-016-510c1966bb639a29d20b/chapter.json"
+    },
+    "4:17": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 17,
+      "revision": "917b3ec7ab23347bf973",
+      "sourceHash": "e384bc0d4c1e05b64fdbfcc0d02d0bd6d09fbdab4ca4e5fdaec7e73781a9adc2",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-017-917b3ec7ab23347bf973/chapter.json"
+    },
+    "4:18": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 18,
+      "revision": "1da25327fbe1264e07c0",
+      "sourceHash": "25a41e4c3e304e95c94f477b5bc9c283058db40c02df7e719cf9d0e7180358a5",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-018-1da25327fbe1264e07c0/chapter.json"
+    },
+    "4:19": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 19,
+      "revision": "cd0e390015d92afa0eb0",
+      "sourceHash": "86b7802d873adba466e77b4f701d44fde6e0c3547472a5ff26e813e4ab756279",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-019-cd0e390015d92afa0eb0/chapter.json"
+    },
+    "4:20": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 20,
+      "revision": "f2c2e6a8701f771cd5f9",
+      "sourceHash": "02ea65fd64a6714098ead77c2dc744c16ee5c8f7a9a95e36f24a2b4416c9c053",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-020-f2c2e6a8701f771cd5f9/chapter.json"
+    },
+    "4:21": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 21,
+      "revision": "95f1b0f5a10b89da8364",
+      "sourceHash": "6ec06fadf74cce4a0605692643be985195a6738c2f7d04b208857c05c33f6cb7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-021-95f1b0f5a10b89da8364/chapter.json"
+    },
+    "4:22": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 22,
+      "revision": "5282482d374158f3242a",
+      "sourceHash": "591d8e235848cf577d962d9d75c6b0a906c0256c9e8e62ed80d8e16749de4027",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-022-5282482d374158f3242a/chapter.json"
+    },
+    "4:23": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 23,
+      "revision": "c4170ac85c1d60e276dd",
+      "sourceHash": "ab62e0e1472044e1e14d61618c4feb7825374778657a9dbac5122bbd429479a7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-023-c4170ac85c1d60e276dd/chapter.json"
+    },
+    "4:24": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 24,
+      "revision": "d582a65fd2b2c1dd2591",
+      "sourceHash": "fcb03f6d61cdc572d64ad0213c03e76e876d828276be0e3e42026172502466de",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-024-d582a65fd2b2c1dd2591/chapter.json"
+    },
+    "4:25": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 25,
+      "revision": "d07726699b6c930a3b67",
+      "sourceHash": "bb4e5629650f0eeaaf072fdc0d0ab7cafc5b3a50be11d308492e5b1743da422e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-025-d07726699b6c930a3b67/chapter.json"
+    },
+    "4:26": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 26,
+      "revision": "1bf13b3f70f745c1f64c",
+      "sourceHash": "7b547d5e6d5487a90fcefbd93f110fecb5be4ec5a1c4fedfccc99812ca70cc80",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-026-1bf13b3f70f745c1f64c/chapter.json"
+    },
+    "4:27": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 27,
+      "revision": "909fa4c8b87344a31f65",
+      "sourceHash": "1bdf7f543d909a6858d7940532c29dcbe144d80bec8fb63008f9b8e903b285c7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-027-909fa4c8b87344a31f65/chapter.json"
+    },
+    "4:28": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 28,
+      "revision": "863e75e50462badd0c9a",
+      "sourceHash": "501021096dd4bad9066629d15095218d2d9edbc39aaf18904905c207c74e29c2",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-028-863e75e50462badd0c9a/chapter.json"
+    },
+    "4:29": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 29,
+      "revision": "893f54d49f875f8fa172",
+      "sourceHash": "11f9e3c6c23bb81d07f4b6b2c85f42992ecf3a52988cd7cc50fe76fbff08a17c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-029-893f54d49f875f8fa172/chapter.json"
+    },
+    "4:30": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 30,
+      "revision": "db74d88ed6179552be96",
+      "sourceHash": "92a46d673f5fdec5869c5faab57c85aa4eaf366f316ac8e7c12ddc3cbdc4ae75",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-030-db74d88ed6179552be96/chapter.json"
+    },
+    "4:31": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 31,
+      "revision": "4da07609e0f867798346",
+      "sourceHash": "10d576b19c96e631579c11231fe5ba6d082a9a0b4dc55fe47f3424fa293a965b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-031-4da07609e0f867798346/chapter.json"
+    },
+    "4:32": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 32,
+      "revision": "c5ad68a16f3620fcba92",
+      "sourceHash": "5bf8d614d06f6bf91fb52fbf3a9c87b95aad4365c3b88a18d77bfec854d35d35",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-032-c5ad68a16f3620fcba92/chapter.json"
+    },
+    "4:33": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 33,
+      "revision": "ade27a68f8df254a94de",
+      "sourceHash": "b26cb3677d1a7f1bc9c1e8a36620b9426e84f5145bb3df971c6ed0c1a639fd03",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-033-ade27a68f8df254a94de/chapter.json"
+    },
+    "4:34": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 34,
+      "revision": "9f4f20a43ebf22ccb709",
+      "sourceHash": "13811de0ac1bf55d41d83ffa126a403f5eb16306803b9d3d57c3462c4e184dce",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-034-9f4f20a43ebf22ccb709/chapter.json"
+    },
+    "4:35": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 35,
+      "revision": "6ec8b704334476b5c699",
+      "sourceHash": "bc3b27d688c1b58fa5072847a8fd52e76d8ca562c113979d892cc3372ee933a7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-035-6ec8b704334476b5c699/chapter.json"
+    },
+    "4:36": {
+      "bookId": 4,
+      "book": "Numbers",
+      "bookName": "Fjärde Moseboken",
+      "chapter": 36,
+      "revision": "866f671467bcff364f5b",
+      "sourceHash": "ffcaf4005f17abf183260f1180839224db00d32bc049e5e06d485f3e17d8f685",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-04-036-866f671467bcff364f5b/chapter.json"
+    },
+    "5:1": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 1,
+      "revision": "b89c6ad359623b6259e1",
+      "sourceHash": "491e2696e15b89216b22285115cbd78cc981f6efa839ad8657dea87886995e1b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-001-b89c6ad359623b6259e1/chapter.json"
+    },
+    "5:2": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 2,
+      "revision": "2627c8581d7c844e5584",
+      "sourceHash": "d143df4d33f3b8e07fac78e0a49b59b2ebaad91a46859c5afd2a43255d8ed8af",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-002-2627c8581d7c844e5584/chapter.json"
+    },
+    "5:3": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 3,
+      "revision": "230664888d30aeb348a7",
+      "sourceHash": "de6d0da8df928ae30c22fa36ad7d6f9e56fdc32eea3d88d77e089139fe078f65",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-003-230664888d30aeb348a7/chapter.json"
+    },
+    "5:4": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 4,
+      "revision": "554b3a5ea14ec712e498",
+      "sourceHash": "72a4fe6478f913871e97071ce900640eb49f472045a8b6ed7e5e68c4ec920b88",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-004-554b3a5ea14ec712e498/chapter.json"
+    },
+    "5:5": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 5,
+      "revision": "fd415449866962e73f52",
+      "sourceHash": "3fccd2bf9203a6325c6d72d070a99df7e6626b101e20949aaf4a29bc37e342d5",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-005-fd415449866962e73f52/chapter.json"
+    },
+    "5:6": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 6,
+      "revision": "4ea5f2aa4b408d18b021",
+      "sourceHash": "4a4478a77539bc724a24fc0a18fd0fb7d75c393476108d91a79c77acb39a9e83",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-006-4ea5f2aa4b408d18b021/chapter.json"
+    },
+    "5:7": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 7,
+      "revision": "295ebf3e1d15413b5c17",
+      "sourceHash": "5a82f51d714385c07ad80340ff47ba04ed5fdf934e07ffe105d27924d2e39722",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-007-295ebf3e1d15413b5c17/chapter.json"
+    },
+    "5:8": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 8,
+      "revision": "203d2fbfda4a2f63e0ac",
+      "sourceHash": "432f1e7745f8dc87adc32a47917e13c7b237edee1ba2334ce7a25cda61b03c52",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-008-203d2fbfda4a2f63e0ac/chapter.json"
+    },
+    "5:9": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 9,
+      "revision": "b405e9d4a8881f5ba2c3",
+      "sourceHash": "3835c04771ac8eaa53201aef31d8cef3909f6547321ee99e205312ce747d781a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-009-b405e9d4a8881f5ba2c3/chapter.json"
+    },
+    "5:10": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 10,
+      "revision": "3b677c096134f960d373",
+      "sourceHash": "bd9afbb5bec0402b2bade86239ca63dcd9ad39db5d690e84bec37cb48af5fd2a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-010-3b677c096134f960d373/chapter.json"
+    },
+    "5:11": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 11,
+      "revision": "3c412f6110bbf55c156a",
+      "sourceHash": "a27c0eb9903f736ecf8079da5bf84d6cd866dded7b31fe0dd5f3fbb9cb997bb1",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-011-3c412f6110bbf55c156a/chapter.json"
+    },
+    "5:12": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 12,
+      "revision": "792aa5c56023e1036662",
+      "sourceHash": "68387dd0ddc1d3c34ea01531ca13eb3830bb255bde39e31ccf7da82a4d7ddc26",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-012-792aa5c56023e1036662/chapter.json"
+    },
+    "5:13": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 13,
+      "revision": "14fee504f8487592cbd0",
+      "sourceHash": "e00ccf95481c79140fd4094a7cc3ebd059929007e9d5ce1c69d486ff152fac28",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-013-14fee504f8487592cbd0/chapter.json"
+    },
+    "5:14": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 14,
+      "revision": "77af60b5c0756496ad1a",
+      "sourceHash": "058f8659dbab2d87c4792b55e2d5eba14dff3b8987e7213f7aa407a736c693c2",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-014-77af60b5c0756496ad1a/chapter.json"
+    },
+    "5:15": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 15,
+      "revision": "19eb4b14d741e7afa8e9",
+      "sourceHash": "7f88a15b15b286cc237c6aefd152caa3f3596c863f4e288e54eef6d9aec17f72",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-015-19eb4b14d741e7afa8e9/chapter.json"
+    },
+    "5:16": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 16,
+      "revision": "4465e6aa425d214164e7",
+      "sourceHash": "1a503d81b2cef4dfb6a8c34474d8e3685486cfe9ff9df6f09661a3aaffa7b58c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-016-4465e6aa425d214164e7/chapter.json"
+    },
+    "5:17": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 17,
+      "revision": "11ba553d32b759bd747e",
+      "sourceHash": "31e78c15bd3fb3f6fa53b127138a996dedfe68539ff41a2782710394fd2a6935",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-017-11ba553d32b759bd747e/chapter.json"
+    },
+    "5:18": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 18,
+      "revision": "2a95a96bd1c52a333ee3",
+      "sourceHash": "1fcf91c34b02204dd539e98daddc898b1029cded5b7bf7cbcc783f073a014311",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-018-2a95a96bd1c52a333ee3/chapter.json"
+    },
+    "5:19": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 19,
+      "revision": "4ff421a7e2e46b83bdde",
+      "sourceHash": "4391955034ff592512813a308f63592e5a6ce7ae22efdcec9df9731e502e76ca",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-019-4ff421a7e2e46b83bdde/chapter.json"
+    },
+    "5:20": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 20,
+      "revision": "a0c8c1bf04ff059880eb",
+      "sourceHash": "c8b756058ba623755099fefbfa0131b1aef95018dc35b50da8530e1d65293c0d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-020-a0c8c1bf04ff059880eb/chapter.json"
+    },
+    "5:21": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 21,
+      "revision": "4fe9928fe9fa4d689257",
+      "sourceHash": "29efc6d2ac8f965bc220bc43a9840045c2e5298c89beeb28c2896c63abf8a95a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-021-4fe9928fe9fa4d689257/chapter.json"
+    },
+    "5:22": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 22,
+      "revision": "38af5bb146e654ec0ccf",
+      "sourceHash": "95c40a83834229504fedd2e8c6c46e1f02e5fc4166faeee5a2328838259d9781",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-022-38af5bb146e654ec0ccf/chapter.json"
+    },
+    "5:23": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 23,
+      "revision": "77d3972ad47094a3473c",
+      "sourceHash": "92d93d74e37fa7f255808b9521b140ce86d8b0bd92b0e549e6e17568df22a7e1",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-023-77d3972ad47094a3473c/chapter.json"
+    },
+    "5:24": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 24,
+      "revision": "22be1cf9d58bba42a36c",
+      "sourceHash": "56d3b1d9fbeecbc7d8906ae1952266f1661bb095367f17d7f7c5efea2efa2c7d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-024-22be1cf9d58bba42a36c/chapter.json"
+    },
+    "5:25": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 25,
+      "revision": "b03d21d37405ef2d099b",
+      "sourceHash": "084360c4fb773393a95314d3acf12c7f18ea03329e49a7a1f35530b2ab2544ae",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-025-b03d21d37405ef2d099b/chapter.json"
+    },
+    "5:26": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 26,
+      "revision": "251e21033206888e505f",
+      "sourceHash": "c6b5550096586dbc646d2a027205b20776cbb439581aed075b3a8a1f99ea95f9",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-026-251e21033206888e505f/chapter.json"
+    },
+    "5:27": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 27,
+      "revision": "308c30030ee89acb3751",
+      "sourceHash": "a17d2e26a72cb2832b4969746c71f79ca2e18286429ff37c1281accf70a1e718",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-027-308c30030ee89acb3751/chapter.json"
+    },
+    "5:28": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 28,
+      "revision": "8a21f8114d07e0de7cf9",
+      "sourceHash": "06f6a1c4d7b2239c4255ac06cd56e4e0c6f0003fcda81a4d9e9125a71cc794b7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-028-8a21f8114d07e0de7cf9/chapter.json"
+    },
+    "5:29": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 29,
+      "revision": "ad9e61405f9c15fef77e",
+      "sourceHash": "a53f8e326288fb3f4004c183ace14c6c1cdbc36ff037c3deabb776c390e98c78",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-029-ad9e61405f9c15fef77e/chapter.json"
+    },
+    "5:30": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 30,
+      "revision": "c492e00d9385162693d5",
+      "sourceHash": "ec8a775fa608055869f0c88b1671cb7cd4296dfdc345d008ff302a516e25de28",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-030-c492e00d9385162693d5/chapter.json"
+    },
+    "5:31": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 31,
+      "revision": "ae58709595c90737253e",
+      "sourceHash": "5e6105386c69271dd548c9586df19620a6b430abd39cfedb016a7961e0c3ff7d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-031-ae58709595c90737253e/chapter.json"
     }
   }
 }
