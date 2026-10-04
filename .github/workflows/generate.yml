@@ -15,7 +15,7 @@ on:
         default: '1'
         type: string
       entire:
-        description: Entire Bible (leave books and chapters blank)
+        description: Entire Bible (ignores books and chapters)
         default: false
         type: boolean
       replace_legacy:
@@ -75,7 +75,7 @@ jobs:
         shell: bash
         run: |
           args=(--books "$BOOKS" --chapters "$CHAPTERS")
-          if [[ "$ENTIRE" == "true" ]]; then args+=(--all); fi
+          if [[ "$ENTIRE" == "true" ]]; then args=(--all); fi
           if [[ "$REPLACE_LEGACY" == "true" ]]; then args=(--replace-legacy); fi
           if [[ "$OVERWRITE" == "true" ]]; then args+=(--overwrite); fi
           python audio.py estimate "${args[@]}" >> "$GITHUB_STEP_SUMMARY"

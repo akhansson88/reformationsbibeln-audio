@@ -1,4 +1,5 @@
 import json
+import os
 from pathlib import Path
 from types import SimpleNamespace
 import tempfile
@@ -34,6 +35,39 @@ class AudioTests(unittest.TestCase):
         for books, chapters, entire in [("John", "2", False), ("unknown", "", False), ("John", "0", False), ("John", "1", True), ("", "", False)]:
             with self.assertRaises(ValueError):
                 audio.select(self.data, books, chapters, entire)
+
+    def test_workflow_selection_respects_entire_bible_and_other_options(self):
+        # Execute the actual workflow argument builder so shell changes are covered.
+        if os.name == "nt":
+            git = shutil.which("git")
+            bash = Path(git).parents[1] / "bin/bash.exe" if git else None
+            if not bash or not bash.exists():
+                self.skipTest("Git Bash is not installed")
+        else:
+            bash = shutil.which("bash")
+            if not bash:
+                self.skipTest("Bash is not installed")
+        root = Path(__file__).parent
+        workflow = root / ".github/workflows/generate.yml"
+        if not workflow.exists():
+            workflow = root / "generate.yml"
+        lines = workflow.read_text(encoding="utf-8").splitlines()
+        start = next(i for i, line in enumerate(lines) if line.strip().startswith("args=("))
+        end = next(i for i, line in enumerate(lines[start:], start) if line.strip().startswith("python audio.py estimate"))
+        script = "\n".join(line.strip() for line in lines[start:end]) + '\nprintf "%s\\n" "${args[@]}"'
+        for entire, legacy, overwrite, books, chapters, expected in [
+            ("true", "false", "false", "John", "1", ["--all"]),
+            ("true", "false", "true", "John", "1", ["--all", "--overwrite"]),
+            ("true", "false", "false", "", "", ["--all"]),
+            ("false", "false", "false", "John", "1", ["--books", "John", "--chapters", "1"]),
+            ("false", "false", "true", "John", "1", ["--books", "John", "--chapters", "1", "--overwrite"]),
+            ("true", "true", "true", "John", "1", ["--replace-legacy", "--overwrite"]),
+        ]:
+            with self.subTest(entire=entire, legacy=legacy, overwrite=overwrite, books=books):
+                result = subprocess.run([str(bash), "-c", script], check=True, capture_output=True,
+                                        text=True, env={**os.environ, "ENTIRE": entire, "REPLACE_LEGACY": legacy,
+                                                        "OVERWRITE": overwrite, "BOOKS": books, "CHAPTERS": chapters})
+                self.assertEqual(result.stdout.splitlines(), expected)
 
     def test_resume_skips_synthesis_and_complete_manifest(self):
         assets = {"verse-001.mp3": b"existing verse", "verse-002.mp3": b"existing verse"}

@@ -13,8 +13,9 @@ The key needs access to Text to Speech, the selected voice, and model/voice read
 Never paste keys into workflow inputs, source files, or issue comments.
 
 Open Actions > Generate verse audio > Run workflow. Choose books and chapters,
-leave chapters blank for every chapter in those books, or select Entire Bible
-and clear books/chapters. Closing the browser does not stop the workflow.
+leave chapters blank for every chapter in those books, or select Entire Bible.
+Entire Bible ignores the book and chapter fields, including their defaults.
+Closing the browser does not stop the workflow.
 
 For the command line, install Python 3.12+ and GitHub CLI (`gh auth login`). From
 Koino, use `python scripts/bible-audio/audio.py`; inside this repository, use
