@@ -18,9 +18,9 @@ import uuid
 REPO = "akhansson88/reformationsbibeln-audio"
 VERSION = "reformationsbibeln2026"
 MODEL = "eleven_v4"
-VOICE = "r1KmysJdVYZjJCm4mL3b"
+VOICE = "qAZH0aMXY8tw1QufPN0D"
 PROFILE = {"provider": "elevenlabs", "model": MODEL, "voice": VOICE, "voiceId": VOICE,
-           "voiceName": "Jessica", "language": "sv", "format": "mp3_44100_128",
+           "voiceName": "ElevenLabs", "language": "sv", "format": "mp3_44100_128",
            "voiceSettings": {"stability": 0.5, "similarity_boost": 0.75}}
 DEADLINE = float("inf")
 
@@ -54,11 +54,11 @@ def preflight():
             models = json.load(response)
         if not any(model.get("model_id") == MODEL and model.get("can_do_text_to_speech") for model in models):
             raise RuntimeError(f"The ElevenLabs account cannot access {MODEL}; no substitute model will be used")
-        check = "Jessica voice"
+        check = "selected voice"
         with eleven_request(f"voices/{VOICE}") as response:
             voice = json.load(response)
         if voice.get("voice_id") != VOICE:
-            raise RuntimeError("The requested Jessica voice is unavailable")
+            raise RuntimeError("The requested voice is unavailable")
     except urllib.error.HTTPError as error:
         try:
             detail = json.loads(error.read()).get("detail", {})
@@ -72,14 +72,14 @@ def preflight():
             "missing_permissions": "The key is missing permissions. Enable Models: Read, Voices: Read and Text to Speech: Access in ElevenLabs.",
             "invalid_api_key": "The API key is invalid or revoked. Replace the ELEVENLABS_API_KEY GitHub secret with an active ElevenLabs API key.",
             "unauthorized": "The key was rejected. Check that it is active and belongs to the intended ElevenLabs workspace.",
-            "voice_not_found": "The selected Jessica voice is not available in this ElevenLabs workspace.",
+            "voice_not_found": "The selected voice is not available in this ElevenLabs workspace.",
             "quota_exceeded": "The ElevenLabs account or API key has no credits available.",
         }
         reason = reasons.get(status, "Check the key's validity and Models: Read / Voices: Read permissions in ElevenLabs.")
         message = f"ElevenLabs {check} check failed (HTTP {error.code}). {reason}"
         summary(message)
         raise RuntimeError(message) from None
-    summary(f"Verified ElevenLabs {MODEL}, Jessica ({VOICE}).")
+    summary(f"Verified ElevenLabs {MODEL}, voice {VOICE}.")
 BOOKS = "Genesis|Exodus|Leviticus|Numbers|Deuteronomy|Joshua|Judges|Ruth|1 Samuel|2 Samuel|1 Kings|2 Kings|1 Chronicles|2 Chronicles|Ezra|Nehemiah|Esther|Job|Psalms|Proverbs|Ecclesiastes|Solomon's Song|Isaiah|Jeremiah|Lamentations|Ezekiel|Daniel|Hosea|Joel|Amos|Obadiah|Jonah|Micah|Nahum|Habakkuk|Zephaniah|Haggai|Zechariah|Malachi|Matthew|Mark|Luke|John|Acts|Romans|1 Corinthians|2 Corinthians|Galatians|Ephesians|Philippians|Colossians|1 Thessalonians|2 Thessalonians|1 Timothy|2 Timothy|Titus|Philemon|Hebrews|James|1 Peter|2 Peter|1 John|2 John|3 John|Jude|Revelation".split("|")
 
 
@@ -247,8 +247,8 @@ def complete_manifest(value, *, book, chapter, source_hash, generation, repo, ta
     return True
 
 
-def previous_verses(book, chapter, repo):
-    """Reuse unchanged verses when another verse changed the chapter revision."""
+def previous_manifest(book, chapter, repo):
+    """Read the current published chapter, including overwrite revisions."""
     catalog_path = Path(__file__).with_name("catalog.json")
     if catalog_path.exists():
         catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
@@ -258,22 +258,30 @@ def previous_verses(book, chapter, repo):
         catalog = json.loads(gh("api", f"repos/{repo}/contents/catalog.json", "-H", "Accept: application/vnd.github.raw+json").stdout)
     entry = catalog.get("chapters", {}).get(f"{book['number']}:{chapter['number']}")
     if not entry:
-        return {}
+        return None
     prefix = f"https://github.com/{repo}/releases/download/"
     if not entry["manifestUrl"].startswith(prefix):
         raise ValueError("Unexpected previous audio repository")
     with urllib.request.urlopen(entry["manifestUrl"], timeout=60) as response:
         manifest = json.load(response)
     if any(manifest.get(key) != value for key, value in PROFILE.items()):
-        return {}  # A different provider/voice must never supply replacement verses.
+        return None  # A different provider/voice must never supply replacement verses.
     if manifest.get("bookId") != book["number"] or manifest.get("chapter") != chapter["number"]:
         raise ValueError("Existing chapter identity mismatch")
-    return {verse["verse"]: verse for verse in manifest["verses"]}
+    return manifest
 
 
-def generate_chapter(data, book, chapter, repo, output, revision=""):
-    if revision:
-        raise ValueError("Regeneration is disabled: leave revision blank to reuse existing verse audio")
+def previous_verses(book, chapter, repo):
+    """Reuse unchanged verses when another verse changed the chapter revision."""
+    manifest = previous_manifest(book, chapter, repo)
+    return {verse["verse"]: verse for verse in manifest["verses"]} if manifest else {}
+
+
+def generate_chapter(data, book, chapter, repo, output, revision="", *, overwrite=False):
+    if revision and not overwrite:
+        raise ValueError("Regeneration is disabled unless --overwrite is selected")
+    if overwrite and not revision:
+        raise ValueError("Overwrite generation requires a resumable revision")
     verses = [{"verse": v["number"], "text": clean(v["text"])} for v in chapter["verses"]]
     numbers = [v["verse"] for v in verses]
     if not verses or len(set(numbers)) != len(numbers) or numbers != sorted(numbers):
@@ -281,6 +289,20 @@ def generate_chapter(data, book, chapter, repo, output, revision=""):
     if any(not v["text"] or len(v["text"]) > 4096 for v in verses):
         raise ValueError("Source verse is empty or exceeds the speech input limit")
     source_hash = digest(verses)
+    if not overwrite:
+        previous = previous_manifest(book, chapter, repo)
+        if previous and previous.get("sourceHash") == source_hash:
+            # Keep using the latest replacement on normal runs, rather than
+            # reverting the catalog to the original deterministic release.
+            revision = previous.get("revision", "")
+            tag = previous["verses"][0]["url"].split("/releases/download/", 1)[1].split("/", 1)[0] if previous.get("verses") else ""
+            if complete_manifest(previous, book=book, chapter=chapter, source_hash=source_hash,
+                                 generation=revision, repo=repo, tag=tag, numbers=numbers):
+                previous["manifestUrl"] = f"https://github.com/{repo}/releases/download/{tag}/chapter.json"
+                write_json(Path(output) / f"{book['number']:02d}-{chapter['number']:03d}.json", previous)
+                print(f"Already published; skipped {book['number']}:{chapter['number']}", flush=True)
+                return
+            revision = ""
     generation = generation_id(source_hash, revision)
     tag = f"audio-{book['number']:02d}-{chapter['number']:03d}-{generation}"
     existing = gh("release", "view", tag, "--repo", repo, "--json", "assets", check=False)
@@ -318,7 +340,7 @@ def generate_chapter(data, book, chapter, repo, output, revision=""):
         manifest_path.unlink(missing_ok=True)
 
     manifest = {"schemaVersion": 1, "translation": VERSION, "sourceLabel": data["translation"], "sourceHash": source_hash, "revision": generation, **PROFILE, "bookId": book["number"], "book": BOOKS[book["number"] - 1], "bookName": book["name"], "chapter": chapter["number"], "expectedVerses": numbers, "verses": []}
-    reusable = previous_verses(book, chapter, repo) if any(f"verse-{n:03d}.mp3" not in assets for n in numbers) else {}
+    reusable = previous_verses(book, chapter, repo) if not overwrite and any(f"verse-{n:03d}.mp3" not in assets for n in numbers) else {}
     for verse in verses:
         if time.monotonic() >= DEADLINE:
             raise GenerationPaused(f"Time budget reached before {book['number']}:{chapter['number']}:{verse['verse']}; rerun to resume.")
@@ -397,7 +419,7 @@ def prepare_migration(catalog_path, migration_path):
     path = Path(migration_path)
     migration = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {"profile": PROFILE, "chapters": {}}
     if migration["profile"] != PROFILE:
-        raise ValueError("Migration narration profile changed")
+        migration["profile"] = PROFILE  # Retain original legacy snapshots when changing voice.
     for key, entry in list(catalog["chapters"].items()):
         with urllib.request.urlopen(entry["manifestUrl"], timeout=60) as response:
             manifest = json.load(response)
@@ -435,6 +457,8 @@ def recover_pending(output, repo):
             for source in Path(directory).rglob("*"):
                 if source.is_file():
                     target = pending / source.relative_to(directory)
+                    if target.exists() and target.name == "overwrites.json":
+                        continue  # Local session state is newer than the downloaded checkpoint.
                     if target.exists() and target.read_bytes() != source.read_bytes() and target.name != "state.json":
                         raise ValueError("Conflicting pending audio; refusing to overwrite recovery data")
                     target.parent.mkdir(parents=True, exist_ok=True)
@@ -444,7 +468,9 @@ def recover_pending(output, repo):
     for receipt in pending.glob("audio-*/*.receipt.json"):
         record = json.loads(receipt.read_text(encoding="utf-8"))
         path = receipt.with_name(receipt.name.replace(".receipt.json", ".mp3"))
-        if any(record.get(key) != value for key, value in PROFILE.items()) or not path.exists() or digest(path.read_bytes()) != record["sha256"]:
+        if any(record.get(key) != value for key, value in PROFILE.items()):
+            continue  # Preserve checkpoints for the previous voice without reusing them.
+        if not path.exists() or digest(path.read_bytes()) != record["sha256"]:
             raise ValueError("Invalid pending recording; refusing regeneration")
         inspect_mp3(path)
         tag = path.parent.name
@@ -461,6 +487,20 @@ def recover_pending(output, repo):
         path.with_suffix(".request.json").unlink(missing_ok=True)
 
 
+def overwrite_session(output, repo, selection):
+    """Resume interrupted replacements; start a fresh revision after completion."""
+    path = Path(output) / "pending" / "overwrites.json"
+    sessions = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    key = digest({"repo": repo, **PROFILE, "selection": [
+        {"book": book["number"], "chapter": chapter["number"],
+         "verses": [{"number": v["number"], "text": clean(v["text"])} for v in chapter["verses"]]}
+        for book, chapter in selection]})
+    if key not in sessions or sessions[key].get("complete"):
+        sessions[key] = {"revision": uuid.uuid4().hex, "complete": False}
+        write_json(path, sessions)
+    return path, sessions, key
+
+
 def main():
     global DEADLINE
     parser = argparse.ArgumentParser(description=__doc__)
@@ -473,17 +513,18 @@ def main():
     parser.add_argument("--output", default="generated")
     parser.add_argument("--catalog", default="catalog.json")
     parser.add_argument("--replace-legacy", action="store_true")
+    parser.add_argument("--overwrite", action="store_true", help="Overwrite existing audio for the selected chapters")
     parser.add_argument("--migration", default="migration-jessica.json")
     parser.add_argument("--max-seconds", type=int, default=18000)
     parser.add_argument("--shard", type=int)
     parser.add_argument("--shard-size", type=int, default=25)
-    parser.add_argument("--revision", default="", help="Deprecated; must remain blank to prevent regeneration")
+    parser.add_argument("--revision", default="", help="Optional resume ID; only valid with --overwrite")
     args = parser.parse_args()
     if args.command == "preflight":
         preflight()
         return
-    if args.revision:
-        parser.error("Regeneration is disabled; omit --revision")
+    if args.revision and not args.overwrite:
+        parser.error("--revision requires --overwrite")
     if args.shard_size < 1 or (args.shard is not None and args.shard < 0):
         parser.error("Shard size must be positive and shard index nonnegative")
     if args.command == "publish":
@@ -500,10 +541,10 @@ def main():
     if args.command == "estimate":
         texts = [clean(v["text"]) for _, c in selection for v in c["verses"]]
         count = sum(map(len, texts))
-        print(json.dumps({"chapters": len(selection), "verses": len(texts), "characters": count, "model": MODEL, "voice": "Jessica", "note": "Credits depend on your ElevenLabs plan; counts include already generated verses."}))
+        print(json.dumps({"chapters": len(selection), "verses": len(texts), "characters": count, "model": MODEL, "voice": VOICE, "overwrite": args.overwrite, "note": "Credits depend on your ElevenLabs plan; counts include already generated verses."}))
     elif args.command == "dispatch":
         request_id = uuid.uuid4().hex[:12]
-        inputs = {"books": args.books, "chapters": args.chapters, "entire": str(args.all).lower(), "revision": args.revision, "request_id": request_id, "replace_legacy": str(args.replace_legacy).lower()}
+        inputs = {"books": args.books, "chapters": args.chapters, "entire": str(args.all).lower(), "revision": args.revision, "request_id": request_id, "replace_legacy": str(args.replace_legacy).lower(), "overwrite": str(args.overwrite).lower()}
         command = ["workflow", "run", "generate.yml", "--repo", args.repo]
         for name, value in inputs.items():
             command += ["-f", f"{name}={value}"]
@@ -524,16 +565,22 @@ def main():
         preflight()
         DEADLINE = time.monotonic() + args.max_seconds
         selected_shard = selection if args.shard is None else selection[args.shard * args.shard_size:(args.shard + 1) * args.shard_size]
+        session = overwrite_session(args.output, args.repo, selected_shard) if args.overwrite and not args.revision else None
+        revision = session[1][session[2]]["revision"] if session else args.revision
         for book, chapter in selected_shard:
             try:
-                generate_chapter(data, book, chapter, args.repo, args.output, args.revision)
+                generate_chapter(data, book, chapter, args.repo, args.output, revision, overwrite=args.overwrite)
             except GenerationPaused as error:
                 summary(str(error))
                 raise SystemExit(2) from None
             except Exception as error:
                 summary(f"Stopped at {book['number']}:{chapter['number']}. Completed verses are preserved. {error}")
                 raise
-        summary(f"Finished selection: {len(selected_shard)} chapters. Existing recordings were reused.")
+        if session:
+            path, sessions, key = session
+            sessions[key]["complete"] = True
+            write_json(path, sessions)
+        summary(f"Finished selection: {len(selected_shard)} chapters. {'Replacement audio is ready.' if args.overwrite else 'Existing recordings were reused.'}")
 
 
 if __name__ == "__main__":

@@ -15,6 +15,10 @@ import audio
 class AudioTests(unittest.TestCase):
     def setUp(self):
         self.real_previous = audio.previous_verses
+        self.real_previous_manifest = audio.previous_manifest
+        manifest = patch.object(audio, "previous_manifest", return_value=None)
+        self.previous_manifest = manifest.start()
+        self.addCleanup(manifest.stop)
         previous = patch.object(audio, "previous_verses", return_value={})
         self.previous = previous.start()
         self.addCleanup(previous.stop)
@@ -81,6 +85,73 @@ class AudioTests(unittest.TestCase):
                 audio.generate_chapter(self.data, self.book, self.book["chapters"][0], audio.REPO, "unused", "new")
             github.assert_not_called()
             synthesize.assert_not_called()
+
+    def test_overwrite_replaces_existing_audio_and_resumes_without_duplicate_speech(self):
+        assets = {}
+        requests = []
+        self.previous.return_value = {1: {"textHash": "old"}}
+
+        def github(*args, **kwargs):
+            if args[:2] == ("release", "view"):
+                tag = args[2]
+                return SimpleNamespace(returncode=0 if tag in assets else 1,
+                                       stdout=json.dumps({"assets": [{"name": n} for n in assets.get(tag, {})]}))
+            if args[:2] == ("release", "create"):
+                assets[args[2]] = {}
+            if args[:2] == ("release", "download"):
+                name = args[args.index("--pattern") + 1]
+                (Path(args[args.index("--dir") + 1]) / name).write_bytes(assets[args[2]][name])
+            if args[:2] == ("release", "upload"):
+                path = Path(args[3])
+                assets[args[2]][path.name] = path.read_bytes()
+            return SimpleNamespace(returncode=0, stdout="")
+
+        def speech(text, path):
+            requests.append(text)
+            if len(requests) == 2:
+                raise audio.GenerationPaused("No credits")
+            path.write_bytes(text.encode())
+
+        with tempfile.TemporaryDirectory() as temp, patch.object(audio, "gh", side_effect=github) as gh, patch.object(audio, "inspect_mp3", return_value=2), patch.object(audio, "synthesize", side_effect=speech):
+            chapter = self.book["chapters"][0]
+            with self.assertRaises(audio.GenerationPaused):
+                audio.generate_chapter(self.data, self.book, chapter, audio.REPO, temp, "replacement", overwrite=True)
+            self.assertNotIn("chapter.json", next(iter(assets.values())))
+            audio.generate_chapter(self.data, self.book, chapter, audio.REPO, temp, "replacement", overwrite=True)
+            self.assertEqual(requests.count(audio.clean(chapter["verses"][0]["text"])), 1)
+            manifest = json.loads((Path(temp) / "43-001.json").read_text(encoding="utf-8"))
+            self.previous.assert_not_called()
+            self.assertEqual(manifest["voiceId"], "qAZH0aMXY8tw1QufPN0D")
+            original = audio.generation_id(manifest["sourceHash"])
+            self.assertNotEqual(manifest["revision"], original)
+            # Normal generation must preserve the latest published replacement.
+            self.previous_manifest.return_value = manifest
+            gh.reset_mock()
+            audio.generate_chapter(self.data, self.book, chapter, audio.REPO, temp)
+            gh.assert_not_called()
+            self.assertEqual(len(requests), 3)
+            self.assertEqual(json.loads((Path(temp) / "43-001.json").read_text(encoding="utf-8"))["revision"], manifest["revision"])
+            # A later explicit overwrite creates fresh audio again.
+            audio.generate_chapter(self.data, self.book, chapter, audio.REPO, temp, "another-replacement", overwrite=True)
+            self.assertEqual(len(requests), 5)
+
+    def test_overwrite_session_resumes_then_rotates_after_completion(self):
+        with tempfile.TemporaryDirectory() as temp:
+            selection = [(self.book, self.book["chapters"][0])]
+            path, sessions, key = audio.overwrite_session(temp, audio.REPO, selection)
+            revision = sessions[key]["revision"]
+            self.assertEqual(audio.overwrite_session(temp, audio.REPO, selection)[1][key]["revision"], revision)
+            sessions[key]["complete"] = True
+            audio.write_json(path, sessions)
+            self.assertNotEqual(audio.overwrite_session(temp, audio.REPO, selection)[1][key]["revision"], revision)
+
+    def test_dispatch_sends_overwrite_option(self):
+        argv = ["audio.py", "dispatch", "--books", "John", "--chapters", "1", "--overwrite"]
+        def github(*args, **kwargs):
+            return SimpleNamespace(stdout=json.dumps([{"displayTitle": "request", "url": "https://example.test/run"}]))
+        with patch.object(sys, "argv", argv), patch.object(audio, "load_source", return_value=self.data), patch.object(audio.uuid, "uuid4", return_value=SimpleNamespace(hex="request")), patch.object(audio, "gh", side_effect=github) as gh:
+            audio.main()
+            self.assertIn("overwrite=true", gh.call_args_list[0].args)
 
     def test_existing_corrupt_audio_is_not_automatically_regenerated(self):
         def github(*args, **kwargs):
@@ -196,7 +267,8 @@ class AudioTests(unittest.TestCase):
     def test_previous_openai_audio_is_never_reused(self):
         entry = {"manifestUrl": f"https://github.com/{audio.REPO}/releases/download/legacy/chapter.json"}
         with patch.object(audio.Path, "exists", return_value=False), patch.object(audio, "gh", return_value=SimpleNamespace(stdout=json.dumps({"chapters": {"43:1": entry}}))), patch.object(audio.urllib.request, "urlopen", return_value=io.BytesIO(b'{"model":"tts-1-hd","voice":"onyx"}')):
-            self.assertEqual(self.real_previous(self.book, self.book["chapters"][0], audio.REPO), {})
+            with patch.object(audio, "previous_manifest", side_effect=self.real_previous_manifest):
+                self.assertEqual(self.real_previous(self.book, self.book["chapters"][0], audio.REPO), {})
 
     def test_publisher_preserves_existing_chapters(self):
         manifest = {**audio.PROFILE, "translation": audio.VERSION, "bookId": 43, "book": "John", "bookName": "Johannesevangeliet", "chapter": 1, "revision": "revision", "sourceHash": "source", "manifestUrl": "https://example.test/chapter.json", "expectedVerses": [1], "verses": [{"verse": 1}]}
