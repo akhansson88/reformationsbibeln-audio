@@ -199,6 +199,33 @@
       "revision": "48be5f046bdd87f2adb7",
       "sourceHash": "c77a2439536c14997e2ed81bd9987e00346fb34f22155b3afa7c9d71144821dd",
       "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-001-48be5f046bdd87f2adb7/chapter.json"
+    },
+    "40:1": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 1,
+      "revision": "25d88ed6006d0f7d7336",
+      "sourceHash": "f2fe016ad83efb05a653c958eb5063ebb5a08a8cab0ba2498efd775fc193f0d6",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-001-25d88ed6006d0f7d7336/chapter.json"
+    },
+    "41:1": {
+      "bookId": 41,
+      "book": "Mark",
+      "bookName": "Markus Evangelium",
+      "chapter": 1,
+      "revision": "a1bba0b901bccb5fefa1",
+      "sourceHash": "cfb867ae4fa400c1a795d4ddaf68969d512b4693b903e8748f65c93b2d3ff225",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-41-001-a1bba0b901bccb5fefa1/chapter.json"
+    },
+    "42:1": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 1,
+      "revision": "abb2316427bc5bf59d0a",
+      "sourceHash": "8ed59a860c63d4d16ad2a01870d4783f452bbdda129f0fa56dfce3b7ff0ef3a8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-001-abb2316427bc5bf59d0a/chapter.json"
     }
   }
 }
