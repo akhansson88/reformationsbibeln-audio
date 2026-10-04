@@ -1882,6 +1882,1527 @@
       "revision": "ae58709595c90737253e",
       "sourceHash": "5e6105386c69271dd548c9586df19620a6b430abd39cfedb016a7961e0c3ff7d",
       "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-031-ae58709595c90737253e/chapter.json"
+    },
+    "5:32": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 32,
+      "revision": "eee3eb0c052827da6207",
+      "sourceHash": "04edd3b8dda2a0c808cec1526491e0ae4c23f0131c8ddb5ea82d811022ca4fa3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-032-eee3eb0c052827da6207/chapter.json"
+    },
+    "5:33": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 33,
+      "revision": "570f86e0b2ef8ee6580a",
+      "sourceHash": "e61370d3f8ea1a475fe0880048fc8c97b14c26744db37df366c35a1d6e3e3dbc",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-033-570f86e0b2ef8ee6580a/chapter.json"
+    },
+    "5:34": {
+      "bookId": 5,
+      "book": "Deuteronomy",
+      "bookName": "Femte Moseboken",
+      "chapter": 34,
+      "revision": "4a2611273eb7330bb113",
+      "sourceHash": "8416d7ba16110ac5efaa8e29136db30fe73831cb535ee8208975605b3f17815e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-05-034-4a2611273eb7330bb113/chapter.json"
+    },
+    "6:1": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 1,
+      "revision": "d992a05995e15cd5d5b4",
+      "sourceHash": "0b92980f1eb25c186d7fcb26762304355bdd96d91193099d019bb137dcfd0f4a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-001-d992a05995e15cd5d5b4/chapter.json"
+    },
+    "6:2": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 2,
+      "revision": "f49ed7b9806f8fe28cfd",
+      "sourceHash": "34c6db7a3aef202906e2580831f24159c992abebb5f3a122ab9fb360d611ff03",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-002-f49ed7b9806f8fe28cfd/chapter.json"
+    },
+    "6:3": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 3,
+      "revision": "b490d5a10f5191360dd9",
+      "sourceHash": "624badde9a99021ba4a69bc2281d92997e9040961bc6de01bb23352e9edc2141",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-003-b490d5a10f5191360dd9/chapter.json"
+    },
+    "6:4": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 4,
+      "revision": "95ae04f7c9add8693f25",
+      "sourceHash": "ecfd820da7ef8936f241804e4b3464901793cc8ab1026b7ecccc9475f21c1bd4",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-004-95ae04f7c9add8693f25/chapter.json"
+    },
+    "6:5": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 5,
+      "revision": "e67614b2fe2cc7b9ee5e",
+      "sourceHash": "11dfbbce377ba8f23208db935e99666b0aafcdbfe101a03c400b1fcfee391d37",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-005-e67614b2fe2cc7b9ee5e/chapter.json"
+    },
+    "6:6": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 6,
+      "revision": "8be2a1ef053331eebca8",
+      "sourceHash": "4427a8d8b49a14292f5be309cbbcb5b3c10e570bff040ba52a2128c9658d2078",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-006-8be2a1ef053331eebca8/chapter.json"
+    },
+    "6:7": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 7,
+      "revision": "648b377f123bd9a8a6ef",
+      "sourceHash": "e9be94dce864ec0f358973aaecdd2efe98098278442c2e028f38b1e1135d3224",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-007-648b377f123bd9a8a6ef/chapter.json"
+    },
+    "6:8": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 8,
+      "revision": "8b613e0d625195df96f3",
+      "sourceHash": "6139f7457014a34d377174632669e4ca50ea8c5afbaf5a26ae3503c13f219547",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-008-8b613e0d625195df96f3/chapter.json"
+    },
+    "6:9": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 9,
+      "revision": "3697a141eee6bcf2b919",
+      "sourceHash": "907759af7dd39e1ac5ab84a1a2acb5b0596f94ddb7564cd70b3f6bf658f22cd7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-009-3697a141eee6bcf2b919/chapter.json"
+    },
+    "6:10": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 10,
+      "revision": "8d20f948e8c4f062a2da",
+      "sourceHash": "8c5bbd63b0d35b1b0e21c394f4d5712d7ea6341f64f57225fd158a24761a484e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-010-8d20f948e8c4f062a2da/chapter.json"
+    },
+    "6:11": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 11,
+      "revision": "4088558af0f143a06ef6",
+      "sourceHash": "0a6befd9772b086e6b668142ae771170f4777cbba5fbb58d81369f7312f75806",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-011-4088558af0f143a06ef6/chapter.json"
+    },
+    "6:12": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 12,
+      "revision": "9a416085f2f9a225322b",
+      "sourceHash": "255651d2fc7a376f327962c5389377917035b4f97451f3e5cca6e9b0b3d93f37",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-012-9a416085f2f9a225322b/chapter.json"
+    },
+    "6:13": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 13,
+      "revision": "4c2b6f6fd1873e4ee743",
+      "sourceHash": "71f4a5cf9a982ce7ddad4bf075d7fb2e8a94e412df2dfb4dbbf92203e4cb05dc",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-013-4c2b6f6fd1873e4ee743/chapter.json"
+    },
+    "6:14": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 14,
+      "revision": "b4fd814dcdda70089fac",
+      "sourceHash": "4855f44426cd675955db73f8e78a5c6c29d698304cb920a76314da5a2ae214b0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-014-b4fd814dcdda70089fac/chapter.json"
+    },
+    "6:15": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 15,
+      "revision": "e949e331c8aea2b1a0c6",
+      "sourceHash": "183622fc4d01e9ea1b27e5f80706f3629343237fc608c9a3d534b71391aff69a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-015-e949e331c8aea2b1a0c6/chapter.json"
+    },
+    "6:16": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 16,
+      "revision": "36199a7b532288b582c2",
+      "sourceHash": "a98e84d495d7977d8cc94da36c7b462817c40b926fe782529a1f56c83b6d5c30",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-016-36199a7b532288b582c2/chapter.json"
+    },
+    "6:17": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 17,
+      "revision": "c4253f5c89b843ddbb3f",
+      "sourceHash": "26272dfcf732e1a7264a2335cdc0061a0babfa9d217c520fff1248c80731f84d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-017-c4253f5c89b843ddbb3f/chapter.json"
+    },
+    "6:18": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 18,
+      "revision": "79f1c71d04ca0ca6b9c5",
+      "sourceHash": "d0499448fe8bffa54b2539817dc7a525c5169ee56cd74f058d9ebb8d4c169853",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-018-79f1c71d04ca0ca6b9c5/chapter.json"
+    },
+    "6:19": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 19,
+      "revision": "4cee2206456a589a6a61",
+      "sourceHash": "8ee9814b704f000527f9d77f24e2f7180e7ffcf71939dcdbd7d00cf4a31054d0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-019-4cee2206456a589a6a61/chapter.json"
+    },
+    "6:20": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 20,
+      "revision": "e70b246a456b5e84d17a",
+      "sourceHash": "a66327c4fe3fb2b7effc41cc74c7fe203c17c91096ca465a9a1786d8f83bee6d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-020-e70b246a456b5e84d17a/chapter.json"
+    },
+    "6:21": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 21,
+      "revision": "12061a1abfae016cd2f9",
+      "sourceHash": "3d97a1e2daa6e94a677401c76ac470ac2f1b3e24de4cab666d75de795b169a0b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-021-12061a1abfae016cd2f9/chapter.json"
+    },
+    "6:22": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 22,
+      "revision": "c7b171e63e8dd4cb127a",
+      "sourceHash": "0fd2d035e3db0af4b865fdb7f36a07636680d7eb42c29cfba8682796b6d7a395",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-022-c7b171e63e8dd4cb127a/chapter.json"
+    },
+    "6:23": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 23,
+      "revision": "4f90005f690fd88efa40",
+      "sourceHash": "1070580048040a08c767024ce5c5b052e4d1a615d93c60c6c1577fa1133bb09c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-023-4f90005f690fd88efa40/chapter.json"
+    },
+    "6:24": {
+      "bookId": 6,
+      "book": "Joshua",
+      "bookName": "Josua",
+      "chapter": 24,
+      "revision": "659cb21e0a093ac17deb",
+      "sourceHash": "b0783468777929625c5d180352f05d54d5e1baaa0b71d9bbae554ec4d56fe440",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-06-024-659cb21e0a093ac17deb/chapter.json"
+    },
+    "7:1": {
+      "bookId": 7,
+      "book": "Judges",
+      "bookName": "Domarboken",
+      "chapter": 1,
+      "revision": "da7b70ffac0a118e3b36",
+      "sourceHash": "aceba74d8f9011ca00593c1dcca13d83017f7394dfeb44e753526330ba0471d2",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-07-001-da7b70ffac0a118e3b36/chapter.json"
+    },
+    "7:2": {
+      "bookId": 7,
+      "book": "Judges",
+      "bookName": "Domarboken",
+      "chapter": 2,
+      "revision": "7f469c69e66b0a175e9b",
+      "sourceHash": "f44c50077f13ddf0d7b7b5ca7300683ccfa8d8e5cf6c2f910ce98c9a1afa7256",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-07-002-7f469c69e66b0a175e9b/chapter.json"
+    },
+    "7:3": {
+      "bookId": 7,
+      "book": "Judges",
+      "bookName": "Domarboken",
+      "chapter": 3,
+      "revision": "ac7fbec831e87e690bf5",
+      "sourceHash": "7c6da30a0561c6d79089671453f6c129068ade81b507022f95e0935bc91bbdd2",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-07-003-ac7fbec831e87e690bf5/chapter.json"
+    },
+    "7:4": {
+      "bookId": 7,
+      "book": "Judges",
+      "bookName": "Domarboken",
+      "chapter": 4,
+      "revision": "9b34defd324356d96d42",
+      "sourceHash": "cd5281da4dd3ce555d4d2ae7903766ba786b35f483728272d5dcd25e31079930",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-07-004-9b34defd324356d96d42/chapter.json"
+    },
+    "7:5": {
+      "bookId": 7,
+      "book": "Judges",
+      "bookName": "Domarboken",
+      "chapter": 5,
+      "revision": "1e56d7bbdee27c39625d",
+      "sourceHash": "063be214a032ed512143ac97c3b542283bda67f8afd0bce47f82ddfae398cb5e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-07-005-1e56d7bbdee27c39625d/chapter.json"
+    },
+    "7:6": {
+      "bookId": 7,
+      "book": "Judges",
+      "bookName": "Domarboken",
+      "chapter": 6,
+      "revision": "5d4c4cb811d6270f3405",
+      "sourceHash": "396a5103f8c0c5a54f77af36f673e099c198ad0aecb6b89cab6403033a6a7998",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-07-006-5d4c4cb811d6270f3405/chapter.json"
+    },
+    "7:7": {
+      "bookId": 7,
+      "book": "Judges",
+      "bookName": "Domarboken",
+      "chapter": 7,
+      "revision": "7b19ff3f986f3e5d633b",
+      "sourceHash": "12e4b19168503f7a0161c2ce07a5d012a6c69ac4da4ef7c88699cf7820bd2002",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-07-007-7b19ff3f986f3e5d633b/chapter.json"
+    },
+    "7:8": {
+      "bookId": 7,
+      "book": "Judges",
+      "bookName": "Domarboken",
+      "chapter": 8,
+      "revision": "36ccc8b67b0a321f88f4",
+      "sourceHash": "9a506596d6802e9c8babf048374aabda4ac7783dd02c80409bf9292529bc1fed",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-07-008-36ccc8b67b0a321f88f4/chapter.json"
+    },
+    "7:9": {
+      "bookId": 7,
+      "book": "Judges",
+      "bookName": "Domarboken",
+      "chapter": 9,
+      "revision": "f418ed45e6441bc71182",
+      "sourceHash": "137124cd0ada5e7505e99c9b37d29d1eb0b8e6cd63dd374d90c19347c82502e6",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-07-009-f418ed45e6441bc71182/chapter.json"
+    },
+    "7:10": {
+      "bookId": 7,
+      "book": "Judges",
+      "bookName": "Domarboken",
+      "chapter": 10,
+      "revision": "1741c9349656a6940cdf",
+      "sourceHash": "2a163b26805cd38fb94017071a8ae2e6e890b8418be4828109d6779c34642893",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-07-010-1741c9349656a6940cdf/chapter.json"
+    },
+    "7:11": {
+      "bookId": 7,
+      "book": "Judges",
+      "bookName": "Domarboken",
+      "chapter": 11,
+      "revision": "f3217142a16bb995c254",
+      "sourceHash": "1559a71e5a6ab7163fe4084050051959400a67b95582ea15c47b430868c7e5fa",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-07-011-f3217142a16bb995c254/chapter.json"
+    },
+    "7:12": {
+      "bookId": 7,
+      "book": "Judges",
+      "bookName": "Domarboken",
+      "chapter": 12,
+      "revision": "86f899387f586da1424e",
+      "sourceHash": "7d130000b97b44e61ebea36ec169803f67e515680e93bc7d378321f299485730",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-07-012-86f899387f586da1424e/chapter.json"
+    },
+    "7:13": {
+      "bookId": 7,
+      "book": "Judges",
+      "bookName": "Domarboken",
+      "chapter": 13,
+      "revision": "76d48980e94cac3fa0b6",
+      "sourceHash": "2dd96a3542f5062f29905df9e9a38ad64b8fc771cc35c8bdec373e1b2d4d935f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-07-013-76d48980e94cac3fa0b6/chapter.json"
+    },
+    "7:14": {
+      "bookId": 7,
+      "book": "Judges",
+      "bookName": "Domarboken",
+      "chapter": 14,
+      "revision": "4c044f3b4ad792377463",
+      "sourceHash": "f2543cdd494f030369e53f9b44ef2307b343dbb5c203b3e51bb42f225eed2aea",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-07-014-4c044f3b4ad792377463/chapter.json"
+    },
+    "7:15": {
+      "bookId": 7,
+      "book": "Judges",
+      "bookName": "Domarboken",
+      "chapter": 15,
+      "revision": "9116f5ba00bc37acdd80",
+      "sourceHash": "962d834a558f42b131347177f0d01e780cead12762e1eb86644f72854035cd4f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-07-015-9116f5ba00bc37acdd80/chapter.json"
+    },
+    "7:16": {
+      "bookId": 7,
+      "book": "Judges",
+      "bookName": "Domarboken",
+      "chapter": 16,
+      "revision": "bfbbdcbb93760c29f6f4",
+      "sourceHash": "c81b3a5341fda9d8a6d436d52fd1a5290cbdbc2c396801cae3575987c31b67bc",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-07-016-bfbbdcbb93760c29f6f4/chapter.json"
+    },
+    "7:17": {
+      "bookId": 7,
+      "book": "Judges",
+      "bookName": "Domarboken",
+      "chapter": 17,
+      "revision": "a4a36aed2b20ab9ef988",
+      "sourceHash": "4630b6d72ff0402b194711229ded87777a313face0f512e8a293272f0375b8e2",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-07-017-a4a36aed2b20ab9ef988/chapter.json"
+    },
+    "7:18": {
+      "bookId": 7,
+      "book": "Judges",
+      "bookName": "Domarboken",
+      "chapter": 18,
+      "revision": "7a7e03eb09165ebf34f8",
+      "sourceHash": "61dd6f89cae7868d6a9191fc40c04fcb1371e971fe2f95bf268c7398537a01f8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-07-018-7a7e03eb09165ebf34f8/chapter.json"
+    },
+    "7:19": {
+      "bookId": 7,
+      "book": "Judges",
+      "bookName": "Domarboken",
+      "chapter": 19,
+      "revision": "4a3510d0ba2f1a429a13",
+      "sourceHash": "514ed3b75148991b32e6815bf0fbd87b2faf05de9ce68e4666cb51d6d69b673f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-07-019-4a3510d0ba2f1a429a13/chapter.json"
+    },
+    "7:20": {
+      "bookId": 7,
+      "book": "Judges",
+      "bookName": "Domarboken",
+      "chapter": 20,
+      "revision": "dcd03f8b75dd58a4f4fa",
+      "sourceHash": "722cf3d82c5a094ae77211935489c808c78289bf0622d897f2f632720e26e3c0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-07-020-dcd03f8b75dd58a4f4fa/chapter.json"
+    },
+    "7:21": {
+      "bookId": 7,
+      "book": "Judges",
+      "bookName": "Domarboken",
+      "chapter": 21,
+      "revision": "aa73a9d95f486f4417c4",
+      "sourceHash": "a57a4b9d3a70b9f65032622244eba3011663c80034f0358eef1fc356f271fa45",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-07-021-aa73a9d95f486f4417c4/chapter.json"
+    },
+    "8:1": {
+      "bookId": 8,
+      "book": "Ruth",
+      "bookName": "Rut",
+      "chapter": 1,
+      "revision": "e82e4ce88edf70e61abf",
+      "sourceHash": "09b087d5f824ef5d3430084ce5b3114ff0c73862ad4219c959dad0379a3ad0c1",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-08-001-e82e4ce88edf70e61abf/chapter.json"
+    },
+    "8:2": {
+      "bookId": 8,
+      "book": "Ruth",
+      "bookName": "Rut",
+      "chapter": 2,
+      "revision": "622af3323fd07b1304e6",
+      "sourceHash": "c4da70fcce2269174535765a52560d1f347876c5b910df2b17162f2645d56fce",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-08-002-622af3323fd07b1304e6/chapter.json"
+    },
+    "8:3": {
+      "bookId": 8,
+      "book": "Ruth",
+      "bookName": "Rut",
+      "chapter": 3,
+      "revision": "2e791ebfb0349f7f189c",
+      "sourceHash": "9849965d9b7bedd2e6e7da0e10a748700da55b8de6721621e9379a56f619e380",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-08-003-2e791ebfb0349f7f189c/chapter.json"
+    },
+    "8:4": {
+      "bookId": 8,
+      "book": "Ruth",
+      "bookName": "Rut",
+      "chapter": 4,
+      "revision": "efe842ecb1bc112361eb",
+      "sourceHash": "4bef6352d5ff0e1916400a006a22065dee42cb3a756223deba10e51c087ce38f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-08-004-efe842ecb1bc112361eb/chapter.json"
+    },
+    "9:1": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 1,
+      "revision": "9c2400e534995b1091a8",
+      "sourceHash": "9e8c3049fb39a412dc1f8a04d97b5c71ab38c64c0c42ea400b81cbd7135710c9",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-001-9c2400e534995b1091a8/chapter.json"
+    },
+    "9:2": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 2,
+      "revision": "318900f4cec80fa128db",
+      "sourceHash": "4aab0496f3bd373c64f8db8aef5718d4efa18ef39dc1befb51f47696c6368f90",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-002-318900f4cec80fa128db/chapter.json"
+    },
+    "9:3": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 3,
+      "revision": "17fec88c2c18b00eb0b4",
+      "sourceHash": "f075baf154bb3b997a3a6dcc7e1dfef35242ca81c5f513998bcd45b0d49c95b8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-003-17fec88c2c18b00eb0b4/chapter.json"
+    },
+    "9:4": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 4,
+      "revision": "108e63f006e41e330219",
+      "sourceHash": "c159760f493ff165969c63889393484e8bf478d34086479f8c1a3a4e317996a0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-004-108e63f006e41e330219/chapter.json"
+    },
+    "9:5": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 5,
+      "revision": "f907df15a9d7513e5ae8",
+      "sourceHash": "3e5c293a22f96d09587c4d02eef8781b98ff7997e5a28321165963a5d4806cad",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-005-f907df15a9d7513e5ae8/chapter.json"
+    },
+    "9:6": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 6,
+      "revision": "53816665af7973f9ef69",
+      "sourceHash": "00e34494f7f21650ca6cdc8ae94a7e561e4b6d679db2717c9df734b50dbeaf93",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-006-53816665af7973f9ef69/chapter.json"
+    },
+    "9:7": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 7,
+      "revision": "9cacbe180ac74ec4cca2",
+      "sourceHash": "e68d09b9e46ac37b4a013cc2802d4a4a2981b9043c300704a2625c547ec5ef8a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-007-9cacbe180ac74ec4cca2/chapter.json"
+    },
+    "9:8": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 8,
+      "revision": "998e98af626cb87ee3bf",
+      "sourceHash": "c63dfa648f7a6c0a2ad6493666a6fced90e728d43951fc301190427fbf4a19da",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-008-998e98af626cb87ee3bf/chapter.json"
+    },
+    "9:9": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 9,
+      "revision": "8a42f5b1d8bb1ad7f23e",
+      "sourceHash": "ac352220dd11ab22dbf832b2d159b9c15430cfa6d2f5c51fcc7699b9004a949a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-009-8a42f5b1d8bb1ad7f23e/chapter.json"
+    },
+    "9:10": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 10,
+      "revision": "ebd7080ed4d189005196",
+      "sourceHash": "a6db668e0cef13ed850d91392950110f6d6be7fea6a7ceb905588cf8f2852af6",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-010-ebd7080ed4d189005196/chapter.json"
+    },
+    "9:11": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 11,
+      "revision": "b52ac97b9a9e40fa7515",
+      "sourceHash": "e018e048d33310a6f7c31bf0391d3badb66f1e1d85c9425c6af8dbd831dd5860",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-011-b52ac97b9a9e40fa7515/chapter.json"
+    },
+    "9:12": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 12,
+      "revision": "7f194bd96451705e7be8",
+      "sourceHash": "cb3b67ac292dfbdfb3a31108c978d1c0b4c6b396ef8afbdbb39549bb227c9ab4",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-012-7f194bd96451705e7be8/chapter.json"
+    },
+    "9:13": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 13,
+      "revision": "2a16c89d37aefdcaec36",
+      "sourceHash": "15aacd95f5b915a1dac60124f159e58626dd2bae3b42a03155371bc4228a0eb3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-013-2a16c89d37aefdcaec36/chapter.json"
+    },
+    "9:14": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 14,
+      "revision": "b493cef56cee987680a2",
+      "sourceHash": "bc5adde2d632f34a3f278ef0a1802fb5c7de891fe03d88c9d75981d581dc962c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-014-b493cef56cee987680a2/chapter.json"
+    },
+    "9:15": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 15,
+      "revision": "d91699ab56e35bd9f55e",
+      "sourceHash": "2894ed98aa863674366b8e639c37a14f8152033add2b7ad2f05669a0a6d15b9d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-015-d91699ab56e35bd9f55e/chapter.json"
+    },
+    "9:16": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 16,
+      "revision": "0bd27bd07bf6588d6127",
+      "sourceHash": "7bff18011bf890f65f5d5e64c07da896d5295d8e0ef6a48165896c1f280a80d6",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-016-0bd27bd07bf6588d6127/chapter.json"
+    },
+    "9:17": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 17,
+      "revision": "ea42cd7c618fca0d93e8",
+      "sourceHash": "379bd6e3aca9c2eee3251b46a07e36507896e47251e8c6fe91e81e8bf40844ec",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-017-ea42cd7c618fca0d93e8/chapter.json"
+    },
+    "9:18": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 18,
+      "revision": "00dd9422a2ad14e760c1",
+      "sourceHash": "69678ff064c8dc63b6cd8923f65f387a9ec4175e544c40c3177623a56491bed1",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-018-00dd9422a2ad14e760c1/chapter.json"
+    },
+    "9:19": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 19,
+      "revision": "c3673d25c50afc76d983",
+      "sourceHash": "ac8bae96376e396c33c9f7d30f04e193db81f6912bd01a7911d372264370ec81",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-019-c3673d25c50afc76d983/chapter.json"
+    },
+    "9:20": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 20,
+      "revision": "378171175169c70834e8",
+      "sourceHash": "fb84a0ba175a61485f17da570f525cbd622028f03a45aeac6da45a3b8df15e53",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-020-378171175169c70834e8/chapter.json"
+    },
+    "9:21": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 21,
+      "revision": "b4877c468feb10dd5d30",
+      "sourceHash": "122c8d258a0a87c9d14bafba88c6eedeb8c153feed7ebcf75f9ef8bc90100ba0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-021-b4877c468feb10dd5d30/chapter.json"
+    },
+    "9:22": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 22,
+      "revision": "89dfe4b0743fbf1307b6",
+      "sourceHash": "d718c3686dce5e4196b1ac76457461c63658d8612fb078ed14a1d440d808474d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-022-89dfe4b0743fbf1307b6/chapter.json"
+    },
+    "9:23": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 23,
+      "revision": "2d373913394e42c53569",
+      "sourceHash": "7beedca47101e681bc090caadb77433231409692de5319ff72f5a94c823f4c86",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-023-2d373913394e42c53569/chapter.json"
+    },
+    "9:24": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 24,
+      "revision": "a4b9d11e497fb7ef37a0",
+      "sourceHash": "71b550411fd14e1e0ef4d75a2a2934d72396ddd23fa8555f71e876a4cf63b427",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-024-a4b9d11e497fb7ef37a0/chapter.json"
+    },
+    "9:25": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 25,
+      "revision": "84c57fd6268dae7a9c6c",
+      "sourceHash": "8415581cd110b37a76d20a87fc117d33029a99b21fa9b3c7d3173bd183cbd9ec",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-025-84c57fd6268dae7a9c6c/chapter.json"
+    },
+    "9:26": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 26,
+      "revision": "3f0a74a73d865b6b30f1",
+      "sourceHash": "89eacd230c633af76438061613645d6a13309ac491966376971e742bf7de546c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-026-3f0a74a73d865b6b30f1/chapter.json"
+    },
+    "9:27": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 27,
+      "revision": "1c30e42a2443f29bb9de",
+      "sourceHash": "568b94b2c030fc5c3a3d31def5efea10ea1a5fb85927cef2a9c7f193ce7bfa2d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-027-1c30e42a2443f29bb9de/chapter.json"
+    },
+    "9:28": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 28,
+      "revision": "eb01a99f4a0f8ac691ad",
+      "sourceHash": "9f6d930409827cb3bd355efdac65f428fc693a841f11d3987d6dab849d55ef4e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-028-eb01a99f4a0f8ac691ad/chapter.json"
+    },
+    "9:29": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 29,
+      "revision": "6378925433b6294a8bb2",
+      "sourceHash": "75b41a60f6bb3931e0c69503ec8be3202841121a745815d910b149f6d18a4a6d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-029-6378925433b6294a8bb2/chapter.json"
+    },
+    "9:30": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 30,
+      "revision": "8c7df6c2736a2587f1b7",
+      "sourceHash": "ada35ec62db0bd2bb9e4f145dfc82e8472f8e17a79a713db4fdc3d791d7ea2e7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-030-8c7df6c2736a2587f1b7/chapter.json"
+    },
+    "9:31": {
+      "bookId": 9,
+      "book": "1 Samuel",
+      "bookName": "Första Samuelsboken",
+      "chapter": 31,
+      "revision": "a50b67d602576bedd600",
+      "sourceHash": "3e3503c7312294ae1ac8271ed395d36168fcd61edee3fc05082a4f36be87a91f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-09-031-a50b67d602576bedd600/chapter.json"
+    },
+    "10:1": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 1,
+      "revision": "da4ef2fe19f091b744be",
+      "sourceHash": "ec4e7612a6143557e5c4d7312f1a8e29f953156d42019caf9076c76cc5dfed03",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-001-da4ef2fe19f091b744be/chapter.json"
+    },
+    "10:2": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 2,
+      "revision": "92423ec54b65f267efee",
+      "sourceHash": "34c99a8c54a8d5cd31110f84cfc8a2018ba857b63b38753fd4f6b407e5a58dbe",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-002-92423ec54b65f267efee/chapter.json"
+    },
+    "10:3": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 3,
+      "revision": "d7c7e39384e473f5c55f",
+      "sourceHash": "f137647518ebb8fe9e77b697f9e14c547edd9269c29387b901171f5a49ef06e3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-003-d7c7e39384e473f5c55f/chapter.json"
+    },
+    "10:4": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 4,
+      "revision": "1d3742b86ed57b97a87a",
+      "sourceHash": "8961c5f18c57affc3848995a8ba036203a1b4027a451980daaee8abea91e75b4",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-004-1d3742b86ed57b97a87a/chapter.json"
+    },
+    "10:5": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 5,
+      "revision": "746d56a2c5d22171e890",
+      "sourceHash": "726472d6574b1a10becd336955d46aeab2665abcf2abe11d05b1bf6becae599e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-005-746d56a2c5d22171e890/chapter.json"
+    },
+    "10:6": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 6,
+      "revision": "9f69027ae894ec988990",
+      "sourceHash": "91139b28a6289dcbc2ebafe827d414bc44816ac670b9ff029cf30a3965a73b04",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-006-9f69027ae894ec988990/chapter.json"
+    },
+    "10:7": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 7,
+      "revision": "e799b651380f5ea091c9",
+      "sourceHash": "c06c4210a0f297b3decf1860e9f9a6f5470286218f0d1c8f146209d2711cb607",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-007-e799b651380f5ea091c9/chapter.json"
+    },
+    "10:8": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 8,
+      "revision": "8dd0c3dcd6c5197490f2",
+      "sourceHash": "b7578287e5f6634ed4e5b60d023ea81de87a294d08307a71cce51bdeb446628e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-008-8dd0c3dcd6c5197490f2/chapter.json"
+    },
+    "10:9": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 9,
+      "revision": "fe7d261cddeadd22ca40",
+      "sourceHash": "10747a08ef33dbc2a8ebeeabffc850fc1250ec1c046e2219c765c30cfd675f32",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-009-fe7d261cddeadd22ca40/chapter.json"
+    },
+    "10:10": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 10,
+      "revision": "a0f79cee88986c7c0b43",
+      "sourceHash": "25c49e89f61e3b23ce1c0db7f814829b12d38200996e99b2731e53b56555b71a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-010-a0f79cee88986c7c0b43/chapter.json"
+    },
+    "10:11": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 11,
+      "revision": "e568c2d62696a08788dd",
+      "sourceHash": "8b664b6818bebdce6e56c80327daf0a946093a65e7a87c691bcee3b3b9648d03",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-011-e568c2d62696a08788dd/chapter.json"
+    },
+    "10:12": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 12,
+      "revision": "211bfde0c4c7ff41280f",
+      "sourceHash": "919add2d91237c49827755546f03a4344aeb6a093d8c812501fe60b1d58f543c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-012-211bfde0c4c7ff41280f/chapter.json"
+    },
+    "10:13": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 13,
+      "revision": "b4d3f4d74dde59a631d8",
+      "sourceHash": "6812fc4edbe4e008cb189a46097529f767a3af246e359021900ed57a89690636",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-013-b4d3f4d74dde59a631d8/chapter.json"
+    },
+    "10:14": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 14,
+      "revision": "cd14bcc3fb420f8781c9",
+      "sourceHash": "2ac171f1f47a2f334281fb943855fcf7cee589a9737b13300294ec853e737672",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-014-cd14bcc3fb420f8781c9/chapter.json"
+    },
+    "10:15": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 15,
+      "revision": "4eac892849fb40f6e870",
+      "sourceHash": "da3a23ee8a22e6d15b2e72ac1e6bba6861a25fc413dd8aa62cbbf1fd9b16120a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-015-4eac892849fb40f6e870/chapter.json"
+    },
+    "10:16": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 16,
+      "revision": "8a425044ebc699c5f520",
+      "sourceHash": "b324e4eaa8d050f22406a1ccb516a620a24babb787541b9647a2b0f7095c4508",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-016-8a425044ebc699c5f520/chapter.json"
+    },
+    "10:17": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 17,
+      "revision": "d73fadeddddb74fab7c7",
+      "sourceHash": "7a64205ae8175f2a872a0b43fdd6372be1aab587a6290436fa4a267a491dcd3f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-017-d73fadeddddb74fab7c7/chapter.json"
+    },
+    "10:18": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 18,
+      "revision": "09dfd194590989f94c18",
+      "sourceHash": "86f9cf18d0d428783fadb38de28a00d76f41ca9d7c8e306848270c7a1a4189d0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-018-09dfd194590989f94c18/chapter.json"
+    },
+    "10:19": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 19,
+      "revision": "585e21aa9ba962b9e715",
+      "sourceHash": "333cd3788df9564b6ed83db2d85509a5371ca3bec8e1aeed224023f174dfe7e3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-019-585e21aa9ba962b9e715/chapter.json"
+    },
+    "10:20": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 20,
+      "revision": "090ecd80ac281eb4347c",
+      "sourceHash": "bc1593b0a6670460f8d22b65bca203f4135b10a972fc9828346125f8e19216f3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-020-090ecd80ac281eb4347c/chapter.json"
+    },
+    "10:21": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 21,
+      "revision": "917d34618af79d2ba18e",
+      "sourceHash": "20f9d482801ff22965cf16df8bcaae17e2db49a1fc53e6a9375a0365601b919e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-021-917d34618af79d2ba18e/chapter.json"
+    },
+    "10:22": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 22,
+      "revision": "5197d07eca481bdf8065",
+      "sourceHash": "e03a793d45eebd5d415d186236765d8939bc612f23af49b428f5eff36029e20c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-022-5197d07eca481bdf8065/chapter.json"
+    },
+    "10:23": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 23,
+      "revision": "f89e1030226c575ac3c5",
+      "sourceHash": "d39371aae8e73f7226067ca35638cf1a3a7046868c974c70e80589356160819e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-023-f89e1030226c575ac3c5/chapter.json"
+    },
+    "10:24": {
+      "bookId": 10,
+      "book": "2 Samuel",
+      "bookName": "Andra Samuelsboken",
+      "chapter": 24,
+      "revision": "67ab6582db0545d40c87",
+      "sourceHash": "501f02526fcd4d4cf37b88e9803ef8698a7c581d6d1cb46dc56ceae2fc379256",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-10-024-67ab6582db0545d40c87/chapter.json"
+    },
+    "11:1": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 1,
+      "revision": "0bffbe64cc3a9e46d4a8",
+      "sourceHash": "f7af0e1f8aa6f7eaa2f0636ff7b587dd1fa9d391fa64e6eba662d07791087911",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-001-0bffbe64cc3a9e46d4a8/chapter.json"
+    },
+    "11:2": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 2,
+      "revision": "58d8303cb386881b9004",
+      "sourceHash": "c924af475db63a9ee005e5c0f0f554e5cd763925557bcbd3246c3e7a7f6507cd",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-002-58d8303cb386881b9004/chapter.json"
+    },
+    "11:3": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 3,
+      "revision": "a0be59343e369799d188",
+      "sourceHash": "432adc3764a1761de162f159868266d7716cec1956b1e0ed0b598851a17a0887",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-003-a0be59343e369799d188/chapter.json"
+    },
+    "11:4": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 4,
+      "revision": "6a508c0dfbc0685f53b6",
+      "sourceHash": "91f86b961a139ad25ba76d80fe2f2b4643856f4666ca17000b90efa8a3fd25c1",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-004-6a508c0dfbc0685f53b6/chapter.json"
+    },
+    "11:5": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 5,
+      "revision": "6754620b7253d5bee2ef",
+      "sourceHash": "68bd131354ecace5409f8c3c4ffb9771351b509844ab3b5288944ce09b4f8a7c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-005-6754620b7253d5bee2ef/chapter.json"
+    },
+    "11:6": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 6,
+      "revision": "2ab93a3e333f57af2020",
+      "sourceHash": "8d11fa0aee965c37bd00be27e346648dcfc1d714d2fc8007a7f70eb1ead363a0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-006-2ab93a3e333f57af2020/chapter.json"
+    },
+    "11:7": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 7,
+      "revision": "aa5156d117e68b1cb366",
+      "sourceHash": "49815c79b80dc997ae27d40c2c7ca49f6d830c9152678a46fade657d4aa9b53b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-007-aa5156d117e68b1cb366/chapter.json"
+    },
+    "11:8": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 8,
+      "revision": "821a5e74d876f19ea306",
+      "sourceHash": "a70542f7606d749e31e10869f1132bb7b9c32d13329b81b01e2c05e520c31cff",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-008-821a5e74d876f19ea306/chapter.json"
+    },
+    "11:9": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 9,
+      "revision": "1355b2ee87a6413b4445",
+      "sourceHash": "31d5d6a19bc4b723359c367714dc083a4ffabbc0fa323c47569f8e15ac848ce8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-009-1355b2ee87a6413b4445/chapter.json"
+    },
+    "11:10": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 10,
+      "revision": "2b09e4902ee9dbb24f87",
+      "sourceHash": "c017fca73bc113a3c8834c2000101edc39e600a138c47b06ba52fd534dd3a3fd",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-010-2b09e4902ee9dbb24f87/chapter.json"
+    },
+    "11:11": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 11,
+      "revision": "593e6d82a5dfa8c68a3b",
+      "sourceHash": "8ce814edbbcb54e3528e7b17675b03a409422bf97a40be1d191622bc1221e200",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-011-593e6d82a5dfa8c68a3b/chapter.json"
+    },
+    "11:12": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 12,
+      "revision": "f9d970c7f185c88614d3",
+      "sourceHash": "71ee3fb70942b5d3ed08639ffa0144c7022bafa220f1fa6ba8f6818f529c524d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-012-f9d970c7f185c88614d3/chapter.json"
+    },
+    "11:13": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 13,
+      "revision": "1f6fe9980d4f0b2cb5af",
+      "sourceHash": "e650e1ebf8df4db067767a6d3f985be0df2d976b8ea0dda7b5f6dfa3a10331fc",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-013-1f6fe9980d4f0b2cb5af/chapter.json"
+    },
+    "11:14": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 14,
+      "revision": "0885a6d1b77b3bb20a85",
+      "sourceHash": "afb165545519d9b2cada76552ada5baee2d3eac014da7d9b0203c241c5405de7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-014-0885a6d1b77b3bb20a85/chapter.json"
+    },
+    "11:15": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 15,
+      "revision": "d487bd6cf1fa4102a765",
+      "sourceHash": "89ea6acc587f5dc4f98e7d0658e7cd5050a3a46db7d5520af0d55202509b9e5d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-015-d487bd6cf1fa4102a765/chapter.json"
+    },
+    "11:16": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 16,
+      "revision": "0844385d894b6f4c71cc",
+      "sourceHash": "fa4e1c4316f5f6840fbf88ad1b583ee47d11e1185908df9e0c6c1e9048f043bc",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-016-0844385d894b6f4c71cc/chapter.json"
+    },
+    "11:17": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 17,
+      "revision": "bb6175675520ea769809",
+      "sourceHash": "b6b5d7f1cc72662d05c41f4226462d5f06f6e9ed3ae6ad72992ea8aace98320c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-017-bb6175675520ea769809/chapter.json"
+    },
+    "11:18": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 18,
+      "revision": "a2124c78f766ba11e589",
+      "sourceHash": "3b9676e389bc0132bf5ada5ad07ed2557bafab02d3eb1ca222e93c3abf77d31d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-018-a2124c78f766ba11e589/chapter.json"
+    },
+    "11:19": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 19,
+      "revision": "c979cb75ced2acb2698f",
+      "sourceHash": "db1646440f366ac7f9fecff8e3a0d0b9ba4bec5e600b448140e1ca678475419a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-019-c979cb75ced2acb2698f/chapter.json"
+    },
+    "11:20": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 20,
+      "revision": "743f15ec1dfdb1800188",
+      "sourceHash": "0b0e7bcd0e7f51152d0619866cb67b001f72e006e48dbe2e8607f2886be329f1",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-020-743f15ec1dfdb1800188/chapter.json"
+    },
+    "11:21": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 21,
+      "revision": "a74f2d2b00c708abe765",
+      "sourceHash": "edd4370e494204fc18a2a9d289797640c7dffb66992e563ccfcf37f4b8fff695",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-021-a74f2d2b00c708abe765/chapter.json"
+    },
+    "11:22": {
+      "bookId": 11,
+      "book": "1 Kings",
+      "bookName": "Första Kungaboken",
+      "chapter": 22,
+      "revision": "65a8baf5169bc37ca47e",
+      "sourceHash": "e293275d13d278b6e2fd7174a2684ad0701c226605011c99aef2b6fc459729b5",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-11-022-65a8baf5169bc37ca47e/chapter.json"
+    },
+    "12:1": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 1,
+      "revision": "07c143bf97a0fc7a5625",
+      "sourceHash": "3797395ba2cdf5f060d0a96083cb94e752e2fe6a2d887c6117ce0ad6536d31c0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-001-07c143bf97a0fc7a5625/chapter.json"
+    },
+    "12:2": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 2,
+      "revision": "3c7ba2797cdfb5db3abf",
+      "sourceHash": "4dc006ac3b81e8117e6ea619fd1e4a71e69af81fa3903d9bbd84607b77807342",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-002-3c7ba2797cdfb5db3abf/chapter.json"
+    },
+    "12:3": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 3,
+      "revision": "a8582bf225981803f109",
+      "sourceHash": "a28921ce841dffab4191abfb17d7f7c54e4c71f03cb96114c7cc40673564e5d0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-003-a8582bf225981803f109/chapter.json"
+    },
+    "12:4": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 4,
+      "revision": "48ba870fcb8d73531906",
+      "sourceHash": "bff40408cfdc1ddd8dfa2d8019514766695507a9dba51642176f1ff55400897c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-004-48ba870fcb8d73531906/chapter.json"
+    },
+    "12:5": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 5,
+      "revision": "dffc9d1d40ac93b21d58",
+      "sourceHash": "cff7a74027e8c1e923c313710febba970cd555d7ab5e16173ed9d855a652ac5a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-005-dffc9d1d40ac93b21d58/chapter.json"
+    },
+    "12:6": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 6,
+      "revision": "75fc7744737e1c13cdc7",
+      "sourceHash": "b2a343e8dc76896b57c64e19cb74737c701354775c5e8791c6b11dae1939c39d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-006-75fc7744737e1c13cdc7/chapter.json"
+    },
+    "12:7": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 7,
+      "revision": "0d4136685d1c7c2e1023",
+      "sourceHash": "4594380bd2d5fbd8575ca8c5dc253b7ccd5ffdc4d5a61fc4dd772ac4a3457095",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-007-0d4136685d1c7c2e1023/chapter.json"
+    },
+    "12:8": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 8,
+      "revision": "78a8407ec1d1945ed3cd",
+      "sourceHash": "4c8768ecd72b0a061ca012d6a64e6109d614880460611ffb981b00814c1383ae",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-008-78a8407ec1d1945ed3cd/chapter.json"
+    },
+    "12:9": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 9,
+      "revision": "63e1dfaf1167555a5bfa",
+      "sourceHash": "6604585df506c94a1872e23a132656d96e2fe728bb47974f868a567f59b15b43",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-009-63e1dfaf1167555a5bfa/chapter.json"
+    },
+    "12:10": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 10,
+      "revision": "5580726626fe1305b883",
+      "sourceHash": "37fd5637158fecb7f4461c9ec61be989c82a29e30325c3b3d49b1e153638f5c8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-010-5580726626fe1305b883/chapter.json"
+    },
+    "12:11": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 11,
+      "revision": "f05e7082ecee709ebd51",
+      "sourceHash": "a31b92701bbce84b9d092596b648e20a2770b141fd9a58edd5576bd54162e885",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-011-f05e7082ecee709ebd51/chapter.json"
+    },
+    "12:12": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 12,
+      "revision": "aa4649c01de0fcd74f67",
+      "sourceHash": "25be4abe69332ebe7f9eb74ef3542bfb9eb80c0612e048e6e6024f0ec4246ecc",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-012-aa4649c01de0fcd74f67/chapter.json"
+    },
+    "12:13": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 13,
+      "revision": "74a0b287d8d8aa9b5191",
+      "sourceHash": "bd6a27fb2db06e840e04aaf04bf4c8cc9d3e10eba2878e463464a37752d828b8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-013-74a0b287d8d8aa9b5191/chapter.json"
+    },
+    "12:14": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 14,
+      "revision": "146eb7f54d0cc12a031e",
+      "sourceHash": "61303c8ea7bf769cc105fc6b72dc19fd387046a11b535be13c06cf3dd95074a1",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-014-146eb7f54d0cc12a031e/chapter.json"
+    },
+    "12:15": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 15,
+      "revision": "184b909067bfd6d7254d",
+      "sourceHash": "71e2be94c60bab5bcfbe8568c613ec1d76664f1f596bdd4d0fcb8308270fbb79",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-015-184b909067bfd6d7254d/chapter.json"
+    },
+    "12:16": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 16,
+      "revision": "067bf23084616f030916",
+      "sourceHash": "133f6469d0a3f7dc12729c969a872dec4cda97c33d1df25d9c1e496613aaf005",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-016-067bf23084616f030916/chapter.json"
+    },
+    "12:17": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 17,
+      "revision": "7ee6847620e1fb905e84",
+      "sourceHash": "2dd504f25023a2f125d067c460201222cd87bf200fefe8f24add3be47cd99539",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-017-7ee6847620e1fb905e84/chapter.json"
+    },
+    "12:18": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 18,
+      "revision": "95d42e5992e4b405b979",
+      "sourceHash": "2ee89179b32b3558f1904fc250131d1b95e5d9f4f9d68a17e9ec3f129a12aa8b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-018-95d42e5992e4b405b979/chapter.json"
+    },
+    "12:19": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 19,
+      "revision": "e59c86f0fdd5ef8c7e98",
+      "sourceHash": "7ff099db9020947d418d9ef7fdd6f4ec9ae7f2986ae730990163ec3ec4fdbf5c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-019-e59c86f0fdd5ef8c7e98/chapter.json"
+    },
+    "12:20": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 20,
+      "revision": "2ecabacc2c4009193b6d",
+      "sourceHash": "4786db5c7f64406150b3896d5e1fc67b8c1847a92e9227ac84cb0a5e80fc53aa",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-020-2ecabacc2c4009193b6d/chapter.json"
+    },
+    "12:21": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 21,
+      "revision": "cd872ece1c6e2d0e36ea",
+      "sourceHash": "64d7f1a74d683b18f2d4dbed639029816e0df266e46cc0e313816dcb136eded9",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-021-cd872ece1c6e2d0e36ea/chapter.json"
+    },
+    "12:22": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 22,
+      "revision": "5e6042b52d87e3182292",
+      "sourceHash": "098e161a95c0f2e790d34e301ead7a0202395a4197c9b4e40a0cd9bef66bb58e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-022-5e6042b52d87e3182292/chapter.json"
+    },
+    "12:23": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 23,
+      "revision": "f5b21933a4b620b2b57a",
+      "sourceHash": "03a71d77248d89ac70f4f08a83f9db39a1a09c78e09d4458add03dad40649568",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-023-f5b21933a4b620b2b57a/chapter.json"
+    },
+    "12:24": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 24,
+      "revision": "e84a1c122513a02ab10b",
+      "sourceHash": "b7dafc5a01d6a0a30328273ef75dc99acfd5d7baf87c0ecf8d4c5d18497c1581",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-024-e84a1c122513a02ab10b/chapter.json"
+    },
+    "12:25": {
+      "bookId": 12,
+      "book": "2 Kings",
+      "bookName": "Andra Kungaboken",
+      "chapter": 25,
+      "revision": "ab7f8d6c52aec1b87a85",
+      "sourceHash": "7a966a8acd2834aa9b433fa0dabe9bf5c85ef8c5c0742ba697e9090973583a3f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-12-025-ab7f8d6c52aec1b87a85/chapter.json"
+    },
+    "13:1": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 1,
+      "revision": "b73a5595ecb95dcc9664",
+      "sourceHash": "0d5067fa4ca09a7512ebf15ff945a3e1d0cf3894f44729b9eaf6f21e80538e68",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-001-b73a5595ecb95dcc9664/chapter.json"
+    },
+    "13:2": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 2,
+      "revision": "b531112ec8623e0c1191",
+      "sourceHash": "cc8073ebd017af246d08ccbbe2f006718225216758bbd707fea62405baa8c64d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-002-b531112ec8623e0c1191/chapter.json"
+    },
+    "13:3": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 3,
+      "revision": "3f1fea42f5cf4259d942",
+      "sourceHash": "1c10106c3d535238d5683c022fe9eb03565301f35536af353eac87a5c15ec4d2",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-003-3f1fea42f5cf4259d942/chapter.json"
+    },
+    "13:4": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 4,
+      "revision": "4ab223ece4c8b24b0932",
+      "sourceHash": "f3682b8855b03867fa4a07b04cd5ab6c626438c68e28a213e8d0a150184b2ada",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-004-4ab223ece4c8b24b0932/chapter.json"
+    },
+    "13:5": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 5,
+      "revision": "7694ecd4e49be3f34700",
+      "sourceHash": "dd205fb6d0da6e81ecb386157298960647fe5f76721e203ca2a8ea26822cd212",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-005-7694ecd4e49be3f34700/chapter.json"
+    },
+    "13:6": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 6,
+      "revision": "7953587db57d17647b36",
+      "sourceHash": "9d53242d8a35d44f266337ebd28d435f04ca595000464ec87069619db9e1f66f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-006-7953587db57d17647b36/chapter.json"
+    },
+    "13:7": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 7,
+      "revision": "26654c96372c6a36a8a5",
+      "sourceHash": "7b44d771990db0c6fca61ff0466b433feb361b480ac214e5062a403d9566f619",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-007-26654c96372c6a36a8a5/chapter.json"
+    },
+    "13:8": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 8,
+      "revision": "cee1a80fb0753395153b",
+      "sourceHash": "54a29dbe7a495b1d22055e50103cdae5d95f65253031806efe592770aa5b5417",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-008-cee1a80fb0753395153b/chapter.json"
+    },
+    "13:9": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 9,
+      "revision": "d0eba7857d6153af598b",
+      "sourceHash": "3c1c7302bdf38814e94452db9534c8977ae09e452f68111b59c5283ca3c8d307",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-009-d0eba7857d6153af598b/chapter.json"
+    },
+    "13:10": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 10,
+      "revision": "c7dc35da88f8eefb8305",
+      "sourceHash": "f6978966e0783df1cb1d49661b95f78b2e73399a3d76398d6e831aef0d95884c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-010-c7dc35da88f8eefb8305/chapter.json"
+    },
+    "13:11": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 11,
+      "revision": "da4f5e5fae22ed28020d",
+      "sourceHash": "14f8a2764848ff7a808582837c35267a97d2642a3cfe9acf644603ef817b1d00",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-011-da4f5e5fae22ed28020d/chapter.json"
+    },
+    "13:12": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 12,
+      "revision": "177cce6095d3fb6b7e64",
+      "sourceHash": "c0c465f505cd5792b9b38336a2833c92422dd2cca9e77b174688379e8a7d8a13",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-012-177cce6095d3fb6b7e64/chapter.json"
+    },
+    "13:13": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 13,
+      "revision": "e8ffbf5a260d7b534cb6",
+      "sourceHash": "815ae1d77a9db0b22306165b0f3053989f004fdb8ef19e7c28202232e4b6e943",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-013-e8ffbf5a260d7b534cb6/chapter.json"
+    },
+    "13:14": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 14,
+      "revision": "5257351bc951351d4987",
+      "sourceHash": "d7dff3ef221bdc4f08049de3480883639a915f3c7b5be92a966410af8d0f7b11",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-014-5257351bc951351d4987/chapter.json"
+    },
+    "13:15": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 15,
+      "revision": "5b26c59245e5d84811fc",
+      "sourceHash": "e22d869119d34c0523eeec5c453f8b6565b08d4fb09ebe3eeba817c8f6f074be",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-015-5b26c59245e5d84811fc/chapter.json"
     }
   }
 }
