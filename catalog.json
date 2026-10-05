@@ -3403,6 +3403,2598 @@
       "revision": "5b26c59245e5d84811fc",
       "sourceHash": "e22d869119d34c0523eeec5c453f8b6565b08d4fb09ebe3eeba817c8f6f074be",
       "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-015-5b26c59245e5d84811fc/chapter.json"
+    },
+    "13:16": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 16,
+      "revision": "a99e65ffa2f203d72e3a",
+      "sourceHash": "b334b1e2bc49a8357f2db2600c2ba0dbad28539f7130943573fe2391736cd995",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-016-a99e65ffa2f203d72e3a/chapter.json"
+    },
+    "13:17": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 17,
+      "revision": "a718d6b42b10ec7dddb9",
+      "sourceHash": "0f9071bfb4ccf8d21ce64f7789b3e1003daea47af8d3b8a7c012cee44e658481",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-017-a718d6b42b10ec7dddb9/chapter.json"
+    },
+    "13:18": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 18,
+      "revision": "e342adbd828a2695a80a",
+      "sourceHash": "21494d669468a2efe1c249f27a9f1d0200af40ed13cb9c2bfc101d0471836930",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-018-e342adbd828a2695a80a/chapter.json"
+    },
+    "13:19": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 19,
+      "revision": "87002427a46f19b4c77f",
+      "sourceHash": "0826c3f9574e82f1861bca9b1c4f6e70b8c223e16476d89ec4f7a97b8e27fa5f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-019-87002427a46f19b4c77f/chapter.json"
+    },
+    "13:20": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 20,
+      "revision": "ac06602eef5961c4aceb",
+      "sourceHash": "7b35c2c7fd8c22a9f4a503086ded6580cbc8e987b3c7c9ec8778a78df198f3ae",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-020-ac06602eef5961c4aceb/chapter.json"
+    },
+    "13:21": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 21,
+      "revision": "58905c04bd411c1b4a40",
+      "sourceHash": "4ad6b2b9a19cc014bb677c766ee2a4d55864e2f8511c8c9f9767ecda62e792c0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-021-58905c04bd411c1b4a40/chapter.json"
+    },
+    "13:22": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 22,
+      "revision": "c747202bd5b4ae932216",
+      "sourceHash": "3f3f42c35220de3740f22247c8311c590747c1c87e1af9bb37594cfbbc54e169",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-022-c747202bd5b4ae932216/chapter.json"
+    },
+    "13:23": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 23,
+      "revision": "a416bb78d8e569535456",
+      "sourceHash": "bfd48dfa29db0f5f1f40ba2f621542b43567eec11170fee769830fa00fea19ff",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-023-a416bb78d8e569535456/chapter.json"
+    },
+    "13:24": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 24,
+      "revision": "80453eefb21c02816287",
+      "sourceHash": "efbbbf661af33a5d01d9bd83b35b66981b7c81b6d92c7627003c07c0eab9cd27",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-024-80453eefb21c02816287/chapter.json"
+    },
+    "13:25": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 25,
+      "revision": "d1ed2ef5f9bbf1ce1967",
+      "sourceHash": "5f0f5801e16be70abf012d53753056973c26d0194ac3c21caf0fafe2e10236b6",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-025-d1ed2ef5f9bbf1ce1967/chapter.json"
+    },
+    "13:26": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 26,
+      "revision": "01c269963bdcdc8cbf6b",
+      "sourceHash": "4ec476e6f73712d17d14d50a726a3aeeaaff8bfa6e92ecce8b00f8100e23f254",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-026-01c269963bdcdc8cbf6b/chapter.json"
+    },
+    "13:27": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 27,
+      "revision": "566d6045ce1fed9c16f5",
+      "sourceHash": "ad7eae8e12c32fe9fd764db686184bf2f1a2f5a92152ecfbb318f01176c5d508",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-027-566d6045ce1fed9c16f5/chapter.json"
+    },
+    "13:28": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 28,
+      "revision": "698f5e90299e7acdc348",
+      "sourceHash": "34a14e111398ef8a0129ad57ff53bc631da0e796ee353a7262c21217a0c62883",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-028-698f5e90299e7acdc348/chapter.json"
+    },
+    "13:29": {
+      "bookId": 13,
+      "book": "1 Chronicles",
+      "bookName": "Första Krönikeboken",
+      "chapter": 29,
+      "revision": "f3b30600d09fe172f4e7",
+      "sourceHash": "4fc4d1cf4fe02f9019b226bd7c4eb088502cf4c5be2193c6776dc1f788104f07",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-13-029-f3b30600d09fe172f4e7/chapter.json"
+    },
+    "14:1": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 1,
+      "revision": "5cc22a4cd0308b3d60ea",
+      "sourceHash": "bf12ec2ce2b9950e91db23ab4cb901d8c1112a23023fa053c4b01ca1886a88f6",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-001-5cc22a4cd0308b3d60ea/chapter.json"
+    },
+    "14:2": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 2,
+      "revision": "ac16c12e0ea0682fcebf",
+      "sourceHash": "996797fef6551d1ae647c76da20cb4ed54d258f8d71420d6c3a375b3f2a92226",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-002-ac16c12e0ea0682fcebf/chapter.json"
+    },
+    "14:3": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 3,
+      "revision": "d9a63d290e24d8440b6f",
+      "sourceHash": "bd92d0b8683a1e04477eae3ae0a26a2e790d6b14256a520ae9540660be24355a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-003-d9a63d290e24d8440b6f/chapter.json"
+    },
+    "14:4": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 4,
+      "revision": "d396a350d2e7bc538f35",
+      "sourceHash": "e8987723a91eedc83a291fb4c75635154227061bb18303ce65c85cd40b7251b8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-004-d396a350d2e7bc538f35/chapter.json"
+    },
+    "14:5": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 5,
+      "revision": "d62f86da874aa3b4751b",
+      "sourceHash": "d15e189163398c2b21719b0cfc3b9341acaca2b4a0c8cd7736f08d2d7a0bb0c0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-005-d62f86da874aa3b4751b/chapter.json"
+    },
+    "14:6": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 6,
+      "revision": "198ffcee70ce82e97a81",
+      "sourceHash": "8e90853c7647a228cf89cd34c1e1e140260717c4cf6c0d56dbe6a9673d2d81bf",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-006-198ffcee70ce82e97a81/chapter.json"
+    },
+    "14:7": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 7,
+      "revision": "58f8841ad2b4b2aa0f7b",
+      "sourceHash": "f9c0935c240ef45039e35cedf485018886dc3185fabd3c40277e52ca195e88f4",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-007-58f8841ad2b4b2aa0f7b/chapter.json"
+    },
+    "14:8": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 8,
+      "revision": "f21e1135105f76eec560",
+      "sourceHash": "aa956a4d05fa38c144d8d97cd7a7c2725db60929d3529d527e78b70b6d089a0a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-008-f21e1135105f76eec560/chapter.json"
+    },
+    "14:9": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 9,
+      "revision": "db2c2c5899aba7a1e2dd",
+      "sourceHash": "ea2b9c54f6ac3b229313687db3777f0e2c8ec2f4702558a30c57937ac6b8b4ff",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-009-db2c2c5899aba7a1e2dd/chapter.json"
+    },
+    "14:10": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 10,
+      "revision": "fcc35e6a144c0ade01ea",
+      "sourceHash": "2e6e1adc557aec228b6c25f920d0aaeae52b7521029177de131dead8961751e8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-010-fcc35e6a144c0ade01ea/chapter.json"
+    },
+    "14:11": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 11,
+      "revision": "5bf7f0c1eadf1a53fdc0",
+      "sourceHash": "3962bcfeb76a2ecd1eefc1fc350e12ff096f3a449292775723770c23067abc6a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-011-5bf7f0c1eadf1a53fdc0/chapter.json"
+    },
+    "14:12": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 12,
+      "revision": "c9b744ac62f1badc09ce",
+      "sourceHash": "5e12bbad0fdd4aa631a951ac464cd38e39e5b81c6b5a24544776cb33ef65f992",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-012-c9b744ac62f1badc09ce/chapter.json"
+    },
+    "14:13": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 13,
+      "revision": "d0423bc01db26f62489d",
+      "sourceHash": "c90c3578760172205efc756b74172b0f77c08e421b04fe916c2b26513d9b249c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-013-d0423bc01db26f62489d/chapter.json"
+    },
+    "14:14": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 14,
+      "revision": "0ea32457b6c502d12dfe",
+      "sourceHash": "a6a35a0f671d42b5a8204aaed0b045902f22a8991e0ce24d670c2ad2bf274def",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-014-0ea32457b6c502d12dfe/chapter.json"
+    },
+    "14:15": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 15,
+      "revision": "006f8fd36f9d2319aa37",
+      "sourceHash": "422943bbfe27abd184c9f7a3eb7f623732efe4bcaac7745e1a00ff4fcc1cef08",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-015-006f8fd36f9d2319aa37/chapter.json"
+    },
+    "14:16": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 16,
+      "revision": "9efa9266b9c696876cc6",
+      "sourceHash": "711368f75547763f2c8b43c7ae5ae9b37397094335b514988978f9598cf2541f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-016-9efa9266b9c696876cc6/chapter.json"
+    },
+    "14:17": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 17,
+      "revision": "dd08d77f5904ccf6400d",
+      "sourceHash": "d8ccd84d13351bf693463baca81de5a79f0a4abf8827c8468999890c4155468e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-017-dd08d77f5904ccf6400d/chapter.json"
+    },
+    "14:18": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 18,
+      "revision": "0bb623fe200d9a5e6b70",
+      "sourceHash": "9381d4311ad1d12f48ece7d4509ee6719dbf55da9eabb675edf27ddbc40be28e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-018-0bb623fe200d9a5e6b70/chapter.json"
+    },
+    "14:19": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 19,
+      "revision": "3ac2d6e31a5ca6b1e011",
+      "sourceHash": "1b93371751cafa44b20df01167b7f153d840a0aac127cb3370299c58afdb9d28",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-019-3ac2d6e31a5ca6b1e011/chapter.json"
+    },
+    "14:20": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 20,
+      "revision": "8265b1d20401a5b56723",
+      "sourceHash": "8f59d8e3bf51d3be2545da2719a764ef7f601a8ef431692304b5bac70d3499ee",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-020-8265b1d20401a5b56723/chapter.json"
+    },
+    "14:21": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 21,
+      "revision": "8fb18f72c2a00f8f3d01",
+      "sourceHash": "8ee3afba365c52386a83d5d10e5c465e81f401b85756dfecf73200ecd277c6f0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-021-8fb18f72c2a00f8f3d01/chapter.json"
+    },
+    "14:22": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 22,
+      "revision": "8a57970d67ed6fc36497",
+      "sourceHash": "bc418bd950845a1e9e0de27f3f13d4e91f6eef5084f940ad1a4def1c4935f753",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-022-8a57970d67ed6fc36497/chapter.json"
+    },
+    "14:23": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 23,
+      "revision": "3037ee718058d0393057",
+      "sourceHash": "13f1fc8265061ed7834bb9c036dcae0f4915034314f4903a3b18714f47ecea29",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-023-3037ee718058d0393057/chapter.json"
+    },
+    "14:24": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 24,
+      "revision": "a459f99048e111ec6676",
+      "sourceHash": "27d8570e310d369634985c35bd91568874c38f99b4126019229135c20e733a75",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-024-a459f99048e111ec6676/chapter.json"
+    },
+    "14:25": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 25,
+      "revision": "ff6d49398609b895644f",
+      "sourceHash": "06a3a0572ec908cb8b8e740cfc69cc633a67c5688cc70eb4368a064cc91b8d96",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-025-ff6d49398609b895644f/chapter.json"
+    },
+    "14:26": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 26,
+      "revision": "ea53a5641bd90aac6337",
+      "sourceHash": "ec928117597f7148a2cd00ac10ac1d043ecfab8bffa7eb97b5d7b816aa5f1fd3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-026-ea53a5641bd90aac6337/chapter.json"
+    },
+    "14:27": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 27,
+      "revision": "851d12fe31e817c62974",
+      "sourceHash": "5841f7d6c189d649b14fd0b890c54d4f2f7ab70e0d63c5c9dd900cb0c8603bd8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-027-851d12fe31e817c62974/chapter.json"
+    },
+    "14:28": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 28,
+      "revision": "abee82cf174b6b5fd82f",
+      "sourceHash": "82620e183942496e328ae25a1d5fedbecd44584769af54dc8f800dce5c34df71",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-028-abee82cf174b6b5fd82f/chapter.json"
+    },
+    "14:29": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 29,
+      "revision": "6d7ed918a6c79b7c2f72",
+      "sourceHash": "197a21f156a4340b3de4c25afb7f25fd78ce6c483c68b0413155250ff3f34b72",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-029-6d7ed918a6c79b7c2f72/chapter.json"
+    },
+    "14:30": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 30,
+      "revision": "f6802cced711e8c832e0",
+      "sourceHash": "c50bb85b0c2f7b186d49452965f7f24e57c438f19526241b0a650b12515d967e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-030-f6802cced711e8c832e0/chapter.json"
+    },
+    "14:31": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 31,
+      "revision": "6ae3242e17ea0f300c98",
+      "sourceHash": "c524f7d1390582ac383a87698ffc0a466cb14ac755d04ffe58831a9d57843731",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-031-6ae3242e17ea0f300c98/chapter.json"
+    },
+    "14:32": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 32,
+      "revision": "4d93136ec0e8ed722d83",
+      "sourceHash": "fb1530432c3f881a028d88ffdcbdea1ad1a2ea70c2f62106af95b4f4491a91b4",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-032-4d93136ec0e8ed722d83/chapter.json"
+    },
+    "14:33": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 33,
+      "revision": "8f71a945f51213607b35",
+      "sourceHash": "3b730f5b7f9d98c25f850cd8ddade456bc26775d8d4d504da6cbe673305bf606",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-033-8f71a945f51213607b35/chapter.json"
+    },
+    "14:34": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 34,
+      "revision": "428230a0283ae48d20b9",
+      "sourceHash": "a64e3b3c2fae5db968db7abc68e50f2f77d3b8b404886eb8325b8edd3f29aa4b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-034-428230a0283ae48d20b9/chapter.json"
+    },
+    "14:35": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 35,
+      "revision": "523bb5063e93e0378887",
+      "sourceHash": "3ec9fc5beb33c95dd87c9973b0bc509f75b941c6dae61c1cfc9bbc14e4b7768c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-035-523bb5063e93e0378887/chapter.json"
+    },
+    "14:36": {
+      "bookId": 14,
+      "book": "2 Chronicles",
+      "bookName": "Andra Krönikeboken",
+      "chapter": 36,
+      "revision": "50984d0f10235c3fa894",
+      "sourceHash": "26d457cda4f0f2777f1917e6ba87789856bd28567e37788c0211d697357608d8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-14-036-50984d0f10235c3fa894/chapter.json"
+    },
+    "15:1": {
+      "bookId": 15,
+      "book": "Ezra",
+      "bookName": "Esra",
+      "chapter": 1,
+      "revision": "85e6e87a5d7927459d0a",
+      "sourceHash": "9bef24955a2346c6f807f71f816ec7adbf8c994144ecabb44af95492453a842f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-15-001-85e6e87a5d7927459d0a/chapter.json"
+    },
+    "15:2": {
+      "bookId": 15,
+      "book": "Ezra",
+      "bookName": "Esra",
+      "chapter": 2,
+      "revision": "c4a17ef0a092cf7fd63e",
+      "sourceHash": "04ab1ff81da217f6def58b36bf8c4b5e41287df8c7ff727648cbfcd4b3ef2532",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-15-002-c4a17ef0a092cf7fd63e/chapter.json"
+    },
+    "15:3": {
+      "bookId": 15,
+      "book": "Ezra",
+      "bookName": "Esra",
+      "chapter": 3,
+      "revision": "5727a8994c3499d0392e",
+      "sourceHash": "f6aefbbac05a9a4a3ed0765fd43e94746f8c59c07bfd9b661f0c7035b26ca322",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-15-003-5727a8994c3499d0392e/chapter.json"
+    },
+    "15:4": {
+      "bookId": 15,
+      "book": "Ezra",
+      "bookName": "Esra",
+      "chapter": 4,
+      "revision": "7321c66ce4d3d2b6473e",
+      "sourceHash": "aa46b326409ef368b05cad56d0a814eab14a93a61b32b170a82796962bca1055",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-15-004-7321c66ce4d3d2b6473e/chapter.json"
+    },
+    "15:5": {
+      "bookId": 15,
+      "book": "Ezra",
+      "bookName": "Esra",
+      "chapter": 5,
+      "revision": "556686b4acef449f05dc",
+      "sourceHash": "0fe2d561ae416fb8e51f973d2a61180cd53f9f226e00b220fc46e6312364b275",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-15-005-556686b4acef449f05dc/chapter.json"
+    },
+    "15:6": {
+      "bookId": 15,
+      "book": "Ezra",
+      "bookName": "Esra",
+      "chapter": 6,
+      "revision": "36943fdef66933fa8daa",
+      "sourceHash": "7fb43c28a088e3917f8fba41381a24e88b7d1402efb03fcf4916e9b9498f3a13",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-15-006-36943fdef66933fa8daa/chapter.json"
+    },
+    "15:7": {
+      "bookId": 15,
+      "book": "Ezra",
+      "bookName": "Esra",
+      "chapter": 7,
+      "revision": "cd2283f60b329be75029",
+      "sourceHash": "161edb772653c7759220d1924ffd2278c6df75fd5ecbb2ddd38ab0ca5ec543fe",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-15-007-cd2283f60b329be75029/chapter.json"
+    },
+    "15:8": {
+      "bookId": 15,
+      "book": "Ezra",
+      "bookName": "Esra",
+      "chapter": 8,
+      "revision": "8ffe539f2258683af252",
+      "sourceHash": "38494be3ba67215374275745117764dd06577b757b7c29b8e16946d60cecd2be",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-15-008-8ffe539f2258683af252/chapter.json"
+    },
+    "15:9": {
+      "bookId": 15,
+      "book": "Ezra",
+      "bookName": "Esra",
+      "chapter": 9,
+      "revision": "c8b78611f106be2147a6",
+      "sourceHash": "09a50aba4936e2aa5115393a7b0adb0e55deb84a100bb9eeb0bd77b1386eff8b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-15-009-c8b78611f106be2147a6/chapter.json"
+    },
+    "15:10": {
+      "bookId": 15,
+      "book": "Ezra",
+      "bookName": "Esra",
+      "chapter": 10,
+      "revision": "a7eca9ab21bc00100e77",
+      "sourceHash": "6b38e9fcaa72d887a04850bae47231b171ec1301c35295b2b056f517730ae563",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-15-010-a7eca9ab21bc00100e77/chapter.json"
+    },
+    "16:1": {
+      "bookId": 16,
+      "book": "Nehemiah",
+      "bookName": "Nehemja",
+      "chapter": 1,
+      "revision": "6c36872b7c187512a7f6",
+      "sourceHash": "83649d60ee2a1ebd5636b1dd4ea1e52d9e764bfa684910f57488ffe3af92b9db",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-16-001-6c36872b7c187512a7f6/chapter.json"
+    },
+    "16:2": {
+      "bookId": 16,
+      "book": "Nehemiah",
+      "bookName": "Nehemja",
+      "chapter": 2,
+      "revision": "9d023de1ab58eedf0680",
+      "sourceHash": "b15525c20d108279671ab9792f2153dcc1d4165a9155f6c06de7157b78548179",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-16-002-9d023de1ab58eedf0680/chapter.json"
+    },
+    "16:3": {
+      "bookId": 16,
+      "book": "Nehemiah",
+      "bookName": "Nehemja",
+      "chapter": 3,
+      "revision": "179ae066f321ad1f6c6e",
+      "sourceHash": "83e367961c4a0772a87758af9153d39e21294d076b09d6741babb16a86a2b19c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-16-003-179ae066f321ad1f6c6e/chapter.json"
+    },
+    "16:4": {
+      "bookId": 16,
+      "book": "Nehemiah",
+      "bookName": "Nehemja",
+      "chapter": 4,
+      "revision": "0f53baa0f595e6b518df",
+      "sourceHash": "b86a835042557f30f61ff5220cbd54ac18e9b91da50e9a67303d047cbe132d13",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-16-004-0f53baa0f595e6b518df/chapter.json"
+    },
+    "16:5": {
+      "bookId": 16,
+      "book": "Nehemiah",
+      "bookName": "Nehemja",
+      "chapter": 5,
+      "revision": "ce67603f8f43c0673f29",
+      "sourceHash": "f9fad69b34acf0ff16145683f15d55c4a3204dd5906219fcd26e7ad60b437518",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-16-005-ce67603f8f43c0673f29/chapter.json"
+    },
+    "16:6": {
+      "bookId": 16,
+      "book": "Nehemiah",
+      "bookName": "Nehemja",
+      "chapter": 6,
+      "revision": "fe75ad0849810c6a5e63",
+      "sourceHash": "ae41b92910dcd5969de9e04260b427fb7225c2e1ff0a2985439eed403d8eaae9",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-16-006-fe75ad0849810c6a5e63/chapter.json"
+    },
+    "16:7": {
+      "bookId": 16,
+      "book": "Nehemiah",
+      "bookName": "Nehemja",
+      "chapter": 7,
+      "revision": "565160b46ae7110265fb",
+      "sourceHash": "7c577a3c7d9272e352d979e3042d9a77bc2fb08feb0dd8219f53475ae2511b41",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-16-007-565160b46ae7110265fb/chapter.json"
+    },
+    "16:8": {
+      "bookId": 16,
+      "book": "Nehemiah",
+      "bookName": "Nehemja",
+      "chapter": 8,
+      "revision": "8134d90ad82c5bade6b3",
+      "sourceHash": "39369a21b8191a7cb0a1375faac7a842a125594188b29a218a7301b6f26d2528",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-16-008-8134d90ad82c5bade6b3/chapter.json"
+    },
+    "16:9": {
+      "bookId": 16,
+      "book": "Nehemiah",
+      "bookName": "Nehemja",
+      "chapter": 9,
+      "revision": "292a4e34690b21a5de29",
+      "sourceHash": "6dfbb316ae44216050356b8276a5a76b0f70b61294ede3062569cf4991a7a2bc",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-16-009-292a4e34690b21a5de29/chapter.json"
+    },
+    "16:10": {
+      "bookId": 16,
+      "book": "Nehemiah",
+      "bookName": "Nehemja",
+      "chapter": 10,
+      "revision": "42a9ac7cc22a57ad9549",
+      "sourceHash": "18f1c71dda434eac6131a5e05a08f460fb4ccae72fca06a379def817e74bfde5",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-16-010-42a9ac7cc22a57ad9549/chapter.json"
+    },
+    "16:11": {
+      "bookId": 16,
+      "book": "Nehemiah",
+      "bookName": "Nehemja",
+      "chapter": 11,
+      "revision": "67a6d5a4f631059f3d53",
+      "sourceHash": "7e405e94f51dc752ac05fa5f78922236d11d815fb9602e7ee5a8441d179ba52e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-16-011-67a6d5a4f631059f3d53/chapter.json"
+    },
+    "16:12": {
+      "bookId": 16,
+      "book": "Nehemiah",
+      "bookName": "Nehemja",
+      "chapter": 12,
+      "revision": "b3a6a1282d33064490d6",
+      "sourceHash": "d96ccf51d01b309f8b4ceec7f0e83ffdc0133ccea65796d01ad4b16102938913",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-16-012-b3a6a1282d33064490d6/chapter.json"
+    },
+    "16:13": {
+      "bookId": 16,
+      "book": "Nehemiah",
+      "bookName": "Nehemja",
+      "chapter": 13,
+      "revision": "bb3d4462e6ae099e630f",
+      "sourceHash": "cfe9c62814c332f13f768049b1a46de4cd4fe385b79987ea9208bf3481a0d086",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-16-013-bb3d4462e6ae099e630f/chapter.json"
+    },
+    "17:1": {
+      "bookId": 17,
+      "book": "Esther",
+      "bookName": "Ester",
+      "chapter": 1,
+      "revision": "cdcb7cd47a119f25b18d",
+      "sourceHash": "0d6c8cc64802af4fc13aaf192e53f31ef8222fd0e083e20e9b8b52a3f8c28d16",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-17-001-cdcb7cd47a119f25b18d/chapter.json"
+    },
+    "17:2": {
+      "bookId": 17,
+      "book": "Esther",
+      "bookName": "Ester",
+      "chapter": 2,
+      "revision": "7e1b4b9bd0490d4b0e17",
+      "sourceHash": "dd06644e16ac56f4c7ced1eaddb5ca1a12f8f5b9e466852e60b2d21598a94dcf",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-17-002-7e1b4b9bd0490d4b0e17/chapter.json"
+    },
+    "17:3": {
+      "bookId": 17,
+      "book": "Esther",
+      "bookName": "Ester",
+      "chapter": 3,
+      "revision": "74a0b0c7f90274cd66a8",
+      "sourceHash": "fb9b48ed52c4bc853bd4184ccb01530ccf9c077bbc43dfdee7437c8ab990cd03",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-17-003-74a0b0c7f90274cd66a8/chapter.json"
+    },
+    "17:4": {
+      "bookId": 17,
+      "book": "Esther",
+      "bookName": "Ester",
+      "chapter": 4,
+      "revision": "2d673f6075421367119f",
+      "sourceHash": "dabfba45bbfe1681f7d6457ec67601603d1e22c60484cd66a154293ba5b66e5c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-17-004-2d673f6075421367119f/chapter.json"
+    },
+    "17:5": {
+      "bookId": 17,
+      "book": "Esther",
+      "bookName": "Ester",
+      "chapter": 5,
+      "revision": "a97d4c20074ce042ff29",
+      "sourceHash": "67b898719f75602bdd1b2199a73abac35204e188c8d280cd9ca7f3c39f91bbc0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-17-005-a97d4c20074ce042ff29/chapter.json"
+    },
+    "17:6": {
+      "bookId": 17,
+      "book": "Esther",
+      "bookName": "Ester",
+      "chapter": 6,
+      "revision": "3adfe1081d1e7dee4c4c",
+      "sourceHash": "6181e8c05dee60935deb97f2abcf3244f534b7e0f095dcd65fa60ec25ba9c9bc",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-17-006-3adfe1081d1e7dee4c4c/chapter.json"
+    },
+    "17:7": {
+      "bookId": 17,
+      "book": "Esther",
+      "bookName": "Ester",
+      "chapter": 7,
+      "revision": "7e08491f209b785a7069",
+      "sourceHash": "f09fad6d63b48203d2570ba0a0beccb12b962400af34443b9158a868da3f0065",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-17-007-7e08491f209b785a7069/chapter.json"
+    },
+    "17:8": {
+      "bookId": 17,
+      "book": "Esther",
+      "bookName": "Ester",
+      "chapter": 8,
+      "revision": "38ac2298939eb8d77548",
+      "sourceHash": "cffc4d572c6b52a34446b5e62e72594d5bcb7650fa92f37c7c3c85f874b275e0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-17-008-38ac2298939eb8d77548/chapter.json"
+    },
+    "17:9": {
+      "bookId": 17,
+      "book": "Esther",
+      "bookName": "Ester",
+      "chapter": 9,
+      "revision": "2f1c4776035f51415e37",
+      "sourceHash": "49bcab7e0ef5c20d364d849ac3dd8fbfb1c681145d383c973d0dc666f1cd1534",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-17-009-2f1c4776035f51415e37/chapter.json"
+    },
+    "17:10": {
+      "bookId": 17,
+      "book": "Esther",
+      "bookName": "Ester",
+      "chapter": 10,
+      "revision": "d995f1f23e82246f972c",
+      "sourceHash": "599a052f0611b3a90f84f4d2b70fe24eded29972396164961cdf4f25dd8766e6",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-17-010-d995f1f23e82246f972c/chapter.json"
+    },
+    "18:1": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 1,
+      "revision": "aa96f8ec6ed8f55a646c",
+      "sourceHash": "15f7e72021dcf4e0eed15e1e095ed3974b0e5c0e8f709af520625ca19ca38149",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-001-aa96f8ec6ed8f55a646c/chapter.json"
+    },
+    "18:2": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 2,
+      "revision": "166163d77e8e63796b5e",
+      "sourceHash": "9d78ee4b2348c0100b6aa2241a9aa8afb24e5ef74e3c64691bcd5b68125a5c45",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-002-166163d77e8e63796b5e/chapter.json"
+    },
+    "18:3": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 3,
+      "revision": "c74d3a687b97abc0f0af",
+      "sourceHash": "05615f0504da071ea3bc12179a3b6c0fa7b98c964730f862cd0f449701f8bc48",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-003-c74d3a687b97abc0f0af/chapter.json"
+    },
+    "18:4": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 4,
+      "revision": "a03187a2df5ba70e092a",
+      "sourceHash": "578a2751cebff3e0b2ca0813b5c3c2e6fa6e87ce0775b5d969eb69897d698873",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-004-a03187a2df5ba70e092a/chapter.json"
+    },
+    "18:5": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 5,
+      "revision": "eae8d7a4816494d8734e",
+      "sourceHash": "6f248012832262e952a958ebf5a8e690cd4b4e7c6071ac3f4da9d9fbe3e9dbda",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-005-eae8d7a4816494d8734e/chapter.json"
+    },
+    "18:6": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 6,
+      "revision": "6d95a9cdb2221323dcd3",
+      "sourceHash": "3afe688bd94969fd4ae7b62bc0b32359f3abd9c865598104fc78f7f032ebc2d8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-006-6d95a9cdb2221323dcd3/chapter.json"
+    },
+    "18:7": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 7,
+      "revision": "ace3248ef201fb593206",
+      "sourceHash": "799107aeb7c1b8d7bf716266e3c360f9de70a6fef36bff157fa7e33b0c4e3742",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-007-ace3248ef201fb593206/chapter.json"
+    },
+    "18:8": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 8,
+      "revision": "f8ef335db6ca51f1320e",
+      "sourceHash": "9a72c865d82b9bf4680f62ce87ca0a8bd3cfe6331171f2487c6879503d5144fe",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-008-f8ef335db6ca51f1320e/chapter.json"
+    },
+    "18:9": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 9,
+      "revision": "3f856b3a26354284fae1",
+      "sourceHash": "15f733ec4cda8031eb44aa360e986c18a81a0a61c9fd91f4c4f43c1947e186c6",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-009-3f856b3a26354284fae1/chapter.json"
+    },
+    "18:10": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 10,
+      "revision": "26839a0d04f23c101c28",
+      "sourceHash": "c48b3a01d125368480dca3b4c6c8264f63855558781bf08ae0d8001a43abb86e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-010-26839a0d04f23c101c28/chapter.json"
+    },
+    "18:11": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 11,
+      "revision": "437329dca877c46e58e2",
+      "sourceHash": "119887876b939a1f6a6b0673af9e664454d0e4e49419715e9c1f230897e612dc",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-011-437329dca877c46e58e2/chapter.json"
+    },
+    "18:12": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 12,
+      "revision": "c1af2cb27d2dc26c36b0",
+      "sourceHash": "d79d09a559431f4775b51e0344ccea3d57b71ec74a439cf2db936a28da853901",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-012-c1af2cb27d2dc26c36b0/chapter.json"
+    },
+    "18:13": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 13,
+      "revision": "6d72124f8ec145f78027",
+      "sourceHash": "57771d2d3f127d75187a905353ddba7c1b27dd9bdb63100c950049180da131ed",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-013-6d72124f8ec145f78027/chapter.json"
+    },
+    "18:14": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 14,
+      "revision": "ea6c13e37b841530f545",
+      "sourceHash": "2829d4a6a601291ccf7bd53162f27f63b08bd24117314c25b2afbc16306420c3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-014-ea6c13e37b841530f545/chapter.json"
+    },
+    "18:15": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 15,
+      "revision": "75181328b2ba5f2b3602",
+      "sourceHash": "bb46b5c5e426ef85545d04ea96701448e008f226023424f1a4e3cb37d82dd031",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-015-75181328b2ba5f2b3602/chapter.json"
+    },
+    "18:16": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 16,
+      "revision": "a542d94d501ec7f8319c",
+      "sourceHash": "3ee75bd785729f7cb78e9c4b964081eeda6889681e72ed4b3bc04776a428550e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-016-a542d94d501ec7f8319c/chapter.json"
+    },
+    "18:17": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 17,
+      "revision": "ae90efe1e16625f6c00e",
+      "sourceHash": "0878c2d73f9377a0eeb41acc691a2866cf6a17492439e5bba5be7dbc7e1be504",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-017-ae90efe1e16625f6c00e/chapter.json"
+    },
+    "18:18": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 18,
+      "revision": "a41c7b8517be15c4de2a",
+      "sourceHash": "63f997c64d9efa74641d11db7ebdf2d7ad9433a2a65ed4553fb1bb9248c60e9a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-018-a41c7b8517be15c4de2a/chapter.json"
+    },
+    "18:19": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 19,
+      "revision": "947f6853dd733a015442",
+      "sourceHash": "3db8841cb37d950ed36d740dfe14e4e6919f09840d9b4b39914e96684e81b91e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-019-947f6853dd733a015442/chapter.json"
+    },
+    "18:20": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 20,
+      "revision": "43c00ed4aed431702207",
+      "sourceHash": "d39cd825ce724287dc3e2e05d383a3fa5e496cd05ec44a27c3276bd4f87f305b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-020-43c00ed4aed431702207/chapter.json"
+    },
+    "18:21": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 21,
+      "revision": "de7799050d98edeaf990",
+      "sourceHash": "b19a872eba66ae505d2b1e20c340cd6852bd8c06275d247ae4d8893bcb7db60a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-021-de7799050d98edeaf990/chapter.json"
+    },
+    "18:22": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 22,
+      "revision": "196f6b16a7535c4e2566",
+      "sourceHash": "06f7b53ba84534f2d747d23f7896e4dacb374df23a6e5ff53a13a6b8b4a3b0c7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-022-196f6b16a7535c4e2566/chapter.json"
+    },
+    "18:23": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 23,
+      "revision": "f0168ef1adb8468f1f9a",
+      "sourceHash": "2676a29364841547ec964b0aeaf7b00c804427b76619f19c15a072e71cf11143",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-023-f0168ef1adb8468f1f9a/chapter.json"
+    },
+    "18:24": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 24,
+      "revision": "94fcfe8b386ea0d0c5f1",
+      "sourceHash": "869381bda9a7d90177eb77134bb33c9949a9bd7b10769cae72bff575195ae11b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-024-94fcfe8b386ea0d0c5f1/chapter.json"
+    },
+    "18:25": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 25,
+      "revision": "1f0d8ec2d1133a30d5b2",
+      "sourceHash": "5c0fa4d7d8e23bc4fda604310fe5112e81a0ab14c0231c89834fe80fc156775c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-025-1f0d8ec2d1133a30d5b2/chapter.json"
+    },
+    "18:26": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 26,
+      "revision": "def52fdd240df1138613",
+      "sourceHash": "7b57d03308a262fd169219e1d9cd40b9c9365cbea9fcc6e97905a6b78ea7b146",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-026-def52fdd240df1138613/chapter.json"
+    },
+    "18:27": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 27,
+      "revision": "aacc2bdebff876b4c2e3",
+      "sourceHash": "1f901a417f08884a230e48c6d21e3e02addb913c63134121da88e4f12f934977",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-027-aacc2bdebff876b4c2e3/chapter.json"
+    },
+    "18:28": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 28,
+      "revision": "0296df834b1bad63725f",
+      "sourceHash": "06f12388894c9a4567cde69de4eaee5ad5e851cb8434ac63118eb2c1aa0081c9",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-028-0296df834b1bad63725f/chapter.json"
+    },
+    "18:29": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 29,
+      "revision": "7d33506cd61f85991694",
+      "sourceHash": "50e4c2b896c1631d40e61c0e754d222febae30a6e0b94eadfc323e62fca9b7ee",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-029-7d33506cd61f85991694/chapter.json"
+    },
+    "18:30": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 30,
+      "revision": "9a488d9fa5c901e5e7a6",
+      "sourceHash": "895086e077e5dc741b6b9d744cf1faba455e012231b0f09f51db2c622661e7c7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-030-9a488d9fa5c901e5e7a6/chapter.json"
+    },
+    "18:31": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 31,
+      "revision": "0ef87e8a07fc24d50513",
+      "sourceHash": "a4678e05ac414c9253f21734e6a2e3141c1b5e9ca01c9108111015b84e495c5d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-031-0ef87e8a07fc24d50513/chapter.json"
+    },
+    "18:32": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 32,
+      "revision": "709bb26b13252357a566",
+      "sourceHash": "c342c62df8eb5a4efcd2ef4275c10ea10160cd9652d04c61dc80fd122288c69b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-032-709bb26b13252357a566/chapter.json"
+    },
+    "18:33": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 33,
+      "revision": "0fc48deccb4784279fce",
+      "sourceHash": "68e8774218ef033e10e73b60187d7e685484feb15ceb51fa340d17c59789aa4b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-033-0fc48deccb4784279fce/chapter.json"
+    },
+    "18:34": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 34,
+      "revision": "9eb1314448e14df318f7",
+      "sourceHash": "10a971bf9a77d3e39fa6290b553dc7ee43a3075c71604f945800d38de0267c14",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-034-9eb1314448e14df318f7/chapter.json"
+    },
+    "18:35": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 35,
+      "revision": "af13a92151d31826802d",
+      "sourceHash": "9582543af719173f10a87ae89219b64d4f85f3af35cda8d074a01abfa836019a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-035-af13a92151d31826802d/chapter.json"
+    },
+    "18:36": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 36,
+      "revision": "671a194e9dcead0bcbcf",
+      "sourceHash": "a8f9f88aa666750b7cfd7ec9c173dd8039022e593ab8c9cd5c2f7ec76b404bd0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-036-671a194e9dcead0bcbcf/chapter.json"
+    },
+    "18:37": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 37,
+      "revision": "da918504eaa375e249c8",
+      "sourceHash": "29910c0ff1d2e0180b9507b10c128e4ba90fc7963e509ab8482f5a2d64fbaa95",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-037-da918504eaa375e249c8/chapter.json"
+    },
+    "18:38": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 38,
+      "revision": "b5a09ad55f310668b355",
+      "sourceHash": "94e6a0485d3bf8c04e6ab5983b8d6f8bc5dee47ead6920940e856db9e1c53a41",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-038-b5a09ad55f310668b355/chapter.json"
+    },
+    "18:39": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 39,
+      "revision": "b50d7ac3dfb15e12f2f9",
+      "sourceHash": "b4ef7cdfe4e1ac034a139bac2f46c2f90a32f459333383413d0a5d5fcdf8cebd",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-039-b50d7ac3dfb15e12f2f9/chapter.json"
+    },
+    "18:40": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 40,
+      "revision": "341316401f3e1066e1ac",
+      "sourceHash": "57561ad4ade9bd2c2edf1d3a9bec45493abee8768c1322e824f84ddb36c4000c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-040-341316401f3e1066e1ac/chapter.json"
+    },
+    "18:41": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 41,
+      "revision": "0918f2d0044a3ae8c057",
+      "sourceHash": "4b6651c5c35b96e55439413d5432ac4d7593eae5b0932a34b0d96d382ab55fcb",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-041-0918f2d0044a3ae8c057/chapter.json"
+    },
+    "18:42": {
+      "bookId": 18,
+      "book": "Job",
+      "bookName": "Job",
+      "chapter": 42,
+      "revision": "feffee5908e2a3fd5d4c",
+      "sourceHash": "55f226ebb8af2befa529ba665bb68c7fa56933d1eeb72e3a4ff3f7d783bb8fb8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-18-042-feffee5908e2a3fd5d4c/chapter.json"
+    },
+    "19:1": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 1,
+      "revision": "0b2b0233d8dccc1f107d",
+      "sourceHash": "07ba71eb4db4f8845ebd3db37353a3a19d0350cadc7edaed4844bdbbc15526e3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-001-0b2b0233d8dccc1f107d/chapter.json"
+    },
+    "19:2": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 2,
+      "revision": "6f0100c511860f8f35ae",
+      "sourceHash": "fd9ef1d03a0fb77c4acd5945520d71c3f0122e1df8f6673558e80e29cbe4ed42",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-002-6f0100c511860f8f35ae/chapter.json"
+    },
+    "19:3": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 3,
+      "revision": "bb22aa2c38c9ff93b04c",
+      "sourceHash": "9731a41805868705b565a5b26c08f4dc3ca292248ac82a02baddaba8184dff64",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-003-bb22aa2c38c9ff93b04c/chapter.json"
+    },
+    "19:4": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 4,
+      "revision": "617d52b3c017150fd9cd",
+      "sourceHash": "336655fb0f975718a3a4cfaae84b5ceaa076e1700b609e2b1b7cd3bb0b16713e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-004-617d52b3c017150fd9cd/chapter.json"
+    },
+    "19:5": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 5,
+      "revision": "3de95d4b888965850285",
+      "sourceHash": "f0cb8c790d3b00f091078ba70d2dfd186734b14bb332067073dae10582bb17f3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-005-3de95d4b888965850285/chapter.json"
+    },
+    "19:6": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 6,
+      "revision": "ffae3ac88640ad354a7a",
+      "sourceHash": "246cc32a035d8419129f859521bf4646b3257cf79ca0e644f6b943a36ec41458",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-006-ffae3ac88640ad354a7a/chapter.json"
+    },
+    "19:7": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 7,
+      "revision": "94adc2e6babb94a6c660",
+      "sourceHash": "8e31970ca34d672aae95d87489ace4ae1b23d59cdf85be55e02c733a03275a7e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-007-94adc2e6babb94a6c660/chapter.json"
+    },
+    "19:8": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 8,
+      "revision": "c348e98ecb3ba84a6a2b",
+      "sourceHash": "eae60dcb6cf856973404a0ca827f65a7813ab2267e623738462b7b20047befa9",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-008-c348e98ecb3ba84a6a2b/chapter.json"
+    },
+    "19:9": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 9,
+      "revision": "7596a768486410b06401",
+      "sourceHash": "99b588420ad8eeb6d184e1d1c669fa6bca6e3e10a57a132eced2b44998e3df33",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-009-7596a768486410b06401/chapter.json"
+    },
+    "19:10": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 10,
+      "revision": "45a5a322524b835cef02",
+      "sourceHash": "5f4b4d1a6e50d7c5d888c4d9dcbbb360f7f4de4f0e81d6ec5ea127e59a2ac6d8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-010-45a5a322524b835cef02/chapter.json"
+    },
+    "19:11": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 11,
+      "revision": "8d03ce3a5185db85fc36",
+      "sourceHash": "40914f681737ce8ac9ea36a0d105ad3402b323b0f4218e9a34af32b919a633fb",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-011-8d03ce3a5185db85fc36/chapter.json"
+    },
+    "19:12": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 12,
+      "revision": "e266287ebbbf3846dcd6",
+      "sourceHash": "90658bf85585ab8d2fe689084b6d71269209356a5dc4fba04b53157f04540f1f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-012-e266287ebbbf3846dcd6/chapter.json"
+    },
+    "19:13": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 13,
+      "revision": "e44919a3d9d1d61a79c4",
+      "sourceHash": "ad1af83b8062ec936e6826bd4d629ead962c4194a7a215edc5eb6b28a9bf5fe5",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-013-e44919a3d9d1d61a79c4/chapter.json"
+    },
+    "19:14": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 14,
+      "revision": "f5418078dc9d5d1d41d7",
+      "sourceHash": "98b880066961e9ffcbbce1d244bfce2e883b94b7008c6b9f7320165409589782",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-014-f5418078dc9d5d1d41d7/chapter.json"
+    },
+    "19:15": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 15,
+      "revision": "84f96b256cf077931da3",
+      "sourceHash": "b25ca8d31f1def9346d2b7d21a51255554508717176b9e74f2067faa0a23a03c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-015-84f96b256cf077931da3/chapter.json"
+    },
+    "19:16": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 16,
+      "revision": "4cd8e9f9d01ad9d31844",
+      "sourceHash": "b0b77150c82d89a5fb9f4325a0fefc8290f63ac8f10677105ee5677e9432edbb",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-016-4cd8e9f9d01ad9d31844/chapter.json"
+    },
+    "19:17": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 17,
+      "revision": "3409fcf72c5c8895d1a5",
+      "sourceHash": "6177549897af7f0ebc8afb4a581a37cddc4eb1903e6c7545aebc016166505f1b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-017-3409fcf72c5c8895d1a5/chapter.json"
+    },
+    "19:18": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 18,
+      "revision": "368d751d82230da61c90",
+      "sourceHash": "deb399ff5db1431e16df0cd9281e56a94d9dfb1fbb80cac871cae58d9cd2d18d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-018-368d751d82230da61c90/chapter.json"
+    },
+    "19:19": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 19,
+      "revision": "ea97ba6264cdd19d37ec",
+      "sourceHash": "2ae78aa75d9934f1140d84165e852f850b5d6d9daf975b347e69db2269da9425",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-019-ea97ba6264cdd19d37ec/chapter.json"
+    },
+    "19:20": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 20,
+      "revision": "2f0b3178a58eda90a11d",
+      "sourceHash": "a72f959351dc16f0964432c881d01da5df99d35f5d667dffeaf5d3f6949252f7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-020-2f0b3178a58eda90a11d/chapter.json"
+    },
+    "19:21": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 21,
+      "revision": "f62ac3c604b5d7be2490",
+      "sourceHash": "c5545b23ce34d7035a0da9e448b2eca33b8590b9241f7715fee53e8da43cfc1d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-021-f62ac3c604b5d7be2490/chapter.json"
+    },
+    "19:22": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 22,
+      "revision": "93ff1ffd25273c710261",
+      "sourceHash": "461ebc364aa9adcb02e25c6cc4d4a00d6eaacec5f0bf1526c072a323440c4931",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-022-93ff1ffd25273c710261/chapter.json"
+    },
+    "19:23": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 23,
+      "revision": "9b6d96edb23d92fced5b",
+      "sourceHash": "143708fc89abf0a791cc40a0e46a6b3ef7cb4003ddd877d5e429f008567d49a4",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-023-9b6d96edb23d92fced5b/chapter.json"
+    },
+    "19:24": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 24,
+      "revision": "a6e71607452c477edb28",
+      "sourceHash": "8aa8e21d36844aaf1719b6a60fcd9687d6938439eeea288423ce82d55d2323e8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-024-a6e71607452c477edb28/chapter.json"
+    },
+    "19:25": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 25,
+      "revision": "d5a107cf34aba29d04ce",
+      "sourceHash": "f9e939680897430079559a4532bfae1c0bfb0994b53036415f261739732c5741",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-025-d5a107cf34aba29d04ce/chapter.json"
+    },
+    "19:26": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 26,
+      "revision": "08186215e1fd59edc1f1",
+      "sourceHash": "f80e314192483d510c90a5bd8e106ec64fab0aadd33c4e1e0fb6f76263305482",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-026-08186215e1fd59edc1f1/chapter.json"
+    },
+    "19:27": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 27,
+      "revision": "b3ed7a13044b382d0469",
+      "sourceHash": "ba754cad19bcd5879e0e62f540c3f30b47e3085033849ffb7ad97366032fe59e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-027-b3ed7a13044b382d0469/chapter.json"
+    },
+    "19:28": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 28,
+      "revision": "a2c08d6358324e731dce",
+      "sourceHash": "58211815a14be802938a8670bad899c4eb4d389de4260b3a1c5926d857db7dfc",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-028-a2c08d6358324e731dce/chapter.json"
+    },
+    "19:29": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 29,
+      "revision": "875c006241ea97cde468",
+      "sourceHash": "0c01363b9518021892107b4e05e99feaaf79543d9a0b8ee3e793b51daaa26021",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-029-875c006241ea97cde468/chapter.json"
+    },
+    "19:30": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 30,
+      "revision": "022fd66f68dbafcfe7f9",
+      "sourceHash": "8ee6f90aa4a9983091fb1ef882525bc1b81bcddd7859ca2aa30d026bdaa4cffb",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-030-022fd66f68dbafcfe7f9/chapter.json"
+    },
+    "19:31": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 31,
+      "revision": "79f4620b36587a3dbb9f",
+      "sourceHash": "b3dea62764202a81752e159f87301f63c0b569046e61d78265c1e797622ef778",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-031-79f4620b36587a3dbb9f/chapter.json"
+    },
+    "19:32": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 32,
+      "revision": "e39422c079e16aaa9425",
+      "sourceHash": "903a3d8ef4106ae4180069c2c49952260f14d4810e5ee4f97d99be5355e84454",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-032-e39422c079e16aaa9425/chapter.json"
+    },
+    "19:33": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 33,
+      "revision": "a31a49244014b37edaed",
+      "sourceHash": "1e6673748539acd9ae63ef91e7453d861cc66be8d62df0011ed5d287aec7d0b3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-033-a31a49244014b37edaed/chapter.json"
+    },
+    "19:34": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 34,
+      "revision": "84a5939592fedb2637dc",
+      "sourceHash": "9ad1c6937461628fe3a0aacbd6f27f44a8ccac38e1cd68cf6850261ab9c5edda",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-034-84a5939592fedb2637dc/chapter.json"
+    },
+    "19:35": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 35,
+      "revision": "d8b140f707624a8bea0a",
+      "sourceHash": "86c9c960eca71736bc0fb7984e52b597bd0833401d54b0107c5530031867997e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-035-d8b140f707624a8bea0a/chapter.json"
+    },
+    "19:36": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 36,
+      "revision": "747258e20ad0357811a8",
+      "sourceHash": "b2ea3680b24d8f7f12c4c215df72793901c4323ce6d71607ec862103190ee062",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-036-747258e20ad0357811a8/chapter.json"
+    },
+    "19:37": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 37,
+      "revision": "e0b647e7d8f88be71ce0",
+      "sourceHash": "de6da59c0dbb31f63fb73db08f977fc3e508f6b7a399c1dd11bf32de0868ff61",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-037-e0b647e7d8f88be71ce0/chapter.json"
+    },
+    "19:38": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 38,
+      "revision": "6ca1aa7ee6093efbed9e",
+      "sourceHash": "2233c071e756875176f839da4042d46d6ea92f0c4639ea37014494597e1aef85",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-038-6ca1aa7ee6093efbed9e/chapter.json"
+    },
+    "19:39": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 39,
+      "revision": "04680b2eb72913fc19f7",
+      "sourceHash": "6dc27c56098dcb5e9bcd8638ca6e3787573b8c52d442bbd72a26d34efd686ef3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-039-04680b2eb72913fc19f7/chapter.json"
+    },
+    "19:40": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 40,
+      "revision": "e8bf128db12e4eb67580",
+      "sourceHash": "97686578fa1a9828e20a000bcdad46d94667c5b87506f8f2ba262be151162298",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-040-e8bf128db12e4eb67580/chapter.json"
+    },
+    "19:41": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 41,
+      "revision": "40aef8886c04fd67bd05",
+      "sourceHash": "ce0740cfc53eaabaca86e0d671d57f3388f1ce7bef89301668159874a488b455",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-041-40aef8886c04fd67bd05/chapter.json"
+    },
+    "19:42": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 42,
+      "revision": "bc485f14e8214d44e493",
+      "sourceHash": "fcc398d09eecadc4e94fe4b5f09799c63a79b4db86c4e5d7110bd6cd55c2c35c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-042-bc485f14e8214d44e493/chapter.json"
+    },
+    "19:43": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 43,
+      "revision": "c2e3c116112c84f2b413",
+      "sourceHash": "1b210741a4d185b9daf90a6cf158caf071d3296c211ad733847dba87c33e1f5e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-043-c2e3c116112c84f2b413/chapter.json"
+    },
+    "19:44": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 44,
+      "revision": "765eee7410928ba7172a",
+      "sourceHash": "e49ae9fe7f8a4758406209f7be4ef0c1e3ec7be8e536fa2814d896d9d602f163",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-044-765eee7410928ba7172a/chapter.json"
+    },
+    "19:45": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 45,
+      "revision": "abe91def4a2ee773825b",
+      "sourceHash": "6142983365a4d2d6166e75ffe655c3b9ab5006b2c09f0a218ecdd667c1936c7b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-045-abe91def4a2ee773825b/chapter.json"
+    },
+    "19:46": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 46,
+      "revision": "84f881332763a01bf50d",
+      "sourceHash": "1eb7cc1484600f99e5f0145a3df7efe6111002e8f30a902792b523e85a000ba4",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-046-84f881332763a01bf50d/chapter.json"
+    },
+    "19:47": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 47,
+      "revision": "285dd0a7e5ebd078bd65",
+      "sourceHash": "2e1abd16dcf0884026117a8f110b0eb2c19e4706aa036cbcb2acb81c0a4ef3ce",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-047-285dd0a7e5ebd078bd65/chapter.json"
+    },
+    "19:48": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 48,
+      "revision": "6e9662bc631ff9be06fe",
+      "sourceHash": "bce814661007b85be4b70fe0d26944a741dcd5742b4728b8a647c8faccbd1a5d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-048-6e9662bc631ff9be06fe/chapter.json"
+    },
+    "19:49": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 49,
+      "revision": "0fddec19bb97bcaf22e2",
+      "sourceHash": "8fad29f87c44dbcfca6ac4c86cd38477084747ad6af5cc2b1d8d335475f1fc40",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-049-0fddec19bb97bcaf22e2/chapter.json"
+    },
+    "19:50": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 50,
+      "revision": "0f4095ae065f010d4203",
+      "sourceHash": "ee5e7ebc4079dd4b2569e2e5def8a9bf263065170afbe9dbc5a6dc94580b05ef",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-050-0f4095ae065f010d4203/chapter.json"
+    },
+    "19:51": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 51,
+      "revision": "c8446fc46ac4ff35ae11",
+      "sourceHash": "0081be7d0acdb08db282ba3e7858bb610f1582a08134846704134ec75add1b03",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-051-c8446fc46ac4ff35ae11/chapter.json"
+    },
+    "19:52": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 52,
+      "revision": "bf1bbf2331c31fd9c200",
+      "sourceHash": "431a48205ca6970ec60e03a8ec453c77af265067668535ca4d25aef782d7ee3f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-052-bf1bbf2331c31fd9c200/chapter.json"
+    },
+    "19:53": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 53,
+      "revision": "3a972f4c404e32e7fc98",
+      "sourceHash": "073682a68c07e4627bf0bb53c8ed13ca1e382ae3d241c6e9f0a8c6c75ade3b4c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-053-3a972f4c404e32e7fc98/chapter.json"
+    },
+    "19:54": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 54,
+      "revision": "fb8cea024453a884f15f",
+      "sourceHash": "fd94c62cc5b916717a1517dc978ca05bb63b72831c1f5d224a55207c67165b50",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-054-fb8cea024453a884f15f/chapter.json"
+    },
+    "19:55": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 55,
+      "revision": "3b18cbdde1dfda0a9f07",
+      "sourceHash": "105f8da599d4b34f4078740f468c734f6b1ae4bfac075b406040f72c9da0559b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-055-3b18cbdde1dfda0a9f07/chapter.json"
+    },
+    "19:56": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 56,
+      "revision": "1e1d3f820ffad9b9f902",
+      "sourceHash": "ea07bddc987604dd94c485386433fda81b746d7162d03f92fa8d698d302daa77",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-056-1e1d3f820ffad9b9f902/chapter.json"
+    },
+    "19:57": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 57,
+      "revision": "c709d3f1ca0101912239",
+      "sourceHash": "b2b8106c36889f049252dc173c9ca9cb43e9b1ccd039b9fb0d085e042a7fba78",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-057-c709d3f1ca0101912239/chapter.json"
+    },
+    "19:58": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 58,
+      "revision": "a5d55a03ca574fdcff5d",
+      "sourceHash": "f9b2caaad23a665c651437e767d5354965d6f4208ca12c6d170cc1b632418258",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-058-a5d55a03ca574fdcff5d/chapter.json"
+    },
+    "19:59": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 59,
+      "revision": "938441e2730ae38a3bc4",
+      "sourceHash": "5d2aff6cd5964522ea3e0fb3363faf0557d2b3e6bc57232653156163f1ff7e86",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-059-938441e2730ae38a3bc4/chapter.json"
+    },
+    "19:60": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 60,
+      "revision": "56c57927c287b941c976",
+      "sourceHash": "404235e27b093f181a365494cf2555942240b65f40c9972765789d1dd8a0a6fa",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-060-56c57927c287b941c976/chapter.json"
+    },
+    "19:61": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 61,
+      "revision": "c7270b95a9d4662f8e50",
+      "sourceHash": "aa7a92e254753c8da5acfdc05fe06ed4e605fdea1990896684827355603d4230",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-061-c7270b95a9d4662f8e50/chapter.json"
+    },
+    "19:62": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 62,
+      "revision": "265aa2dea1a80d1b1adf",
+      "sourceHash": "a9b207f4e0625de3413d532bef2cf194abed015bf5a665ca58508a05d7f5d9b1",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-062-265aa2dea1a80d1b1adf/chapter.json"
+    },
+    "19:63": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 63,
+      "revision": "3e48aa6610328191ddf8",
+      "sourceHash": "c53a49a3ce712d3acbefcf1d588aed5a206ad97089116800f1dde9d69cb23e05",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-063-3e48aa6610328191ddf8/chapter.json"
+    },
+    "19:64": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 64,
+      "revision": "d6e047bb55fc51409714",
+      "sourceHash": "67657089adbbdf0474c7c61b678d8989b4acda3e22a7a1a84415d5357dee19c4",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-064-d6e047bb55fc51409714/chapter.json"
+    },
+    "19:65": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 65,
+      "revision": "e4764f71145bbe404a25",
+      "sourceHash": "b7aa04bca51317f8c994576a2b4abf128a34e9062037ff920eb5b649444d1211",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-065-e4764f71145bbe404a25/chapter.json"
+    },
+    "19:66": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 66,
+      "revision": "a9390a5ed69cb1b9e6b8",
+      "sourceHash": "5006006bce358bd007d8566148c87c8f9d4a63553d07f7da3429dca38a3bdb8e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-066-a9390a5ed69cb1b9e6b8/chapter.json"
+    },
+    "19:67": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 67,
+      "revision": "9bbed5c9162b32bb0e40",
+      "sourceHash": "dd3e92ccd85b769b86520b54de6b39196528c0e2067b049d7d39b7eaed08c5a7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-067-9bbed5c9162b32bb0e40/chapter.json"
+    },
+    "19:68": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 68,
+      "revision": "79ce09f45de9af106a83",
+      "sourceHash": "1be25cecabd9314a3b35e41ba5019bbc509f1c3361c436d71049614f3006298c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-068-79ce09f45de9af106a83/chapter.json"
+    },
+    "19:69": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 69,
+      "revision": "3b597662286daef8b08a",
+      "sourceHash": "cac4d8b1d33981b58996b487608fd057b08dbeda1468d905e97f5b2504a8252a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-069-3b597662286daef8b08a/chapter.json"
+    },
+    "19:70": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 70,
+      "revision": "ad33945be6207d4351bc",
+      "sourceHash": "1fd16c88d201d632f864e02c1fd8d0f03af2964684b301c02891814dd900ca31",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-070-ad33945be6207d4351bc/chapter.json"
+    },
+    "19:71": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 71,
+      "revision": "c16a296f7baa101740e9",
+      "sourceHash": "dc3cda4646ee97bac9da0f2fe3835aeb3f0b5146d43f1de4cea5646841de74c8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-071-c16a296f7baa101740e9/chapter.json"
+    },
+    "19:72": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 72,
+      "revision": "dd80d91fa3200c975dc5",
+      "sourceHash": "c044ccd7edea72b80fa8226288cbc8bc015c3cc5d6299c1f113ee4886a1bcee5",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-072-dd80d91fa3200c975dc5/chapter.json"
+    },
+    "19:73": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 73,
+      "revision": "524a879b6d00736e9987",
+      "sourceHash": "2451109d355025bed411579be5376b57bb7a02737aefb22a59cebdf7ce0ad7e0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-073-524a879b6d00736e9987/chapter.json"
+    },
+    "19:74": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 74,
+      "revision": "cb4c3ff3b74e64539f50",
+      "sourceHash": "b9339868b7ccbb67cbb1058f2c1f79d1da754e000a373ee3c6ebe87c87fb8419",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-074-cb4c3ff3b74e64539f50/chapter.json"
+    },
+    "19:75": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 75,
+      "revision": "ce6276863e37aafdbf70",
+      "sourceHash": "849886ff4e18a99ec0e4ea2ba6b04e7abe63b652a1cd34469793eeb4d301ba4b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-075-ce6276863e37aafdbf70/chapter.json"
+    },
+    "19:76": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 76,
+      "revision": "e0591d3d819dc2a83e2a",
+      "sourceHash": "4fffd7aa15af290d714850434a691b86e95582c2c005c00da93e088b683caee9",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-076-e0591d3d819dc2a83e2a/chapter.json"
+    },
+    "19:77": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 77,
+      "revision": "1804defd37a951cbb7f8",
+      "sourceHash": "daf8b0e72b2e11c55ce4031002bde11c83f46c4bf5d35f425daaadd26c2d2ab3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-077-1804defd37a951cbb7f8/chapter.json"
+    },
+    "19:78": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 78,
+      "revision": "fa53479f6763b579c877",
+      "sourceHash": "d4daf53a078342a8a6c935362040abba1237faca79959c67929baffbedf13821",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-078-fa53479f6763b579c877/chapter.json"
+    },
+    "19:79": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 79,
+      "revision": "0ab7658de6145eba5579",
+      "sourceHash": "a977c1192d11904efa847f4b4a6946189bc418f022223645ccf0057351641068",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-079-0ab7658de6145eba5579/chapter.json"
+    },
+    "19:80": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 80,
+      "revision": "6a78b62c273b22cb4fc1",
+      "sourceHash": "a3e007018fec7392ff0728dae44abb518532c16636c9f4070130175899bcf042",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-080-6a78b62c273b22cb4fc1/chapter.json"
+    },
+    "19:81": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 81,
+      "revision": "eb43015b4f26769e694b",
+      "sourceHash": "86f3aea4a11ffbf282964ccfc4b65a8b17093c6eb55e650d1ae679122f4e5d39",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-081-eb43015b4f26769e694b/chapter.json"
+    },
+    "19:82": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 82,
+      "revision": "54d2306ff2692e00603f",
+      "sourceHash": "a0893321f6eb0614de1124f252667985fa4ee7ea706757dee74cfbd469d8803e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-082-54d2306ff2692e00603f/chapter.json"
+    },
+    "19:83": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 83,
+      "revision": "6cf965257cb6c860d6be",
+      "sourceHash": "ceb4f310576d8dac086913e7fca8ca937ef3a68da823644aeeb6a363e6317339",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-083-6cf965257cb6c860d6be/chapter.json"
+    },
+    "19:84": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 84,
+      "revision": "939f1f529da41d6c3df1",
+      "sourceHash": "3855c656f05cc811ae166e0401b88b3b35f8b7265488b51898daa8570417d8d7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-084-939f1f529da41d6c3df1/chapter.json"
+    },
+    "19:85": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 85,
+      "revision": "dce57c9da3714eb29c6e",
+      "sourceHash": "780fa7b4f950e977ddbebd3750d6e22b577836cde9be811c2bdcaceef7a3eda3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-085-dce57c9da3714eb29c6e/chapter.json"
+    },
+    "19:86": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 86,
+      "revision": "4df8c57dab9b5cde1188",
+      "sourceHash": "74ce4338b58c6ca430902e65d5ab3b91f59eaee7aee75c7253151dce29f7b82b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-086-4df8c57dab9b5cde1188/chapter.json"
+    },
+    "19:87": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 87,
+      "revision": "32c6a44c36420a8dd44c",
+      "sourceHash": "95fd6ce024badedbc618bbcb27b1034b15ed866f447e3fe4d288916a5ff199c0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-087-32c6a44c36420a8dd44c/chapter.json"
+    },
+    "19:88": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 88,
+      "revision": "95db8b1fbc08e5bf283e",
+      "sourceHash": "45d54e3e99877ac8a6fc14801df33cf1a5fcb4d2a4129acfc5ac51ea5c3db3e6",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-088-95db8b1fbc08e5bf283e/chapter.json"
+    },
+    "19:89": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 89,
+      "revision": "fc33f9d32e6fec1fea9d",
+      "sourceHash": "dd961391a4747c925bb4b5adaa51cda389e4fda543a1a8c9ccc7d664c7516a9d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-089-fc33f9d32e6fec1fea9d/chapter.json"
+    },
+    "19:90": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 90,
+      "revision": "7d346b10fe80ea47e117",
+      "sourceHash": "114a0b6bed18b20c353b146559201952da86221e201fc014b2c610a442aad33f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-090-7d346b10fe80ea47e117/chapter.json"
+    },
+    "19:91": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 91,
+      "revision": "a74d49b5bb70981d2da3",
+      "sourceHash": "bc33f483e7ce40ca430582365f0191ffc375f1ee52edfdef16b023863e31a203",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-091-a74d49b5bb70981d2da3/chapter.json"
+    },
+    "19:92": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 92,
+      "revision": "9cc43bec947163ce66d6",
+      "sourceHash": "1facf7bb25449e006ff46ed3c5dbaf058e7ce3be214d44222f4f863d38520d8b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-092-9cc43bec947163ce66d6/chapter.json"
+    },
+    "19:93": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 93,
+      "revision": "72474824d49b701f6df9",
+      "sourceHash": "891bdac394995b08e0227240429e76d298eb583da6dd37c7fca26194ab6725c8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-093-72474824d49b701f6df9/chapter.json"
+    },
+    "19:94": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 94,
+      "revision": "d4d55aa8917494571e71",
+      "sourceHash": "88c469d20b74615c1465c484c62132b1a889eb4e20319ecdc6875011ded772ab",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-094-d4d55aa8917494571e71/chapter.json"
+    },
+    "19:95": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 95,
+      "revision": "8efaff00ae27a0463b56",
+      "sourceHash": "15f6acb4d41a62b66ec7cbd1ba0acf8bfdb08a173762cf1b219bf505da0d4923",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-095-8efaff00ae27a0463b56/chapter.json"
+    },
+    "19:96": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 96,
+      "revision": "c06f2e0faef2e8ef3967",
+      "sourceHash": "332e6bed38179d28b2ee34117218a25b2744ae6f383ae99bb8ebeef5cbf463bf",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-096-c06f2e0faef2e8ef3967/chapter.json"
+    },
+    "19:97": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 97,
+      "revision": "0e71aedfa874d4a32ad5",
+      "sourceHash": "4469751f796f8432ecb14cb3c8034d83f228de932b570a5f406e15f547020032",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-097-0e71aedfa874d4a32ad5/chapter.json"
+    },
+    "19:98": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 98,
+      "revision": "db5a8af5ade430981fd3",
+      "sourceHash": "2a17a4d17130766315998e747a14544164e762fac6a080039538273819ab73ee",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-098-db5a8af5ade430981fd3/chapter.json"
+    },
+    "19:99": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 99,
+      "revision": "9bca6f88c629b30c5b7c",
+      "sourceHash": "957162ac551ff997d56b3537b6edc07ef8f36ef29aa11e9f7e9031bd8944b7f9",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-099-9bca6f88c629b30c5b7c/chapter.json"
+    },
+    "19:100": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 100,
+      "revision": "bd785fb71448767d6965",
+      "sourceHash": "f6f36522843e6ac1af66dfa809e3a050d1db6086f9700552f74646f58f83576f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-100-bd785fb71448767d6965/chapter.json"
+    },
+    "19:101": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 101,
+      "revision": "d0b04691073b8b26d8fb",
+      "sourceHash": "520df235c0bb1092140d99a2010a0f49176ffc28c08f191fbfca20abc8d3e9d7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-101-d0b04691073b8b26d8fb/chapter.json"
+    },
+    "19:102": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 102,
+      "revision": "30905c0887083fea0fab",
+      "sourceHash": "9ebad424f63b0545556c99b6af36ee889f84f7ecd2a3027ded74a2fe9f52127b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-102-30905c0887083fea0fab/chapter.json"
+    },
+    "19:103": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 103,
+      "revision": "2a378226f25cbb2dae85",
+      "sourceHash": "c4fab7c7a5a8aedd783b186647b2ad21df958fe5da33543e50b63d9365275c88",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-103-2a378226f25cbb2dae85/chapter.json"
+    },
+    "19:104": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 104,
+      "revision": "512377a40bf73473f178",
+      "sourceHash": "a195dd6a9a68f484fb4346891f848a78f09c980e90c91647fa99e1ac911459c4",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-104-512377a40bf73473f178/chapter.json"
+    },
+    "19:105": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 105,
+      "revision": "42f319cde275848e3aa4",
+      "sourceHash": "4eaabffc6d8f8f597f9d5602acac4578c97ced00176a7e7b2defc7486fd71d12",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-105-42f319cde275848e3aa4/chapter.json"
+    },
+    "19:106": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 106,
+      "revision": "e05be80ef40acfe53b5e",
+      "sourceHash": "3d0cc33bb43563d752b8540d7f9179e142de49fd60a74f16405a799e55c8408f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-106-e05be80ef40acfe53b5e/chapter.json"
+    },
+    "19:107": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 107,
+      "revision": "bff97d82712876de3362",
+      "sourceHash": "ba605e24eb145c331b720e2780962db61995f98d5863a182bd5d85eda14b8a81",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-107-bff97d82712876de3362/chapter.json"
+    },
+    "19:108": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 108,
+      "revision": "c0a75cd8caf2e47f7544",
+      "sourceHash": "b07108d0b32fe1cb03c081e4362e6243c4316fa7a89f9a2032463795a6394b93",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-108-c0a75cd8caf2e47f7544/chapter.json"
+    },
+    "19:109": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 109,
+      "revision": "13017f16ae446298c3c4",
+      "sourceHash": "d51f16675792d4fb86781876752b6d50532fad81c1bcae344c9132e6715b3c9a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-109-13017f16ae446298c3c4/chapter.json"
+    },
+    "19:110": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 110,
+      "revision": "9322bb35248990a848c2",
+      "sourceHash": "a4195447cac44a4412cc8bacf117963bd587a8ec7a35664dc1389f70f07d24c2",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-110-9322bb35248990a848c2/chapter.json"
+    },
+    "19:111": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 111,
+      "revision": "d2823ce6c018904af7ee",
+      "sourceHash": "ddc7957a3ccf5262fbc8c9e5a1e6c2e2eb1b995eebfdfb2dbe2a4a7cd0a7c679",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-111-d2823ce6c018904af7ee/chapter.json"
+    },
+    "19:112": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 112,
+      "revision": "4d16ed0c90efa0295b64",
+      "sourceHash": "994154f326dfd140226aba8f2b9674a9368003e0b0699789772de516678ef501",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-112-4d16ed0c90efa0295b64/chapter.json"
+    },
+    "19:113": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 113,
+      "revision": "fc61566b7f67247fd6c5",
+      "sourceHash": "3e44f7176ff1d7d87d618ca36d77c6a7755dbd2ef0354fe99582ccc63b901e15",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-113-fc61566b7f67247fd6c5/chapter.json"
+    },
+    "19:114": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 114,
+      "revision": "0334467f4d64e40daa05",
+      "sourceHash": "38e446aac2b9c0640a41428fe6dc09cddaa0050d5c92a8948ca150bdd5202fce",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-114-0334467f4d64e40daa05/chapter.json"
+    },
+    "19:115": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 115,
+      "revision": "4ac89001b35a385d361b",
+      "sourceHash": "3b89a1b61e83990ef24f9e11e42f570778bd87c039096505c3237d04d84ca92f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-115-4ac89001b35a385d361b/chapter.json"
+    },
+    "19:116": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 116,
+      "revision": "2bc5c32d24128a4761e5",
+      "sourceHash": "08ab85b87ee72fe682b8e5fcdfdd0cd34f131dcc1ccce731fcb1b382a544e88d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-116-2bc5c32d24128a4761e5/chapter.json"
+    },
+    "19:117": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 117,
+      "revision": "25804d419f7ae66733d3",
+      "sourceHash": "3deb0f0b2bba381be2c43cd474e8de909b9abee61798f789285e75527f4b0141",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-117-25804d419f7ae66733d3/chapter.json"
+    },
+    "19:118": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 118,
+      "revision": "1334d660951d738b4aae",
+      "sourceHash": "efe126fc0ce944eaefdcac5203f95be80737aaf7d2a95ababd320d53419db301",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-118-1334d660951d738b4aae/chapter.json"
+    },
+    "19:119": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 119,
+      "revision": "68120c43d5ecbc3855a7",
+      "sourceHash": "8d8ccf8a43356a389bf6bd815ea9f238499ed65f329242d354aac3ae1d7f7fb9",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-119-68120c43d5ecbc3855a7/chapter.json"
+    },
+    "19:120": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 120,
+      "revision": "f51c63c1ac4d5fbf0984",
+      "sourceHash": "84a73cf9dc7442e2151eb4922d60a555c16e065f57826cb653dcfb14021ab785",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-120-f51c63c1ac4d5fbf0984/chapter.json"
+    },
+    "19:121": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 121,
+      "revision": "f69ff81967d51498bdcd",
+      "sourceHash": "9974624ff7b7985893913d608e2d504a87cd0c2b52fd56ab8260c360d9e63f43",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-121-f69ff81967d51498bdcd/chapter.json"
+    },
+    "19:122": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 122,
+      "revision": "f98450ff2b286ea3ad2b",
+      "sourceHash": "3ebbcb4e5a76e4004dfc6949ed8a41cf5587eae599865caf952c08b2ba105c80",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-122-f98450ff2b286ea3ad2b/chapter.json"
+    },
+    "19:123": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 123,
+      "revision": "1018f69197a344e0b8e2",
+      "sourceHash": "6b609674a1d129186b94db11f1a1ebe4fb9970d2a864377a427f349c7a39804d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-123-1018f69197a344e0b8e2/chapter.json"
+    },
+    "19:124": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 124,
+      "revision": "ffb830bda5b66ffab1ae",
+      "sourceHash": "a6a9f8ba160b173773f2745bb8c2c1c9126ccc1c225b7aeec6abaf920e67ba66",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-124-ffb830bda5b66ffab1ae/chapter.json"
+    },
+    "19:125": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 125,
+      "revision": "7adaf3eda1c1fa7d5adb",
+      "sourceHash": "6290279ac9ae31e42ea8e829cca5378cd48ea3f6ecec9ae5739e2b7cb71db6f2",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-125-7adaf3eda1c1fa7d5adb/chapter.json"
+    },
+    "19:126": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 126,
+      "revision": "8bb38a4b7e294c4c463e",
+      "sourceHash": "9162792480decf3ff22d944621af248e3b38c5eb36e5042098466eb5a9207a21",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-126-8bb38a4b7e294c4c463e/chapter.json"
+    },
+    "19:127": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 127,
+      "revision": "5e710835db986a7f0d15",
+      "sourceHash": "8c7cdf19bf4c5519d013a3f079d89a2b4b38662ef3e04f0f85f19ae0f2ff7f1e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-127-5e710835db986a7f0d15/chapter.json"
+    },
+    "19:128": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 128,
+      "revision": "b35d6c4f4c85072488db",
+      "sourceHash": "5235697619727877f3baabfb50f05abae5c3870e90c8efaeeef7a05fb9b6d185",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-128-b35d6c4f4c85072488db/chapter.json"
+    },
+    "19:129": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 129,
+      "revision": "aa2c45dbc02a9e38f1fb",
+      "sourceHash": "fb386f9e80b9e032fa7385f0708b8eeb78edc9e0a6f3f628c85fc329a82ea2c0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-129-aa2c45dbc02a9e38f1fb/chapter.json"
+    },
+    "19:130": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 130,
+      "revision": "3ec39b870c1ebd542978",
+      "sourceHash": "a721e066c2f587a1ca61b8b6466608b960b0687124fe13b81303c400136bc5c1",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-130-3ec39b870c1ebd542978/chapter.json"
+    },
+    "19:131": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 131,
+      "revision": "00a9c6b6405253621344",
+      "sourceHash": "c56e7483e15fd104f6295d5d7cc51392339fa59c95b6520645b0c24ff7d2f438",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-131-00a9c6b6405253621344/chapter.json"
+    },
+    "19:132": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 132,
+      "revision": "c07b58f54c02c656ff69",
+      "sourceHash": "8b3b5e2cec3b4a24fd86d47f1d597e2dd1c0417bdaca6befa348c1a5ca5f1a65",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-132-c07b58f54c02c656ff69/chapter.json"
+    },
+    "19:133": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 133,
+      "revision": "2e1e7f86ab88732373eb",
+      "sourceHash": "8ba837ec2be579ad259c37504900151de0402beda24f42bce5ed114e34711553",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-133-2e1e7f86ab88732373eb/chapter.json"
+    },
+    "19:134": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 134,
+      "revision": "3df90baea538a322d22b",
+      "sourceHash": "bf9a04913214627e7683acce50551e9716a367f7bb52cda0c18fe14a7e293c7c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-134-3df90baea538a322d22b/chapter.json"
+    },
+    "19:135": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 135,
+      "revision": "e846390492165da793e7",
+      "sourceHash": "ddd9f55937f269fbce64d1b590f5919f1bdd4ba25091ac2a2dd35ce08a443e3c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-135-e846390492165da793e7/chapter.json"
+    },
+    "19:136": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 136,
+      "revision": "fa9325472d0fb79c0da5",
+      "sourceHash": "3330732c973f7f06c826435c0803fbbbcc7037393a684857f82ae3123bdda376",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-136-fa9325472d0fb79c0da5/chapter.json"
+    },
+    "19:137": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 137,
+      "revision": "327ff3dfcc93b18fd297",
+      "sourceHash": "ae9c0e673d2b0aade1fcbef901360ff7f01f1792c1dc472b8696561ac01087dd",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-137-327ff3dfcc93b18fd297/chapter.json"
+    },
+    "19:138": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 138,
+      "revision": "7224e60123af427d92c0",
+      "sourceHash": "f449ce3d07af7ccfaa3480b1ed5a71db7463230b5de718e056413d18147c4bad",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-138-7224e60123af427d92c0/chapter.json"
+    },
+    "19:139": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 139,
+      "revision": "2a413da467b1b14aaed0",
+      "sourceHash": "19053aaede91e2d98e40f2c189f8681dd1d4492525e5e535f344863e7156a363",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-139-2a413da467b1b14aaed0/chapter.json"
+    },
+    "19:140": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 140,
+      "revision": "b6964080c54860d1f063",
+      "sourceHash": "74f5356530f1183e7c2ce403b41e5987a6d725bafcd8fb428de61a14a19affdf",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-140-b6964080c54860d1f063/chapter.json"
+    },
+    "19:141": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 141,
+      "revision": "86f7bca741107f5fec49",
+      "sourceHash": "711cca3998ea9d49f719448de2948976269027792982948f1de736589b6412a4",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-141-86f7bca741107f5fec49/chapter.json"
+    },
+    "19:142": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 142,
+      "revision": "71e10b4c1cc14e419a0c",
+      "sourceHash": "dd1dfd9cae05a1b9f253ca49a5489cbf5ed5e12e4cc2f2b60b51e600563d76b3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-142-71e10b4c1cc14e419a0c/chapter.json"
+    },
+    "19:143": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 143,
+      "revision": "a3273569705a13fbe13d",
+      "sourceHash": "4140a91b45c0e13b37b821a09625eab22c245cf29831b123ee83a0103fe4de52",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-143-a3273569705a13fbe13d/chapter.json"
+    },
+    "19:144": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 144,
+      "revision": "7f58e4230fe654f9068b",
+      "sourceHash": "6ce91a30836612463909803d75c080bf6001ec010ce4cdf7ae82251f29433978",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-144-7f58e4230fe654f9068b/chapter.json"
+    },
+    "19:145": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 145,
+      "revision": "a98660fc43dcf260ebf2",
+      "sourceHash": "a863445cc55dff72f6c16464c48eecfe30fb0541e60059baadb693ceac645fea",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-145-a98660fc43dcf260ebf2/chapter.json"
+    },
+    "19:146": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 146,
+      "revision": "3736530463bfe8df0c29",
+      "sourceHash": "8a8420500cac844f0256b203509f23a1f4fee540adea5d4c4d0d9669cf2aaa56",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-146-3736530463bfe8df0c29/chapter.json"
+    },
+    "19:147": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 147,
+      "revision": "5f3288e58569d1475b0f",
+      "sourceHash": "dd1ad2d5a836fa825689843fff99b02a28e7d3b8853ee616077fe8637897e12b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-147-5f3288e58569d1475b0f/chapter.json"
+    },
+    "19:148": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 148,
+      "revision": "b74fa6385ec623418d4f",
+      "sourceHash": "bea401b90ed95c8f7319750835bf5fa2b240c3d25728aac3190381d07ff2f579",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-148-b74fa6385ec623418d4f/chapter.json"
+    },
+    "19:149": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 149,
+      "revision": "b3e28c57691d81637029",
+      "sourceHash": "39077290108accf52a9fb52ec18d790dcddcf49f4c97557e05884762ba5f4dbe",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-149-b3e28c57691d81637029/chapter.json"
+    },
+    "19:150": {
+      "bookId": 19,
+      "book": "Psalms",
+      "bookName": "Psaltaren",
+      "chapter": 150,
+      "revision": "4720eb8495fff7ee1b32",
+      "sourceHash": "75d3b5ff43623d4c784588e4103134a4d17f635365d53404123e0b374e506242",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-19-150-4720eb8495fff7ee1b32/chapter.json"
+    },
+    "20:1": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 1,
+      "revision": "37ad882e93005bcf00a5",
+      "sourceHash": "fab22953db47b5b7773bcacd78d07ede5770aeebe23f8ddf0f150d17c250866f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-001-37ad882e93005bcf00a5/chapter.json"
+    },
+    "20:2": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 2,
+      "revision": "e51815a29e755c8f1977",
+      "sourceHash": "a1b1fd6d2afb994896f053cff0dcffbd129418be70d5530e2026ba1bde8f2558",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-002-e51815a29e755c8f1977/chapter.json"
+    },
+    "20:3": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 3,
+      "revision": "9a180b42f15db59bb6f6",
+      "sourceHash": "8d7f81e93a883ba6a8a3e7f15543b56b38d0e688841bef527c9e81157806858e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-003-9a180b42f15db59bb6f6/chapter.json"
+    },
+    "20:4": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 4,
+      "revision": "06b83ffa38dcb0fc0022",
+      "sourceHash": "6267c2874eb498256ca11ec1a4bc3245c886667f54a0d5a4321d4cf0ee97e433",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-004-06b83ffa38dcb0fc0022/chapter.json"
+    },
+    "20:5": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 5,
+      "revision": "bf92d18dde2a3b932bcb",
+      "sourceHash": "48b433a70dbad54d4198b6c15bcb978f7ea023775e743d100b35c1bf2c194c6c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-005-bf92d18dde2a3b932bcb/chapter.json"
+    },
+    "20:6": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 6,
+      "revision": "6c9fca55be2226f91512",
+      "sourceHash": "95065cd00a7554320a01dea3b4d0ad9644cd4df937291b879e8e2da0eba4d520",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-006-6c9fca55be2226f91512/chapter.json"
+    },
+    "20:7": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 7,
+      "revision": "e25a5b0fced62f5a9c16",
+      "sourceHash": "d06ab7e49c83dc5ae9997c94430f18f5fcc51f1c589c1e36aaeca5a60e055ac2",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-007-e25a5b0fced62f5a9c16/chapter.json"
+    },
+    "20:8": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 8,
+      "revision": "e4718155a3dfb8ca12fe",
+      "sourceHash": "abb741dc356a1f501f639424eb7197141331fd1e92318b12028f28aef43fe6b0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-008-e4718155a3dfb8ca12fe/chapter.json"
+    },
+    "20:9": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 9,
+      "revision": "42a452eea504d9d6705a",
+      "sourceHash": "3c17cd10c71215ae4575cb2337feacb8490c88e80f5d71fcf71f6a2647542b68",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-009-42a452eea504d9d6705a/chapter.json"
+    },
+    "20:10": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 10,
+      "revision": "032d0dbe3ea9adf03cae",
+      "sourceHash": "a7227b20afc0ce26333f389ea4db50f7cf10b571b324fe654d716e6999d1a2e4",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-010-032d0dbe3ea9adf03cae/chapter.json"
+    },
+    "20:11": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 11,
+      "revision": "ba78c422bb1798c17213",
+      "sourceHash": "4e9f938780a4ab15f2270a12859880f6a25a90d71f94397accb91c61c520f9a8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-011-ba78c422bb1798c17213/chapter.json"
+    },
+    "20:12": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 12,
+      "revision": "9537d063ecd78f7b5f2e",
+      "sourceHash": "c116cd6a4fa3e6ae222c91fae2390d2c952646b3af259047bab041495b981cc5",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-012-9537d063ecd78f7b5f2e/chapter.json"
+    },
+    "20:13": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 13,
+      "revision": "aff2f789b85d000d4ef4",
+      "sourceHash": "454665166baf88c015431f0cf857c4635bdfb0aa7db2218781fa3202b65d0cf5",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-013-aff2f789b85d000d4ef4/chapter.json"
     }
   }
 }
