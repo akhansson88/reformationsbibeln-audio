@@ -7003,6 +7003,249 @@
       "revision": "f734284f16e5d670c3ce",
       "sourceHash": "8108502310f6bfc256852cd4812394c1f8b45639efe4ddc5b8efcd125d22a75a",
       "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-008-f734284f16e5d670c3ce/chapter.json"
+    },
+    "40:2": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 2,
+      "revision": "c20803bbabca2585355d",
+      "sourceHash": "f04017681478dd6c260b69bbd752499be0493f527b906f2446e1fa699c324fc6",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-002-c20803bbabca2585355d/chapter.json"
+    },
+    "40:3": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 3,
+      "revision": "ebd007b1debd964db7eb",
+      "sourceHash": "32a30654c84389a976ab50472fa531e7c453937ea3c01fd4f67dadb000b7ac9f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-003-ebd007b1debd964db7eb/chapter.json"
+    },
+    "40:4": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 4,
+      "revision": "96b12d83d12c7710bc7b",
+      "sourceHash": "51287ec55c9c762eec4aedaf6edd5392b16d56f4a43a6375ebd9ec1e7796512f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-004-96b12d83d12c7710bc7b/chapter.json"
+    },
+    "40:5": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 5,
+      "revision": "05dcedf2828c36fe7564",
+      "sourceHash": "fd002ac0ee67bb25e154c3bd4c774d263fd2f6f7cf3c713d1cf87e1dadffc216",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-005-05dcedf2828c36fe7564/chapter.json"
+    },
+    "40:6": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 6,
+      "revision": "2869ab51b36d7f45f62d",
+      "sourceHash": "6e16b948b3fb0074d7fd5219b3cc3e9e30b68d9b4d6ce7e0d48d0752e5d19efc",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-006-2869ab51b36d7f45f62d/chapter.json"
+    },
+    "40:7": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 7,
+      "revision": "01292dd85a2d525078b0",
+      "sourceHash": "ec3eaece91eab22de06e57a57e14f39216831cb43fea4f0d8655fb04779d6344",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-007-01292dd85a2d525078b0/chapter.json"
+    },
+    "40:8": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 8,
+      "revision": "cf68cbd60f33128c1510",
+      "sourceHash": "57b1dd7ed85ee18ea9199ecf5c8d729ad1fff28882c1522b836e36f5ca0d0649",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-008-cf68cbd60f33128c1510/chapter.json"
+    },
+    "40:9": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 9,
+      "revision": "3407c61ae6d440ffe81c",
+      "sourceHash": "7a483d73f98d4516e453670e3781e6a0944033da1da5a6b3eaef7852906f478b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-009-3407c61ae6d440ffe81c/chapter.json"
+    },
+    "40:10": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 10,
+      "revision": "3570390096c0ff60083e",
+      "sourceHash": "d40a0787d90891ab129ec9f37f7dc6052ff1b428e7b743869d72a37156617fd6",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-010-3570390096c0ff60083e/chapter.json"
+    },
+    "40:11": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 11,
+      "revision": "62cfb182fc69e46e5210",
+      "sourceHash": "411f6604444e4ebce62dd14a6128ca2ef8eba507c937f4cbf06dfafa3b67de9f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-011-62cfb182fc69e46e5210/chapter.json"
+    },
+    "40:12": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 12,
+      "revision": "e92708730924d7bf483d",
+      "sourceHash": "6abf74ad872f81f931dd3c146b75551692043cc0893e93127f3ffdb418582620",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-012-e92708730924d7bf483d/chapter.json"
+    },
+    "40:13": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 13,
+      "revision": "cea77e9a620f68419e69",
+      "sourceHash": "84d235ff4abb3920dfa0a9b017c46528bc010aa8418f9b75dc235b78c6a8bfc1",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-013-cea77e9a620f68419e69/chapter.json"
+    },
+    "40:14": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 14,
+      "revision": "419aad08b671313d80be",
+      "sourceHash": "c8fe5a9f20d1d0caf0fa5281b7baf84188523fc12a74fa7a4288bc7f33189b04",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-014-419aad08b671313d80be/chapter.json"
+    },
+    "40:15": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 15,
+      "revision": "da7928f4751cd032a8d7",
+      "sourceHash": "81fb78b528bb9702ce06543ccf714b3a871271a07b06266b8f7b6fc685bb5de6",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-015-da7928f4751cd032a8d7/chapter.json"
+    },
+    "40:16": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 16,
+      "revision": "623a8802880316f67732",
+      "sourceHash": "e589148f76c5e2e306c772d72f13e8fa1900c66324ae8c2d8601f5f60678134c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-016-623a8802880316f67732/chapter.json"
+    },
+    "40:17": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 17,
+      "revision": "c26cd9062996b6537cb1",
+      "sourceHash": "572830ee0befb5b21e12159dafe96d2f91f7086e2264daa332d4e1c0ee4690f4",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-017-c26cd9062996b6537cb1/chapter.json"
+    },
+    "40:18": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 18,
+      "revision": "d19c43fe447b298933aa",
+      "sourceHash": "d6c8edb53411c6c228e129d4bedd16cbcbfa1be55cdc499535c3e2d7ea9213a9",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-018-d19c43fe447b298933aa/chapter.json"
+    },
+    "40:19": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 19,
+      "revision": "cd8b147d900c765e0717",
+      "sourceHash": "99ce960d0f5322ffe44647099ede44332a587850df844377b67f5565c2771e3e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-019-cd8b147d900c765e0717/chapter.json"
+    },
+    "40:20": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 20,
+      "revision": "b53842d9a3970690cce4",
+      "sourceHash": "deceea1d8365a6a148143af8cf02fc5f8af746d190663d4d51c68eb80acc8109",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-020-b53842d9a3970690cce4/chapter.json"
+    },
+    "40:21": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 21,
+      "revision": "84133e5248cb6b19a959",
+      "sourceHash": "ad2c06c4acbc5b5a58a13488ce570bef9ad39c5e0956b5f5a58046b2d1196d02",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-021-84133e5248cb6b19a959/chapter.json"
+    },
+    "40:22": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 22,
+      "revision": "8a1f350348143d5d8627",
+      "sourceHash": "3d8788819572a8762b6c05c5e222afcd900d348f3697bf02d8298d9ef5b02012",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-022-8a1f350348143d5d8627/chapter.json"
+    },
+    "40:23": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 23,
+      "revision": "0911ca2f8dd2e0f98aa4",
+      "sourceHash": "129ac7a59451d57b5049ac38058957651385e46df36894975f7ccbb0c43d9f7e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-023-0911ca2f8dd2e0f98aa4/chapter.json"
+    },
+    "40:24": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 24,
+      "revision": "eacb7df92db3c136a6f3",
+      "sourceHash": "4f13afe69550294ced12bd50c961fd88de52605756113150e1d45f6a51d94864",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-024-eacb7df92db3c136a6f3/chapter.json"
+    },
+    "40:25": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 25,
+      "revision": "1ab20ade28c1f5297147",
+      "sourceHash": "b9888f6f1fc695765e0a6d7a0660fe3812cf5780e84b8cd15efdb6a8e01fd258",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-025-1ab20ade28c1f5297147/chapter.json"
+    },
+    "40:26": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 26,
+      "revision": "6ce1c844ea52875826eb",
+      "sourceHash": "48a0b04a1ab495cc4a3d390f2b89a209a1bd9fb4500cdc22f184e5852f01d426",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-026-6ce1c844ea52875826eb/chapter.json"
+    },
+    "40:27": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 27,
+      "revision": "40b2a3ddfb9f303a6381",
+      "sourceHash": "e5c04f61717b7c0de06d623a93fdc01a0e600234422b21af22d1a0e8b9078441",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-027-40b2a3ddfb9f303a6381/chapter.json"
+    },
+    "40:28": {
+      "bookId": 40,
+      "book": "Matthew",
+      "bookName": "Matteus Evangelium",
+      "chapter": 28,
+      "revision": "a651eb3860e8fa12a2ae",
+      "sourceHash": "2bed4c1e7faebc046aeed752008654731a67c836352aee2ac610bbc44fc0c84e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-028-a651eb3860e8fa12a2ae/chapter.json"
     }
   }
 }
