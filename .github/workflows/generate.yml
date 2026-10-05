@@ -12,7 +12,7 @@ on:
         type: string
       chapters:
         description: Chapters/ranges, blank for all chapters of selected books
-        default: '1'
+        default: ''
         type: string
       entire:
         description: Entire Bible (ignores books and chapters)
@@ -29,6 +29,10 @@ on:
       revision:
         description: Optional overwrite resume ID; normally leave blank
         type: string
+      workers:
+        description: Parallel requests (auto or a number from 1 to 15)
+        default: auto
+        type: string
 permissions:
   contents: write
   actions: read
@@ -43,6 +47,7 @@ env:
   REPLACE_LEGACY: ${{ inputs.replace_legacy }}
   OVERWRITE: ${{ inputs.overwrite }}
   REVISION: ${{ inputs.revision }}
+  WORKERS: ${{ inputs.workers }}
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -79,7 +84,7 @@ jobs:
           if [[ "$REPLACE_LEGACY" == "true" ]]; then args=(--replace-legacy); fi
           if [[ "$OVERWRITE" == "true" ]]; then args+=(--overwrite); fi
           python audio.py estimate "${args[@]}" >> "$GITHUB_STEP_SUMMARY"
-          python audio.py generate "${args[@]}" --revision "$REVISION" --max-seconds 18000
+          python audio.py generate "${args[@]}" --workers "${WORKERS:-auto}" --revision "$REVISION" --max-seconds 18000
       - uses: actions/upload-artifact@v4
         if: always()
         with:

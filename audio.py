@@ -2,6 +2,9 @@
 from __future__ import annotations
 
 import argparse
+from concurrent.futures import ThreadPoolExecutor, as_completed, CancelledError
+from contextlib import contextmanager
+from email.utils import parsedate_to_datetime
 import hashlib
 import json
 import math
@@ -10,6 +13,7 @@ from pathlib import Path
 import subprocess
 import sys
 import tempfile
+import threading
 import time
 import urllib.request
 import urllib.error
@@ -27,6 +31,136 @@ DEADLINE = float("inf")
 
 class GenerationPaused(RuntimeError):
     """Completed recordings remain uploaded; rerun with the same selection."""
+
+
+class GenerationStopped(RuntimeError):
+    """Another worker stopped the run before this request was admitted."""
+
+
+def worker_setting(value):
+    value = str(value).strip().lower()
+    if value == "auto" or (value.isdigit() and 1 <= int(value) <= 15):
+        return value
+    raise argparse.ArgumentTypeError("Workers must be auto or an integer from 1 to 15")
+
+
+class RunControl:
+    """Coordinate request admission, adaptive concurrency and graceful stopping."""
+
+    def __init__(self, workers="auto", deadline=float("inf")):
+        workers = worker_setting(workers)
+        self.automatic = workers == "auto"
+        self.max_workers = 15 if self.automatic else int(workers)
+        self.target = 2 if self.automatic else int(workers)
+        self.ceiling = self.target
+        self.discovered = False
+        self.active = self.peak = self.successes = 0
+        self.verses = self.chapters = 0
+        self.deadline = deadline
+        self.started = time.monotonic()
+        self.error = None
+        self.condition = threading.Condition()
+
+    def stop(self, error):
+        with self.condition:
+            if self.error is None:
+                self.error = error
+            self.condition.notify_all()
+
+    def check(self):
+        with self.condition:
+            if self.error is not None:
+                raise GenerationStopped("Generation stopped; no new request was started")
+            if time.monotonic() >= self.deadline:
+                error = GenerationPaused("Time budget reached; rerun the same selection to resume.")
+                self.stop(error)
+                raise error
+
+    @contextmanager
+    def request(self):
+        with self.condition:
+            self.check()
+            while self.active >= self.target:
+                self.condition.wait(timeout=min(1, max(0, self.deadline - time.monotonic())))
+                self.check()
+            self.active += 1
+            self.peak = max(self.peak, self.active)
+        try:
+            yield
+        except Exception as error:
+            # Notify waiting workers before releasing this request's slot.
+            self.stop(error)
+            raise
+        finally:
+            with self.condition:
+                self.active -= 1
+                self.condition.notify_all()
+
+    def succeeded(self, headers):
+        with self.condition:
+            before = self.target
+            try:
+                limit = int(headers.get("maximum-concurrent-requests", "0"))
+            except (ValueError, TypeError, AttributeError):
+                limit = 0
+            if self.automatic and limit > 0:
+                self.ceiling = min(self.max_workers, limit)
+                if not self.discovered:
+                    self.target = self.ceiling
+                    self.discovered = True
+                else:
+                    self.target = min(self.target, self.ceiling)
+            self.successes += 1
+            if self.successes >= 10:
+                self.target = min(self.ceiling, self.target + 1)
+                self.successes = 0
+            if self.target != before:
+                print(f"Speech concurrency: {self.target} (ceiling {self.ceiling})", flush=True)
+            self.condition.notify_all()
+
+    def throttled(self):
+        with self.condition:
+            self.target = max(1, self.target // 2)
+            self.successes = 0
+            print(f"Speech throttled; concurrency reduced to {self.target}", flush=True)
+            self.condition.notify_all()
+
+    def backoff(self, seconds):
+        with self.condition:
+            end = min(self.deadline, time.monotonic() + seconds)
+            while time.monotonic() < end:
+                self.check()
+                self.condition.wait(timeout=end - time.monotonic())
+            self.check()
+
+    def completed_verse(self):
+        with self.condition:
+            self.verses += 1
+
+    def completed_chapter(self, cached_verses=0):
+        with self.condition:
+            self.chapters += 1
+            self.verses += cached_verses
+
+    def progress(self):
+        with self.condition:
+            return (f"Completed {self.verses} verses and {self.chapters} chapters; "
+                    f"concurrency {self.target}, peak requests {self.peak}; "
+                    f"elapsed {time.monotonic() - self.started:.1f}s.")
+
+
+def retry_delay(headers, attempt):
+    """Honor both numeric and HTTP-date Retry-After values."""
+    value = headers.get("Retry-After") if headers else None
+    if value:
+        try:
+            return max(0, float(value))
+        except ValueError:
+            try:
+                return max(0, parsedate_to_datetime(value).timestamp() - time.time())
+            except (ValueError, TypeError, OverflowError):
+                pass
+    return min(60, 2 ** (attempt + 1))
 
 
 def summary(message):
@@ -116,6 +250,7 @@ def load_source(path):
 
 
 def select(data, books="", chapters="", entire=False):
+    books, chapters = books.strip(), chapters.strip()
     if entire and (books or chapters):
         raise ValueError("--all cannot be combined with --books or --chapters")
     if not entire and not books:
@@ -163,36 +298,48 @@ def inspect_mp3(path):
     return duration
 
 
-def synthesize(text, destination):
+def synthesize(text, destination, *, control=None):
+    managed = control is not None
+    control = control or RunControl("1", DEADLINE)
     partial = destination.with_suffix(".part")
+    marker = destination.with_suffix(".request.json")
     for attempt in range(6):
-        try:
-            with eleven_request(f"text-to-speech/{VOICE}?output_format={PROFILE['format']}", {
-                "model_id": MODEL, "text": text, "language_code": "sv",
-                "voice_settings": PROFILE["voiceSettings"],
-            }) as response, partial.open("wb") as output:
-                import shutil
-                shutil.copyfileobj(response, output)
-            partial.replace(destination)
-            return
-        except urllib.error.HTTPError as error:
+        with control.request():
+            write_json(marker, {"textHash": digest(text), **PROFILE})
             try:
-                detail = json.loads(error.read()).get("detail", {})
-                status = detail.get("status", "") if isinstance(detail, dict) else ""
-            except (ValueError, AttributeError):
-                status = ""
-            finally:
-                error.close()
-            if error.code == 402 or status in ("quota_exceeded", "insufficient_credits", "insufficient_credit_balance"):
-                raise GenerationPaused("ElevenLabs credits exhausted. Refill credits and rerun the same selection.") from None
-            if error.code == 429 and attempt < 5:
-                time.sleep(min(60, 2 ** (attempt + 1)))
-                continue
-            # A rejection is safe to resume. An uncertain server/connection failure
-            # leaves a request marker so a rerun cannot silently charge twice.
-            if error.code < 500 and error.code != 408:
-                destination.with_suffix(".request.json").unlink(missing_ok=True)
-            raise RuntimeError(f"Speech request failed (HTTP {error.code}); no automatic paid retry") from None
+                with eleven_request(f"text-to-speech/{VOICE}?output_format={PROFILE['format']}", {
+                    "model_id": MODEL, "text": text, "language_code": "sv",
+                    "voice_settings": PROFILE["voiceSettings"],
+                }) as response, partial.open("wb") as output:
+                    import shutil
+                    headers = getattr(response, "headers", {})
+                    shutil.copyfileobj(response, output)
+                partial.replace(destination)
+                control.succeeded(headers)
+                return
+            except urllib.error.HTTPError as error:
+                delay = retry_delay(error.headers, attempt)
+                try:
+                    detail = json.loads(error.read()).get("detail", {})
+                    status = detail.get("status", "") if isinstance(detail, dict) else ""
+                except (ValueError, AttributeError):
+                    status = ""
+                finally:
+                    error.close()
+                if error.code < 500 and error.code != 408:
+                    marker.unlink(missing_ok=True)  # Rejected requests are safe to resume.
+                if error.code == 402 or status in ("quota_exceeded", "insufficient_credits", "insufficient_credit_balance"):
+                    raise GenerationPaused("ElevenLabs credits exhausted. Refill credits and rerun the same selection.") from None
+                if error.code == 429 and attempt < 5:
+                    control.throttled()
+                else:
+                    # Uncertain failures retain their marker; never retry paid requests blindly.
+                    raise RuntimeError(f"Speech request failed (HTTP {error.code}); no automatic paid retry") from None
+        # Backoff holds no request slot and wakes promptly when another worker stops.
+        if managed:
+            control.backoff(delay)
+        else:
+            time.sleep(delay)
 
 
 def upload(tag, path, repo):
@@ -277,11 +424,14 @@ def previous_verses(book, chapter, repo):
     return {verse["verse"]: verse for verse in manifest["verses"]} if manifest else {}
 
 
-def generate_chapter(data, book, chapter, repo, output, revision="", *, overwrite=False):
+def generate_chapter(data, book, chapter, repo, output, revision="", *, overwrite=False, control=None):
     if revision and not overwrite:
         raise ValueError("Regeneration is disabled unless --overwrite is selected")
     if overwrite and not revision:
         raise ValueError("Overwrite generation requires a resumable revision")
+    managed = control is not None
+    control = control or RunControl("1", DEADLINE)
+    control.check()
     verses = [{"verse": v["number"], "text": clean(v["text"])} for v in chapter["verses"]]
     numbers = [v["verse"] for v in verses]
     if not verses or len(set(numbers)) != len(numbers) or numbers != sorted(numbers):
@@ -301,6 +451,7 @@ def generate_chapter(data, book, chapter, repo, output, revision="", *, overwrit
                 previous["manifestUrl"] = f"https://github.com/{repo}/releases/download/{tag}/chapter.json"
                 write_json(Path(output) / f"{book['number']:02d}-{chapter['number']:03d}.json", previous)
                 print(f"Already published; skipped {book['number']}:{chapter['number']}", flush=True)
+                control.completed_chapter(len(numbers))
                 return
             revision = ""
     generation = generation_id(source_hash, revision)
@@ -336,14 +487,20 @@ def generate_chapter(data, book, chapter, repo, output, revision="", *, overwrit
             published["manifestUrl"] = manifest_url
             write_json(Path(output) / f"{book['number']:02d}-{chapter['number']:03d}.json", published)
             print(f"Already complete; skipped {book['number']}:{chapter['number']} ({len(numbers)} verses)", flush=True)
+            control.completed_chapter(len(numbers))
             return
         manifest_path.unlink(missing_ok=True)
 
     manifest = {"schemaVersion": 1, "translation": VERSION, "sourceLabel": data["translation"], "sourceHash": source_hash, "revision": generation, **PROFILE, "bookId": book["number"], "book": BOOKS[book["number"] - 1], "bookName": book["name"], "chapter": chapter["number"], "expectedVerses": numbers, "verses": []}
     reusable = previous_verses(book, chapter, repo) if not overwrite and any(f"verse-{n:03d}.mp3" not in assets for n in numbers) else {}
-    for verse in verses:
-        if time.monotonic() >= DEADLINE:
-            raise GenerationPaused(f"Time budget reached before {book['number']}:{chapter['number']}:{verse['verse']}; rerun to resume.")
+    # Detect known uncertain requests before any parallel worker can spend credits.
+    for number in numbers:
+        path = pending / f"verse-{number:03d}.mp3"
+        if path.with_suffix(".request.json").exists() and not path.exists() and path.name not in assets:
+            raise RuntimeError(f"Uncertain previous speech request for {tag}/{path.name}; recover audio from ElevenLabs history before retrying")
+
+    def process_verse(verse):
+        control.check()
         name = f"verse-{verse['verse']:03d}.mp3"
         path = Path(directory) / name
         marker = path.with_suffix(".request.json")
@@ -370,27 +527,64 @@ def generate_chapter(data, book, chapter, repo, output, revision="", *, overwrit
                     raise ValueError("Existing verse checksum mismatch; refusing regeneration")
                 print(f"Reused {book['number']}:{chapter['number']}:{verse['verse']}", flush=True)
             else:
-                write_json(marker, {"textHash": digest(verse["text"]), **PROFILE})
                 try:
-                    synthesize(verse["text"], path)
+                    if managed:
+                        synthesize(verse["text"], path, control=control)
+                    else:
+                        # Preserve the direct-call interface used by local integrations.
+                        write_json(marker, {"textHash": digest(verse["text"]), **PROFILE})
+                        synthesize(verse["text"], path)
                 except GenerationPaused as error:
-                    marker.unlink(missing_ok=True)
+                    # synthesize removes markers for explicit provider rejections.
+                    # A deadline stop must never remove an uncertain earlier request.
+                    if not managed:
+                        marker.unlink(missing_ok=True)
                     raise GenerationPaused(f"{error} Next verse: {book['number']}:{chapter['number']}:{verse['verse']}.") from None
             duration = inspect_mp3(path)
             write_json(receipt, {"sha256": digest(path.read_bytes()), "textHash": digest(verse["text"]), **PROFILE})
             upload(tag, path, repo)
-        manifest["verses"].append({"verse": verse["verse"], "url": f"https://github.com/{repo}/releases/download/{tag}/{name}", "duration": duration, "sha256": digest(path.read_bytes()), "textHash": digest(verse["text"])})
+        result = {"verse": verse["verse"], "url": f"https://github.com/{repo}/releases/download/{tag}/{name}", "duration": duration, "sha256": digest(path.read_bytes()), "textHash": digest(verse["text"])}
         path.unlink(missing_ok=True)
         marker.unlink(missing_ok=True)
         receipt.unlink(missing_ok=True)
         path.with_suffix(".part").unlink(missing_ok=True)
         print(f"Validated {book['number']}:{chapter['number']}:{verse['verse']}", flush=True)
+        control.completed_verse()
+        return result
+
+    def worker(verse):
+        try:
+            return process_verse(verse)
+        except Exception as error:
+            control.stop(error)
+            raise
+
+    if control.max_workers == 1:
+        manifest["verses"] = [worker(verse) for verse in verses]
+    else:
+        results = {}
+        with ThreadPoolExecutor(max_workers=control.max_workers, thread_name_prefix="verse-audio") as pool:
+            futures = [pool.submit(worker, verse) for verse in verses]
+            for future in as_completed(futures):
+                try:
+                    result = future.result()
+                    results[result["verse"]] = result
+                except CancelledError:
+                    pass
+                except Exception:
+                    for queued in futures:
+                        queued.cancel()
+            # The executor drains in-flight work before recovery artifacts are saved.
+        if control.error is not None:
+            raise control.error
+        manifest["verses"] = [results[number] for number in numbers]
     manifest_path = Path(directory) / "chapter.json"
     write_json(manifest_path, manifest)
     upload(tag, manifest_path, repo)
     manifest_path.unlink(missing_ok=True)
     manifest["manifestUrl"] = manifest_url
     write_json(Path(output) / f"{book['number']:02d}-{chapter['number']:03d}.json", manifest)
+    control.completed_chapter()
 
 
 def publish(directory, catalog_path):
@@ -514,12 +708,14 @@ def main():
     parser.add_argument("--catalog", default="catalog.json")
     parser.add_argument("--replace-legacy", action="store_true")
     parser.add_argument("--overwrite", action="store_true", help="Overwrite existing audio for the selected chapters")
+    parser.add_argument("--workers", type=worker_setting, default="auto", help="Parallel requests: auto (default) or 1–15")
     parser.add_argument("--migration", default="migration-jessica.json")
     parser.add_argument("--max-seconds", type=int, default=18000)
     parser.add_argument("--shard", type=int)
     parser.add_argument("--shard-size", type=int, default=25)
     parser.add_argument("--revision", default="", help="Optional resume ID; only valid with --overwrite")
     args = parser.parse_args()
+    args.books, args.chapters = args.books.strip(), args.chapters.strip()
     if args.command == "preflight":
         preflight()
         return
@@ -544,7 +740,7 @@ def main():
         print(json.dumps({"chapters": len(selection), "verses": len(texts), "characters": count, "model": MODEL, "voice": VOICE, "overwrite": args.overwrite, "note": "Credits depend on your ElevenLabs plan; counts include already generated verses."}))
     elif args.command == "dispatch":
         request_id = uuid.uuid4().hex[:12]
-        inputs = {"books": args.books, "chapters": args.chapters, "entire": str(args.all).lower(), "revision": args.revision, "request_id": request_id, "replace_legacy": str(args.replace_legacy).lower(), "overwrite": str(args.overwrite).lower()}
+        inputs = {"books": args.books, "chapters": args.chapters, "entire": str(args.all).lower(), "revision": args.revision, "request_id": request_id, "replace_legacy": str(args.replace_legacy).lower(), "overwrite": str(args.overwrite).lower(), "workers": args.workers}
         command = ["workflow", "run", "generate.yml", "--repo", args.repo]
         for name, value in inputs.items():
             command += ["-f", f"{name}={value}"]
@@ -564,23 +760,28 @@ def main():
         recover_pending(args.output, args.repo)
         preflight()
         DEADLINE = time.monotonic() + args.max_seconds
+        control = RunControl(args.workers, DEADLINE)
+        summary(f"Parallel generation: workers={args.workers}, initial concurrency={control.target}.")
         selected_shard = selection if args.shard is None else selection[args.shard * args.shard_size:(args.shard + 1) * args.shard_size]
         session = overwrite_session(args.output, args.repo, selected_shard) if args.overwrite and not args.revision else None
         revision = session[1][session[2]]["revision"] if session else args.revision
         for book, chapter in selected_shard:
             try:
-                generate_chapter(data, book, chapter, args.repo, args.output, revision, overwrite=args.overwrite)
+                generate_chapter(data, book, chapter, args.repo, args.output, revision, overwrite=args.overwrite, control=control)
             except GenerationPaused as error:
                 summary(str(error))
+                summary(control.progress())
                 raise SystemExit(2) from None
             except Exception as error:
                 summary(f"Stopped at {book['number']}:{chapter['number']}. Completed verses are preserved. {error}")
+                summary(control.progress())
                 raise
         if session:
             path, sessions, key = session
             sessions[key]["complete"] = True
             write_json(path, sessions)
         summary(f"Finished selection: {len(selected_shard)} chapters. {'Replacement audio is ready.' if args.overwrite else 'Existing recordings were reused.'}")
+        summary(control.progress())
 
 
 if __name__ == "__main__":

@@ -36,6 +36,17 @@ class AudioTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 audio.select(self.data, books, chapters, entire)
 
+    def test_blank_chapters_selects_the_whole_book(self):
+        source = Path(__file__).with_name("reformationsbibeln.json")
+        if not source.exists():
+            source = Path(__file__).parents[2] / "assets/bible/reformationsbibeln.json"
+        data = audio.load_source(source)
+        for chapters in ("", "   ", "\t\n"):
+            self.assertEqual([chapter["number"] for _, chapter in audio.select(data, " John ", chapters)], list(range(1, 22)))
+        self.assertEqual(len(audio.select(data, "John", "1")), 1)
+        self.assertEqual([c["number"] for _, c in audio.select(data, "John", "1-3,5")], [1, 2, 3, 5])
+        self.assertEqual(len(audio.select(data, "John,Romans", "")), 37)
+
     def test_workflow_selection_respects_entire_bible_and_other_options(self):
         # Execute the actual workflow argument builder so shell changes are covered.
         if os.name == "nt":
@@ -52,6 +63,9 @@ class AudioTests(unittest.TestCase):
         if not workflow.exists():
             workflow = root / "generate.yml"
         lines = workflow.read_text(encoding="utf-8").splitlines()
+        chapters_input = "\n".join(lines).split("      chapters:\n", 1)[1].split("      entire:", 1)[0]
+        self.assertIn("default: ''", chapters_input)
+        self.assertIn('--workers "${WORKERS:-auto}"', "\n".join(lines))
         start = next(i for i, line in enumerate(lines) if line.strip().startswith("args=("))
         end = next(i for i, line in enumerate(lines[start:], start) if line.strip().startswith("python audio.py estimate"))
         script = "\n".join(line.strip() for line in lines[start:end]) + '\nprintf "%s\\n" "${args[@]}"'
@@ -60,6 +74,8 @@ class AudioTests(unittest.TestCase):
             ("true", "false", "true", "John", "1", ["--all", "--overwrite"]),
             ("true", "false", "false", "", "", ["--all"]),
             ("false", "false", "false", "John", "1", ["--books", "John", "--chapters", "1"]),
+            ("false", "false", "false", "John", "", ["--books", "John", "--chapters", ""]),
+            ("false", "false", "false", "John", "   ", ["--books", "John", "--chapters", "   "]),
             ("false", "false", "true", "John", "1", ["--books", "John", "--chapters", "1", "--overwrite"]),
             ("true", "true", "true", "John", "1", ["--replace-legacy", "--overwrite"]),
         ]:
@@ -180,12 +196,13 @@ class AudioTests(unittest.TestCase):
             self.assertNotEqual(audio.overwrite_session(temp, audio.REPO, selection)[1][key]["revision"], revision)
 
     def test_dispatch_sends_overwrite_option(self):
-        argv = ["audio.py", "dispatch", "--books", "John", "--chapters", "1", "--overwrite"]
+        argv = ["audio.py", "dispatch", "--books", "John", "--chapters", "1", "--overwrite", "--workers", "5"]
         def github(*args, **kwargs):
             return SimpleNamespace(stdout=json.dumps([{"displayTitle": "request", "url": "https://example.test/run"}]))
         with patch.object(sys, "argv", argv), patch.object(audio, "load_source", return_value=self.data), patch.object(audio.uuid, "uuid4", return_value=SimpleNamespace(hex="request")), patch.object(audio, "gh", side_effect=github) as gh:
             audio.main()
             self.assertIn("overwrite=true", gh.call_args_list[0].args)
+            self.assertIn("workers=5", gh.call_args_list[0].args)
 
     def test_existing_corrupt_audio_is_not_automatically_regenerated(self):
         def github(*args, **kwargs):

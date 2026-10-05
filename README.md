@@ -25,6 +25,7 @@ Koino, use `python scripts/bible-audio/audio.py`; inside this repository, use
 python audio.py estimate --books John --chapters 1-3
 python audio.py dispatch --books John --chapters 1-3
 python audio.py dispatch --books 'John,Romans'
+python audio.py dispatch --books John --workers 5
 python audio.py dispatch --books 'Första Moseboken' --chapters '1-3,5'
 python audio.py dispatch --all
 python audio.py dispatch --replace-legacy
@@ -35,6 +36,30 @@ Estimates show text counts including existing recordings. Credit usage depends o
 your ElevenLabs subscription. The workflow verifies the exact model and voice;
 it never silently falls back to another model. For local generation also install
 FFmpeg and expose `ELEVENLABS_API_KEY` in your environment. No Python SDK is needed.
+
+## Parallel generation
+
+The **Parallel requests** workflow input defaults to `auto`. The command-line
+equivalent is `--workers auto`. Verses within each chapter run in parallel, and
+chapters finish in order. This speeds up single-chapter selections too.
+
+Automatic mode starts with two speech requests at a time, then uses ElevenLabs'
+`maximum-concurrent-requests` response header to learn the account's limit,
+capped at 15. Without that header, it keeps two requests. To choose your own
+limit, enter a number from 1 to 15, such as `5`, or pass `--workers 5`.
+Use `1` for sequential generation.
+
+On HTTP 429, the shared request limit halves to a minimum of one. Rejected
+requests retry at most five times, honoring `Retry-After`; after ten successful
+requests, concurrency recovers by one up to its ceiling. The Actions summary
+shows completed verses and chapters, current concurrency, peak requests,
+elapsed time, and any stop reason. Actual speed depends on the account's
+concurrency allowance, speech latency, and GitHub uploads.
+
+Changing the worker setting when resuming does not change recording revisions
+or cause completed verses to be generated again. Leave **Chapters/ranges** blank
+to generate every chapter of the selected books; enter `1` to select only the
+first chapter or a range such as `1-3,5` to select specific chapters.
 
 ## Overwrite existing audio
 
@@ -62,11 +87,13 @@ no longer listed. Completed chapters for the selected voice and verses are reuse
 
 ## Credits, interruptions, and recovery
 
-The workflow runs one generator at a time. Each verse is decoded and uploaded
-immediately before the next paid request. The public `catalog.json` contains only
-complete chapters; `chapter.json` is uploaded only when every verse is ready.
+The workflow runs one generator job at a time, with bounded parallel requests
+inside that job. Each completed verse is decoded and uploaded immediately.
+The public `catalog.json` contains only complete chapters; `chapter.json` is
+uploaded only when every verse is ready, in its original verse order.
 
-If credits run out, generation stops with a resume point in the Actions summary.
+If credits run out, new requests stop and in-flight requests finish saving
+before recovery artifacts are written. The Actions summary reports the stop.
 Completed verses stay in GitHub releases, and completed chapters are published
 even though the generation step reports failure. Refill credits and **run the
 workflow again with the same inputs**. Existing matching audio is not charged for
