@@ -7246,6 +7246,141 @@
       "revision": "a651eb3860e8fa12a2ae",
       "sourceHash": "2bed4c1e7faebc046aeed752008654731a67c836352aee2ac610bbc44fc0c84e",
       "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-40-028-a651eb3860e8fa12a2ae/chapter.json"
+    },
+    "41:2": {
+      "bookId": 41,
+      "book": "Mark",
+      "bookName": "Markus Evangelium",
+      "chapter": 2,
+      "revision": "5d14f07fe336177efe1d",
+      "sourceHash": "457cf5d8d0791f19a4b19341c05bed93c5ca5fa36da081fc116541d698f84a73",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-41-002-5d14f07fe336177efe1d/chapter.json"
+    },
+    "41:3": {
+      "bookId": 41,
+      "book": "Mark",
+      "bookName": "Markus Evangelium",
+      "chapter": 3,
+      "revision": "70734afef49a6310f050",
+      "sourceHash": "306c6ca0229aae7a0c0159701ad24c48b64125567581a9ade803c24bf7ac0b3b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-41-003-70734afef49a6310f050/chapter.json"
+    },
+    "41:4": {
+      "bookId": 41,
+      "book": "Mark",
+      "bookName": "Markus Evangelium",
+      "chapter": 4,
+      "revision": "d3a0fe1a990da36de967",
+      "sourceHash": "44dc94095a45d070a5c264b14e6c6216676bd936362f50ddbea53aec021282c3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-41-004-d3a0fe1a990da36de967/chapter.json"
+    },
+    "41:5": {
+      "bookId": 41,
+      "book": "Mark",
+      "bookName": "Markus Evangelium",
+      "chapter": 5,
+      "revision": "5512e14f4d97c6b87af8",
+      "sourceHash": "5e283d50afc8cdd3c522a39d279e066f98006ea4757187c7bcab3d8f90625603",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-41-005-5512e14f4d97c6b87af8/chapter.json"
+    },
+    "41:6": {
+      "bookId": 41,
+      "book": "Mark",
+      "bookName": "Markus Evangelium",
+      "chapter": 6,
+      "revision": "05445b2b7ba442c2db97",
+      "sourceHash": "59fd00dc9e9462e790e1a0a403fe3eadb8b1ec0398dd852236f1b9c8135edfae",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-41-006-05445b2b7ba442c2db97/chapter.json"
+    },
+    "41:7": {
+      "bookId": 41,
+      "book": "Mark",
+      "bookName": "Markus Evangelium",
+      "chapter": 7,
+      "revision": "e7d4be817b476831e61b",
+      "sourceHash": "b90100f3f7a54c100edc27d2baa735ae44f8f06cfc4d20c9a74db9374657c50b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-41-007-e7d4be817b476831e61b/chapter.json"
+    },
+    "41:8": {
+      "bookId": 41,
+      "book": "Mark",
+      "bookName": "Markus Evangelium",
+      "chapter": 8,
+      "revision": "d260c3f25aea1f43b860",
+      "sourceHash": "e11d2c82b906d0ab51a3311fbd96fc5604d82fdd0186d5b45c6f7a31873b7db8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-41-008-d260c3f25aea1f43b860/chapter.json"
+    },
+    "41:9": {
+      "bookId": 41,
+      "book": "Mark",
+      "bookName": "Markus Evangelium",
+      "chapter": 9,
+      "revision": "718249eead87d7b676fa",
+      "sourceHash": "a70508f06da8dd8149c559c73f19251911a19aa81fa3e34a8342bbf9d6d3b77f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-41-009-718249eead87d7b676fa/chapter.json"
+    },
+    "41:10": {
+      "bookId": 41,
+      "book": "Mark",
+      "bookName": "Markus Evangelium",
+      "chapter": 10,
+      "revision": "ee22b144dcb1ac775928",
+      "sourceHash": "ff477e333be11692d894ac4ea75709db2b8f745bdc951400f7df3ea4f2d802d2",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-41-010-ee22b144dcb1ac775928/chapter.json"
+    },
+    "41:11": {
+      "bookId": 41,
+      "book": "Mark",
+      "bookName": "Markus Evangelium",
+      "chapter": 11,
+      "revision": "9f9e44bbcaf453685e41",
+      "sourceHash": "a2b91bef35a38e78b1274d5dca754b83631bbd6fb0ad0ad769601b00ea8daa89",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-41-011-9f9e44bbcaf453685e41/chapter.json"
+    },
+    "41:12": {
+      "bookId": 41,
+      "book": "Mark",
+      "bookName": "Markus Evangelium",
+      "chapter": 12,
+      "revision": "cad8b0835dcb4edef038",
+      "sourceHash": "18ff001b86bc2aa3a10f9fe6a94eb2d5ac89fc444818cd19c904b5a7bb2ba54d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-41-012-cad8b0835dcb4edef038/chapter.json"
+    },
+    "41:13": {
+      "bookId": 41,
+      "book": "Mark",
+      "bookName": "Markus Evangelium",
+      "chapter": 13,
+      "revision": "75650d2ffab8bce11562",
+      "sourceHash": "d474e5a292920ab410a1802aa9af5f6ff7a1c7c45eabb4dc20fa16875d66c561",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-41-013-75650d2ffab8bce11562/chapter.json"
+    },
+    "41:14": {
+      "bookId": 41,
+      "book": "Mark",
+      "bookName": "Markus Evangelium",
+      "chapter": 14,
+      "revision": "9123d83f8271ace337e1",
+      "sourceHash": "0de0da5ea3246692934c48ac886cc0cc1e76319927fa640988c1da8394c38653",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-41-014-9123d83f8271ace337e1/chapter.json"
+    },
+    "41:15": {
+      "bookId": 41,
+      "book": "Mark",
+      "bookName": "Markus Evangelium",
+      "chapter": 15,
+      "revision": "0f038f5fd35af76224e4",
+      "sourceHash": "0f9a05a66aa1e2556fb891362f8fefa2f6626e320acf4db68ec9b618205eb1a0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-41-015-0f038f5fd35af76224e4/chapter.json"
+    },
+    "41:16": {
+      "bookId": 41,
+      "book": "Mark",
+      "bookName": "Markus Evangelium",
+      "chapter": 16,
+      "revision": "4a1a615f890025eedd26",
+      "sourceHash": "b004eb62a546e05ca7fc90b3e1443bfaaa5cd2e68170fe82cc76d247597c7be5",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-41-016-4a1a615f890025eedd26/chapter.json"
     }
   }
 }
