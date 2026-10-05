@@ -196,9 +196,9 @@
       "book": "Acts",
       "bookName": "Apostlagärningarna",
       "chapter": 1,
-      "revision": "48be5f046bdd87f2adb7",
+      "revision": "66478cb6534fa43f1815",
       "sourceHash": "c77a2439536c14997e2ed81bd9987e00346fb34f22155b3afa7c9d71144821dd",
-      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-001-48be5f046bdd87f2adb7/chapter.json"
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-001-66478cb6534fa43f1815/chapter.json"
     },
     "40:1": {
       "bookId": 40,
@@ -7381,6 +7381,231 @@
       "revision": "4a1a615f890025eedd26",
       "sourceHash": "b004eb62a546e05ca7fc90b3e1443bfaaa5cd2e68170fe82cc76d247597c7be5",
       "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-41-016-4a1a615f890025eedd26/chapter.json"
+    },
+    "44:2": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 2,
+      "revision": "779e9bbf65de70a071c4",
+      "sourceHash": "51db86cfc68b497a86bee7aaa23550714007f48eb7f8c850ff7210f1287c1bf2",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-002-779e9bbf65de70a071c4/chapter.json"
+    },
+    "44:3": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 3,
+      "revision": "1f2e1a4bf8d1e7132a7a",
+      "sourceHash": "33bcde624628ea333766eb9ea720559d5b896b62d8ec1e63c1cee5b8dcfebe07",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-003-1f2e1a4bf8d1e7132a7a/chapter.json"
+    },
+    "44:4": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 4,
+      "revision": "b823b57ae429e85643e1",
+      "sourceHash": "5078b326e52aa6727fb1a20fb2eb4da5ef03a91d2e56933f9957bbb569414c39",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-004-b823b57ae429e85643e1/chapter.json"
+    },
+    "44:5": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 5,
+      "revision": "ec6c8b7aa0d86efe3851",
+      "sourceHash": "aa628152c4dd30c4a5caddb17dc67cd8e3612398ac7d7b3d1910ba6ca1e070f8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-005-ec6c8b7aa0d86efe3851/chapter.json"
+    },
+    "44:6": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 6,
+      "revision": "e74c6c3284317aca1264",
+      "sourceHash": "27048ac2e4ccc7da41923906f31c265ab00e52a728b8bf36818ff55016cc72aa",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-006-e74c6c3284317aca1264/chapter.json"
+    },
+    "44:7": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 7,
+      "revision": "3c6416e1c8d7a8556e87",
+      "sourceHash": "aece8cf35aaa268c894223453c66f322c60fe2dd7c405857b7893eaf0d52b00c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-007-3c6416e1c8d7a8556e87/chapter.json"
+    },
+    "44:8": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 8,
+      "revision": "e2c744de277c9c1c1888",
+      "sourceHash": "13c87fe5cb88ca93ac8842857cbba1c741f80b19db9c179bdf47a7c6a3755e94",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-008-e2c744de277c9c1c1888/chapter.json"
+    },
+    "44:9": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 9,
+      "revision": "a516898661f139088b87",
+      "sourceHash": "534b0696187b403d4847b6342640a86d6d86d901e2a5ea0cb2d89e172e17997a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-009-a516898661f139088b87/chapter.json"
+    },
+    "44:10": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 10,
+      "revision": "4545e3ed19d2ab026023",
+      "sourceHash": "75b918f69d865a7a47324e40ef295a30a3150bc1ce52f269230897e7aa5de64e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-010-4545e3ed19d2ab026023/chapter.json"
+    },
+    "44:11": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 11,
+      "revision": "5ba5619c6bb155b0723b",
+      "sourceHash": "0f76bedb4502d6e40fdb29a4be4166ebf64d7117ae44a1997668625b9b816d7d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-011-5ba5619c6bb155b0723b/chapter.json"
+    },
+    "44:12": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 12,
+      "revision": "ebd90aed671d6deb5720",
+      "sourceHash": "55ecfc3522581c3f5a7149c9b3b231a3c5ac00309888cd9dac392337ffd626a0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-012-ebd90aed671d6deb5720/chapter.json"
+    },
+    "44:13": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 13,
+      "revision": "5b339f3af49a79be12ba",
+      "sourceHash": "927b05592d9e38ab3864e10d65c87e7e331105224f86865b8d09633e541995f6",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-013-5b339f3af49a79be12ba/chapter.json"
+    },
+    "44:14": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 14,
+      "revision": "28b329e2e7529942d56a",
+      "sourceHash": "0f0f00c3e1d65d2e959f384eb4f8eebdef69e2661be3a2da561820e84c40d287",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-014-28b329e2e7529942d56a/chapter.json"
+    },
+    "44:15": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 15,
+      "revision": "ac54c9bfad93fe9a21e6",
+      "sourceHash": "d5a8fbea0ba597653c0355bc4b1558946654e02aa49d7109ac81f52d5ef107ca",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-015-ac54c9bfad93fe9a21e6/chapter.json"
+    },
+    "44:16": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 16,
+      "revision": "aec45edfe444377f0307",
+      "sourceHash": "2249e6b7fbb2f36f0fc1d12993fa849fa45f1bde3ddb505dd2245a5543309801",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-016-aec45edfe444377f0307/chapter.json"
+    },
+    "44:17": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 17,
+      "revision": "4de80a0173f7de649651",
+      "sourceHash": "b1db47719398fb988617601f1bcbc1097ed313e3bb55a4f388e166fd6c40c592",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-017-4de80a0173f7de649651/chapter.json"
+    },
+    "44:18": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 18,
+      "revision": "6e38019cc2de871b0512",
+      "sourceHash": "c449ab8c6a0f7df57aacead4d5785d85658649ad3c168ab910b58625025a3b8b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-018-6e38019cc2de871b0512/chapter.json"
+    },
+    "44:19": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 19,
+      "revision": "449cba23cfb3cf7ff44c",
+      "sourceHash": "991cc3ad00a54969e43c1ae0b33dc6ea45fa633a0c711ccfdccfb5ab307042d0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-019-449cba23cfb3cf7ff44c/chapter.json"
+    },
+    "44:20": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 20,
+      "revision": "631bc3396024244991cb",
+      "sourceHash": "6b78628fe871d6a88761cdd0a6f0788ce836e3edac00f999960e18fb6eeb71b1",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-020-631bc3396024244991cb/chapter.json"
+    },
+    "44:21": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 21,
+      "revision": "7ea448de1b30f6241c7b",
+      "sourceHash": "d41aeacbb4339883671dad5b4fb65805cc111c542410f68aa54ae8c5f8d16cd6",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-021-7ea448de1b30f6241c7b/chapter.json"
+    },
+    "44:22": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 22,
+      "revision": "4374689a23869130dbeb",
+      "sourceHash": "af5b278d4887b5a82c9b7b81f65d94b363daa9e82db19aa7094f19ef15d09f01",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-022-4374689a23869130dbeb/chapter.json"
+    },
+    "44:23": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 23,
+      "revision": "e598cba6f7c4de384b3e",
+      "sourceHash": "a19aa419014c1dd89cc4b99854967153c43fba983a32f67e493bbb3f1aaf811c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-023-e598cba6f7c4de384b3e/chapter.json"
+    },
+    "44:24": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 24,
+      "revision": "8cc4aa02a696b8714353",
+      "sourceHash": "f0149d06873320125f702800264512ec54da95462042f4e1f2d3a283d04e6c77",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-024-8cc4aa02a696b8714353/chapter.json"
+    },
+    "44:25": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 25,
+      "revision": "d6e99e98532db06d661f",
+      "sourceHash": "001c08f2a76e9b9ec3b61543632dd9cc227c13e6786812af46df3dba3f1c8c59",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-025-d6e99e98532db06d661f/chapter.json"
+    },
+    "44:26": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 26,
+      "revision": "2faa757aaab4c7d8fe42",
+      "sourceHash": "cda1e6c438adcfd135eef0ac05ac6d3909672632ab620657a837d73fa672f7cd",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-026-2faa757aaab4c7d8fe42/chapter.json"
     }
   }
 }
