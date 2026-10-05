@@ -5995,6 +5995,1014 @@
       "revision": "aff2f789b85d000d4ef4",
       "sourceHash": "454665166baf88c015431f0cf857c4635bdfb0aa7db2218781fa3202b65d0cf5",
       "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-013-aff2f789b85d000d4ef4/chapter.json"
+    },
+    "20:14": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 14,
+      "revision": "0bb2fea229c5f281acea",
+      "sourceHash": "0ed3ab9b4e31e422694a23bd0f4c658e93addd8260dea64a2468c72ada1c6044",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-014-0bb2fea229c5f281acea/chapter.json"
+    },
+    "20:15": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 15,
+      "revision": "b8b11f9d0c09370be557",
+      "sourceHash": "942586b03a634ef03a1fe22c27653381650ad40b4bca4c4d7a864e3e6f3059be",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-015-b8b11f9d0c09370be557/chapter.json"
+    },
+    "20:16": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 16,
+      "revision": "0bb5f0e45c893d064bdc",
+      "sourceHash": "d865f38efb99909053d036acaf83f5bf2033da3403c6cd2e2b5958e29f3adaa5",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-016-0bb5f0e45c893d064bdc/chapter.json"
+    },
+    "20:17": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 17,
+      "revision": "94b1aa809524f87d80be",
+      "sourceHash": "6948b492f9b8a736a6176c95000adde2a606ca90315a02c94e3361a78e64f46f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-017-94b1aa809524f87d80be/chapter.json"
+    },
+    "20:18": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 18,
+      "revision": "32037f367256ac234f1f",
+      "sourceHash": "66a9ddbad0c615b762a71703349f5cdabd34815e145566c1d268d6c426c5e42b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-018-32037f367256ac234f1f/chapter.json"
+    },
+    "20:19": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 19,
+      "revision": "a2dd346ee3ca0716e7e2",
+      "sourceHash": "287e6dbd01ce542d3b3847339ae6e7c4adc6f6062e0b684b0cdc24089113b425",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-019-a2dd346ee3ca0716e7e2/chapter.json"
+    },
+    "20:20": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 20,
+      "revision": "2afc3c6c51b45d727d40",
+      "sourceHash": "ec4f9d1475b1becc387559f811967e99cac771e9e2426da7eb7b86aeee927ebf",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-020-2afc3c6c51b45d727d40/chapter.json"
+    },
+    "20:21": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 21,
+      "revision": "8ffd55625255166772c6",
+      "sourceHash": "0fad7330fc9e468b90592f3d4128dfa7e664baaf40c6c955f5d3d14d80ef4908",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-021-8ffd55625255166772c6/chapter.json"
+    },
+    "20:22": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 22,
+      "revision": "9161888305a7de04d7b7",
+      "sourceHash": "77ab5b3121acf1a9db58dc10db5f0ad4dc58b223144b4a272e7d974d3a6a4cbc",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-022-9161888305a7de04d7b7/chapter.json"
+    },
+    "20:23": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 23,
+      "revision": "4d213c9b87505d51ff75",
+      "sourceHash": "30bb53756fe6b1d9aec652988eca9e5320645c2c616c47086f48ae49a8c57541",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-023-4d213c9b87505d51ff75/chapter.json"
+    },
+    "20:24": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 24,
+      "revision": "c68838ed002fa8153695",
+      "sourceHash": "b59aa2445cc477037fb9260429fc4224996119ac2c544d3ba08aa55c6e2ac441",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-024-c68838ed002fa8153695/chapter.json"
+    },
+    "20:25": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 25,
+      "revision": "163451cf5b24e1900583",
+      "sourceHash": "fe3afffc857108050050462d86c46b719739ce9636579a7930dc98df8263abda",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-025-163451cf5b24e1900583/chapter.json"
+    },
+    "20:26": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 26,
+      "revision": "64d51e5b99e1aee8edb2",
+      "sourceHash": "83a17e28ab2611af11b8ad9fa3907a21e6fb20d43d11b1fb662ae93f7fc57eaa",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-026-64d51e5b99e1aee8edb2/chapter.json"
+    },
+    "20:27": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 27,
+      "revision": "44baae520673f7645273",
+      "sourceHash": "595d995d49d939d9cecf3294faef2f072eeb117e5612beb70673cc98b0c83488",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-027-44baae520673f7645273/chapter.json"
+    },
+    "20:28": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 28,
+      "revision": "dc6eb28d83bb36c596d0",
+      "sourceHash": "7fced3d854880be4df5a1cd43429e1cd8cc735ae7d21c6184134a5e9c4944f0d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-028-dc6eb28d83bb36c596d0/chapter.json"
+    },
+    "20:29": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 29,
+      "revision": "f8e3a933745ca9affc81",
+      "sourceHash": "fbab215407edde3558574d8e3a0449923bf59ad96abb297cfc4021573ab08d07",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-029-f8e3a933745ca9affc81/chapter.json"
+    },
+    "20:30": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 30,
+      "revision": "1df03a7e923972f21f27",
+      "sourceHash": "44b2e7ca7246d8c1645e93e88f2fe527d2a65db31b302f8196c63b7b1971b62f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-030-1df03a7e923972f21f27/chapter.json"
+    },
+    "20:31": {
+      "bookId": 20,
+      "book": "Proverbs",
+      "bookName": "Ordspråksboken",
+      "chapter": 31,
+      "revision": "5b508ff403bbb7aa118d",
+      "sourceHash": "201395c0945b72f274533100550817b5421e2cc49ec9fcaccdbd8e40c7d7c979",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-20-031-5b508ff403bbb7aa118d/chapter.json"
+    },
+    "21:1": {
+      "bookId": 21,
+      "book": "Ecclesiastes",
+      "bookName": "Predikaren",
+      "chapter": 1,
+      "revision": "6e587c2e901c26538883",
+      "sourceHash": "d8ca09ce67ea964d49c1da3488458ec164876013efc1ccedd47126be180acacb",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-21-001-6e587c2e901c26538883/chapter.json"
+    },
+    "21:2": {
+      "bookId": 21,
+      "book": "Ecclesiastes",
+      "bookName": "Predikaren",
+      "chapter": 2,
+      "revision": "2e36d68446b6f6cc9842",
+      "sourceHash": "064bf6cad66cc7fb95bc67b0262ed287d76642cd37bd37326fce16e00b6abd21",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-21-002-2e36d68446b6f6cc9842/chapter.json"
+    },
+    "21:3": {
+      "bookId": 21,
+      "book": "Ecclesiastes",
+      "bookName": "Predikaren",
+      "chapter": 3,
+      "revision": "2bb819c8b3dc7db75428",
+      "sourceHash": "a3d72e2c3fa39b1a82fd060e2f07dfca36049cb5a74eb6c74bf9926ee5c3541c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-21-003-2bb819c8b3dc7db75428/chapter.json"
+    },
+    "21:4": {
+      "bookId": 21,
+      "book": "Ecclesiastes",
+      "bookName": "Predikaren",
+      "chapter": 4,
+      "revision": "1443eadee1f04b4723e3",
+      "sourceHash": "a519dea42074a329da35bfedd4890e521a1f462a639d9cd263a80c572a6bc4b4",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-21-004-1443eadee1f04b4723e3/chapter.json"
+    },
+    "21:5": {
+      "bookId": 21,
+      "book": "Ecclesiastes",
+      "bookName": "Predikaren",
+      "chapter": 5,
+      "revision": "274c1a12a6b228ab2d62",
+      "sourceHash": "6c554d5e7d9c44bfad19359cbaa70b652a1da7d90219fddb7e6a50f54c763321",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-21-005-274c1a12a6b228ab2d62/chapter.json"
+    },
+    "21:6": {
+      "bookId": 21,
+      "book": "Ecclesiastes",
+      "bookName": "Predikaren",
+      "chapter": 6,
+      "revision": "757830bc86bd10397391",
+      "sourceHash": "4e0d48f0f19e3c22e94d15803e3f62fe707b32f41f62e7511f5d9e7aa58d5eb1",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-21-006-757830bc86bd10397391/chapter.json"
+    },
+    "21:7": {
+      "bookId": 21,
+      "book": "Ecclesiastes",
+      "bookName": "Predikaren",
+      "chapter": 7,
+      "revision": "cb5d185f634a62c4ed9c",
+      "sourceHash": "b3a1b378677d3702793207109237434fb0a4263b0424a2e15265881d92bd92b9",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-21-007-cb5d185f634a62c4ed9c/chapter.json"
+    },
+    "21:8": {
+      "bookId": 21,
+      "book": "Ecclesiastes",
+      "bookName": "Predikaren",
+      "chapter": 8,
+      "revision": "ba39160ba84b6fb64193",
+      "sourceHash": "d780e5eedbd66e2b849f4b07d4e6ff2b17c7d147245c4dc76e97cf7f14430d28",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-21-008-ba39160ba84b6fb64193/chapter.json"
+    },
+    "21:9": {
+      "bookId": 21,
+      "book": "Ecclesiastes",
+      "bookName": "Predikaren",
+      "chapter": 9,
+      "revision": "24ff543d211069d0bf7a",
+      "sourceHash": "0995492416155691ff2fc27bc7b7dfd5bf1e5d2e421798e4209a528434ac1ee0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-21-009-24ff543d211069d0bf7a/chapter.json"
+    },
+    "21:10": {
+      "bookId": 21,
+      "book": "Ecclesiastes",
+      "bookName": "Predikaren",
+      "chapter": 10,
+      "revision": "ea7255228f7daa18c5a3",
+      "sourceHash": "7941641c91b623185851a87d2107e59418b1fb3acc19bd7f8828617ab5f8258b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-21-010-ea7255228f7daa18c5a3/chapter.json"
+    },
+    "21:11": {
+      "bookId": 21,
+      "book": "Ecclesiastes",
+      "bookName": "Predikaren",
+      "chapter": 11,
+      "revision": "77c45cd38d8c981d7b7b",
+      "sourceHash": "9de53b30fe4e4d7fc2e943070360047d35ccaa82965b1321bec6545b9fb74681",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-21-011-77c45cd38d8c981d7b7b/chapter.json"
+    },
+    "21:12": {
+      "bookId": 21,
+      "book": "Ecclesiastes",
+      "bookName": "Predikaren",
+      "chapter": 12,
+      "revision": "810d8e61036dbeeced47",
+      "sourceHash": "f3cacb4415f768b0b1e3e15f0fcdc127c5f4a65415b4de52cb702073521211ce",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-21-012-810d8e61036dbeeced47/chapter.json"
+    },
+    "22:1": {
+      "bookId": 22,
+      "book": "Solomon's Song",
+      "bookName": "Höga Visan",
+      "chapter": 1,
+      "revision": "22a50307529081ce4907",
+      "sourceHash": "61d9ae048f3e7994476c99100bfaed0395e63418c1665b61840f4d665d79e7e3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-22-001-22a50307529081ce4907/chapter.json"
+    },
+    "22:2": {
+      "bookId": 22,
+      "book": "Solomon's Song",
+      "bookName": "Höga Visan",
+      "chapter": 2,
+      "revision": "b6ef6621be0101edee27",
+      "sourceHash": "0686ccec63670d45c130c765af4b95cb012113ad0f139ab5a5375bdefaa52096",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-22-002-b6ef6621be0101edee27/chapter.json"
+    },
+    "22:3": {
+      "bookId": 22,
+      "book": "Solomon's Song",
+      "bookName": "Höga Visan",
+      "chapter": 3,
+      "revision": "1f682e6c5d001c65f743",
+      "sourceHash": "7fc7ca6fdaeffdbb49bf0d1fbacbaec255751c6c4a260f1e32d8901edecf6838",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-22-003-1f682e6c5d001c65f743/chapter.json"
+    },
+    "22:4": {
+      "bookId": 22,
+      "book": "Solomon's Song",
+      "bookName": "Höga Visan",
+      "chapter": 4,
+      "revision": "e2a7d4aad2f183a2a367",
+      "sourceHash": "0d24a7de4127fef847d54016ca4ed98206f892e539c38653c6c73ed0d3df69af",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-22-004-e2a7d4aad2f183a2a367/chapter.json"
+    },
+    "22:5": {
+      "bookId": 22,
+      "book": "Solomon's Song",
+      "bookName": "Höga Visan",
+      "chapter": 5,
+      "revision": "9434cd06298e53bf79fc",
+      "sourceHash": "356349bcc776cd1bda483ff651783772f188e8797e4a4edf8c1a70d163219c6f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-22-005-9434cd06298e53bf79fc/chapter.json"
+    },
+    "22:6": {
+      "bookId": 22,
+      "book": "Solomon's Song",
+      "bookName": "Höga Visan",
+      "chapter": 6,
+      "revision": "e69dc1d55dedaf1df9ff",
+      "sourceHash": "cbc2b8f78ec66946641cab87f3fac88fa3f37d929c4af9b82d07f6c951b7c8c3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-22-006-e69dc1d55dedaf1df9ff/chapter.json"
+    },
+    "22:7": {
+      "bookId": 22,
+      "book": "Solomon's Song",
+      "bookName": "Höga Visan",
+      "chapter": 7,
+      "revision": "56e290541c19eb4bda2a",
+      "sourceHash": "3053384ab52230514711074b5661790d7fb0a2e540157eccdca94ca49da741a9",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-22-007-56e290541c19eb4bda2a/chapter.json"
+    },
+    "22:8": {
+      "bookId": 22,
+      "book": "Solomon's Song",
+      "bookName": "Höga Visan",
+      "chapter": 8,
+      "revision": "c4e85276921cfd90d7f2",
+      "sourceHash": "7076181ef3c7d0c7972e9a9dc93d396b2bfbc6b02a24397c5280978d880162b7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-22-008-c4e85276921cfd90d7f2/chapter.json"
+    },
+    "23:1": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 1,
+      "revision": "7fad57c0698a2157b737",
+      "sourceHash": "4561db4321def468e5c8e82d4c345140ba4a9c167f97d1f8def11d43ceb2661e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-001-7fad57c0698a2157b737/chapter.json"
+    },
+    "23:2": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 2,
+      "revision": "4261bae5fa4b51df5153",
+      "sourceHash": "4fcc2ec8e429661bec8b4c57fbc4ffcc043170c56956756d7f4b4597db4511d0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-002-4261bae5fa4b51df5153/chapter.json"
+    },
+    "23:3": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 3,
+      "revision": "3d0f2c8bba50adbad2b3",
+      "sourceHash": "5e2fe24ade9bff9f38bfef4d5eb962892ca41f2f44882190fd8c5c80052e4ee8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-003-3d0f2c8bba50adbad2b3/chapter.json"
+    },
+    "23:4": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 4,
+      "revision": "bc898d194bf22e85b1c3",
+      "sourceHash": "4e4881bebbd3f384d8a80d2cd999dd855212da256a8cc87f890b04ae14be75c8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-004-bc898d194bf22e85b1c3/chapter.json"
+    },
+    "23:5": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 5,
+      "revision": "b0db10392cbfef806208",
+      "sourceHash": "3c70277015d07fffbe83716f7c8c9758495b4e547afd999586517f7803d6fe5a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-005-b0db10392cbfef806208/chapter.json"
+    },
+    "23:6": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 6,
+      "revision": "09ee71e638ab0e0933ac",
+      "sourceHash": "0c1dc0c95a9c4437ab944c65d340077c7f85f829bd67a28106ff87fd29c6adf2",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-006-09ee71e638ab0e0933ac/chapter.json"
+    },
+    "23:7": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 7,
+      "revision": "48bb0afa83c0e5bc8e6a",
+      "sourceHash": "e05219af4ed18067cd34129b9f37f553591b8ae53f33fe7a2bf601458e49fafb",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-007-48bb0afa83c0e5bc8e6a/chapter.json"
+    },
+    "23:8": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 8,
+      "revision": "1c5e68d9edef843c3c64",
+      "sourceHash": "760f3de87c0829ab485fc57afd6ab34d71a37a81f0ea0d780d4a2748479db430",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-008-1c5e68d9edef843c3c64/chapter.json"
+    },
+    "23:9": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 9,
+      "revision": "5fa0995b1551504c1ea7",
+      "sourceHash": "503b156c3ab8a386691b3f595047a9e593d2158137adc786233f4e5a76a6ac69",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-009-5fa0995b1551504c1ea7/chapter.json"
+    },
+    "23:10": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 10,
+      "revision": "6b0a8680b3f3109d6ddc",
+      "sourceHash": "8d13822a17f18e9ca2b1b740eb860a46e287cb3285be1d45fef8271fcec917fe",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-010-6b0a8680b3f3109d6ddc/chapter.json"
+    },
+    "23:11": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 11,
+      "revision": "0357ef62563e3d6d90e8",
+      "sourceHash": "879281a9fdff4a69de1d461c6955c2829219f631d4b2dcca4f03dc5b5cef6fcd",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-011-0357ef62563e3d6d90e8/chapter.json"
+    },
+    "23:12": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 12,
+      "revision": "e486acd2d0ec0d1dad82",
+      "sourceHash": "35ada722c0735b283defc81d9653e566f843fb16d7c05e950bf6909a143096db",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-012-e486acd2d0ec0d1dad82/chapter.json"
+    },
+    "23:13": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 13,
+      "revision": "916a8840f5224ffcde63",
+      "sourceHash": "1b4108a743c124850790d10b5eb62ff7a76c69df304c3101356aa8c059df4ea0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-013-916a8840f5224ffcde63/chapter.json"
+    },
+    "23:14": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 14,
+      "revision": "bc3f53ca1c422041fc76",
+      "sourceHash": "467b6e54e2bfebd7d67274b87f7f04d138ec76c16e4e8fdf7f001df747840601",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-014-bc3f53ca1c422041fc76/chapter.json"
+    },
+    "23:15": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 15,
+      "revision": "38075a357f71a426e576",
+      "sourceHash": "f13f8f68bcfb3526270a94d609ea2bc0b3799acbb0e9805d73083f772dddcd42",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-015-38075a357f71a426e576/chapter.json"
+    },
+    "23:16": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 16,
+      "revision": "cf40762475261b2565d2",
+      "sourceHash": "3da3cac1669b826dbbf34c595090b55fb0e28eef7ba29357ec0ab67edaf64af8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-016-cf40762475261b2565d2/chapter.json"
+    },
+    "23:17": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 17,
+      "revision": "f5a6558fa7c981f735cb",
+      "sourceHash": "2610d94c5dca4dd03751f75e21ea22a41604ca4f43d663c02e1b0f55e6fb581e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-017-f5a6558fa7c981f735cb/chapter.json"
+    },
+    "23:18": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 18,
+      "revision": "a68201131204ab31b577",
+      "sourceHash": "b8fcea92d7d74f6a8a34bca751ff05c96fe454b0b23c09f9bdb6abb8eab70bb3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-018-a68201131204ab31b577/chapter.json"
+    },
+    "23:19": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 19,
+      "revision": "10373d9a65df982daf16",
+      "sourceHash": "d2268f9b128038d876b932834ac09e1b60e5aa2415f3a1bb682de12cd2283e41",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-019-10373d9a65df982daf16/chapter.json"
+    },
+    "23:20": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 20,
+      "revision": "c641fd3b4b81cd398b4e",
+      "sourceHash": "2d9efa6ac26542315eb68b47a9e58c83f9d459c68f81de676f7147d00a59d647",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-020-c641fd3b4b81cd398b4e/chapter.json"
+    },
+    "23:21": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 21,
+      "revision": "ae2a7a421e46dec1d967",
+      "sourceHash": "61b31b95c657259912bbb99aa4a44c34bc18b115c9ab3dbfcf833cb73e3a4004",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-021-ae2a7a421e46dec1d967/chapter.json"
+    },
+    "23:22": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 22,
+      "revision": "f5d7f89d3224fb8d9789",
+      "sourceHash": "5f260e39ca02d802ebbc207dc6ff05567d8e7128131563cee555f605b0ca2dd3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-022-f5d7f89d3224fb8d9789/chapter.json"
+    },
+    "23:23": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 23,
+      "revision": "4944ec4d7a2097cd07af",
+      "sourceHash": "9ef11361ba5794930c13b5ee4e6f43038a180c33100ec27854c82df6773c98f8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-023-4944ec4d7a2097cd07af/chapter.json"
+    },
+    "23:24": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 24,
+      "revision": "55e44e847aa4fa47a95e",
+      "sourceHash": "1fa944c2b4182923ab99311e86ee9430643c6c5d78b60ba5801bfb26eae8ca89",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-024-55e44e847aa4fa47a95e/chapter.json"
+    },
+    "23:25": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 25,
+      "revision": "b57422d69a48a3ccdf99",
+      "sourceHash": "9e6e49715acdd1d22beeb3562942ea559473b1fb9a77929ffcd97ccc7419042c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-025-b57422d69a48a3ccdf99/chapter.json"
+    },
+    "23:26": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 26,
+      "revision": "713a9f966630158e7bc7",
+      "sourceHash": "da48815c23a38d6d6c7b7e877267086f6a8e46df22b9153f77d9c587f250af93",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-026-713a9f966630158e7bc7/chapter.json"
+    },
+    "23:27": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 27,
+      "revision": "07aec8d83ab674d87d5f",
+      "sourceHash": "991c375c6de4b864c2c6002987289cdd8274d91460afa013c8faa05c62749c26",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-027-07aec8d83ab674d87d5f/chapter.json"
+    },
+    "23:28": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 28,
+      "revision": "8af7eb3a2c012c9de55c",
+      "sourceHash": "8d448e41798bc5badc01175efdd0457518e7df5c9a6c310adb9a4cc2833510f9",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-028-8af7eb3a2c012c9de55c/chapter.json"
+    },
+    "23:29": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 29,
+      "revision": "3aefa530c1f7fe918d0c",
+      "sourceHash": "31b41845b1104b20e0c1c9c9b857a030a38bb55d38d15ef4fe15aee4449df7f9",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-029-3aefa530c1f7fe918d0c/chapter.json"
+    },
+    "23:30": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 30,
+      "revision": "12d3257411187d0bd2df",
+      "sourceHash": "5449eea1d2a65009afdb704126a4d034a4e6a5572d4c28a2154a44ed921f16d5",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-030-12d3257411187d0bd2df/chapter.json"
+    },
+    "23:31": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 31,
+      "revision": "a2d6da4a752dae2048c1",
+      "sourceHash": "baa91b11fc58e51bdd213a2a485664adcc26c51162efa205d09a100fc91b7622",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-031-a2d6da4a752dae2048c1/chapter.json"
+    },
+    "23:32": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 32,
+      "revision": "e58bc0914e928cdef29f",
+      "sourceHash": "78e76ade75e2b8cb740c03487adb9e241ac91da74e2f768e167259b9d1d3e649",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-032-e58bc0914e928cdef29f/chapter.json"
+    },
+    "23:33": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 33,
+      "revision": "30342244fec9e3377548",
+      "sourceHash": "ac3925ba79d0c621ddd1eb127d40d02aa2bfa3c9f6965870ab99230d070169fe",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-033-30342244fec9e3377548/chapter.json"
+    },
+    "23:34": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 34,
+      "revision": "be613ac9ae21d3bb5c5d",
+      "sourceHash": "7f0a558a59196ab535f143c5b97269e548af0e68ba401d43589084f73f4a61df",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-034-be613ac9ae21d3bb5c5d/chapter.json"
+    },
+    "23:35": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 35,
+      "revision": "09b41b1ffa6d4330fc7f",
+      "sourceHash": "93cb0e785fe90b307aa6fbe6274828313da46ff121be993bee2c237f7fb1e41e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-035-09b41b1ffa6d4330fc7f/chapter.json"
+    },
+    "23:36": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 36,
+      "revision": "4df3c016efdedbc43549",
+      "sourceHash": "54063efb9e833a21c30469f1b868a53d81fa68b08397b48b0a9a383460a0f14f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-036-4df3c016efdedbc43549/chapter.json"
+    },
+    "23:37": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 37,
+      "revision": "07ae6a390c707b96a4cb",
+      "sourceHash": "cf0f23bf7598c5de043f1a5db62019000cb9044c3c0e5110fafc66081f6dc9d0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-037-07ae6a390c707b96a4cb/chapter.json"
+    },
+    "23:38": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 38,
+      "revision": "7c05767cdd9b873f93c8",
+      "sourceHash": "5ae13c13bd5b4c55da5e9bf9a31e48d92d51a00cc734557cc4254a992e4c984a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-038-7c05767cdd9b873f93c8/chapter.json"
+    },
+    "23:39": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 39,
+      "revision": "5614ef447169fa5f4f1a",
+      "sourceHash": "ce5a4e0b1b3bac6ab7d3c713f002cf4789e2fa28f05d457af3aefa587b142ecf",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-039-5614ef447169fa5f4f1a/chapter.json"
+    },
+    "23:40": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 40,
+      "revision": "ba2c2fe4bb31ce42bd79",
+      "sourceHash": "74e85034d29c166b8c2e6d3b9c3c335fb19748eeb6cde680b548e173446473b6",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-040-ba2c2fe4bb31ce42bd79/chapter.json"
+    },
+    "23:41": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 41,
+      "revision": "86f851aaf54ef76f9dca",
+      "sourceHash": "489c1e1703032eafbb03649389c5ef4d029ac3e33ef6816adb0ef98179a6fc95",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-041-86f851aaf54ef76f9dca/chapter.json"
+    },
+    "23:42": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 42,
+      "revision": "207a315b5275c2029ebd",
+      "sourceHash": "2a2c456af9fab38fc6b84f4783c67611d330c35efd47db6b4975058c2ae73c6e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-042-207a315b5275c2029ebd/chapter.json"
+    },
+    "23:43": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 43,
+      "revision": "3d4aca9759a725058c55",
+      "sourceHash": "d7e52caf8ca25a70d131b3af75552b9911823231e369c667b1bb74b374926c4e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-043-3d4aca9759a725058c55/chapter.json"
+    },
+    "23:44": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 44,
+      "revision": "78ce23d3f3afc27fef63",
+      "sourceHash": "f4880b32fb9386d8c37424fa916e39d8ab4f2c61cb1a8d65fb34cedb2f8ecb7f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-044-78ce23d3f3afc27fef63/chapter.json"
+    },
+    "23:45": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 45,
+      "revision": "7c0a7c529a8d89194e58",
+      "sourceHash": "0eb87fa76d652e0f024dc3a08f0b23ec48060a2d08940d709b2ee02166200114",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-045-7c0a7c529a8d89194e58/chapter.json"
+    },
+    "23:46": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 46,
+      "revision": "8631872e509a3e80da44",
+      "sourceHash": "843fd06f04aef6c2995ee6437826b67c3cbc76e3f79deed7cfdd95cd0b5f9b22",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-046-8631872e509a3e80da44/chapter.json"
+    },
+    "23:47": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 47,
+      "revision": "61c3be0f5d39ebe257cd",
+      "sourceHash": "549678b145cc0ebac54a94918cf2319a9234a46c9862c5efdddb70df4b83c235",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-047-61c3be0f5d39ebe257cd/chapter.json"
+    },
+    "23:48": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 48,
+      "revision": "ca4f980bcffd713b0dfd",
+      "sourceHash": "6f4f2079b14bcc20f62078a1cc6b2655d4294a6c6cd9830ed68e796c0698f2f7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-048-ca4f980bcffd713b0dfd/chapter.json"
+    },
+    "23:49": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 49,
+      "revision": "108f0281461b89d82bbe",
+      "sourceHash": "154badf3206a7de646ce1232c05c954ea2d4388f609fd90cd0a1db981a2955d8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-049-108f0281461b89d82bbe/chapter.json"
+    },
+    "23:50": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 50,
+      "revision": "ba9116406bd0144b3ef7",
+      "sourceHash": "9724d8e6dfcd3110ed89f0e876ec5dad55974d405fad77ed75ffe4dd41fead9a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-050-ba9116406bd0144b3ef7/chapter.json"
+    },
+    "23:51": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 51,
+      "revision": "ba9c26dc65dcba4e7a4c",
+      "sourceHash": "ed4b5736fceef623c20a4568d37f4d03e35e5b08bfad4233a4eefd9b7dc8ecca",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-051-ba9c26dc65dcba4e7a4c/chapter.json"
+    },
+    "23:52": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 52,
+      "revision": "923753e039aa2b3fccec",
+      "sourceHash": "9eebfbddcfcc2fb8d7fae1541223b24b1eea43d858cac83011483bd37845c13c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-052-923753e039aa2b3fccec/chapter.json"
+    },
+    "23:53": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 53,
+      "revision": "15fb04e9d548af783602",
+      "sourceHash": "ef1746bb1b7c03d9567bdf402c405c40651ff549330eafd06abe8715d008a670",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-053-15fb04e9d548af783602/chapter.json"
+    },
+    "23:54": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 54,
+      "revision": "3cf65259d525d6d2267c",
+      "sourceHash": "28407892e8594559d459d73ef04e97f4d65e434ca83d659df90d764e4aaa42a5",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-054-3cf65259d525d6d2267c/chapter.json"
+    },
+    "23:55": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 55,
+      "revision": "1a89f14d9d8ca048366c",
+      "sourceHash": "0c89dcae24750a9ca05b955df7afadc3bf84cf99479e14e916b8fd303943b5f7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-055-1a89f14d9d8ca048366c/chapter.json"
+    },
+    "23:56": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 56,
+      "revision": "a5687681ed930050fecb",
+      "sourceHash": "f214b827b300058d0645b7aaf656d694b014dafec6fd84bf9f9193ac4dc66203",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-056-a5687681ed930050fecb/chapter.json"
+    },
+    "23:57": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 57,
+      "revision": "3be91dd524687ca63da7",
+      "sourceHash": "9d9b76aeb01d8da0effa590edd499d2693896bbfdde636d0e7ab4d974e14ed2b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-057-3be91dd524687ca63da7/chapter.json"
+    },
+    "23:58": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 58,
+      "revision": "8be6a093884ea7505d37",
+      "sourceHash": "d37a6ebe7d4068d353a84736b2de04feed6a63ee6a7ab38e95a8e30a9a40831e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-058-8be6a093884ea7505d37/chapter.json"
+    },
+    "23:59": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 59,
+      "revision": "827e6ae805c8661f835c",
+      "sourceHash": "c62737126e9b346dbb8de1f2e75db155f01e37e54e23d176015f18707c9b330c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-059-827e6ae805c8661f835c/chapter.json"
+    },
+    "23:60": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 60,
+      "revision": "4274f4640d74e3b2e435",
+      "sourceHash": "d4ef1affc177b57bb26a35d42db8163c5d7c40246d64443577346ed796c6268f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-060-4274f4640d74e3b2e435/chapter.json"
+    },
+    "23:61": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 61,
+      "revision": "a630e8ff657947e3c56d",
+      "sourceHash": "82b5bd60239456f24b9f2fd9ddd81845033bfae784ef7c14bf3080d04948172e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-061-a630e8ff657947e3c56d/chapter.json"
+    },
+    "23:62": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 62,
+      "revision": "1b1b05e0868e59734448",
+      "sourceHash": "48e3f404c67821f5c125bd0e1036ac0ff1b25411c2e683d52ff9365e24f53cb7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-062-1b1b05e0868e59734448/chapter.json"
+    },
+    "23:63": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 63,
+      "revision": "5daf68ea40938d33db26",
+      "sourceHash": "1ce6178a731316ff9359f1dbbe075df60529b7416f8871bee10c8f2ae8cc2d67",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-063-5daf68ea40938d33db26/chapter.json"
+    },
+    "23:64": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 64,
+      "revision": "10feeafad7b412732bc4",
+      "sourceHash": "dc30514ea29a0d31f4abee3557fb19e2813eb4e59dc8b83cb471efc97bc89438",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-064-10feeafad7b412732bc4/chapter.json"
+    },
+    "23:65": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 65,
+      "revision": "fceac381ad02f0f60b90",
+      "sourceHash": "5a21fc2abe278d6c50e2980eb4449f1db2bbe6619a866eb9ce7326b30ed5b4df",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-065-fceac381ad02f0f60b90/chapter.json"
+    },
+    "23:66": {
+      "bookId": 23,
+      "book": "Isaiah",
+      "bookName": "Jesaja",
+      "chapter": 66,
+      "revision": "26dd9cbf177253433349",
+      "sourceHash": "7f0ebf8f45b3e288a171e1c27056a2f4cd7bd3d102cf672cbf9b30105b8b38b2",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-23-066-26dd9cbf177253433349/chapter.json"
+    },
+    "24:1": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 1,
+      "revision": "16271551eaa854916101",
+      "sourceHash": "3242650efb313ef42d96fc9a69210cf79e5b19fd0acef5c893eace4fb9f05851",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-001-16271551eaa854916101/chapter.json"
+    },
+    "24:2": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 2,
+      "revision": "f03df980dfed0f73c369",
+      "sourceHash": "cf0e66ae1edf9f1a31fde697843cc44a5641d4dc10c7e4afb92d2cdcd0176f68",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-002-f03df980dfed0f73c369/chapter.json"
+    },
+    "24:3": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 3,
+      "revision": "e500547bc9ad4744ef81",
+      "sourceHash": "d6c2f88a54b51dd6a1d6d231606af3bcf24567645a70832f8aaabad0c4086489",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-003-e500547bc9ad4744ef81/chapter.json"
+    },
+    "24:4": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 4,
+      "revision": "58a92d38155a13091822",
+      "sourceHash": "350ab190a5f566708107d92fbda321b087c9e749841add657140b1c8832d1dbb",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-004-58a92d38155a13091822/chapter.json"
+    },
+    "24:5": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 5,
+      "revision": "42ffbebd85fdabe4c63e",
+      "sourceHash": "f4d4b3ac4474aa8665e8c4845de229a68bf5baddef606685ef02e717a1084856",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-005-42ffbebd85fdabe4c63e/chapter.json"
+    },
+    "24:6": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 6,
+      "revision": "ac45e5d2f887eb48e83f",
+      "sourceHash": "cf5ce588513fb0cbd81d5d9489b8ab4913bd9abfb1814a67433e1342626e648d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-006-ac45e5d2f887eb48e83f/chapter.json"
+    },
+    "24:7": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 7,
+      "revision": "94844876b141c0b7a12c",
+      "sourceHash": "634a39b973ef308572d55760ba5400d897ceb7ba84278d578615ce776dfa747b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-007-94844876b141c0b7a12c/chapter.json"
+    },
+    "24:8": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 8,
+      "revision": "f734284f16e5d670c3ce",
+      "sourceHash": "8108502310f6bfc256852cd4812394c1f8b45639efe4ddc5b8efcd125d22a75a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-008-f734284f16e5d670c3ce/chapter.json"
     }
   }
 }
