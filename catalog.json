@@ -8236,6 +8236,150 @@
       "revision": "ea5af82bd7278c2f0844",
       "sourceHash": "93326daac78c048f0f0f46c65eb443a86ae13f32dffbcc1bbc674ba2a2b0dfad",
       "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-47-013-ea5af82bd7278c2f0844/chapter.json"
+    },
+    "48:1": {
+      "bookId": 48,
+      "book": "Galatians",
+      "bookName": "Galaterbrevet",
+      "chapter": 1,
+      "revision": "be0170dd88ce7525aa4a",
+      "sourceHash": "b77dee589a9ab98506c05705c7986c3a0dc706c2b85912bb5bbfd49db02f9de1",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-48-001-be0170dd88ce7525aa4a/chapter.json"
+    },
+    "48:2": {
+      "bookId": 48,
+      "book": "Galatians",
+      "bookName": "Galaterbrevet",
+      "chapter": 2,
+      "revision": "c1222b00b17874877df9",
+      "sourceHash": "e9cbde8ccc4a2dcf760fd4e7d8f7df4ca13e64dd5308488d2ceed05626dafad7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-48-002-c1222b00b17874877df9/chapter.json"
+    },
+    "48:3": {
+      "bookId": 48,
+      "book": "Galatians",
+      "bookName": "Galaterbrevet",
+      "chapter": 3,
+      "revision": "0186abe992b8521e61ff",
+      "sourceHash": "2e8f12f5e1300418156bd19388b8839774f4eebb5aad571a6b0f87b347490f15",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-48-003-0186abe992b8521e61ff/chapter.json"
+    },
+    "48:4": {
+      "bookId": 48,
+      "book": "Galatians",
+      "bookName": "Galaterbrevet",
+      "chapter": 4,
+      "revision": "4948a24c7bf39b67c8e7",
+      "sourceHash": "f0621d3bab6441b2e3f5d0b48a0ca85fbb341eaf7da3d7659eded3bb47c102af",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-48-004-4948a24c7bf39b67c8e7/chapter.json"
+    },
+    "48:5": {
+      "bookId": 48,
+      "book": "Galatians",
+      "bookName": "Galaterbrevet",
+      "chapter": 5,
+      "revision": "81b0136b6d42d9e6f163",
+      "sourceHash": "67fb7905ac3158dc57f2ae8de00a3b3fd88645e0a1762b74724fa3fcc44690b0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-48-005-81b0136b6d42d9e6f163/chapter.json"
+    },
+    "48:6": {
+      "bookId": 48,
+      "book": "Galatians",
+      "bookName": "Galaterbrevet",
+      "chapter": 6,
+      "revision": "b441de2af42cfd4c7e73",
+      "sourceHash": "2766413afce602a87e17876702171436e0cda065f83ffb039cf21e1ffbd40da4",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-48-006-b441de2af42cfd4c7e73/chapter.json"
+    },
+    "49:1": {
+      "bookId": 49,
+      "book": "Ephesians",
+      "bookName": "Efesierbrevet",
+      "chapter": 1,
+      "revision": "6d5c64212796336c740d",
+      "sourceHash": "f58d92577d3d1bf7d1e92949078059c4a56079ea8dabf7e157fb8be62974e457",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-49-001-6d5c64212796336c740d/chapter.json"
+    },
+    "49:2": {
+      "bookId": 49,
+      "book": "Ephesians",
+      "bookName": "Efesierbrevet",
+      "chapter": 2,
+      "revision": "f42c1f3304346d819867",
+      "sourceHash": "89ba60260f8d773ff81a5fe74b715cb8baf8c5adeb7c0e84ebdf44c561fc4f37",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-49-002-f42c1f3304346d819867/chapter.json"
+    },
+    "49:3": {
+      "bookId": 49,
+      "book": "Ephesians",
+      "bookName": "Efesierbrevet",
+      "chapter": 3,
+      "revision": "9dc265997b0c4b1ee57e",
+      "sourceHash": "307644cdc2e3340ea7844c4ea2818d0fdac24911bd1632c3aab2ca040036c505",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-49-003-9dc265997b0c4b1ee57e/chapter.json"
+    },
+    "49:4": {
+      "bookId": 49,
+      "book": "Ephesians",
+      "bookName": "Efesierbrevet",
+      "chapter": 4,
+      "revision": "818f7885fb7a479d3681",
+      "sourceHash": "fa0ce44219db6f5ddb00ba8a17e3b9456fd58ee21f4ffeec8fbf382e249e42bb",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-49-004-818f7885fb7a479d3681/chapter.json"
+    },
+    "49:5": {
+      "bookId": 49,
+      "book": "Ephesians",
+      "bookName": "Efesierbrevet",
+      "chapter": 5,
+      "revision": "8dbda1dc5e095709d623",
+      "sourceHash": "f60b3aa94aa319c83a2e3185087b26d2f3ec7181d3883a17140c1499386c2c75",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-49-005-8dbda1dc5e095709d623/chapter.json"
+    },
+    "49:6": {
+      "bookId": 49,
+      "book": "Ephesians",
+      "bookName": "Efesierbrevet",
+      "chapter": 6,
+      "revision": "2b68f2f8343655dc27e4",
+      "sourceHash": "13566224c60cfd52c11fe754be067d6a1377be5b57c47004da99605d4cba1904",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-49-006-2b68f2f8343655dc27e4/chapter.json"
+    },
+    "50:1": {
+      "bookId": 50,
+      "book": "Philippians",
+      "bookName": "Filipperbrevet",
+      "chapter": 1,
+      "revision": "716e37ae7183d219777c",
+      "sourceHash": "596eff5255b2e4a6615bd405fce8f25adb75932abceb0472e13361b847589281",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-50-001-716e37ae7183d219777c/chapter.json"
+    },
+    "50:2": {
+      "bookId": 50,
+      "book": "Philippians",
+      "bookName": "Filipperbrevet",
+      "chapter": 2,
+      "revision": "75c7cbd8632dd84a2e08",
+      "sourceHash": "6a9fda39ded2d3047714b5158610c8dd7c65eb0e19937e81599bd05cdae482db",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-50-002-75c7cbd8632dd84a2e08/chapter.json"
+    },
+    "50:3": {
+      "bookId": 50,
+      "book": "Philippians",
+      "bookName": "Filipperbrevet",
+      "chapter": 3,
+      "revision": "0bb2f03fc2265892a159",
+      "sourceHash": "56b655d9801a7e902a97eaf083c1f766d7a4ae07be4b95a9c877e20312f0c0f4",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-50-003-0bb2f03fc2265892a159/chapter.json"
+    },
+    "50:4": {
+      "bookId": 50,
+      "book": "Philippians",
+      "bookName": "Filipperbrevet",
+      "chapter": 4,
+      "revision": "8d8def7a999c4a662d7f",
+      "sourceHash": "bb0b600ab629bdfd155c5b868555e205129139fe15c0214a20050fb10f79fb4f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-50-004-8d8def7a999c4a662d7f/chapter.json"
     }
   }
 }
