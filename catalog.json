@@ -7975,6 +7975,15 @@
       "revision": "037203396f3c0f862d94",
       "sourceHash": "d5b596abd3f67a74e2c4c5b3a14faed0ef510a0c9d0c118eb0187fb4d90335a7",
       "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-45-016-037203396f3c0f862d94/chapter.json"
+    },
+    "46:1": {
+      "bookId": 46,
+      "book": "1 Corinthians",
+      "bookName": "Första Korintierbrevet",
+      "chapter": 1,
+      "revision": "136463af00844cfc9d14",
+      "sourceHash": "7c896ea02a3bc1108b5b40193137e0f3f9649c87c8b32db1c191938daa447dfb",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-46-001-136463af00844cfc9d14/chapter.json"
     }
   }
 }
