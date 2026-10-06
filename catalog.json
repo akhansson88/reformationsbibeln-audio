@@ -8731,6 +8731,123 @@
       "revision": "9491cdd7e2494699186b",
       "sourceHash": "79a23d5da2fd6859d66d10a083fe93c468d9e41123cb62940df6fa00d20d0c4b",
       "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-55-004-9491cdd7e2494699186b/chapter.json"
+    },
+    "59:1": {
+      "bookId": 59,
+      "book": "James",
+      "bookName": "Jakobs brev",
+      "chapter": 1,
+      "revision": "9c58c2208376ab856756",
+      "sourceHash": "bcfbdef04fae6cfb45b4b6bb1aff783910160bda18d1aab907c86119af502d9b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-59-001-9c58c2208376ab856756/chapter.json"
+    },
+    "59:2": {
+      "bookId": 59,
+      "book": "James",
+      "bookName": "Jakobs brev",
+      "chapter": 2,
+      "revision": "e03e1b5202c24fc3ce6e",
+      "sourceHash": "26193d7321009dd862dcb6ce640cc84637c42db41052dcf7d746cce9b03fca2e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-59-002-e03e1b5202c24fc3ce6e/chapter.json"
+    },
+    "59:3": {
+      "bookId": 59,
+      "book": "James",
+      "bookName": "Jakobs brev",
+      "chapter": 3,
+      "revision": "29e1c11f67773380ffc2",
+      "sourceHash": "d0ae4fd6589d72eecbf0326fbda497ed27052fc504cda8085c5e030b122641a4",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-59-003-29e1c11f67773380ffc2/chapter.json"
+    },
+    "59:4": {
+      "bookId": 59,
+      "book": "James",
+      "bookName": "Jakobs brev",
+      "chapter": 4,
+      "revision": "c9f1707b7bfcef898ab2",
+      "sourceHash": "f23fd4154c804a68cbdd145c2d27c905c14ca61657c3e33765c47289b3ad7f18",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-59-004-c9f1707b7bfcef898ab2/chapter.json"
+    },
+    "59:5": {
+      "bookId": 59,
+      "book": "James",
+      "bookName": "Jakobs brev",
+      "chapter": 5,
+      "revision": "a55d5c66f8bc9ed2b9e8",
+      "sourceHash": "110607d5d4e5fe4308501f823e2eb54c02b706ca9c0d43fb523ffdd1fc4f2d76",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-59-005-a55d5c66f8bc9ed2b9e8/chapter.json"
+    },
+    "60:1": {
+      "bookId": 60,
+      "book": "1 Peter",
+      "bookName": "Första Petrusbrevet",
+      "chapter": 1,
+      "revision": "c75ce1fce7e54f2b9002",
+      "sourceHash": "de100165c6328412ddc0297b3c2556922d3f88f3be245e60e27db03c74a83c63",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-60-001-c75ce1fce7e54f2b9002/chapter.json"
+    },
+    "60:2": {
+      "bookId": 60,
+      "book": "1 Peter",
+      "bookName": "Första Petrusbrevet",
+      "chapter": 2,
+      "revision": "d139b021844ec7335ef2",
+      "sourceHash": "28cf47d2f0ffde82df6d1495556e1e57e91a7475145d95d7481f2c1f3b03f87b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-60-002-d139b021844ec7335ef2/chapter.json"
+    },
+    "60:3": {
+      "bookId": 60,
+      "book": "1 Peter",
+      "bookName": "Första Petrusbrevet",
+      "chapter": 3,
+      "revision": "e9b887bccb9c95dc3664",
+      "sourceHash": "75d54645ade50766e1af26f62abebbd41a62d0ca80d5d5393b3f7deebf8d8452",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-60-003-e9b887bccb9c95dc3664/chapter.json"
+    },
+    "60:4": {
+      "bookId": 60,
+      "book": "1 Peter",
+      "bookName": "Första Petrusbrevet",
+      "chapter": 4,
+      "revision": "6fee2ed21ae571505ed8",
+      "sourceHash": "f1023a35abc6ee4185351976fe11601660893eddb863aeb35ece4398a2bbcb4f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-60-004-6fee2ed21ae571505ed8/chapter.json"
+    },
+    "60:5": {
+      "bookId": 60,
+      "book": "1 Peter",
+      "bookName": "Första Petrusbrevet",
+      "chapter": 5,
+      "revision": "cd8e6487d427d5e8d1d7",
+      "sourceHash": "f701b5bf532e6a209b08a756b41311cd72480a8d543260b9ac855e2e9973c42a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-60-005-cd8e6487d427d5e8d1d7/chapter.json"
+    },
+    "61:1": {
+      "bookId": 61,
+      "book": "2 Peter",
+      "bookName": "Andra Petrusbrevet",
+      "chapter": 1,
+      "revision": "6ce27b9a19d78beb7459",
+      "sourceHash": "58925f1406264a4ea28adc672927d9d25a3affc8bfb05906cd76d95e95983761",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-61-001-6ce27b9a19d78beb7459/chapter.json"
+    },
+    "61:2": {
+      "bookId": 61,
+      "book": "2 Peter",
+      "bookName": "Andra Petrusbrevet",
+      "chapter": 2,
+      "revision": "229af7ab49fd7943eb1c",
+      "sourceHash": "78a75320680f154d95642333885e8c3287a31cb62df9e9e1b942c209aef5c613",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-61-002-229af7ab49fd7943eb1c/chapter.json"
+    },
+    "61:3": {
+      "bookId": 61,
+      "book": "2 Peter",
+      "bookName": "Andra Petrusbrevet",
+      "chapter": 3,
+      "revision": "ae5d2ab3ac08e0d1deb0",
+      "sourceHash": "c7a8edcf1f02208d1099cc958e150e74c2f31306d2f011d66cd57a7df7509fa3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-61-003-ae5d2ab3ac08e0d1deb0/chapter.json"
     }
   }
 }
