@@ -8848,6 +8848,69 @@
       "revision": "ae5d2ab3ac08e0d1deb0",
       "sourceHash": "c7a8edcf1f02208d1099cc958e150e74c2f31306d2f011d66cd57a7df7509fa3",
       "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-61-003-ae5d2ab3ac08e0d1deb0/chapter.json"
+    },
+    "62:1": {
+      "bookId": 62,
+      "book": "1 John",
+      "bookName": "Första Johannesbrevet",
+      "chapter": 1,
+      "revision": "a79ade0b68b78345f206",
+      "sourceHash": "c42a027548a6374eafd7723c8e3127f1987c8008a16306f05e9e3f1c69d4c5b2",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-62-001-a79ade0b68b78345f206/chapter.json"
+    },
+    "62:2": {
+      "bookId": 62,
+      "book": "1 John",
+      "bookName": "Första Johannesbrevet",
+      "chapter": 2,
+      "revision": "cb6adf19b3a655bff0e8",
+      "sourceHash": "1cff395e487677b2fafd5094e80051e3afa990fee44d6fb4fa47f9a9c894ce7f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-62-002-cb6adf19b3a655bff0e8/chapter.json"
+    },
+    "62:3": {
+      "bookId": 62,
+      "book": "1 John",
+      "bookName": "Första Johannesbrevet",
+      "chapter": 3,
+      "revision": "1e061412c01af4d6ecca",
+      "sourceHash": "a9eb4a544b8cc027748c885e038f906b876689b1a19671aa543f1f2dbae4c997",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-62-003-1e061412c01af4d6ecca/chapter.json"
+    },
+    "62:4": {
+      "bookId": 62,
+      "book": "1 John",
+      "bookName": "Första Johannesbrevet",
+      "chapter": 4,
+      "revision": "80da133d8b60fdbe7251",
+      "sourceHash": "8fd15eb5af8694d38e25001a43ae35ad4f8ab8f6747704e85222c2ee3bb8b144",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-62-004-80da133d8b60fdbe7251/chapter.json"
+    },
+    "62:5": {
+      "bookId": 62,
+      "book": "1 John",
+      "bookName": "Första Johannesbrevet",
+      "chapter": 5,
+      "revision": "4f73948f941449c80b31",
+      "sourceHash": "8bac6bff32c654c6e415ca97ed6ab3d0daa43016c6c5043d335a42ee5c91c3f1",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-62-005-4f73948f941449c80b31/chapter.json"
+    },
+    "63:1": {
+      "bookId": 63,
+      "book": "2 John",
+      "bookName": "Andra Johannesbrevet",
+      "chapter": 1,
+      "revision": "5a1dcd23514f5201d270",
+      "sourceHash": "08355535aff2332048a730683ce6c7498daa2896f33e1f83d355e82e75e476f4",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-63-001-5a1dcd23514f5201d270/chapter.json"
+    },
+    "64:1": {
+      "bookId": 64,
+      "book": "3 John",
+      "bookName": "Tredje Johannesbrevet",
+      "chapter": 1,
+      "revision": "8e727b0e97433401c322",
+      "sourceHash": "030671ba527bfd3b7658e46180804443fe2e2d1f088ca8ed8f34a3438d648cde",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-64-001-8e727b0e97433401c322/chapter.json"
     }
   }
 }
