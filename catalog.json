@@ -7606,6 +7606,213 @@
       "revision": "2faa757aaab4c7d8fe42",
       "sourceHash": "cda1e6c438adcfd135eef0ac05ac6d3909672632ab620657a837d73fa672f7cd",
       "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-026-2faa757aaab4c7d8fe42/chapter.json"
+    },
+    "42:2": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 2,
+      "revision": "873d40912f8343f6822a",
+      "sourceHash": "8d12d94d8b7f158cfb57ea27ab261f38e80b96cf746b5d87b2d3c84a984e1098",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-002-873d40912f8343f6822a/chapter.json"
+    },
+    "42:3": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 3,
+      "revision": "2b7d82d3c6fc492fc3d1",
+      "sourceHash": "c0b6ff822928d4ac8d80fc8d6b53bf2380d569245fea726667fd5d7c008dc80d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-003-2b7d82d3c6fc492fc3d1/chapter.json"
+    },
+    "42:4": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 4,
+      "revision": "830ca7c86ca9423a18da",
+      "sourceHash": "c6d07802b963de2dbc592c693859a450e5d385762b10d8c46b8b7098d81c7823",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-004-830ca7c86ca9423a18da/chapter.json"
+    },
+    "42:5": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 5,
+      "revision": "0432beb7ed562446a4b4",
+      "sourceHash": "0bbe39b01669fbf35f8646599f39b98d479e53e144c9438ded25e04f0dcd7a93",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-005-0432beb7ed562446a4b4/chapter.json"
+    },
+    "42:6": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 6,
+      "revision": "bdb158a8fde049b73b36",
+      "sourceHash": "9ea97ffedff3bc75b5dfc945c17861417deb21521f0c1bebccdc4110875caf2f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-006-bdb158a8fde049b73b36/chapter.json"
+    },
+    "42:7": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 7,
+      "revision": "4f6e1d4604451dae35a5",
+      "sourceHash": "e3b21869db45150b289070febcfedfd84414a2d106dff409405bd6f640228c45",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-007-4f6e1d4604451dae35a5/chapter.json"
+    },
+    "42:8": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 8,
+      "revision": "8b5433215e44b5db9a01",
+      "sourceHash": "4ef7e9494487c3106712ca3f9dea0a668af619635d69722e2ad93615c194a055",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-008-8b5433215e44b5db9a01/chapter.json"
+    },
+    "42:9": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 9,
+      "revision": "06b44fb6aed27fd47dd4",
+      "sourceHash": "037a9e1dacb8f3bea304429cd5545ad94392c6bc5c85caa463fcbbf7053eadc3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-009-06b44fb6aed27fd47dd4/chapter.json"
+    },
+    "42:10": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 10,
+      "revision": "db187fd1f8d5a30a70fc",
+      "sourceHash": "eb87c30e397f8a38984f5f0fc0152a4f99a3f17b317387e64a3950c485e9b395",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-010-db187fd1f8d5a30a70fc/chapter.json"
+    },
+    "42:11": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 11,
+      "revision": "5211385d66eff0a8c6ef",
+      "sourceHash": "cecf99cdebe6ebfe9cd5312e3a07165450917fcf8cf83453ea37060e7ee3c052",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-011-5211385d66eff0a8c6ef/chapter.json"
+    },
+    "42:12": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 12,
+      "revision": "f699feaf4f3e18121424",
+      "sourceHash": "4e2019499a3dd707058ad3b918a9604d27ce4428b28a68ef965179e1b283309a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-012-f699feaf4f3e18121424/chapter.json"
+    },
+    "42:13": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 13,
+      "revision": "55087e475ced2033396c",
+      "sourceHash": "3060ebbc7e03e7aa4e6b7331d6db3d528403c44d256ad8a9962afcec2999ae2e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-013-55087e475ced2033396c/chapter.json"
+    },
+    "42:14": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 14,
+      "revision": "fbf0e4e6f03de1b26b71",
+      "sourceHash": "4e7f3570ee47cd6e0bd49ffd8aa4ab5561df0a47a3f17ea45a4b53d33404516d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-014-fbf0e4e6f03de1b26b71/chapter.json"
+    },
+    "42:15": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 15,
+      "revision": "70b64e69d96bc785f3ba",
+      "sourceHash": "84be94e22008b380776e5513f4fcd5f5a02bada5f7b6f3882ccd10894a021804",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-015-70b64e69d96bc785f3ba/chapter.json"
+    },
+    "42:16": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 16,
+      "revision": "d7f2277f2515c01db170",
+      "sourceHash": "d60a7aedd1ac807dca1b4a6217d62b8c125d70ea084814c8243c99b5229b5d27",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-016-d7f2277f2515c01db170/chapter.json"
+    },
+    "42:17": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 17,
+      "revision": "6b8e6e4338745c5ce131",
+      "sourceHash": "441ab5eb60a7932aa4847187d5b062e063e8d80a7bdd28268a4c53a322116070",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-017-6b8e6e4338745c5ce131/chapter.json"
+    },
+    "42:18": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 18,
+      "revision": "a05b09ac6d804df2e3e6",
+      "sourceHash": "3097d935e0c842afe1fcca18d2ec9963b0368045defa9239a7fb3e5101d2fc19",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-018-a05b09ac6d804df2e3e6/chapter.json"
+    },
+    "42:19": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 19,
+      "revision": "dd71d37ea1530bf2fe10",
+      "sourceHash": "dc648ce3ac178cc06dbcb0115ac4345eed71565446d5335f92bcc69307d9f88f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-019-dd71d37ea1530bf2fe10/chapter.json"
+    },
+    "42:20": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 20,
+      "revision": "5ae2c1521f9c5590ea62",
+      "sourceHash": "66592d4a525d4fda1dc3cde0118efe2146539c7069b9d19b74329458b68ebd82",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-020-5ae2c1521f9c5590ea62/chapter.json"
+    },
+    "42:21": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 21,
+      "revision": "895ed7f19094da0efd8a",
+      "sourceHash": "3e4325d5229ab3284add8bbe8f7cc9bf878b31e7985cadd7359bf196a37cf6dc",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-021-895ed7f19094da0efd8a/chapter.json"
+    },
+    "42:22": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 22,
+      "revision": "fba57eeeb50bb8c18147",
+      "sourceHash": "8b1ce5b83da5c349db70b1e8bbd4c35572e3cdefa3c5f779a5ed5f22b3237ad4",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-022-fba57eeeb50bb8c18147/chapter.json"
+    },
+    "42:23": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 23,
+      "revision": "217cfdc43e0753302f06",
+      "sourceHash": "8642dd8c307480c6261785c8676b97ab96673449610d177e55f4cc6c8dd63768",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-023-217cfdc43e0753302f06/chapter.json"
+    },
+    "42:24": {
+      "bookId": 42,
+      "book": "Luke",
+      "bookName": "Lukas Evangelium",
+      "chapter": 24,
+      "revision": "a6a425c0006037adac1e",
+      "sourceHash": "fbef5d406bfb3fbd54175a9e1071c94d1860b9b49a85136477f4bbc66793d068",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-024-a6a425c0006037adac1e/chapter.json"
     }
   }
 }
