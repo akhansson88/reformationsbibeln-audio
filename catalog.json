@@ -8641,6 +8641,96 @@
       "revision": "ad889aae08aaebe131ca",
       "sourceHash": "59014cbb9a583e0b44049b02cb91169741eb7545ee144a7092058dfc96f0f97e",
       "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-58-013-ad889aae08aaebe131ca/chapter.json"
+    },
+    "54:1": {
+      "bookId": 54,
+      "book": "1 Timothy",
+      "bookName": "Första Timoteusbrevet",
+      "chapter": 1,
+      "revision": "46bc23f0a5e0439d648e",
+      "sourceHash": "1c193807fd8015639094155d25bf836ad6daf06f9a5267235da432412e5975c8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-54-001-46bc23f0a5e0439d648e/chapter.json"
+    },
+    "54:2": {
+      "bookId": 54,
+      "book": "1 Timothy",
+      "bookName": "Första Timoteusbrevet",
+      "chapter": 2,
+      "revision": "3e6edc5897011aa9348a",
+      "sourceHash": "152810b9709c945f8a6342f41c04c17bbe3ef8fc1a260f55de6dd770e1dfebff",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-54-002-3e6edc5897011aa9348a/chapter.json"
+    },
+    "54:3": {
+      "bookId": 54,
+      "book": "1 Timothy",
+      "bookName": "Första Timoteusbrevet",
+      "chapter": 3,
+      "revision": "de3726f1f120fc824858",
+      "sourceHash": "04c5d46db603c2aab7d5fbfe0b77a176d022ca815f585d7e9a47ea6ba14167ff",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-54-003-de3726f1f120fc824858/chapter.json"
+    },
+    "54:4": {
+      "bookId": 54,
+      "book": "1 Timothy",
+      "bookName": "Första Timoteusbrevet",
+      "chapter": 4,
+      "revision": "029bac127ea30e891446",
+      "sourceHash": "cce248309dcb3fc17ad1a3fb3f6eb905faf2db8abc1971c08249f78cfb762fde",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-54-004-029bac127ea30e891446/chapter.json"
+    },
+    "54:5": {
+      "bookId": 54,
+      "book": "1 Timothy",
+      "bookName": "Första Timoteusbrevet",
+      "chapter": 5,
+      "revision": "6451709fd669e07efbe7",
+      "sourceHash": "ff1df5e4f238d960894c6d7ec42b403f15079f81725b3e5c62f041888abd1e9c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-54-005-6451709fd669e07efbe7/chapter.json"
+    },
+    "54:6": {
+      "bookId": 54,
+      "book": "1 Timothy",
+      "bookName": "Första Timoteusbrevet",
+      "chapter": 6,
+      "revision": "5ed22a8455743137ddb8",
+      "sourceHash": "507bd5ff068d2a808a78d2cbcb65fcf5d4b4136eae1c9546fb816971b7f68629",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-54-006-5ed22a8455743137ddb8/chapter.json"
+    },
+    "55:1": {
+      "bookId": 55,
+      "book": "2 Timothy",
+      "bookName": "Andra Timoteusbrevet",
+      "chapter": 1,
+      "revision": "38620c3919c1ce077365",
+      "sourceHash": "ab232d89d4ae7372238b9637e751539c0e8e05f7252ee3cb1ca2c8f4e3cfef70",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-55-001-38620c3919c1ce077365/chapter.json"
+    },
+    "55:2": {
+      "bookId": 55,
+      "book": "2 Timothy",
+      "bookName": "Andra Timoteusbrevet",
+      "chapter": 2,
+      "revision": "c0adb039a34cec2dad7c",
+      "sourceHash": "8442ae2ec62a8cfa8dafd54c35016e93880b5631221714a50cc526f89b2b2f3c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-55-002-c0adb039a34cec2dad7c/chapter.json"
+    },
+    "55:3": {
+      "bookId": 55,
+      "book": "2 Timothy",
+      "bookName": "Andra Timoteusbrevet",
+      "chapter": 3,
+      "revision": "96208a4ea7de093d6029",
+      "sourceHash": "1739983708ef13516bc33d3798e97e4aea919b6f3859447dc1b62c654e99d856",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-55-003-96208a4ea7de093d6029/chapter.json"
+    },
+    "55:4": {
+      "bookId": 55,
+      "book": "2 Timothy",
+      "bookName": "Andra Timoteusbrevet",
+      "chapter": 4,
+      "revision": "9491cdd7e2494699186b",
+      "sourceHash": "79a23d5da2fd6859d66d10a083fe93c468d9e41123cb62940df6fa00d20d0c4b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-55-004-9491cdd7e2494699186b/chapter.json"
     }
   }
 }
