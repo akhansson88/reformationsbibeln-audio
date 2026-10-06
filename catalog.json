@@ -9118,6 +9118,159 @@
       "revision": "01bfd8c75e4c407d9e6a",
       "sourceHash": "a75c377724e96cf65291fc11dce2abac09056d6c466f935dbd770d9ac270b395",
       "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-022-01bfd8c75e4c407d9e6a/chapter.json"
+    },
+    "24:9": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 9,
+      "revision": "571533a49b46c91f9927",
+      "sourceHash": "43d7ff1741d38e14c59eb5f4fb56e278241de1aa18a3beb09bc53aa21aeb2652",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-009-571533a49b46c91f9927/chapter.json"
+    },
+    "24:10": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 10,
+      "revision": "d0e57c070b99e0c496db",
+      "sourceHash": "a596fb325895ae20537b6ba1b7de6f2ef9a6dea83009fd2af1e562617c20179a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-010-d0e57c070b99e0c496db/chapter.json"
+    },
+    "24:11": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 11,
+      "revision": "aa37b7cfbd88e6c75072",
+      "sourceHash": "9b1ef2b1dc8d0dfc8d2f8f76f7dd87a41724f7f92f83aab33d8d8f495417c220",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-011-aa37b7cfbd88e6c75072/chapter.json"
+    },
+    "24:12": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 12,
+      "revision": "8038cb50666e8c112f1a",
+      "sourceHash": "41bd8f8e51f8e3e5cc89c0275c1984654ac9ac4398d062b24a8c4bc242b5704c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-012-8038cb50666e8c112f1a/chapter.json"
+    },
+    "24:13": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 13,
+      "revision": "d6ce93ae859582dc33e4",
+      "sourceHash": "7ac21321c8d8b146efaefe4f39bbbe723b98f11a8fd24d5a2bd5239912c0520f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-013-d6ce93ae859582dc33e4/chapter.json"
+    },
+    "24:14": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 14,
+      "revision": "82175d827b2b32ca06bb",
+      "sourceHash": "79cf2125ccbabda53573360f4af7c43adb5eb6c2ef099d185d20bff3f4f92926",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-014-82175d827b2b32ca06bb/chapter.json"
+    },
+    "24:15": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 15,
+      "revision": "cd8d2a06f0dc0bcd6aea",
+      "sourceHash": "fb70822d299ac2dd48710c701c6fe497a86c9787d3c0bbc122b46726348a2116",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-015-cd8d2a06f0dc0bcd6aea/chapter.json"
+    },
+    "24:16": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 16,
+      "revision": "fa9319241683d9830713",
+      "sourceHash": "4cde643ab17004e2d32306b87d349403aae6c0dae8fa7dfc3966191e060dea6c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-016-fa9319241683d9830713/chapter.json"
+    },
+    "24:17": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 17,
+      "revision": "2e700ce08941bdee39a2",
+      "sourceHash": "cfd597ff9b05c58ff178962ec43d548b1ab97e71c7069f0636208b462fe99181",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-017-2e700ce08941bdee39a2/chapter.json"
+    },
+    "24:18": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 18,
+      "revision": "f539eda0c7ce8ad5d9ba",
+      "sourceHash": "6cbfc16060952d7fad20c348c7994642fc6cfee174f1de6be6690fba18f5cd7a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-018-f539eda0c7ce8ad5d9ba/chapter.json"
+    },
+    "24:19": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 19,
+      "revision": "4f5d17cc6600ebc20f58",
+      "sourceHash": "38e62baf9fa8f6de4e2f57c076ec69abd1182a25eaf35075c1144d59bdde6bea",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-019-4f5d17cc6600ebc20f58/chapter.json"
+    },
+    "24:20": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 20,
+      "revision": "31dbe7dba5395a27e165",
+      "sourceHash": "eb32d92b9091e680fa9b40815d9bca736fdbb9cdc6fa5dad4936816a8e0a5789",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-020-31dbe7dba5395a27e165/chapter.json"
+    },
+    "24:21": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 21,
+      "revision": "b3fc65cfd788ae33ff25",
+      "sourceHash": "d5ab79b892b17b206a1d3109a72d7cc13125e3b0df62910fd3a02b1abd68cac3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-021-b3fc65cfd788ae33ff25/chapter.json"
+    },
+    "24:22": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 22,
+      "revision": "406e050a2d5241de0e73",
+      "sourceHash": "1d3b5b6f3ebb04553ffdf69e85d6f0b885a56ac9fa6b6d11c8ac7956917a20e2",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-022-406e050a2d5241de0e73/chapter.json"
+    },
+    "24:23": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 23,
+      "revision": "9eb077a758be2c89f022",
+      "sourceHash": "983af0980edda6d41433196a4c93f982f5a88d7e9e45d8a867c78284f33a6c12",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-023-9eb077a758be2c89f022/chapter.json"
+    },
+    "24:24": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 24,
+      "revision": "29226b931fa4afec2564",
+      "sourceHash": "27aee1137ce11df03d3c2090724bd96b3b5fd1d949d9262ef329e7977c299998",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-024-29226b931fa4afec2564/chapter.json"
+    },
+    "24:25": {
+      "bookId": 24,
+      "book": "Jeremiah",
+      "bookName": "Jeremia",
+      "chapter": 25,
+      "revision": "552aef1b406c55e4db22",
+      "sourceHash": "57bc7a04524debc91793ab5f32747239a3fdd92ab62bad89df8797fa9d6aa612",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-24-025-552aef1b406c55e4db22/chapter.json"
     }
   }
 }
