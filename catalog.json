@@ -8911,6 +8911,213 @@
       "revision": "8e727b0e97433401c322",
       "sourceHash": "030671ba527bfd3b7658e46180804443fe2e2d1f088ca8ed8f34a3438d648cde",
       "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-64-001-8e727b0e97433401c322/chapter.json"
+    },
+    "65:1": {
+      "bookId": 65,
+      "book": "Jude",
+      "bookName": "Judas brev",
+      "chapter": 1,
+      "revision": "bdbb164f3926097ee5e8",
+      "sourceHash": "91670e5f8a0ef9197e7e39e6c32cd43154451ec05dbfc5183da4e46bb6fb0253",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-65-001-bdbb164f3926097ee5e8/chapter.json"
+    },
+    "66:1": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 1,
+      "revision": "b0537390cfad212783d1",
+      "sourceHash": "50fec43bdf585b970e149b7670b1501a615073109fd5724283d3f17cd698aaad",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-001-b0537390cfad212783d1/chapter.json"
+    },
+    "66:2": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 2,
+      "revision": "2ed0395fb7f15226f578",
+      "sourceHash": "bb001614844d28817850be2e3ce3b942d23a54c554a1ef1e0f54147afdb164ac",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-002-2ed0395fb7f15226f578/chapter.json"
+    },
+    "66:3": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 3,
+      "revision": "f664a385b99a965b1bd5",
+      "sourceHash": "d16dbeb0faf9215696643991e3473735b104bdb5947751d68bcccff13dc5b727",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-003-f664a385b99a965b1bd5/chapter.json"
+    },
+    "66:4": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 4,
+      "revision": "98822c744060e36727b3",
+      "sourceHash": "8692131f48d892766798b0ff51855ff47a311307b1ac57a1d46d21984b53293e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-004-98822c744060e36727b3/chapter.json"
+    },
+    "66:5": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 5,
+      "revision": "15801ebe376d35482ec5",
+      "sourceHash": "547f9c8bb741b979a1ce9ac4fbad771cd4c5bbdb5cbbf742e4ab64207245884a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-005-15801ebe376d35482ec5/chapter.json"
+    },
+    "66:6": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 6,
+      "revision": "189bbdd865a490e09b32",
+      "sourceHash": "d08d026dd4cd4015b99bea1314789f360b9769eccec55f19b6fe88e4b5226237",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-006-189bbdd865a490e09b32/chapter.json"
+    },
+    "66:7": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 7,
+      "revision": "2e27eba22e261870ccd6",
+      "sourceHash": "d710af84a68c1f043ec4a38fcdae6dcbe5a35a79ddb94d6596a55d2adee5d1be",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-007-2e27eba22e261870ccd6/chapter.json"
+    },
+    "66:8": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 8,
+      "revision": "61bb3fd98a5ff10e8744",
+      "sourceHash": "d5823a08b4d9b971c27b3fb6c87f9fdf3220c9603bfd6f9cd8b61ad342b09964",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-008-61bb3fd98a5ff10e8744/chapter.json"
+    },
+    "66:9": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 9,
+      "revision": "ff9260a6c9de7387cbc6",
+      "sourceHash": "2b855c1c08eb594bc285743018e491d4adfcaac01cc1f72be4c9fd0167d7eaf0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-009-ff9260a6c9de7387cbc6/chapter.json"
+    },
+    "66:10": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 10,
+      "revision": "d0bdd0ff5041c9261382",
+      "sourceHash": "4e06f9e4adaed255a01cf7a6e51608249363aef782f8fb9f57585e2cdba5b79c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-010-d0bdd0ff5041c9261382/chapter.json"
+    },
+    "66:11": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 11,
+      "revision": "ed77f5ba8985d6e0a6ad",
+      "sourceHash": "4379c911fc8c3b19bdf147570013fc97588fd069697b12a632a372dccb2424cb",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-011-ed77f5ba8985d6e0a6ad/chapter.json"
+    },
+    "66:12": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 12,
+      "revision": "836e71f1acf5ff8281b9",
+      "sourceHash": "f5ee1fba5937f3df227e089086d1a3fb3cd50c42b5b984c97e7d71c85a70ec16",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-012-836e71f1acf5ff8281b9/chapter.json"
+    },
+    "66:13": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 13,
+      "revision": "c94d99d1658525eebaff",
+      "sourceHash": "e4df6904b5f2b8c00d0c3f32444e6135c51d54f40b61e3a19d4374b689be0a57",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-013-c94d99d1658525eebaff/chapter.json"
+    },
+    "66:14": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 14,
+      "revision": "788a1221d7ffd370f605",
+      "sourceHash": "a31808f1b484cb2856d50708c1adaaee6d94d282713cfa0670d7428a3fc14b90",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-014-788a1221d7ffd370f605/chapter.json"
+    },
+    "66:15": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 15,
+      "revision": "96c524bb5264956ec3a8",
+      "sourceHash": "c759b0783e585408d42ec673547531df0358cb9e427a70ef1b0895707242639b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-015-96c524bb5264956ec3a8/chapter.json"
+    },
+    "66:16": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 16,
+      "revision": "4b5a418297d8671ca808",
+      "sourceHash": "21bf6225ea4a24b14407de5f7a1c843a34b8bfda053bda35a8cc070fe0801396",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-016-4b5a418297d8671ca808/chapter.json"
+    },
+    "66:17": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 17,
+      "revision": "50c0d8289ccebb2e39c0",
+      "sourceHash": "5f50b6efc93861752e2a97c1cb23f3921d00b31ac5dc23840d08b827a3a4a732",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-017-50c0d8289ccebb2e39c0/chapter.json"
+    },
+    "66:18": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 18,
+      "revision": "659eef2ff8417770f484",
+      "sourceHash": "8e5851a7646c034c3d7e28547218a5b8cb75aa2b263046190180185e846b2122",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-018-659eef2ff8417770f484/chapter.json"
+    },
+    "66:19": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 19,
+      "revision": "14b7fd5d522444e9a889",
+      "sourceHash": "c19795aa0820ccc7a0ccdc0645be49889d43216912fe231f51dd6101c4818b84",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-019-14b7fd5d522444e9a889/chapter.json"
+    },
+    "66:20": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 20,
+      "revision": "c42d3c822cc935ce1709",
+      "sourceHash": "cfa13148894790fa4f9175f0aa950f69bc74b336ff7648777f5939dc00662e91",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-020-c42d3c822cc935ce1709/chapter.json"
+    },
+    "66:21": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 21,
+      "revision": "0c4bde099682f7aaf760",
+      "sourceHash": "99cd8d782779823430d62c21efad7e08fb451613d5bedb1512eae5f8a585375b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-021-0c4bde099682f7aaf760/chapter.json"
+    },
+    "66:22": {
+      "bookId": 66,
+      "book": "Revelation",
+      "bookName": "Uppenbarelseboken",
+      "chapter": 22,
+      "revision": "01bfd8c75e4c407d9e6a",
+      "sourceHash": "a75c377724e96cf65291fc11dce2abac09056d6c466f935dbd770d9ac270b395",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-66-022-01bfd8c75e4c407d9e6a/chapter.json"
     }
   }
 }
