@@ -8380,6 +8380,114 @@
       "revision": "8d8def7a999c4a662d7f",
       "sourceHash": "bb0b600ab629bdfd155c5b868555e205129139fe15c0214a20050fb10f79fb4f",
       "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-50-004-8d8def7a999c4a662d7f/chapter.json"
+    },
+    "51:1": {
+      "bookId": 51,
+      "book": "Colossians",
+      "bookName": "Kolosserbrevet",
+      "chapter": 1,
+      "revision": "2630be7c72b5d8afc0cc",
+      "sourceHash": "9d3399f8ce00b64c582ce1e2ff78c0bce41b0bed969f53403bf0c3488bb6e5d7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-51-001-2630be7c72b5d8afc0cc/chapter.json"
+    },
+    "51:2": {
+      "bookId": 51,
+      "book": "Colossians",
+      "bookName": "Kolosserbrevet",
+      "chapter": 2,
+      "revision": "92b0f0e5fe2823914ade",
+      "sourceHash": "d497b456046c308a6b661c5f18ae5ae7f878c538fe2fad0e0d17e87273afcf9c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-51-002-92b0f0e5fe2823914ade/chapter.json"
+    },
+    "51:3": {
+      "bookId": 51,
+      "book": "Colossians",
+      "bookName": "Kolosserbrevet",
+      "chapter": 3,
+      "revision": "92baa5c51597dd5c7c7e",
+      "sourceHash": "461887638e174f2072bb3d8423c05628d044f7a6fdb552c1acfdf1bfec8ac8fb",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-51-003-92baa5c51597dd5c7c7e/chapter.json"
+    },
+    "51:4": {
+      "bookId": 51,
+      "book": "Colossians",
+      "bookName": "Kolosserbrevet",
+      "chapter": 4,
+      "revision": "4b8e11884a3c22ce93ce",
+      "sourceHash": "74e5f123e25e93bd68ad60f2080ca1181bc16fb1ebd4897ea027da5e5c7c7c79",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-51-004-4b8e11884a3c22ce93ce/chapter.json"
+    },
+    "52:1": {
+      "bookId": 52,
+      "book": "1 Thessalonians",
+      "bookName": "Första Thessalonikerbrevet",
+      "chapter": 1,
+      "revision": "1fcd3488c34ef2fd49a4",
+      "sourceHash": "9aeb4480527cbe1e5afad06e1556545bc34dea22f9f84643fdd4e2ce52f77a1b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-52-001-1fcd3488c34ef2fd49a4/chapter.json"
+    },
+    "52:2": {
+      "bookId": 52,
+      "book": "1 Thessalonians",
+      "bookName": "Första Thessalonikerbrevet",
+      "chapter": 2,
+      "revision": "ed58b14d34725d5e6070",
+      "sourceHash": "fbf2a2b309d741184497ae0258c84278b5a071d4277c2ab0678c3cee850f1344",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-52-002-ed58b14d34725d5e6070/chapter.json"
+    },
+    "52:3": {
+      "bookId": 52,
+      "book": "1 Thessalonians",
+      "bookName": "Första Thessalonikerbrevet",
+      "chapter": 3,
+      "revision": "9aa29d201aef3a1a1fc7",
+      "sourceHash": "3aa937494623f1474ca2d229493b4bbceef17888a1c8221a53f8e3a4026b471c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-52-003-9aa29d201aef3a1a1fc7/chapter.json"
+    },
+    "52:4": {
+      "bookId": 52,
+      "book": "1 Thessalonians",
+      "bookName": "Första Thessalonikerbrevet",
+      "chapter": 4,
+      "revision": "4d5e97fcdba5de5823a1",
+      "sourceHash": "c208f2d3ab9dfec2932e4bedad8d645edd2a9b5044e2fc1aab360f3bcb443de8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-52-004-4d5e97fcdba5de5823a1/chapter.json"
+    },
+    "52:5": {
+      "bookId": 52,
+      "book": "1 Thessalonians",
+      "bookName": "Första Thessalonikerbrevet",
+      "chapter": 5,
+      "revision": "74707cef0076a4c7b30c",
+      "sourceHash": "22c4fbaf880b8b35b36f7d3f8d1db8264b71784848989f0b36d31e5d52e9ca81",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-52-005-74707cef0076a4c7b30c/chapter.json"
+    },
+    "53:1": {
+      "bookId": 53,
+      "book": "2 Thessalonians",
+      "bookName": "Andra Thessalonikerbrevet",
+      "chapter": 1,
+      "revision": "d5112626e1afe534dff6",
+      "sourceHash": "a2cf54e9a4b1414a8bad02877733c156cbfc519db494af09d916ba9a29c37113",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-53-001-d5112626e1afe534dff6/chapter.json"
+    },
+    "53:2": {
+      "bookId": 53,
+      "book": "2 Thessalonians",
+      "bookName": "Andra Thessalonikerbrevet",
+      "chapter": 2,
+      "revision": "a328f3eb38900155d2f1",
+      "sourceHash": "3da61d5b1c91f846eb1bff90a78c749672440af7e5eac4ac29a387aeaa490121",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-53-002-a328f3eb38900155d2f1/chapter.json"
+    },
+    "53:3": {
+      "bookId": 53,
+      "book": "2 Thessalonians",
+      "bookName": "Andra Thessalonikerbrevet",
+      "chapter": 3,
+      "revision": "f3d2e00dee6f6e5f3af9",
+      "sourceHash": "df1126447f79a2fa8adb483fd0a815b6d68a16e0fce4f1141f62aca28d95807d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-53-003-f3d2e00dee6f6e5f3af9/chapter.json"
     }
   }
 }
