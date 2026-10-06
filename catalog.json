@@ -7984,6 +7984,258 @@
       "revision": "136463af00844cfc9d14",
       "sourceHash": "7c896ea02a3bc1108b5b40193137e0f3f9649c87c8b32db1c191938daa447dfb",
       "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-46-001-136463af00844cfc9d14/chapter.json"
+    },
+    "46:2": {
+      "bookId": 46,
+      "book": "1 Corinthians",
+      "bookName": "Första Korintierbrevet",
+      "chapter": 2,
+      "revision": "4d33b0f66a45b0e96186",
+      "sourceHash": "eb5df2cd6ff674f5da48e35590e593889c1e790d6e423ccbb1561a08cb1a89f8",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-46-002-4d33b0f66a45b0e96186/chapter.json"
+    },
+    "46:3": {
+      "bookId": 46,
+      "book": "1 Corinthians",
+      "bookName": "Första Korintierbrevet",
+      "chapter": 3,
+      "revision": "504a6ef85e3e81311e9b",
+      "sourceHash": "49ace0de9a866cd72fd4f92c6df5b9456bf0bf2599da5e6d411b960d9df83640",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-46-003-504a6ef85e3e81311e9b/chapter.json"
+    },
+    "46:4": {
+      "bookId": 46,
+      "book": "1 Corinthians",
+      "bookName": "Första Korintierbrevet",
+      "chapter": 4,
+      "revision": "5c12b4f1026d9da182e1",
+      "sourceHash": "e0a08ca57896ffe9e0062058e4043616944fc137ecec8964c0c69820b721c8f3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-46-004-5c12b4f1026d9da182e1/chapter.json"
+    },
+    "46:5": {
+      "bookId": 46,
+      "book": "1 Corinthians",
+      "bookName": "Första Korintierbrevet",
+      "chapter": 5,
+      "revision": "ea3ad5306ec1057d7a38",
+      "sourceHash": "00dc2657ea1619d0ea789f622afb37824a4b65b166db6a363a98a1d0dc5c7f3e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-46-005-ea3ad5306ec1057d7a38/chapter.json"
+    },
+    "46:6": {
+      "bookId": 46,
+      "book": "1 Corinthians",
+      "bookName": "Första Korintierbrevet",
+      "chapter": 6,
+      "revision": "8bcb1bbd7ead9830a803",
+      "sourceHash": "4015e25dd658ffafde5082846da450e19e6a7db4eef78884e7019ad56bae4ee5",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-46-006-8bcb1bbd7ead9830a803/chapter.json"
+    },
+    "46:7": {
+      "bookId": 46,
+      "book": "1 Corinthians",
+      "bookName": "Första Korintierbrevet",
+      "chapter": 7,
+      "revision": "7b6bba5af62acdadb8e4",
+      "sourceHash": "138f0d9603c44df4688d4e85d4152bed46580fa2e5c36ce117063dd7b8011a41",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-46-007-7b6bba5af62acdadb8e4/chapter.json"
+    },
+    "46:8": {
+      "bookId": 46,
+      "book": "1 Corinthians",
+      "bookName": "Första Korintierbrevet",
+      "chapter": 8,
+      "revision": "ebb22bd1e34e314a100e",
+      "sourceHash": "0dbe36f25352649b3d1576e22de365e7d64d948fee36694ca2e606d2c5ed4b5c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-46-008-ebb22bd1e34e314a100e/chapter.json"
+    },
+    "46:9": {
+      "bookId": 46,
+      "book": "1 Corinthians",
+      "bookName": "Första Korintierbrevet",
+      "chapter": 9,
+      "revision": "d2c2830ae56c9678dfc3",
+      "sourceHash": "8ef77066fd6670da6563af13df8fb1a4ccf6a873ff7ca9e0f7bea5c5b8be92c7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-46-009-d2c2830ae56c9678dfc3/chapter.json"
+    },
+    "46:10": {
+      "bookId": 46,
+      "book": "1 Corinthians",
+      "bookName": "Första Korintierbrevet",
+      "chapter": 10,
+      "revision": "27e3fa817bd94f52fde4",
+      "sourceHash": "a77c18047c6666005f3be852d5afecb6edb7d38ce22c4cf9397e932685fa0047",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-46-010-27e3fa817bd94f52fde4/chapter.json"
+    },
+    "46:11": {
+      "bookId": 46,
+      "book": "1 Corinthians",
+      "bookName": "Första Korintierbrevet",
+      "chapter": 11,
+      "revision": "08b323730ee9e9429ef5",
+      "sourceHash": "538b893b0c0bcf3b0dfddb73922fda53de280078ff6345fef1e973dcec3bb131",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-46-011-08b323730ee9e9429ef5/chapter.json"
+    },
+    "46:12": {
+      "bookId": 46,
+      "book": "1 Corinthians",
+      "bookName": "Första Korintierbrevet",
+      "chapter": 12,
+      "revision": "e348d3e52986700ec254",
+      "sourceHash": "f409086782e772bc7e6e7fb1be10ae9d034b07774eb6f5548d063b6eeb19a351",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-46-012-e348d3e52986700ec254/chapter.json"
+    },
+    "46:13": {
+      "bookId": 46,
+      "book": "1 Corinthians",
+      "bookName": "Första Korintierbrevet",
+      "chapter": 13,
+      "revision": "8a482803b3ea2ead8d7c",
+      "sourceHash": "683313f51b3a391108b367aa88c2ee5277274861792d30a2a916f2e2f3a115de",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-46-013-8a482803b3ea2ead8d7c/chapter.json"
+    },
+    "46:14": {
+      "bookId": 46,
+      "book": "1 Corinthians",
+      "bookName": "Första Korintierbrevet",
+      "chapter": 14,
+      "revision": "cb72a74330487acd380e",
+      "sourceHash": "0659e9f365154a9802611a3862c5d84e699713e53cfcb8fa2922ee152c035c54",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-46-014-cb72a74330487acd380e/chapter.json"
+    },
+    "46:15": {
+      "bookId": 46,
+      "book": "1 Corinthians",
+      "bookName": "Första Korintierbrevet",
+      "chapter": 15,
+      "revision": "7e43394af8f530722cd2",
+      "sourceHash": "84c62a8289febbb139afb161c64c796fdcf8fac957c4c16229905f6d45ec57e9",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-46-015-7e43394af8f530722cd2/chapter.json"
+    },
+    "46:16": {
+      "bookId": 46,
+      "book": "1 Corinthians",
+      "bookName": "Första Korintierbrevet",
+      "chapter": 16,
+      "revision": "c7688bee7e41a1f3d6a3",
+      "sourceHash": "e2f18fa42022ead576cd2c17f4919ac3dbeaa9c4afe328dd41670a4afe89acef",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-46-016-c7688bee7e41a1f3d6a3/chapter.json"
+    },
+    "47:1": {
+      "bookId": 47,
+      "book": "2 Corinthians",
+      "bookName": "Andra Korintierbrevet",
+      "chapter": 1,
+      "revision": "44ddaf5165b8a73dc1e5",
+      "sourceHash": "05f5cf942cd8aa389294f9753a22b5bfb5787dbbb8888aaf0a1291b8864e8909",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-47-001-44ddaf5165b8a73dc1e5/chapter.json"
+    },
+    "47:2": {
+      "bookId": 47,
+      "book": "2 Corinthians",
+      "bookName": "Andra Korintierbrevet",
+      "chapter": 2,
+      "revision": "949d6b6f6879dbd83c5b",
+      "sourceHash": "ddd405d1197383e1ffa7cd04df3f2fc7f1fd9ab38487645deca70389a6fc9f15",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-47-002-949d6b6f6879dbd83c5b/chapter.json"
+    },
+    "47:3": {
+      "bookId": 47,
+      "book": "2 Corinthians",
+      "bookName": "Andra Korintierbrevet",
+      "chapter": 3,
+      "revision": "e77360659b1086486b52",
+      "sourceHash": "a5a8f0ce3c0d464b5d975b27c5d927cb0570bd802f02c65939b0b38e000d97eb",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-47-003-e77360659b1086486b52/chapter.json"
+    },
+    "47:4": {
+      "bookId": 47,
+      "book": "2 Corinthians",
+      "bookName": "Andra Korintierbrevet",
+      "chapter": 4,
+      "revision": "c7c6ceca699bc49a7f5a",
+      "sourceHash": "317d708f8db2bff6d46d79a13d8a8b6cbd7114ce6a33ccf36a1f71f7500ff7ea",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-47-004-c7c6ceca699bc49a7f5a/chapter.json"
+    },
+    "47:5": {
+      "bookId": 47,
+      "book": "2 Corinthians",
+      "bookName": "Andra Korintierbrevet",
+      "chapter": 5,
+      "revision": "09cfb62999160522ca03",
+      "sourceHash": "2782cbc2fb7c74d13a82838127a8425af17e53204fe0d3f18e8be237b695e014",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-47-005-09cfb62999160522ca03/chapter.json"
+    },
+    "47:6": {
+      "bookId": 47,
+      "book": "2 Corinthians",
+      "bookName": "Andra Korintierbrevet",
+      "chapter": 6,
+      "revision": "9182ea6b2d417676c80e",
+      "sourceHash": "4ffdc69791a3d0604944c382bd30f8537dae0bcff6cfac876a98d1521ed32b56",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-47-006-9182ea6b2d417676c80e/chapter.json"
+    },
+    "47:7": {
+      "bookId": 47,
+      "book": "2 Corinthians",
+      "bookName": "Andra Korintierbrevet",
+      "chapter": 7,
+      "revision": "83762d16ecc84097781e",
+      "sourceHash": "ff5661cddf2286b0607fd6dce5953886c0b632655bddab14fa86b21886990902",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-47-007-83762d16ecc84097781e/chapter.json"
+    },
+    "47:8": {
+      "bookId": 47,
+      "book": "2 Corinthians",
+      "bookName": "Andra Korintierbrevet",
+      "chapter": 8,
+      "revision": "5de06da6a389424b514a",
+      "sourceHash": "0be8229bcccab8387cd2c8f8b8717de48a02a5e16783189c4e61067874d5d8b3",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-47-008-5de06da6a389424b514a/chapter.json"
+    },
+    "47:9": {
+      "bookId": 47,
+      "book": "2 Corinthians",
+      "bookName": "Andra Korintierbrevet",
+      "chapter": 9,
+      "revision": "09a2e5fe3637794aed17",
+      "sourceHash": "0f452f80045171c62b44566427542735c999a66a3d51951a194c08cc2a315183",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-47-009-09a2e5fe3637794aed17/chapter.json"
+    },
+    "47:10": {
+      "bookId": 47,
+      "book": "2 Corinthians",
+      "bookName": "Andra Korintierbrevet",
+      "chapter": 10,
+      "revision": "05a6725712475276ab97",
+      "sourceHash": "1ceb8da7a22920666176cedd52dda766cbf0c14b4671722bc5583c2ec02851fb",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-47-010-05a6725712475276ab97/chapter.json"
+    },
+    "47:11": {
+      "bookId": 47,
+      "book": "2 Corinthians",
+      "bookName": "Andra Korintierbrevet",
+      "chapter": 11,
+      "revision": "6b8ae9d119a9c6f12486",
+      "sourceHash": "7899f60e5c43cfc4bcb15a04dfaffc492aa723bed38a522de37c67263ac01b8d",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-47-011-6b8ae9d119a9c6f12486/chapter.json"
+    },
+    "47:12": {
+      "bookId": 47,
+      "book": "2 Corinthians",
+      "bookName": "Andra Korintierbrevet",
+      "chapter": 12,
+      "revision": "4afaffb8b67ccd5a7f82",
+      "sourceHash": "2632957ab3adfb983382301eaa99b80171e73a95036c900421fcde39ff6fbec5",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-47-012-4afaffb8b67ccd5a7f82/chapter.json"
+    },
+    "47:13": {
+      "bookId": 47,
+      "book": "2 Corinthians",
+      "bookName": "Andra Korintierbrevet",
+      "chapter": 13,
+      "revision": "ea5af82bd7278c2f0844",
+      "sourceHash": "93326daac78c048f0f0f46c65eb443a86ae13f32dffbcc1bbc674ba2a2b0dfad",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-47-013-ea5af82bd7278c2f0844/chapter.json"
     }
   }
 }
