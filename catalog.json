@@ -8605,6 +8605,42 @@
       "revision": "77a0649715f799a455f0",
       "sourceHash": "0615ee85fe8cd4ac2aba408467cc72da20928969effc920ea64ac59b9328394c",
       "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-58-009-77a0649715f799a455f0/chapter.json"
+    },
+    "58:10": {
+      "bookId": 58,
+      "book": "Hebrews",
+      "bookName": "Hebreerbrevet",
+      "chapter": 10,
+      "revision": "861bb6d26d35d9041baf",
+      "sourceHash": "e7551cbe70ffd245165b02c9803e9cb1b6dda6e763cb93147d86f0d31f61a9f1",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-58-010-861bb6d26d35d9041baf/chapter.json"
+    },
+    "58:11": {
+      "bookId": 58,
+      "book": "Hebrews",
+      "bookName": "Hebreerbrevet",
+      "chapter": 11,
+      "revision": "8f1fe2d02de992179032",
+      "sourceHash": "a0998c9d39f7aba6ac1b3d1eb18e10cf187075f49d9aeed4b76f3261ae650262",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-58-011-8f1fe2d02de992179032/chapter.json"
+    },
+    "58:12": {
+      "bookId": 58,
+      "book": "Hebrews",
+      "bookName": "Hebreerbrevet",
+      "chapter": 12,
+      "revision": "635ddc94a25c7db7e0d8",
+      "sourceHash": "53c86c3fe88c72d6b934541377f48690fcd0bc848a60893736c459313c186e8e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-58-012-635ddc94a25c7db7e0d8/chapter.json"
+    },
+    "58:13": {
+      "bookId": 58,
+      "book": "Hebrews",
+      "bookName": "Hebreerbrevet",
+      "chapter": 13,
+      "revision": "ad889aae08aaebe131ca",
+      "sourceHash": "59014cbb9a583e0b44049b02cb91169741eb7545ee144a7092058dfc96f0f97e",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-58-013-ad889aae08aaebe131ca/chapter.json"
     }
   }
 }
