@@ -7813,6 +7813,168 @@
       "revision": "a6a425c0006037adac1e",
       "sourceHash": "fbef5d406bfb3fbd54175a9e1071c94d1860b9b49a85136477f4bbc66793d068",
       "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-42-024-a6a425c0006037adac1e/chapter.json"
+    },
+    "44:27": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 27,
+      "revision": "dd327692c5e36923c926",
+      "sourceHash": "1972ef3a1aea43ca1807cac94ce917b986be09f2ec26f4fee91bca3d3d5bede7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-027-dd327692c5e36923c926/chapter.json"
+    },
+    "44:28": {
+      "bookId": 44,
+      "book": "Acts",
+      "bookName": "Apostlagärningarna",
+      "chapter": 28,
+      "revision": "bb2b34b26705fed73b2b",
+      "sourceHash": "ae3a1271752f9ba79812fc8d985a5153c9c6406d7646674c902044c1951c565f",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-44-028-bb2b34b26705fed73b2b/chapter.json"
+    },
+    "45:1": {
+      "bookId": 45,
+      "book": "Romans",
+      "bookName": "Romarbrevet",
+      "chapter": 1,
+      "revision": "a8236639b451f9fc8970",
+      "sourceHash": "81c7998a0784f630548344526dfad18c46195f18fc3b8294b3be6fd698b2f336",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-45-001-a8236639b451f9fc8970/chapter.json"
+    },
+    "45:2": {
+      "bookId": 45,
+      "book": "Romans",
+      "bookName": "Romarbrevet",
+      "chapter": 2,
+      "revision": "e7035870d331b98e987f",
+      "sourceHash": "8227321f285b0a839ae7ca9b3ca85de7725b66286816bde4f3b7cdc18f474dac",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-45-002-e7035870d331b98e987f/chapter.json"
+    },
+    "45:3": {
+      "bookId": 45,
+      "book": "Romans",
+      "bookName": "Romarbrevet",
+      "chapter": 3,
+      "revision": "d8f852e4e75ece9e9a57",
+      "sourceHash": "ce84b245f4cafa0a74270e04d55ffc235aef8ce0091bd3dc6838369050859260",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-45-003-d8f852e4e75ece9e9a57/chapter.json"
+    },
+    "45:4": {
+      "bookId": 45,
+      "book": "Romans",
+      "bookName": "Romarbrevet",
+      "chapter": 4,
+      "revision": "12f4ff662c029be66cd1",
+      "sourceHash": "9b66860922d6d13fb30f5ac85ca6b91f1f1f56cb2a3baccdbf4d02196a81d34b",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-45-004-12f4ff662c029be66cd1/chapter.json"
+    },
+    "45:5": {
+      "bookId": 45,
+      "book": "Romans",
+      "bookName": "Romarbrevet",
+      "chapter": 5,
+      "revision": "4cd12a9f665b4e3ec47e",
+      "sourceHash": "3e9b12d567aaa5a0de94808620d2ca23511540ca94d382759e40430f4fce03af",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-45-005-4cd12a9f665b4e3ec47e/chapter.json"
+    },
+    "45:6": {
+      "bookId": 45,
+      "book": "Romans",
+      "bookName": "Romarbrevet",
+      "chapter": 6,
+      "revision": "507879e894dd24e26bf9",
+      "sourceHash": "b065a8812dc3565e32403643d6ce7dfee3d2726c5abc30b04cbacf1067ad5137",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-45-006-507879e894dd24e26bf9/chapter.json"
+    },
+    "45:7": {
+      "bookId": 45,
+      "book": "Romans",
+      "bookName": "Romarbrevet",
+      "chapter": 7,
+      "revision": "17b9fe03d3bcad41f1d4",
+      "sourceHash": "16b99b7fd39ffc6d743979ecdc710ed64612feccf84d2155e4f139337e420440",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-45-007-17b9fe03d3bcad41f1d4/chapter.json"
+    },
+    "45:8": {
+      "bookId": 45,
+      "book": "Romans",
+      "bookName": "Romarbrevet",
+      "chapter": 8,
+      "revision": "0e48fb3d390b9b25a342",
+      "sourceHash": "d856a6ceff3da09d6e61805d057010291979c1001954331ed7bd0d1579b53cd2",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-45-008-0e48fb3d390b9b25a342/chapter.json"
+    },
+    "45:9": {
+      "bookId": 45,
+      "book": "Romans",
+      "bookName": "Romarbrevet",
+      "chapter": 9,
+      "revision": "fe255b1f78d1769b0739",
+      "sourceHash": "cc5caec2dbce33391a75c0a8fdc58b587934248d5381f6e043cbc951e1c8e385",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-45-009-fe255b1f78d1769b0739/chapter.json"
+    },
+    "45:10": {
+      "bookId": 45,
+      "book": "Romans",
+      "bookName": "Romarbrevet",
+      "chapter": 10,
+      "revision": "9e76fc9cc6e0973859dd",
+      "sourceHash": "ba88869197aa30d31d48c95c63941e74dc6ce9928dbea127ed7e24bce498ee86",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-45-010-9e76fc9cc6e0973859dd/chapter.json"
+    },
+    "45:11": {
+      "bookId": 45,
+      "book": "Romans",
+      "bookName": "Romarbrevet",
+      "chapter": 11,
+      "revision": "f9f310f23f2f1e6e6e45",
+      "sourceHash": "cf1ed9457e031331c029f006bd55087ee13d264a56d457179e398df9f6065d3c",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-45-011-f9f310f23f2f1e6e6e45/chapter.json"
+    },
+    "45:12": {
+      "bookId": 45,
+      "book": "Romans",
+      "bookName": "Romarbrevet",
+      "chapter": 12,
+      "revision": "73165067df3e991a16fb",
+      "sourceHash": "055741991d3ddb2cfed3477a9ccaff5550499f458680efede739a39deeedbf0a",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-45-012-73165067df3e991a16fb/chapter.json"
+    },
+    "45:13": {
+      "bookId": 45,
+      "book": "Romans",
+      "bookName": "Romarbrevet",
+      "chapter": 13,
+      "revision": "376d9a6a1b1eec24046f",
+      "sourceHash": "fc4ef885992ddbfabb78d4a5589f33c4d9fc60a97e685db7b8c1dd8951c94965",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-45-013-376d9a6a1b1eec24046f/chapter.json"
+    },
+    "45:14": {
+      "bookId": 45,
+      "book": "Romans",
+      "bookName": "Romarbrevet",
+      "chapter": 14,
+      "revision": "f336c28874160a0be11e",
+      "sourceHash": "610fa5cc7ab3588bec01425f9debf5f615ee5e4bf27a4469c372e3d2c3e521c0",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-45-014-f336c28874160a0be11e/chapter.json"
+    },
+    "45:15": {
+      "bookId": 45,
+      "book": "Romans",
+      "bookName": "Romarbrevet",
+      "chapter": 15,
+      "revision": "e57b4369b535edacdc13",
+      "sourceHash": "e0314acf943829037a6cd5f10cdbb2e740a02d2b5074842f6feb8021da2ad2cc",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-45-015-e57b4369b535edacdc13/chapter.json"
+    },
+    "45:16": {
+      "bookId": 45,
+      "book": "Romans",
+      "bookName": "Romarbrevet",
+      "chapter": 16,
+      "revision": "037203396f3c0f862d94",
+      "sourceHash": "d5b596abd3f67a74e2c4c5b3a14faed0ef510a0c9d0c118eb0187fb4d90335a7",
+      "manifestUrl": "https://github.com/akhansson88/reformationsbibeln-audio/releases/download/audio-45-016-037203396f3c0f862d94/chapter.json"
     }
   }
 }
