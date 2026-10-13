@@ -142,6 +142,9 @@ async function marked(page, n) {
       await page.mouse.move(box.x+box.width*.66,box.y+box.height/2);
       assert.match(await frame.locator('#tooltip').innerText(),/^Vers \d+ · /);
       await frame.locator('#follow').click();
+      // The follow message crosses the iframe boundary asynchronously. Let the
+      // parent cancel the prior smooth scroll before measuring a new baseline.
+      await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
       const scrollBefore=await page.evaluate(()=>window.scrollY);
       await seek(frame,duration*22+.04);await marked(page,23);
       assert.equal(await page.evaluate(()=>window.scrollY),scrollBefore,'Follow off must preserve manual scrolling');
