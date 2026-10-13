@@ -78,9 +78,7 @@ async function marked(page, n) {
 (async()=>{
   browser=await chromium.launchPersistentContext(profile,{
     headless:true,channel:'chromium',executablePath:process.env.RB_CHROMIUM_EXECUTABLE || undefined, viewport:{width:1280,height:900},
-    // Keep CI's autoplay heuristics from masking the continuation state machine.
-    // NotAllowedError and the manual-play fallback are covered by dom.test.cjs.
-    args:[`--disable-extensions-except=${extension}`,`--load-extension=${extension}`,'--no-sandbox','--autoplay-policy=no-user-gesture-required'],
+    args:[`--disable-extensions-except=${extension}`,`--load-extension=${extension}`,'--no-sandbox'],
   });
   const seconds=Math.floor(Date.now()/1000),encode=v=>Buffer.from(JSON.stringify(v)).toString('base64url');
   const jwt=encode({alg:'none',typ:'JWT'})+'.'+encode({iss:'https://securetoken.google.com/reformationsbibeln-fel',aud:'reformationsbibeln-fel',sub:'browser-listener',user_id:'browser-listener',iat:seconds,exp:seconds+3600,auth_time:seconds,firebase:{sign_in_provider:'anonymous'}})+'.signature';
@@ -105,7 +103,12 @@ async function marked(page, n) {
   });
   await browser.route('https://bibelonline.se/**',async route=>{
     const u=new URL(route.request().url());
-    if(u.pathname==='/fromgettopost.php') return route.fulfill({status:302,headers:{location:`https://bibelonline.se/${u.searchParams.get('prog')}.php?book=${u.searchParams.get('book')}&chap=${u.searchParams.get('chap')}`}});
+    if(u.pathname==='/fromgettopost.php') {
+      const target=`https://bibelonline.se/${u.searchParams.get('prog')}.php?book=${u.searchParams.get('book')}&chap=${u.searchParams.get('chap')}`;
+      // Playwright routes only the first URL of an HTTP redirect chain. A fresh
+      // client navigation keeps the destination fixture intercepted as well.
+      return route.fulfill({status:200,contentType:'text/html',body:`<!doctype html><script>location.replace(${JSON.stringify(target)})</script>`});
+    }
     if(['/biblereader.php','/studyb.php'].includes(u.pathname)) return route.fulfill({status:200,contentType:'text/html',body:fixture(u.pathname.slice(1,-4),Number(u.searchParams.get('book')||40),Number(u.searchParams.get('chap')||1),u.searchParams.get('hide')==='1',u.searchParams.get('strong')==='1')});
     return route.fulfill({status:200,contentType:'text/html',body:'<html><body>Startsidan</body></html>'});
   });

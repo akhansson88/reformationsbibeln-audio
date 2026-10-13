@@ -40,9 +40,9 @@ It also checks the report dialog, verse text without Strongs numbers, word
 selection, required descriptions, Firebase request payloads, retry after an
 error, success only after acknowledgement and dialog sizing in a narrow window.
 Authentication and database requests are mocked; no real user accounts or
-production reports are created. CI disables autoplay heuristics with a browser
-flag to exercise automatic chapter continuation. The separate media-model test
-verifies the UI's manual-play fallback when Chrome raises `NotAllowedError`.
+production reports are created. Chromium uses its normal autoplay policy.
+The separate media-model test also verifies the UI's manual-play fallback when
+Chrome raises `NotAllowedError`.
 
 Screenshots and the report are written to a temporary output directory or
 `RB_TEST_OUTPUT` when specified. Test fixtures do not get included in the ZIP.
