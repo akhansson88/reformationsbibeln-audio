@@ -8,12 +8,14 @@ Ingen administratörsnyckel finns i tillägget.
 
 1. Öppna Firebase Console och välj **reformationsbibeln-fel**.
 2. Öppna **Firestore Database → Rules / Regler**.
-3. Kopiera hela innehållet i **firestore.rules** till regelredigeraren.
+3. Markera allt i regelredigeraren och ersätt det med hela innehållet i
+   **firestore.rules** eller **firestore-rules.json**.
 4. Klicka **Publish / Publicera**.
 
-`firestore-rules.json` är den efterfrågade JSON-filen. Den innehåller exakt samma
-regler som en sträng i fältet `rules`. Firestore använder sitt eget regelspråk,
-så **kopiera firestore.rules**, inte hela JSON-objektet, till Console.
+De två filerna innehåller exakt samma regelkod och kan klistras in direkt i
+Firestore Console. Filnamnet `firestore-rules.json` behålls enligt önskemålet,
+men innehållet är Firestores regelspråk. Filen har inget JSON-omslag och ska
+inte läsas med en JSON-parser. Första raden är `rules_version = '2';`.
 Reglerna ingår i ZIP-versionens `firebase`-mapp. De publiceras inte genom att
 Chrome-tillägget installeras. Filen nekar åtkomst till övriga samlingar i projektet.
 

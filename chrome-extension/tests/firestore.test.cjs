@@ -3,7 +3,8 @@ const { initializeTestEnvironment, assertSucceeds, assertFails } = require('@fir
 const { collection, doc, setDoc, getDoc, getDocs, updateDoc, deleteDoc, serverTimestamp, Timestamp } = require('firebase/firestore');
 const core = require('../lib/core.js'), reports = require('../lib/reports.js');
 let env;
-before(async()=>{ env=await initializeTestEnvironment({projectId:'demo-reformationsbibeln-fel',firestore:{host:'127.0.0.1',port:8080,rules:fs.readFileSync(path.join(__dirname,'../firebase/firestore.rules'),'utf8')}}); });
+// Compile the exact file that users paste, including the historical .json name.
+before(async()=>{ env=await initializeTestEnvironment({projectId:'demo-reformationsbibeln-fel',firestore:{host:'127.0.0.1',port:8080,rules:fs.readFileSync(path.join(__dirname,'../firebase/firestore-rules.json'),'utf8')}}); });
 beforeEach(async()=>env.clearFirestore());
 after(async()=>{if(env)await env.cleanup();});
 const anon=uid=>env.authenticatedContext(uid,{firebase:{sign_in_provider:'anonymous'}}).firestore();
@@ -53,6 +54,7 @@ test('book and chapter boundaries, long Psalm 119 and marking an entire long ver
 test('all other collections stay inaccessible to extension clients',async()=>{
  const db=anon('listener-a');await assertFails(setDoc(doc(db,'settings','anything'),{enabled:true}));await assertFails(getDoc(doc(db,'settings','anything')));
 });
-test('JSON delivery contains exactly the same native rules as the deploy file',()=>{
- const native=fs.readFileSync(path.join(__dirname,'../firebase/firestore.rules'),'utf8'),json=JSON.parse(fs.readFileSync(path.join(__dirname,'../firebase/firestore-rules.json'),'utf8'));assert.equal(json.rules,native);assert.equal(json.projectId,'reformationsbibeln-fel');
+test('both delivered rule files are identical paste-ready Firestore source without a JSON wrapper',()=>{
+ const native=fs.readFileSync(path.join(__dirname,'../firebase/firestore.rules'),'utf8'),alias=fs.readFileSync(path.join(__dirname,'../firebase/firestore-rules.json'),'utf8');
+ assert.equal(alias,native);assert.equal(alias.split('\n')[0],"rules_version = '2';");assert.throws(()=>JSON.parse(alias),SyntaxError);
 });
