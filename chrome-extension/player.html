@@ -20,12 +20,12 @@
       </div>
     </div>
     <div class="transport">
-      <div class="buttons"><button id="previous" class="icon" aria-label="Föregående vers" title="Föregående vers" disabled>‹</button><button id="play" class="play" aria-label="Spela" title="Spela" disabled><span id="play-symbol" aria-hidden="true">▶</span></button><button id="next" class="icon" aria-label="Nästa vers" title="Nästa vers" disabled>›</button></div>
+      <div class="buttons"><button id="previous" class="icon" aria-label="Föregående vers" title="Föregående vers" disabled>‹</button><button id="play" class="play" aria-label="Spela" title="Spela" disabled><svg id="play-symbol" data-state="play" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="play-glyph" d="M8 5.5 19 12 8 18.5Z" fill="currentColor" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><g class="pause-glyph" fill="currentColor"><rect x="6" y="4.5" width="4" height="15" rx="1"/><rect x="14" y="4.5" width="4" height="15" rx="1"/></g></svg></button><button id="next" class="icon" aria-label="Nästa vers" title="Nästa vers" disabled>›</button></div>
       <div class="scrubber">
         <div class="timeline-labels"><span id="verse">Vers –</span><span id="time">0:00 / 0:00</span></div>
         <div id="seek-wrap" class="seek-wrap"><div id="tooltip" class="tooltip" role="tooltip" hidden>Vers 1</div><div id="ticks" class="ticks" aria-hidden="true"></div><input id="seek" type="range" min="0" max="1" step="0.05" value="0" aria-label="Spola i kapitlet" aria-valuetext="Ljudet laddas" disabled></div>
       </div>
-      <label class="volume-label"><span aria-hidden="true">◖</span><input id="volume" type="range" min="0" max="1" step="0.05" value="1" aria-label="Volym"></label>
+      <label class="volume-label"><input id="volume" type="range" min="0" max="1" step="0.05" value="1" aria-label="Volym"></label>
     </div>
     <div class="statusline"><span id="status" role="status" aria-live="polite">Förbereder ljudet…</span><span id="download" aria-live="off"></span><button id="retry" hidden>Försök igen</button></div>
     <progress id="progress" max="1" value="0" aria-label="Kapitlets ljudfiler hämtas"></progress>

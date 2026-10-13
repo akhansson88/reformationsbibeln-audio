@@ -187,7 +187,7 @@ async function marked(page, n) {
     const frame=await playerFrame(page);await frame.waitForFunction(()=>document.getElementById('status').textContent.includes('integritetskontrollen'));
     assert.equal(await frame.locator('#play').isDisabled(),true);corrupt=false;await frame.locator('#retry').click();
     await frame.waitForFunction(()=>!document.getElementById('play').disabled);
-    assert.match(await frame.locator('#download').innerText(),/25 verser förladdade/);
+    assert.equal(await frame.locator('#download').innerText(),'');
   });
   await test('a transient failed download is retried before playback is enabled',async()=>{
     transient=true;attemptedRetry=false;await ready(page);

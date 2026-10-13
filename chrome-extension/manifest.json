@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Reformationsbibeln – ljud på Bibelonline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minimum_chrome_version": "120",
   "description": "Lyssna på Reformationsbibeln på Bibelonline med versmarkering, automatisk rullning och loopning.",
   "permissions": ["storage"],

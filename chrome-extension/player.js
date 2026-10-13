@@ -21,7 +21,7 @@
     ui.previous.disabled = !ready || index === 0;
     ui.next.disabled = !ready || index === tracks.length - 1;
     const active = phase === "playing" || pendingPlay;
-    ui["play-symbol"].textContent = active ? "Ⅱ" : "▶";
+    ui["play-symbol"].setAttribute("data-state", active ? "pause" : "play");
     ui.play.setAttribute("aria-label", active ? "Pausa" : "Spela"); ui.play.title = active ? "Pausa" : "Spela";
     ui.loop.textContent = loop === "verse" ? `Loop: vers ${tracks[index]?.verse || 1}` : loop === "chapter" ? "Loop: kapitel" : "Loop: av";
     ui.loop.setAttribute("aria-pressed", String(loop !== "off"));
@@ -99,7 +99,7 @@
       }, signal);
       if (signal.aborted || run !== generation) throw core.abortError();
       tracks = result; clock = core.timeline(result); ui.seek.max = String(clock.total);
-      ui.progress.hidden = true; ui.download.textContent = `${verses.length} verser förladdade`;
+      ui.progress.hidden = true; ui.download.textContent = "";
       const fragment = document.createDocumentFragment();
       for (const s of clock.segments.slice(1)) { const tick = document.createElement("span"); tick.style.left = `${s.start / clock.total * 100}%`; fragment.append(tick); }
       ui.ticks.replaceChildren(fragment);

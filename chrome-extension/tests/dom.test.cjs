@@ -76,9 +76,9 @@ function playerHarness({corrupt=false,missing=false,autoplayBlocked=false}={}){
 }
 test('player prefetches all 25 files with checksums before enabling play; pause and seek select the proper verse',async()=>{
  const h=playerHarness();await until(()=>h.messages.some(m=>m.type==='READY'));h.emit('LOAD',{context:{bookId:40,chapter:1,view:'biblereader'},mappingComplete:true});await until(()=>!h.get('play').disabled);
- assert.equal(h.fetches.filter(u=>u.endsWith('.mp3')).length,25);assert.equal(h.blobs.size,25);assert.equal(h.media[0].paused,true);
- h.get('play').click();await until(()=>h.get('status').textContent.startsWith('Spelar'));assert.equal(h.messages.filter(m=>m.type==='VERSE').at(-1).verse,1);
- h.get('play').click();assert.equal(h.media[0].paused,true);h.seek(18.5);await until(()=>h.messages.filter(m=>m.type==='VERSE').at(-1).verse===10);
+ assert.equal(h.fetches.filter(u=>u.endsWith('.mp3')).length,25);assert.equal(h.blobs.size,25);assert.equal(h.media[0].paused,true);assert.equal(h.get('download').textContent,'');
+ h.get('play').click();await until(()=>h.get('status').textContent.startsWith('Spelar'));assert.equal(h.messages.filter(m=>m.type==='VERSE').at(-1).verse,1);assert.equal(h.get('play-symbol').getAttribute('data-state'),'pause');
+ h.get('play').click();assert.equal(h.media[0].paused,true);assert.equal(h.get('play-symbol').getAttribute('data-state'),'play');h.seek(18.5);await until(()=>h.messages.filter(m=>m.type==='VERSE').at(-1).verse===10);
  assert.match(h.get('verse').textContent,/Vers 10/);assert.equal(h.media[0].paused,true);assert.equal(h.media[0].currentTime,.5);
  h.emit('STOP');assert.equal(h.blobs.size,0);assert.equal(h.media[0].paused,true);h.dom.window.close();
 });

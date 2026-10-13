@@ -1,15 +1,15 @@
 # Reformationsbibeln – ljud på Bibelonline
 
 Chrome-tillägg för **Läs bibeln** och **Studera bibeln** på https://bibelonline.se.
-Version 1.0.0. Chrome 120 eller senare på dator.
+Version 1.0.1. Chrome 120 eller senare på dator.
 
 ## Installera ZIP-versionen
 
-1. Packa upp `Reformationsbibeln-Chrome-1.0.0.zip` i en mapp som du behåller på datorn.
+1. Packa upp `Reformationsbibeln-Chrome-1.0.1.zip` i en mapp som du behåller på datorn.
 2. Skriv `chrome://extensions` i Chromes adressfält.
 3. Slå på **Utvecklarläge** längst upp till höger.
 4. Klicka **Läs in okomprimerat** (engelska: **Load unpacked**).
-5. Välj den uppackade mappen `Reformationsbibeln-Chrome-1.0.0` som innehåller `manifest.json`.
+5. Välj den uppackade mappen `Reformationsbibeln-Chrome-1.0.1` som innehåller `manifest.json`.
 6. Öppna https://bibelonline.se/bibelindex.php och välj **Läs Bibeln** eller **Studera Bibeln**.
 7. Om en bibelsida redan var öppen, ladda om den.
 
