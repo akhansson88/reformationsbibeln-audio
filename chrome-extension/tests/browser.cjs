@@ -52,8 +52,10 @@ async function test(name, fn) {
 }
 async function playerFrame(page) {
   await page.locator('#rb-audio-dock').waitFor();
-  let frame;
-  for(let n=0;n<100;n++){frame=page.frames().find(f=>f.name()==='rb-audio-player');if(frame)break;await new Promise(r=>setTimeout(r,30));}
+  // Resolve the iframe mounted in the active document, rather than a named
+  // frame that Chromium may retain for a previous document's back/forward cache.
+  const handle=await page.locator('#rb-audio-dock iframe').elementHandle();
+  const frame=await handle.contentFrame();
   assert.ok(frame,'Extension player iframe was mounted');
   await frame.locator('#chapter').waitFor();
   return frame;
@@ -253,7 +255,7 @@ async function marked(page, n) {
 })().catch(async error=>{
   const states=[];
   for(const p of browser?.pages()||[])for(const f of p.frames())if(f.name()==='rb-audio-player'){
-    try{states.push(await f.evaluate(()=>({url:location.href,status:document.getElementById('status')?.textContent,chapter:document.getElementById('chapter')?.textContent,verse:document.getElementById('verse')?.textContent,reportError:document.getElementById('report-error')?.textContent})));}catch{}
+    try{states.push({pageUrl:p.url(),...await f.evaluate(()=>({url:location.href,status:document.getElementById('status')?.textContent,chapter:document.getElementById('chapter')?.textContent,verse:document.getElementById('verse')?.textContent,reportError:document.getElementById('report-error')?.textContent}))});}catch{}
   }
   console.error('Player state at failure: '+JSON.stringify(states));
   fs.writeFileSync(path.join(output,'browser-report.json'),JSON.stringify({passed:false,tests:cases,errors,states,error:error.stack},null,2));
