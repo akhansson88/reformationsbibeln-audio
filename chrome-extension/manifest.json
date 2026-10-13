@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Reformationsbibeln – ljud på Bibelonline",
+  "version": "1.0.0",
+  "minimum_chrome_version": "120",
+  "description": "Lyssna på Reformationsbibeln på Bibelonline med versmarkering, automatisk rullning och loopning.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://raw.githubusercontent.com/*",
+    "https://github.com/*",
+    "https://release-assets.githubusercontent.com/*"
+  ],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [{
+    "matches": [
+      "https://bibelonline.se/biblereader.php*",
+      "https://bibelonline.se/studyb.php*",
+      "https://www.bibelonline.se/biblereader.php*",
+      "https://www.bibelonline.se/studyb.php*"
+    ],
+    "js": ["lib/books.js", "lib/core.js", "lib/adapter.js", "content.js"],
+    "run_at": "document_idle"
+  }],
+  "web_accessible_resources": [{
+    "resources": ["player.html"],
+    "matches": ["https://bibelonline.se/*", "https://www.bibelonline.se/*"]
+  }],
+  "action": {
+    "default_title": "Reformationsbibeln – ljud",
+    "default_popup": "popup.html",
+    "default_icon": { "16": "icons/icon-16.png", "32": "icons/icon-32.png" }
+  },
+  "icons": { "16": "icons/icon-16.png", "32": "icons/icon-32.png", "48": "icons/icon-48.png", "128": "icons/icon-128.png" }
+}

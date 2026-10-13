@@ -1,5 +1,18 @@
 # Reformationsbibeln audio
 
+## Chrome player for Bibelonline
+
+The [Chrome extension](chrome-extension/README.md) adds a fixed bottom player to
+Bibelonline's **Läs Bibeln** and **Studera Bibeln** pages. It prefetches and verifies
+the whole chapter, highlights and follows the spoken verse, supports a chapter
+timeline with verse tooltips, and loops either the chapter or selected verse.
+With loop off it continues to the next chapter; manual page changes stop playback.
+It uses these existing releases and does not generate or charge for new audio.
+
+Build an unpacked installation ZIP with
+`python chrome-extension/scripts/package.py --output /absolute/output/path`.
+Installation instructions and verification commands are in the extension README.
+
 One MP3 per verse, generated with ElevenLabs `eleven_v4` and voice
 `qAZH0aMXY8tw1QufPN0D`. Swedish, MP3 44.1 kHz/128 kbps, stability 0.5,
 similarity 0.75. Asterisks and Markdown heading markers are removed before speech.
