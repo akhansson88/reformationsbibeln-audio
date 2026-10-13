@@ -251,6 +251,10 @@ async function marked(page, n) {
     assert.equal(await frame.locator('#follow').isVisible(),true);assert.equal(await frame.locator('#loop').isVisible(),true);
     await page.screenshot({path:path.join(output,'narrow-player.png')});
     await frame.locator('#report').click();await frame.locator('#report-dialog').waitFor({state:'visible'});
+    await frame.waitForFunction(()=>innerHeight===844 && document.querySelectorAll('#report-words button').length>0);
+    await frame.locator('#report-words button').first().click();
+    await frame.locator('#report-description').fill('Exempel på ett felaktigt uttal.');
+    await frame.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
     const dialog=await frame.locator('#report-dialog').boundingBox();assert.ok(dialog.x>=0&&dialog.x+dialog.width<=390&&dialog.y>=0&&dialog.y+dialog.height<=844,JSON.stringify(dialog));
     await page.screenshot({path:path.join(output,'narrow-report.png')});await frame.locator('#report-cancel').click();
   });
