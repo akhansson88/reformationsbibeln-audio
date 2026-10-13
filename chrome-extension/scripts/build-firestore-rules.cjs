@@ -31,15 +31,17 @@ ${verseCounts}
       return value.matches('(?s).*[^${whitespace}].*');
     }
     function validWords(d) {
+      let tokens = d.verseText.split(' ');
+      let selected = d.selectedWords;
       return d.verseText is string && d.verseText.size() <= 6000 &&
         d.verseText.matches('([^${whitespace}]+( [^${whitespace}]+)*)?') &&
-        d.selectedWords is map && d.selectedWords.size() <= 1000 &&
-        (d.selectedWords.size() == 0 || (d.verseText.size() > 0 &&
-          d.selectedWords.size() <= d.verseText.split(' ').size() &&
-          d.selectedWords.keys().join(',').matches('(0|[1-9][0-9]{0,2})(,(0|[1-9][0-9]{0,2}))*') &&
-          d.selectedWords.values().toSet().hasOnly(d.verseText.split(' ').toSet()))) &&
+        selected is map && selected.size() <= 1000 &&
+        (selected.size() == 0 || (d.verseText.size() > 0 &&
+          selected.size() <= tokens.size() &&
+          selected.keys().join(',').matches('(0|[1-9][0-9]{0,2})(,(0|[1-9][0-9]{0,2}))*') &&
+          selected.values().toSet().hasOnly(tokens.toSet()))) &&
         d.description is string && d.description.size() <= 1000 &&
-        (d.selectedWords.size() > 0 || nonBlank(d.description));
+        (selected.size() > 0 || nonBlank(d.description));
     }
     function validAudio(d) {
       return d.audioRevision is string && d.audioRevision.matches('[A-Za-z0-9_-]{1,80}') &&

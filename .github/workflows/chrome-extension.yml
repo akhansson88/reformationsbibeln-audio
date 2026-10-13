@@ -31,6 +31,27 @@ jobs:
       - run: git diff --exit-code -- vendor firebase/firestore.rules firebase/firestore-rules.json
       - run: npm test
       - run: npm run test:rules
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      RB_TEST_OUTPUT: ${{ runner.temp }}/rb-browser
+    defaults:
+      run:
+        working-directory: chrome-extension
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: chrome-extension/package-lock.json
+      - run: npm ci --no-audit --no-fund
       - run: npx playwright install --with-deps chromium
       - run: sudo apt-get install -y ffmpeg
       - run: npm run test:browser
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: chromium-test-results
+          path: ${{ runner.temp }}/rb-browser
