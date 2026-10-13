@@ -12,8 +12,11 @@ manifest = json.loads((root / "manifest.json").read_text())
 folder = "Reformationsbibeln-Chrome-" + manifest["version"]
 args.output.mkdir(parents=True, exist_ok=True)
 target = args.output / (folder + ".zip")
-files = [root / name for name in ["manifest.json", "background.js", "content.js", "player.html", "player.css", "player.js", "popup.html", "popup.css", "README.md"]]
+files = [root / name for name in ["manifest.json", "background.js", "content.js", "player.html", "player.css", "player.js", "report-ui.js", "popup.html", "popup.css", "README.md"]]
 files += sorted((root / "lib").glob("*.js")) + sorted((root / "icons").glob("*.png"))
+files += sorted((root / "vendor").glob("*")) + sorted((root / "firebase").glob("*.rules")) + sorted((root / "firebase").glob("*.json")) + [root / "firebase/README.md"]
+if not (root / "vendor/firebase-client.js").is_file():
+    raise SystemExit("Build the locally bundled Firebase SDK first: cd chrome-extension && npm ci && npm run build")
 with zipfile.ZipFile(target, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as output:
     for path in files:
         item = zipfile.ZipInfo(folder + "/" + path.relative_to(root).as_posix(), date_time=(2026, 10, 13, 0, 0, 0))

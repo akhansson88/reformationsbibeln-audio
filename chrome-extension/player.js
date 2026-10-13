@@ -3,12 +3,14 @@
   const core = globalThis.RBAudioCore;
   const params = new URL(location.href).searchParams;
   const parentOrigin = params.get("origin"), token = params.get("session");
-  const ui = Object.fromEntries(["chapter", "follow", "loop", "speed", "previous", "play", "play-symbol", "next", "verse", "time", "seek", "seek-wrap", "tooltip", "ticks", "volume", "status", "download", "retry", "progress"].map(id => [id, document.getElementById(id)]));
+  const ui = Object.fromEntries(["chapter", "follow", "loop", "speed", "previous", "play", "play-symbol", "next", "verse", "time", "seek", "seek-wrap", "tooltip", "ticks", "volume", "status", "download", "retry", "progress", "report"].map(id => [id, document.getElementById(id)]));
   const audio = new Audio(); audio.preload = "auto";
   let context = null, catalog = null, controller = null, tracks = [], clock = core.timeline([]), index = 0;
   let phase = "loading", loop = "off", follow = true, currentVerse = 0, pendingPlay = false, seeking = false;
   let operation = 0, transition = false, switchAbort = null, generation = 0, raf = null;
   let preferences = { follow: true, speed: 1, volume: 1 };
+  let audioRevision = "", reportUI;
+  const textRequests = new Map();
   function post(type, data = {}) {
     if (core.isSiteURL(parentOrigin)) parent.postMessage({ channel: "RB_AUDIO", token, type, ...data }, parentOrigin);
   }
@@ -17,6 +19,7 @@
   function updateControls() {
     const ready = tracks.length > 0 && !["loading", "error"].includes(phase);
     ui.play.disabled = !ready;
+    ui.report.disabled = !ready;
     ui.seek.disabled = !ready;
     ui.previous.disabled = !ready || index === 0;
     ui.next.disabled = !ready || index === tracks.length - 1;
@@ -54,6 +57,9 @@
     post("CLEAR");
   }
   function stop() {
+    reportUI?.close(); audioRevision = "";
+    for (const request of textRequests.values()) { clearTimeout(request.timer); request.reject(core.abortError()); }
+    textRequests.clear();
     generation++; operation++; controller?.abort(); switchAbort?.abort(); pendingPlay = false; transition = false;
     cancelAnimationFrame(raf); raf = null; releaseTracks(); setPhase("ready");
   }
@@ -98,7 +104,7 @@
         return track;
       }, signal);
       if (signal.aborted || run !== generation) throw core.abortError();
-      tracks = result; clock = core.timeline(result); ui.seek.max = String(clock.total);
+      tracks = result; audioRevision = entry.revision; clock = core.timeline(result); ui.seek.max = String(clock.total);
       ui.progress.hidden = true; ui.download.textContent = "";
       const fragment = document.createDocumentFragment();
       for (const s of clock.segments.slice(1)) { const tick = document.createElement("span"); tick.style.left = `${s.start / clock.total * 100}%`; fragment.append(tick); }
@@ -129,7 +135,7 @@
     });
   }
   async function playPosition(seconds, play = phase === "playing" || pendingPlay) {
-    if (!tracks.length) return;
+    if (!tracks.length || reportUI?.isOpen()) return;
     const p = core.positionAt(clock, seconds), own = ++operation;
     switchAbort?.abort(); switchAbort = new AbortController();
     pendingPlay = play; transition = true; audio.pause(); index = p.index;
@@ -157,9 +163,25 @@
     if (phase === "playing" || pendingPlay) pause();
     else await playPosition(phase === "ended" ? 0 : Number(ui.seek.value), true);
   }
+  function requestVerseText(c, verse) {
+    const requestId = crypto.randomUUID();
+    return new Promise((resolve, reject) => {
+      const timer = setTimeout(() => { textRequests.delete(requestId); reject(new Error("Versens text kunde inte läsas.")); }, 3000);
+      textRequests.set(requestId, { context: c, verse, resolve, reject, timer });
+      post("REQUEST_VERSE_TEXT", { requestId, verse, context: c });
+    });
+  }
+  reportUI = globalThis.RBAudioReportUI.create({ pause, post, requestText: requestVerseText,
+    getSnapshot: () => tracks.length && audioRevision ? {
+      context: { ...context }, verse: tracks[index].verse, revision: audioRevision,
+      version: chrome.runtime?.getManifest?.().version || "1.1.0",
+      tracks: tracks.map(({ verse, url, sha256 }) => ({ verse, url, sha256 }))
+    } : null
+  });
+  ui.report.addEventListener("click", reportUI.open);
   audio.addEventListener("timeupdate", () => { if (!transition && !seeking && tracks.length) drawTime(); });
   audio.addEventListener("ended", () => {
-    if (transition || !tracks.length) return;
+    if (transition || !tracks.length || reportUI.isOpen()) return;
     const action = core.finishAction(loop, index, tracks.length);
     if (action.type === "track") { playPosition(clock.segments[action.index].start, true); return; }
     pendingPlay = false; setPhase("ended"); drawTime(clock.total);
@@ -208,7 +230,7 @@
   ui.seek.addEventListener("change", () => { const seconds = Number(ui.seek.value); seeking = false; ui.tooltip.hidden = true; playPosition(seconds); });
   ui.seek.addEventListener("pointercancel", () => { seeking = false; ui.tooltip.hidden = true; drawTime(); });
   document.addEventListener("keydown", event => {
-    if ((event.code === "Space" || event.key === " ") && !event.target.closest("input,select,button")) { event.preventDefault(); togglePlay(); }
+    if ((event.code === "Space" || event.key === " ") && !event.target.closest("input,select,button,textarea,dialog")) { event.preventDefault(); togglePlay(); }
   });
   window.addEventListener("message", event => {
     const m = event.data;
@@ -216,6 +238,12 @@
     if (m.type === "LOAD") loadChapter(m.context, !!m.autoplay, !!m.mappingComplete);
     else if (m.type === "STOP") stop();
     else if (m.type === "NAV_ERROR") { setPhase("ended"); status("Kunde inte öppna nästa kapitel. Välj det med sidans kapitelmeny."); }
+    else if (m.type === "VERSE_TEXT") {
+      const request = textRequests.get(m.requestId);
+      if (request && m.verse === request.verse && core.sameContext(m.context, request.context) && typeof m.text === "string" && m.text.length <= 10000) {
+        clearTimeout(request.timer); textRequests.delete(m.requestId); request.resolve(m.text);
+      }
+    }
   });
   window.addEventListener("pagehide", stop);
   const resize = new ResizeObserver(() => post("HEIGHT", { height: document.querySelector(".player").getBoundingClientRect().height + 2 }));

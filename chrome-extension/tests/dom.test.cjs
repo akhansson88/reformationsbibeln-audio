@@ -14,6 +14,7 @@ for(const view of ['biblereader','studyb']){
   const c=w.RBAudioAdapter.readContext(w.document,w.location.href),mapping=w.RBAudioAdapter.mapVerses(w.document,c);
   assert.equal(c.bookId,40);assert.equal(c.chapter,1);assert.equal(mapping.complete,true);assert.equal(mapping.map.size,25);
   assert.ok(mapping.map.get(10).element.textContent.startsWith('Text för vers 10.'));
+  assert.match(w.RBAudioAdapter.verseText(mapping.map.get(10)),/kursiv text och ord/);
   assert.match(w.RBAudioAdapter.navigationURL(w.document,w.location.href,w.RBAudioCore.nextChapter(c)),/book=40&chap=2/);
   dom.window.close();
  });
@@ -34,6 +35,11 @@ for(const view of ['biblereader','studyb']){
   if(view==='studyb')assert.equal(w.document.querySelector('tr.mytr:nth-of-type(11) td:nth-child(3)').hasAttribute('data-rb-spoken'),false);
   emit('FOLLOW',{follow:true});assert.equal(scrolls,1);
   emit('VERSE',{verse:11,follow:false});assert.equal(record.element.hasAttribute('data-rb-spoken'),false);
+  const requestId=w.crypto.randomUUID();emit('REQUEST_VERSE_TEXT',{requestId,verse:10,context:c});
+  const response=out.find(m=>m.type==='VERSE_TEXT');assert.equal(response.requestId,requestId);assert.match(response.text,/Text för vers 10/);assert.doesNotMatch(response.text,/G2424|\[r\]/);
+  const before=out.length;emit('REQUEST_VERSE_TEXT',{requestId,verse:10,context:{...c,chapter:2}});assert.equal(out.length,before);
+  emit('REPORT_LAYOUT',{open:true});assert.equal(frame.style.height,`${w.innerHeight}px`);assert.notEqual(w.document.getElementById('rb-audio-spacer').style.height,`${w.innerHeight+24}px`);
+  emit('REPORT_LAYOUT',{open:false});assert.equal(frame.style.height,'134px');
   w.dispatchEvent(new w.PageTransitionEvent('pagehide'));assert.equal(w.document.getElementById('rb-audio-dock'),null);assert.equal(w.document.querySelectorAll('[data-rb-spoken]').length,0);
   assert.ok(out.some(m=>m.type==='STOP'));assert.equal(requests[0].type,'RB_CONSUME_CONTINUATION');dom.window.close();
  });
@@ -51,6 +57,8 @@ function playerHarness({corrupt=false,missing=false,autoplayBlocked=false}={}){
  const messages=[],media=[],fetches=[],blobs=new Map();let blobId=0;
  const parent={postMessage:m=>messages.push(m)};Object.defineProperty(w,'parent',{value:parent});
  w.chrome={storage:{local:{get:async()=>({}),set:async()=>{}}}};w.ResizeObserver=class{observe(){}disconnect(){}};
+ w.HTMLDialogElement.prototype.showModal=function(){this.open=true;};w.HTMLDialogElement.prototype.close=function(){this.open=false;this.dispatchEvent(new w.Event('close'));};
+ w.RBReportStore={submit:async()=>({id:'mock'})};
  Object.defineProperty(w.crypto,'subtle',{value:crypto.webcrypto.subtle});
  w.URL.createObjectURL=b=>{const u='blob:fixture/'+(++blobId);blobs.set(u,b);return u;};w.URL.revokeObjectURL=u=>blobs.delete(u);
  class Media extends w.EventTarget{
@@ -68,7 +76,7 @@ function playerHarness({corrupt=false,missing=false,autoplayBlocked=false}={}){
  w.fetch=async url=>{fetches.push(url);if(url===core.CATALOG_URL)return new Response(JSON.stringify(missing?{...catalog,chapters:{}}:catalog));
   const m=url.match(/audio-(\d+)-(\d+)-fixture\/(.*)$/);assert.ok(m);if(m[3]==='chapter.json')return new Response(JSON.stringify(manifests[`${Number(m[1])}:${Number(m[2])}`]));
   return new Response(corrupt&&m[3]==='verse-001.mp3'?'damaged':bytes);};
- for(const n of ['lib/books.js','lib/core.js','player.js'])load(w,n);
+ for(const n of ['lib/books.js','lib/core.js','lib/reports.js','report-ui.js','player.js'])load(w,n);
  const emit=(type,data={})=>w.dispatchEvent(new w.MessageEvent('message',{source:parent,origin,data:{channel:'RB_AUDIO',token,type,...data}}));
  const get=id=>w.document.getElementById(id);
  const seek=value=>{get('seek').value=String(value);get('seek').dispatchEvent(new w.Event('input'));get('seek').dispatchEvent(new w.Event('change'));};
@@ -89,6 +97,16 @@ test('player chapter loop restarts verse 1, verse loop stays selected, and loop 
  assert.equal(h.media[0].loop,true);h.media[0].finish();assert.match(h.get('loop').textContent,/vers 7/);
  h.get('play').click();h.get('loop').click();h.seek(49.9);await sleep(10);h.get('play').click();await sleep(10);h.media[0].finish();
  await until(()=>h.messages.some(m=>m.type==='NEXT'));assert.equal(h.messages.find(m=>m.type==='NEXT').target.chapter,2);h.emit('STOP');h.dom.window.close();
+});
+test('reporting pauses playback, requests only the selected verse, and requires manual resume',async()=>{
+ const h=playerHarness();await until(()=>h.messages.some(m=>m.type==='READY'));const context={bookId:40,chapter:1,view:'studyb'};
+ h.emit('LOAD',{context,mappingComplete:true});await until(()=>!h.get('play').disabled);h.seek(12.1);await sleep(10);h.get('play').click();await until(()=>!h.media[0].paused);
+ h.get('report').click();assert.equal(h.media[0].paused,true);assert.equal(h.get('report-dialog').open,true);assert.equal(h.get('report-verse').value,'7');
+ const request=h.messages.findLast(m=>m.type==='REQUEST_VERSE_TEXT');assert.equal(request.verse,7);
+ h.emit('VERSE_TEXT',{requestId:request.requestId,context,verse:7,text:'Gud sade Gud.'});await until(()=>h.get('report-words').children.length===3);
+ h.media[0].finish();assert.equal(h.messages.some(m=>m.type==='NEXT'),false);
+ h.get('report-cancel').click();assert.equal(h.get('report-dialog').open,false);assert.equal(h.media[0].paused,true);
+ h.get('play').click();await until(()=>!h.media[0].paused);h.emit('STOP');h.dom.window.close();
 });
 test('autoplay continuation is requested after full prefetch, while blocked autoplay leaves a usable play control',async()=>{
  for(const blocked of [false,true]){const h=playerHarness({autoplayBlocked:blocked});await until(()=>h.messages.some(m=>m.type==='READY'));h.emit('LOAD',{context:{bookId:40,chapter:2,view:'studyb'},autoplay:true,mappingComplete:true});

@@ -1,15 +1,15 @@
 # Reformationsbibeln – ljud på Bibelonline
 
 Chrome-tillägg för **Läs bibeln** och **Studera bibeln** på https://bibelonline.se.
-Version 1.0.1. Chrome 120 eller senare på dator.
+Version 1.1.0. Chrome 120 eller senare på dator.
 
 ## Installera ZIP-versionen
 
-1. Packa upp `Reformationsbibeln-Chrome-1.0.1.zip` i en mapp som du behåller på datorn.
+1. Packa upp `Reformationsbibeln-Chrome-1.1.0.zip` i en mapp som du behåller på datorn.
 2. Skriv `chrome://extensions` i Chromes adressfält.
 3. Slå på **Utvecklarläge** längst upp till höger.
 4. Klicka **Läs in okomprimerat** (engelska: **Load unpacked**).
-5. Välj den uppackade mappen `Reformationsbibeln-Chrome-1.0.1` som innehåller `manifest.json`.
+5. Välj den uppackade mappen `Reformationsbibeln-Chrome-1.1.0` som innehåller `manifest.json`.
 6. Öppna https://bibelonline.se/bibelindex.php och välj **Läs Bibeln** eller **Studera Bibeln**.
 7. Om en bibelsida redan var öppen, ladda om den.
 
@@ -34,6 +34,15 @@ Tillägget visas även under Chromes pusselikon och kan fästas där.
   och dess ljud hämtas först i sin helhet. Loop har företräde över nästa kapitel.
 - Manuellt sidbyte, omladdning eller stängd flik stoppar uppspelningen.
   Att växla mellan Läs Bibeln och Studera Bibeln startar inte ljudet automatiskt.
+- **Anmäl uttalsfel**: pausar ljudet och öppnar den aktuella versen. Markera ett
+  eller flera ord genom att klicka på dem; klicka igen för att ta bort markeringen.
+  Välj en annan vers i kapitelmenyn i formuläret om det behövs. Beskrivningen är
+  valfri med markerade ord, men krävs om du inte markerar ord. Efter en anmälan
+  startar du ljudet igen med **Spela**.
+
+Innan rapporteringen används måste projektägaren publicera reglerna i
+`firebase/firestore.rules`. Se [Firebase-instruktionerna](firebase/README.md).
+Anmälningar granskas i Firebase Console, i samlingen `pronunciationReports`.
 
 Om Chrome blockerar automatisk ljudstart, visar spelaren att kapitlet är förladdat
 och att du ska trycka **Spela**. Det finns ingen bakgrundsuppspelning efter sidbyte.
@@ -56,10 +65,20 @@ Tillägget ger ingen ny licens för bibeltexten eller ljudet.
 
 Spelaren läggs bara till på de två angivna bibelsidorna. Den läser det valda
 kapitlet och textens verselement för att markera och rulla till rätt vers.
-Ingen analys, annonsering, kontoåtkomst eller telemetri ingår.
+Ingen analys, annonsering eller telemetri ingår.
+
+När du själv skickar en uttalsanmälan skapas en anonym Firebase-identitet utan
+synlig inloggning. Versreferens, versens text, markerade ord, beskrivning,
+ljudfilens version och en tidsstämpel skickas till projektet `reformationsbibeln-fel`.
+Inget namn eller e-post samlas in. En anonym teknisk identitet sparas lokalt
+av Firebase-autentiseringen. Rapportering kontaktar inte Firebase före ett
+första försök att skicka en anmälan. Uppgifterna i ett öppet formulär behålls
+vid nätverksfel; oskickade formulär följer inte med vid sidbyte.
 
 Nätverksbehörigheter behövs för `github.com`, `raw.githubusercontent.com` och
-`release-assets.githubusercontent.com`. Chrome beviljar sådana behörigheter per
+`release-assets.githubusercontent.com`, samt för rapportering till
+`identitytoolkit.googleapis.com`, `securetoken.googleapis.com` och
+`firestore.googleapis.com`. Chrome beviljar sådana behörigheter per
 värdnamn; tilläggets kod begränsar ljudlänkarna till detta repo och dess versfiler.
 GitHub ser vanliga nedladdningsförfrågningar för ljudet. Webbläsarens vanliga
 nätverksuppgifter följer med dem, men inga inloggningsuppgifter skickas av spelaren.
@@ -73,21 +92,22 @@ kapitlet eller sidan lämnas. Ingen permanent ljudsamling laddas ner av tillägg
 Utvecklingsfilerna och testerna finns i repots `chrome-extension`-mapp och ingår
 inte i installationspaketet. Kommandona nedan körs från källkoden.
 
-All JavaScript ingår i tillägget. Ingen fjärrkod körs. Spelaren ligger i en
+All JavaScript, inklusive Firebase SDK, ingår i tillägget. Ingen fjärrkod körs. Spelaren ligger i en
 isolerad extension-iframe, som tas bort vid sidbyte; ljudet är därför inte beroende
 av service workerns livslängd. DOM-kopplingen använder läsvyns vers-spans och
 studievyns befintliga versrader. Noter och referenslänkar behåller sina funktioner.
 
-Kör `node --test tests/core.test.cjs` från denna mapp för enhetstester.
+Kör `npm ci`, `npm run build` och `npm test` från denna mapp.
+`npm run test:rules` använder Firestore-emulatorn (Java 21 krävs).
 Webbläsartestet kräver Playwright och dess Chromium-installation och kan köras
 med `node tests/browser.cjs`. Det använder lokala fixtures och mockade ljudlänkar;
 det genererar inget ljud hos en extern tjänst. Se tests/README.md.
 
-Verifiering i byggmiljön: nio logiktester och tio tester av DOM-kopplingen och
-spelarens händelser med en mediamodell passerar. Två riktiga ljudfiler har
-kontrollerats mot checksumma och avkodats med FFprobe. Ett fullständigt Chrome-test
-kunde inte köras i byggmiljön; verklig automatisk ljudstart, ljuduppspelning och
-visuell layout behöver därför kontrolleras i din Chrome-installation.
+Verifiering: lokala tester täcker spelarlogik, DOM-koppling, rapportformulär,
+ordmarkering, validering och den paketerade Firebase-klientens serversvar.
+Regeltester och fullständiga Chromium-tester körs även av repots
+`Chrome extension`-workflow. Tester använder fixtures, mockade API-svar eller
+demoprojektets emulator och skriver inget i din databas.
 
 Från repots rot: `python chrome-extension/scripts/build-books.py` återskapar
 bokmetadata; `python chrome-extension/scripts/package.py --output /absolut/sökväg`
@@ -104,4 +124,4 @@ skapar installationspaketet utan testkod och utvecklingsverktyg.
 - Uppdatera en lokal installation genom att ersätta dess filer och sedan
   klicka **Ladda om** på tilläggets kort i `chrome://extensions`.
 
-README och installationspaket innehåller ingen kopia av bibeltexten eller MP3-filerna.
+Installationspaketet innehåller inga bibelkapitel eller MP3-filer.

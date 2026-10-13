@@ -3,3 +3,6 @@ __pycache__/
 .env*
 generated/
 *.mp3
+node_modules/
+chrome-extension/firebase/*-debug.log
+chrome-extension/firebase/.firebase/

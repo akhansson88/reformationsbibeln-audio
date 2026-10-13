@@ -22,7 +22,7 @@ const chapterContexts = [[40,1],[40,2],[40,28],[41,1],[19,117],[19,118],[66,22]]
 const catalog = {schemaVersion:1,translation:core.TRANSLATION,chapters:{}};
 const manifests = {};
 for (const [bookId,chapter] of chapterContexts) {
-  const key = `${bookId}:${chapter}`, base = `${core.REPO}/releases/download/audio-${bookId}-${String(chapter).padStart(3,'0')}-${revision}/`;
+  const key = `${bookId}:${chapter}`, base = `${core.REPO}/releases/download/audio-${String(bookId).padStart(2,'0')}-${String(chapter).padStart(3,'0')}-${revision}/`;
   const count = core.books[bookId-1].verses[chapter-1];
   catalog.chapters[key] = {bookId,chapter,revision,sourceHash:'fixture',manifestUrl:base+'chapter.json'};
   manifests[key] = {schemaVersion:1,translation:core.TRANSLATION,bookId,chapter,revision,sourceHash:'fixture',expectedVerses:Array.from({length:count},(_,i)=>i+1),verses:Array.from({length:count},(_,i)=>({verse:i+1,duration,sha256,url:base+`verse-${String(i+1).padStart(3,'0')}.mp3`}))};
@@ -45,6 +45,7 @@ function fixture(view, bookId, chapter, hiddenNumbers = false, strongs = false) 
 }
 const cases=[], errors=[], requests=[];
 let corrupt=false, missing=false, transient=false, attemptedRetry=false;
+const savedReports=new Map();let rejectNextReport=false;
 let browser;
 async function test(name, fn) {
   await fn(); cases.push({name,passed:true}); console.log('PASS '+name);
@@ -74,8 +75,29 @@ async function marked(page, n) {
 }
 (async()=>{
   browser=await chromium.launchPersistentContext(profile,{
-    headless:true,executablePath:process.env.RB_CHROMIUM_EXECUTABLE || undefined, viewport:{width:1280,height:900},
+    headless:true,channel:'chromium',executablePath:process.env.RB_CHROMIUM_EXECUTABLE || undefined, viewport:{width:1280,height:900},
     args:[`--disable-extensions-except=${extension}`,`--load-extension=${extension}`,'--no-sandbox'],
+  });
+  const seconds=Math.floor(Date.now()/1000),encode=v=>Buffer.from(JSON.stringify(v)).toString('base64url');
+  const jwt=encode({alg:'none',typ:'JWT'})+'.'+encode({iss:'https://securetoken.google.com/reformationsbibeln-fel',aud:'reformationsbibeln-fel',sub:'browser-listener',user_id:'browser-listener',iat:seconds,exp:seconds+3600,auth_time:seconds,firebase:{sign_in_provider:'anonymous'}})+'.signature';
+  await browser.route('https://identitytoolkit.googleapis.com/**',route=>{
+    const url=route.request().url();
+    const body=url.includes('accounts:signUp')?{localId:'browser-listener',idToken:jwt,refreshToken:'test-token',expiresIn:'3600'}:url.includes('accounts:lookup')?{users:[{localId:'browser-listener',providerUserInfo:[],createdAt:String(Date.now()),lastLoginAt:String(Date.now())}]}:null;
+    if(!body)return route.abort();return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify(body)});
+  });
+  await browser.route('https://securetoken.googleapis.com/**',route=>route.abort());
+  await browser.route('https://firestore.googleapis.com/**',route=>{
+    const url=route.request().url(),body=route.request().postDataJSON(),time=new Date().toISOString();
+    if(url.includes('/documents:commit')){
+      if(rejectNextReport){rejectNextReport=false;return route.fulfill({status:403,contentType:'application/json',body:JSON.stringify({error:{status:'PERMISSION_DENIED',message:'Test failure'}})});}
+      const write=body.writes[0];savedReports.set(write.update.name,write);
+      return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({commitTime:time,writeResults:[{updateTime:time,transformResults:[{timestampValue:time}]}]})});
+    }
+    if(url.includes('/documents:batchGet')){
+      const name=body.documents[0],saved=savedReports.get(name),result=saved?{found:{name,fields:saved.update.fields,createTime:time,updateTime:time},readTime:time}:{missing:name,readTime:time};
+      return route.fulfill({status:200,contentType:'application/json',body:JSON.stringify([result])});
+    }
+    return route.abort();
   });
   await browser.route('https://bibelonline.se/**',async route=>{
     const u=new URL(route.request().url());
@@ -151,6 +173,23 @@ async function marked(page, n) {
       assert.equal(await page.locator('[data-rb-spoken="true"]').count(),0);
       assert.equal(frame.isDetached(),true,'Old player and its audio must be destroyed');
     });
+    await test(`${view}: pronunciation report marks words, validates description, pauses and retries safely`,async()=>{
+      const frame=await ready(page,view,40,1,'&strong=1');await seek(frame,duration*6+.04);await marked(page,7);
+      await frame.locator('#play').click();await frame.locator('#report').click();await frame.locator('#report-dialog').waitFor({state:'visible'});
+      await frame.waitForFunction(()=>document.querySelectorAll('#report-words button').length>0);
+      assert.equal(await frame.locator('#report-verse').inputValue(),'7');assert.equal(await frame.locator('#play').getAttribute('aria-label'),'Spela');
+      assert.doesNotMatch(await frame.locator('#report-words').innerText(),/G2424/);
+      const before=savedReports.size;await frame.locator('#report-description').fill('   ');await frame.locator('#report-submit').click();
+      await frame.locator('#report-error').waitFor({state:'visible'});assert.equal(savedReports.size,before);
+      await frame.locator('#report-words button').nth(0).click();await frame.locator('#report-words button').nth(1).click();
+      assert.equal(await frame.locator('#report-description').getAttribute('required'),null);await frame.locator('#report-description').fill('Beskrivning av uttalet.');
+      rejectNextReport=true;await frame.locator('#report-submit').click();await frame.locator('#report-error').waitFor({state:'visible'});
+      assert.equal(await frame.locator('#report-description').inputValue(),'Beskrivning av uttalet.');assert.equal(await frame.locator('#report-words button[aria-pressed="true"]').count(),2);
+      await frame.locator('#report-submit').click();await frame.locator('#report-success').waitFor({state:'visible'});assert.equal(savedReports.size,before+1);
+      const write=[...savedReports.values()].at(-1);assert.equal(write.update.fields.verse.integerValue,'7');assert.equal(Object.keys(write.update.fields.selectedWords.mapValue.fields).length,2);
+      assert.equal(write.updateTransforms[0].setToServerValue,'REQUEST_TIME');assert.match(write.update.fields.audioUrl.stringValue,/verse-007\.mp3$/);
+      await frame.locator('#report-done').click();await frame.locator('#report-dialog').waitFor({state:'hidden'});assert.equal(await frame.locator('#play').getAttribute('aria-label'),'Spela');
+    });
   }
   await test('reader without visible verse numbers still maps all text spans',async()=>{
     const frame=await ready(page,'biblereader',40,1,'&hide=1');
@@ -201,6 +240,9 @@ async function marked(page, n) {
     assert.ok(dimensions.playerHeight<=dimensions.height+2,JSON.stringify(dimensions));
     assert.equal(await frame.locator('#follow').isVisible(),true);assert.equal(await frame.locator('#loop').isVisible(),true);
     await page.screenshot({path:path.join(output,'narrow-player.png')});
+    await frame.locator('#report').click();await frame.locator('#report-dialog').waitFor({state:'visible'});
+    const dialog=await frame.locator('#report-dialog').boundingBox();assert.ok(dialog.x>=0&&dialog.x+dialog.width<=390&&dialog.y>=0&&dialog.y+dialog.height<=844,JSON.stringify(dialog));
+    await page.screenshot({path:path.join(output,'narrow-report.png')});await frame.locator('#report-cancel').click();
   });
   assert.deepEqual(errors,[],'The browser must not report uncaught page errors');
   const report={passed:true,tests:cases,errors,mp3Requests:requests.length,output};

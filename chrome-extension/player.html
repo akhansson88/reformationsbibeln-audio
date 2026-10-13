@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="player.css">
   <script defer src="lib/books.js"></script>
   <script defer src="lib/core.js"></script>
+  <script defer src="lib/reports.js"></script>
+  <script defer src="vendor/firebase-client.js"></script>
+  <script defer src="report-ui.js"></script>
   <script defer src="player.js"></script>
 </head>
 <body>
@@ -27,8 +30,25 @@
       </div>
       <label class="volume-label"><input id="volume" type="range" min="0" max="1" step="0.05" value="1" aria-label="Volym"></label>
     </div>
-    <div class="statusline"><span id="status" role="status" aria-live="polite">Förbereder ljudet…</span><span id="download" aria-live="off"></span><button id="retry" hidden>Försök igen</button></div>
+    <div class="statusline"><span id="status" role="status" aria-live="polite">Förbereder ljudet…</span><span id="download" aria-live="off"></span><button id="retry" hidden>Försök igen</button><span class="feedback">Under utveckling. <button id="report" disabled>Anmäl uttalsfel</button></span></div>
     <progress id="progress" max="1" value="0" aria-label="Kapitlets ljudfiler hämtas"></progress>
   </main>
+  <dialog id="report-dialog" aria-labelledby="report-title" aria-describedby="report-reference">
+    <div class="report-header"><div><h1 id="report-title">Anmäl uttalsfel</h1><p id="report-reference"></p></div><button id="report-close" class="report-close" aria-label="Stäng anmälan" title="Stäng">×</button></div>
+    <form id="report-form" novalidate>
+      <label class="report-verse-label" for="report-verse">Vers <select id="report-verse"></select></label>
+      <p class="report-instruction" id="report-word-help">Klicka på orden som uttalas fel. Du kan markera flera.</p>
+      <div id="report-words" class="report-words" role="group" aria-label="Markera feluttalade ord" aria-describedby="report-word-help"></div>
+      <p id="report-selection" class="report-selection" aria-live="polite">Inga ord markerade</p>
+      <label class="report-description-label" for="report-description">Beskrivning <span id="report-required">(krävs utan markerade ord)</span></label>
+      <textarea id="report-description" maxlength="1000" rows="3" placeholder="Beskriv felet eller skriv hur ordet ska uttalas." aria-describedby="report-description-help" required></textarea>
+      <div class="report-description-help"><span id="report-description-help">Markera minst ett ord eller skriv en beskrivning.</span><span id="report-count">0/1000</span></div>
+      <p id="report-error" class="report-error" role="alert" hidden></p>
+      <p class="report-privacy">Anmälan skickas anonymt. Inget namn eller e-post behövs.</p>
+      <div class="report-actions"><button type="button" id="report-cancel" class="report-secondary">Avbryt</button><button type="submit" id="report-submit" class="report-primary">Skicka anmälan</button></div>
+      <p id="report-state" class="report-state" role="status" aria-live="polite"></p>
+    </form>
+    <div id="report-success" hidden><p class="report-thanks">Tack! Din anmälan är skickad.</p><p>Du hjälper oss att förbättra ljudbibeln.</p><button id="report-done" class="report-primary">Stäng</button></div>
+  </dialog>
 </body>
 </html>

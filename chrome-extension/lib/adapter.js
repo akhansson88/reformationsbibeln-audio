@@ -67,5 +67,15 @@
     }
     return null;
   }
-  return { readContext, mapVerses, navigationURL };
+  function verseText(record) {
+    if (!record?.element) return "";
+    const copy = record.element.cloneNode(true);
+    for (const node of copy.querySelectorAll('script,style,sup,small,[aria-hidden="true"],.tooltiptext,.tooltip_text')) node.remove();
+    for (const a of copy.querySelectorAll("a")) {
+      if (/^[GH]\d{1,6}$/i.test(a.textContent.trim()) || /showstrong/i.test(a.getAttribute("href") || "")) a.replaceWith(" ");
+    }
+    for (const br of copy.querySelectorAll("br")) br.replaceWith(" ");
+    return (copy.textContent || "").normalize("NFC").replace(/\s+/gu, " ").trim();
+  }
+  return { readContext, mapVerses, navigationURL, verseText };
 });

@@ -1,0 +1,36 @@
+name: Chrome extension
+on:
+  push:
+    branches: [main, 'codex/bibelonline-audio-extension-*']
+    paths: ['chrome-extension/**', '.github/workflows/chrome-extension.yml']
+  pull_request:
+    paths: ['chrome-extension/**', '.github/workflows/chrome-extension.yml']
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: chrome-extension
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: chrome-extension/package-lock.json
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - run: npm ci --no-audit --no-fund
+      - run: npm run build
+      - run: node scripts/build-firestore-rules.cjs
+      - run: git diff --exit-code -- vendor firebase/firestore.rules firebase/firestore-rules.json
+      - run: npm test
+      - run: npm run test:rules
+      - run: npx playwright install --with-deps chromium
+      - run: sudo apt-get install -y ffmpeg
+      - run: npm run test:browser

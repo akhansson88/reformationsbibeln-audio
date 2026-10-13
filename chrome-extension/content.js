@@ -84,13 +84,22 @@
       send("LOAD", { context: session.context, autoplay: session.autoplay, mappingComplete: session.verses.complete });
     }
   }
+  function resizeFrame(active) {
+    active.frame.style.height = `${active.reporting ? window.innerHeight : active.height}px`;
+    active.spacer.style.height = `${active.height + 24}px`;
+  }
   window.addEventListener("message", async event => {
     const active = session, data = event.data;
     if (!active || event.source !== active.frame.contentWindow || event.origin !== extensionOrigin || data?.channel !== "RB_AUDIO" || data.token !== active.token) return;
     if (data.type === "READY") { active.ready = true; loadWhenReady(); }
     else if (data.type === "HEIGHT" && Number.isFinite(data.height)) {
       active.height = Math.min(280, Math.max(90, Math.ceil(data.height)));
-      active.frame.style.height = `${active.height}px`; active.spacer.style.height = `${active.height + 24}px`;
+      resizeFrame(active);
+    } else if (data.type === "REPORT_LAYOUT" && typeof data.open === "boolean") {
+      active.reporting = data.open; resizeFrame(active);
+    } else if (data.type === "REQUEST_VERSE_TEXT" && Number.isInteger(data.verse) && data.verse >= 1 && data.verse <= active.verses.count &&
+      typeof data.requestId === "string" && /^[a-f0-9-]{36}$/.test(data.requestId) && core.sameContext(data.context, active.context)) {
+      send("VERSE_TEXT", { requestId: data.requestId, verse: data.verse, context: active.context, text: adapter.verseText(active.verses.map.get(data.verse)) });
     } else if (data.type === "VERSE" && Number.isInteger(data.verse) && active.verses.map.has(data.verse)) markVerse(data.verse, data.follow);
     else if (data.type === "FOLLOW") {
       active.follow = !!data.follow;
@@ -107,6 +116,7 @@
       } catch { if (session === active) send("NAV_ERROR"); }
     }
   });
+  window.addEventListener("resize", () => { if (session) resizeFrame(session); });
   const observer = new MutationObserver(changes => {
     if (changes.every(change => session?.host.contains(change.target) || change.target === session?.spacer)) return;
     clearTimeout(timer); timer = setTimeout(initialize, 150);
