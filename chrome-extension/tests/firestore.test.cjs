@@ -3,8 +3,8 @@ const { initializeTestEnvironment, assertSucceeds, assertFails } = require('@fir
 const { collection, doc, setDoc, getDoc, getDocs, updateDoc, deleteDoc, serverTimestamp, Timestamp } = require('firebase/firestore');
 const core = require('../lib/core.js'), reports = require('../lib/reports.js');
 let env;
-// Compile the exact file that users paste, including the historical .json name.
-before(async()=>{ env=await initializeTestEnvironment({projectId:'demo-reformationsbibeln-fel',firestore:{host:'127.0.0.1',port:8080,rules:fs.readFileSync(path.join(__dirname,'../firebase/firestore-rules.json'),'utf8')}}); });
+// Compile the exact ASCII file delivered for direct pasting into Console.
+before(async()=>{ env=await initializeTestEnvironment({projectId:'demo-reformationsbibeln-fel',firestore:{host:'127.0.0.1',port:8080,rules:fs.readFileSync(path.join(__dirname,'../firebase/reformationsbibeln-firestore-ascii.rules'),'utf8')}}); });
 beforeEach(async()=>env.clearFirestore());
 after(async()=>{if(env)await env.cleanup();});
 const anon=uid=>env.authenticatedContext(uid,{firebase:{sign_in_provider:'anonymous'}}).firestore();
@@ -18,7 +18,7 @@ test('anonymous reports accept selected words, repeated occurrences and optional
  const db=anon('listener-a');for(const patch of [{},{selectedWords:{'0':'Gud','2':'Gud.'}},{description:'Långt u.'}]){const d=report('listener-a',patch);await assertSucceeds(setDoc(ref(db,d),d));}
 });
 test('unselected words require a non-whitespace description, including Unicode whitespace',async()=>{
- const db=anon('listener-a');for(const description of ['',' \n\t','\u00a0\u2003\ufeff','\u0085']){const d=report('listener-a',{selectedWords:{},description});await assertFails(setDoc(ref(db,d),d));}
+ const db=anon('listener-a');for(const description of ['',' \n\t','\u00a0\u2003\ufeff','\u0085','\u202f\u205f\u3000\ufeff','\u1680\u2000\u200a','\u2028\u2029']){const d=report('listener-a',{selectedWords:{},description});await assertFails(setDoc(ref(db,d),d));}
  const d=report('listener-a',{selectedWords:{},verseText:'',description:'Sista meningen saknas.'});await assertSucceeds(setDoc(ref(db,d),d));
 });
 test('no login, another UID or a non-anonymous account cannot submit',async()=>{
@@ -54,7 +54,8 @@ test('book and chapter boundaries, long Psalm 119 and marking an entire long ver
 test('all other collections stay inaccessible to extension clients',async()=>{
  const db=anon('listener-a');await assertFails(setDoc(doc(db,'settings','anything'),{enabled:true}));await assertFails(getDoc(doc(db,'settings','anything')));
 });
-test('both delivered rule files are identical paste-ready Firestore source without a JSON wrapper',()=>{
- const native=fs.readFileSync(path.join(__dirname,'../firebase/firestore.rules'),'utf8'),alias=fs.readFileSync(path.join(__dirname,'../firebase/firestore-rules.json'),'utf8');
- assert.equal(alias,native);assert.equal(alias.split('\n')[0],"rules_version = '2';");assert.throws(()=>JSON.parse(alias),SyntaxError);
+test('all delivered rule files are identical ASCII Firestore source without a JSON wrapper or BOM',()=>{
+ const native=fs.readFileSync(path.join(__dirname,'../firebase/firestore.rules'),'utf8');
+ for(const name of ['firestore-rules.json','reformationsbibeln-firestore-ascii.rules'])assert.equal(fs.readFileSync(path.join(__dirname,'../firebase',name),'utf8'),native);
+ assert.equal(native.split('\n')[0],"rules_version = '2';");assert.doesNotMatch(native,/[^\x00-\x7f]/);assert.throws(()=>JSON.parse(native),SyntaxError);
 });

@@ -8,14 +8,18 @@ Ingen administratörsnyckel finns i tillägget.
 
 1. Öppna Firebase Console och välj **reformationsbibeln-fel**.
 2. Öppna **Firestore Database → Rules / Regler**.
-3. Markera allt i regelredigeraren och ersätt det med hela innehållet i
-   **firestore.rules** eller **firestore-rules.json**.
-4. Klicka **Publish / Publicera**.
+3. Öppna **reformationsbibeln-firestore-ascii.rules** i en textredigerare och
+   kopiera hela filens innehåll.
+4. Markera allt i Firestores regelredigerare med **Ctrl+A** och ersätt hela
+   innehållet med den kopierade koden. Första raden ska vara `rules_version = '2';`.
+5. Klicka **Publish / Publicera**.
 
-De två filerna innehåller exakt samma regelkod och kan klistras in direkt i
+De tre regelfilerna innehåller exakt samma regelkod och kan klistras in direkt i
 Firestore Console. Filnamnet `firestore-rules.json` behålls enligt önskemålet,
 men innehållet är Firestores regelspråk. Filen har inget JSON-omslag och ska
-inte läsas med en JSON-parser. Första raden är `rules_version = '2';`.
+inte läsas med en JSON-parser. Koden använder endast ASCII-tecken; Unicode i
+ordkontroller och svenska boknamn skrivs med explicita escape-sekvenser.
+Den nya filen med `ascii.rules` i namnet är den rekommenderade nedladdningen.
 Reglerna ingår i ZIP-versionens `firebase`-mapp. De publiceras inte genom att
 Chrome-tillägget installeras. Filen nekar åtkomst till övriga samlingar i projektet.
 
@@ -80,5 +84,5 @@ npm ci
 npm run test:rules
 ```
 
-`node scripts/build-firestore-rules.cjs` återskapar båda regelfilerna från
+`node scripts/build-firestore-rules.cjs` återskapar alla tre regelfilerna från
 tilläggets bok- och kapitelmetadata. Gör regeländringar i generatorn och bygg om.
