@@ -1,8 +1,13 @@
 const fs = require("node:fs"), path = require("node:path"), books = require("../lib/books.js");
 const root = path.resolve(__dirname, "..", "firebase");
 fs.mkdirSync(root, { recursive: true });
-// Explicit chapter tables avoid constructing all 1189 counts for every request.
-const verseCounts = books.map((b, i) => `${i ? "        " : "      return "}${i < books.length - 1 ? `book == ${b.id} ? ` : ""}${JSON.stringify(b.verses)}[chapter - 1]${i < books.length - 1 ? " :" : ";"}`).join("\n");
+// Only the chosen book's metadata is evaluated. A balanced decision tree takes
+// at most seven comparisons and avoids building 66 names/chapter counts.
+function bookMetadata(list) {
+  if (list.length === 1) return JSON.stringify({ name: list[0].name, verses: list[0].verses });
+  const mid = Math.floor(list.length / 2);
+  return `(id < ${list[mid].id} ? ${bookMetadata(list.slice(0, mid))} : ${bookMetadata(list.slice(mid))})`;
+}
 const fields = ["schemaVersion", "source", "extensionVersion", "clientReportId", "translation", "bookId", "bookName", "chapter", "verse", "verseText", "selectedWords", "description", "audioRevision", "audioUrl", "audioChecksum", "status", "reporterUid", "createdAt"];
 // Match JavaScript trim/whitespace, including Swedish non-breaking spaces.
 const whitespace = "\\\\t\\\\r\\\\n\\\\f\\\\v "+"\u0085\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff";
@@ -16,16 +21,15 @@ service cloud.firestore {
     function ownId(id) {
       return anonymous() && id.matches(request.auth.uid + '_[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}');
     }
-    function verseCount(book, chapter) {
-${verseCounts}
+    function bookMeta(id) {
+      return ${bookMetadata(books)};
     }
     function validReference(d) {
-      let chapters = ${JSON.stringify(books.map(b => b.verses.length))};
-      let names = ${JSON.stringify(books.map(b => b.name))};
+      let meta = bookMeta(d.bookId);
       return d.bookId is int && d.bookId >= 1 && d.bookId <= 66 &&
-        d.bookName is string && d.bookName == names[d.bookId - 1] &&
-        d.chapter is int && d.chapter >= 1 && d.chapter <= chapters[d.bookId - 1] &&
-        d.verse is int && d.verse >= 1 && d.verse <= verseCount(d.bookId, d.chapter);
+        d.bookName is string && d.bookName == meta.name &&
+        d.chapter is int && d.chapter >= 1 && d.chapter <= meta.verses.size() &&
+        d.verse is int && d.verse >= 1 && d.verse <= meta.verses[d.chapter - 1];
     }
     function nonBlank(value) {
       return value.matches('(?s).*[^${whitespace}].*');
