@@ -17,6 +17,11 @@ Du ska välja mappen, inte själva ZIP-filen. Behåll mappen där du lade den;
 Chrome använder dess filer. Tillägget behöver inte publiceras i Chrome Web Store.
 Tillägget visas även under Chromes pusselikon och kan fästas där.
 
+Har du en tidigare version? Ersätt filerna i den befintliga tilläggsmappen med
+innehållet i den nya ZIP-mappen. Klicka sedan **Ladda om** på tilläggets kort i
+`chrome://extensions` och ladda om Bibelonline. Då behåller du samma tillägg i
+Chrome och undviker att två versioner ligger aktiva samtidigt.
+
 ## Använd spelaren
 
 - Alla versfiler i det aktuella kapitlet hämtas och kontrolleras innan **Spela** blir tillgängligt.

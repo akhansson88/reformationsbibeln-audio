@@ -104,6 +104,7 @@
     else if (data.type === "FOLLOW") {
       active.follow = !!data.follow;
       if (active.follow) scrollToVerse(active.verses.map.get(active.verse), true);
+      else window.scrollTo({ top: window.scrollY, left: window.scrollX, behavior: "instant" });
     } else if (data.type === "CLEAR") { clearHighlight(); active.verse = 0; }
     else if (data.type === "NEXT") {
       const target = core.nextChapter(active.context);

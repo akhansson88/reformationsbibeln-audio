@@ -21,7 +21,7 @@ for(const view of ['biblereader','studyb']){
  test(`${view}: content bridge highlights only the verse, follows on request, and stops on pagehide`,async()=>{
   const dom=new JSDOM(fixture(view,40,1,false,true),{url:`https://bibelonline.se/${view}.php`,runScripts:'outside-only',pretendToBeVisual:true});const w=dom.window;
   const requests=[];w.chrome={runtime:{id:'test-extension',getURL:n=>`chrome-extension://test-extension/${n}`,sendMessage:async m=>{requests.push(m);return {ok:true,autoplay:false};}}};
-  w.matchMedia=()=>({matches:false});
+  w.matchMedia=()=>({matches:false});const canceledScrolls=[];w.scrollTo=options=>canceledScrolls.push(options);
   for(const n of ['lib/books.js','lib/core.js','lib/adapter.js','content.js'])load(w,n);
   await sleep(10);const frame=w.document.querySelector('#rb-audio-dock').shadowRoot.querySelector('iframe');
   const token=new URL(frame.src).searchParams.get('session'),out=[];frame.contentWindow.postMessage=(m)=>out.push(m);
@@ -34,6 +34,7 @@ for(const view of ['biblereader','studyb']){
   assert.equal(w.document.querySelectorAll('[data-rb-spoken]').length,2);
   if(view==='studyb')assert.equal(w.document.querySelector('tr.mytr:nth-of-type(11) td:nth-child(3)').hasAttribute('data-rb-spoken'),false);
   emit('FOLLOW',{follow:true});assert.equal(scrolls,1);
+  emit('FOLLOW',{follow:false});assert.equal(canceledScrolls.length,1);assert.equal(canceledScrolls[0].behavior,'instant');assert.equal(canceledScrolls[0].top,w.scrollY);
   emit('VERSE',{verse:11,follow:false});assert.equal(record.element.hasAttribute('data-rb-spoken'),false);
   const requestId=w.crypto.randomUUID();emit('REQUEST_VERSE_TEXT',{requestId,verse:10,context:c});
   const response=out.find(m=>m.type==='VERSE_TEXT');assert.equal(response.requestId,requestId);assert.match(response.text,/Text för vers 10/);assert.doesNotMatch(response.text,/G2424|\[r\]/);
