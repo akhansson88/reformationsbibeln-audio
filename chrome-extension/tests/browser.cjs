@@ -76,7 +76,9 @@ async function marked(page, n) {
 (async()=>{
   browser=await chromium.launchPersistentContext(profile,{
     headless:true,channel:'chromium',executablePath:process.env.RB_CHROMIUM_EXECUTABLE || undefined, viewport:{width:1280,height:900},
-    args:[`--disable-extensions-except=${extension}`,`--load-extension=${extension}`,'--no-sandbox'],
+    // Keep CI's autoplay heuristics from masking the continuation state machine.
+    // NotAllowedError and the manual-play fallback are covered by dom.test.cjs.
+    args:[`--disable-extensions-except=${extension}`,`--load-extension=${extension}`,'--no-sandbox','--autoplay-policy=no-user-gesture-required'],
   });
   const seconds=Math.floor(Date.now()/1000),encode=v=>Buffer.from(JSON.stringify(v)).toString('base64url');
   const jwt=encode({alg:'none',typ:'JWT'})+'.'+encode({iss:'https://securetoken.google.com/reformationsbibeln-fel',aud:'reformationsbibeln-fel',sub:'browser-listener',user_id:'browser-listener',iat:seconds,exp:seconds+3600,auth_time:seconds,firebase:{sign_in_provider:'anonymous'}})+'.signature';
@@ -248,7 +250,12 @@ async function marked(page, n) {
   const report={passed:true,tests:cases,errors,mp3Requests:requests.length,output};
   fs.writeFileSync(path.join(output,'browser-report.json'),JSON.stringify(report,null,2));
   console.log(JSON.stringify(report,null,2));
-})().catch(error=>{
-  fs.writeFileSync(path.join(output,'browser-report.json'),JSON.stringify({passed:false,tests:cases,errors,error:error.stack},null,2));
+})().catch(async error=>{
+  const states=[];
+  for(const p of browser?.pages()||[])for(const f of p.frames())if(f.name()==='rb-audio-player'){
+    try{states.push(await f.evaluate(()=>({url:location.href,status:document.getElementById('status')?.textContent,chapter:document.getElementById('chapter')?.textContent,verse:document.getElementById('verse')?.textContent,reportError:document.getElementById('report-error')?.textContent})));}catch{}
+  }
+  console.error('Player state at failure: '+JSON.stringify(states));
+  fs.writeFileSync(path.join(output,'browser-report.json'),JSON.stringify({passed:false,tests:cases,errors,states,error:error.stack},null,2));
   console.error(error);process.exitCode=1;
 }).finally(async()=>{await browser?.close();});
