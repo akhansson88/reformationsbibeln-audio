@@ -349,8 +349,8 @@ def main() -> int:
         check = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT)
         if check.returncode != 0:
             subprocess.run(["git", "commit", "-m", "Publish AAC audio catalog"], cwd=ROOT, check=True)
-            subprocess.run(["git", "push", "origin", "HEAD"], cwd=ROOT, check=True)
-            print("Pushed catalog-aac.json")
+            subprocess.run(["git", "push", "origin", "HEAD:main"], cwd=ROOT, check=True)
+            print("Pushed catalog-aac.json to main")
         else:
             print("catalog-aac.json unchanged; nothing to push")
 
